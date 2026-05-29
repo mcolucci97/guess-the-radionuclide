@@ -147,7 +147,7 @@ The interface and educational card content support:
 
 ## Credits
 
-**Game conceived and developed by Michele Colucci.**
+**Online game conceived and developed by Michele Colucci.**
 
 The digital application is inspired by the original *Indovina il Radionuclide* card-game concept deposited in the INFN Open Access Repository:
 
