@@ -2,7 +2,7 @@
 ### *Indovina il Radionuclide* — an AI-assisted educational card game about radioactivity
 
 <!-- Replace this URL after enabling GitHub Pages -->
-[▶ Play online](https://<USERNAME>.github.io/<REPOSITORY>/)
+[▶ Play online](https://mcolucci97.github.io/guess-the-radionuclide/)
 
 **Guess the Radionuclide** is a digital educational game inspired by the classic deduction format: each player has a secret radionuclide card and must identify the opponent’s card by asking yes/no questions.
 
