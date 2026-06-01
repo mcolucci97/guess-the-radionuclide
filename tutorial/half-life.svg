@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<defs><style>text{font-family:Arial,Helvetica,sans-serif;fill:#0f172a} .title{font-size:34px;font-weight:900} .label{font-size:26px;font-weight:800} .small{font-size:20px;font-weight:700;fill:#334155} .tiny{font-size:16px;font-weight:600;fill:#475569} .box{fill:#fff;stroke:#cbd5e1;stroke-width:3;rx:24} .p{fill:#fb923c} .n{fill:#38bdf8} .alpha{fill:#fde047} .beta{fill:#67e8f9} .orange{fill:#fb7185} .gamma{fill:#fed7aa} .green{fill:#bbf7d0} .purple{fill:#ddd6fe} .blue{fill:#bfdbfe} .dark{fill:#0f172a}</style></defs>
+<rect width="900" height="520" fill="#fffdf8"/>
+<text x="40" y="60" class="title">Tempo di dimezzamento: non va a zero subito</text>
+<rect class="box" x="50" y="100" width="220" height="320"/><text class="label" x="98" y="145">inizio</text>
+<g transform="translate(80 190)">{''.join(f'<circle class="p" cx="{(i%4)*40}" cy="{(i//4)*45}" r="16"/>' for i in range(8))}</g><text class="small" x="110" y="380">8 nuclei</text>
+<path d="M285 260 L345 260" stroke="#0f172a" stroke-width="6" marker-end="url(#a)"/><rect class="box" x="360" y="100" width="220" height="320"/><text class="label" x="400" y="145">1 T½</text><g transform="translate(410 210)">{''.join(f'<circle class="p" cx="{(i%2)*55}" cy="{(i//2)*55}" r="18"/>' for i in range(4))}</g><text class="small" x="430" y="380">4 nuclei</text>
+<path d="M595 260 L655 260" stroke="#0f172a" stroke-width="6"/><rect class="box" x="670" y="100" width="180" height="320"/><text class="label" x="710" y="145">2 T½</text><circle class="p" cx="735" cy="250" r="20"/><circle class="p" cx="785" cy="250" r="20"/><text class="small" x="720" y="380">2 nuclei</text>
+</svg>

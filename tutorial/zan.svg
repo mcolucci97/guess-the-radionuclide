@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<defs><style>text{font-family:Arial,Helvetica,sans-serif;fill:#0f172a} .title{font-size:34px;font-weight:900} .label{font-size:26px;font-weight:800} .small{font-size:20px;font-weight:700;fill:#334155} .tiny{font-size:16px;font-weight:600;fill:#475569} .box{fill:#fff;stroke:#cbd5e1;stroke-width:3;rx:24} .p{fill:#fb923c} .n{fill:#38bdf8} .alpha{fill:#fde047} .beta{fill:#67e8f9} .orange{fill:#fb7185} .gamma{fill:#fed7aa} .green{fill:#bbf7d0} .purple{fill:#ddd6fe} .blue{fill:#bfdbfe} .dark{fill:#0f172a}</style></defs>
+<rect width="900" height="520" fill="#fffdf8"/>
+<text x="40" y="55" class="title">Z, A, N: tre numeri per fare domande</text>
+<circle cx="235" cy="245" r="130" fill="#f8fafc" stroke="#94a3b8" stroke-width="4"/>
+<g>{''.join(f'<circle class="p" cx="{200+(i%3)*35}" cy="{200+(i//3)*35}" r="15"/>' for i in range(5))}{''.join(f'<circle class="n" cx="{175+(i%4)*35}" cy="{270+(i//4)*35}" r="15"/>' for i in range(6))}</g>
+<text class="label" x="450" y="170">Z = protoni</text><text class="small" x="450" y="205">decide l’elemento</text><text class="label" x="450" y="275">A = protoni + neutroni</text><text class="small" x="450" y="310">numero di massa</text><text class="label" x="450" y="380">N = A − Z</text><text class="small" x="450" y="415">numero di neutroni</text>
+</svg>

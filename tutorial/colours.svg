@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.16"/></filter>
+    <style>text{font-family:Arial, Helvetica, sans-serif;fill:#0f172a} .small{font-size:24px;font-weight:700} .tiny{font-size:18px;font-weight:600;fill:#334155} .label{font-size:28px;font-weight:900} .card{fill:#fff;stroke:#cbd5e1;stroke-width:3;rx:28;filter:url(#shadow)} .p{fill:#f97316} .n{fill:#38bdf8} .e{fill:#a78bfa} .alpha{fill:#fde006} .beta{fill:#63b5c1} .orange{fill:#ff744f} .gamma{fill:#ffd0c5}</style>
+  </defs>
+  <rect width="100%" height="100%" fill="#f8fafc" rx="32"/>
+
+  <rect x="80" y="90" width="210" height="300" class="card"/><rect x="80" y="90" width="210" height="300" class="alpha" rx="28"/><text x="145" y="245" class="label">α</text><text x="116" y="330" class="small">giallo</text>
+  <rect x="345" y="90" width="210" height="300" class="card"/><rect x="345" y="90" width="210" height="300" class="beta" rx="28"/><text x="410" y="245" class="label">β⁻</text><text x="376" y="330" class="small">azzurro</text>
+  <rect x="610" y="90" width="210" height="300" class="card"/><rect x="610" y="90" width="210" height="300" class="orange" rx="28"/><text x="675" y="245" class="label">β⁺/ε</text><text x="635" y="330" class="small">arancio</text>
+  <text x="105" y="455" class="tiny">Nel livello bambin* il colore è un indizio visivo; dopo diventa un concetto fisico.</text>
+
+</svg>
