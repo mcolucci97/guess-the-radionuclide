@@ -1,0 +1,5 @@
+--- a/src/engine/advanced.js
++++ b/src/engine/advanced.js
+@@
+- if(q.type==='unknown'){const scores=classify(s,model);if(scores[0]?.score>=.83&&scores[0].score-(scores[1]?.score||0)>=.15)return {type:'parsed',queryType:'concept',conceptId:scores[0].label,negated:old.Pe(s),original:text,language:lang,confidence:scores[0].score,via:'trained-intent'};}
++ if(q.type==='unknown'){const scores=classify(s,model);if(scores[0]?.score>=.30&&scores[0].score-(scores[1]?.score||0)>=.10)return {type:'parsed',queryType:'concept',conceptId:scores[0].label,negated:old.Pe(s),original:text,language:lang,confidence:scores[0].score,via:'trained-intent'};}
