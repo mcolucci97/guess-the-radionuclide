@@ -1,0 +1,196 @@
+{
+  "child": {
+    "base": [
+      {
+        "img": "atom-card",
+        "title": "1 · Un atome qui change",
+        "body": "Un radionucléide possède un noyau instable pouvant se transformer et émettre des particules ou des rayonnements. Observez les indices et posez des questions oui/non.",
+        "chips": []
+      },
+      {
+        "img": "colours",
+        "title": "2 · Les couleurs comme indices",
+        "body": "Le jaune représente alpha, le bleu bêta moins et l’orange les positons ou la capture électronique. Les couleurs simplifient les branches principales ; les branches faibles restent dans les données.",
+        "chips": []
+      },
+      {
+        "img": "applications",
+        "title": "3 · Du quotidien à l’espace",
+        "body": "Médecine, nature, maisons, aliments, industrie et espace sont de grandes catégories. Commencez par des questions larges, puis précisez les applications lorsqu’il reste peu de cartes.",
+        "chips": []
+      },
+      {
+        "img": "half-life",
+        "title": "4 · Période radioactive",
+        "body": "Après une période, environ la moitié des noyaux radioactifs initiaux subsiste. Huit devient quatre, puis deux : ce sont des moyennes ; chaque désintégration est aléatoire. L’activité se mesure en becquerels (Bq).",
+        "chips": []
+      },
+      {
+        "img": "stories",
+        "title": "5 · Histoires mémorables",
+        "body": "Radon des maisons, potassium-40 du corps, datation au carbone-14 et imagerie médicale donnent des indices mémorables. Le jeu utilise les associations documentées sur ses cartes.",
+        "chips": []
+      }
+    ],
+    "intermediate": [
+      {
+        "img": "nucleus",
+        "title": "1 · Protons et neutrons",
+        "body": "Les protons déterminent l’élément. Ses isotopes partagent le nombre de protons mais ont des nombres de neutrons différents. Demandez s’il possède plus de vingt protons ou trente neutrons.",
+        "chips": [
+          "Z / A / N"
+        ]
+      },
+      {
+        "img": "zan",
+        "title": "2 · Z, A et N",
+        "body": "Z est le nombre de protons, A le nombre de masse et N = A − Z le nombre de neutrons. Chaque carte décrit un radionucléide précis, pas seulement son élément chimique.",
+        "chips": [
+          "Z / A / N"
+        ]
+      },
+      {
+        "img": "decays",
+        "title": "3 · Alpha, bêta et gamma",
+        "body": "Les particules alpha ont généralement un parcours court. Le rayonnement bêta est constitué d’électrons ou de positons. Les gamma sont des photons. La pénétration dépend de l’énergie et du matériau traversé.",
+        "chips": []
+      },
+      {
+        "img": "half-life-clock",
+        "title": "4 · Échelles de temps",
+        "body": "Interrogez secondes, minutes, heures, jours, mois ou années, ou utilisez une comparaison numérique. Les niveaux intermédiaire et expert permettent deux questions temporelles par joueur. Les valeurs affichées sont arrondies ; les comparaisons utilisent les secondes complètes.",
+        "chips": []
+      },
+      {
+        "img": "applications",
+        "title": "5 · Du quotidien à l’espace",
+        "body": "Médecine, nature, maisons, aliments, industrie et espace sont de grandes catégories. Commencez par des questions larges, puis précisez les applications lorsqu’il reste peu de cartes.",
+        "chips": []
+      }
+    ],
+    "expert": [
+      {
+        "img": "expert-map",
+        "title": "1 · Questions expertes",
+        "body": "Explorez Z/A/N, familles chimiques, état physique, fusion, désintégrations et applications nucléaires. Une valeur absente ne signifie jamais zéro. Vérifiez l’interprétation avant de confirmer.",
+        "chips": []
+      },
+      {
+        "img": "mean-life",
+        "title": "2 · Période et vie moyenne",
+        "body": "Pour une décroissance exponentielle, N(t) = N₀ exp(−λt), T½ = ln 2 / λ et τ = 1 / λ = T½ / ln 2. Période et vie moyenne partagent la limite des questions temporelles.",
+        "chips": []
+      },
+      {
+        "img": "capture",
+        "title": "3 · Capture neutronique",
+        "body": "La section efficace se mesure en barns et dépend de la cible, de la réaction et de l’énergie. La capture (n,γ) diffère de l’absorption totale. Les cinq valeurs héritées concernent les neutrons thermiques à 2200 m/s.",
+        "chips": []
+      }
+    ]
+  },
+  "adult": {
+    "base": [
+      {
+        "img": "nucleus",
+        "title": "1 · Protons et neutrons",
+        "body": "Les protons déterminent l’élément. Ses isotopes partagent le nombre de protons mais ont des nombres de neutrons différents. Demandez s’il possède plus de vingt protons ou trente neutrons.",
+        "chips": [
+          "Z / A / N"
+        ]
+      },
+      {
+        "img": "zan",
+        "title": "2 · Z, A et N",
+        "body": "Z est le nombre de protons, A le nombre de masse et N = A − Z le nombre de neutrons. Chaque carte décrit un radionucléide précis, pas seulement son élément chimique.",
+        "chips": [
+          "Z / A / N"
+        ]
+      },
+      {
+        "img": "decays",
+        "title": "3 · Alpha, bêta et gamma",
+        "body": "Les particules alpha ont généralement un parcours court. Le rayonnement bêta est constitué d’électrons ou de positons. Les gamma sont des photons. La pénétration dépend de l’énergie et du matériau traversé.",
+        "chips": []
+      },
+      {
+        "img": "half-life",
+        "title": "4 · Période radioactive",
+        "body": "Après une période, environ la moitié des noyaux radioactifs initiaux subsiste. Huit devient quatre, puis deux : ce sont des moyennes ; chaque désintégration est aléatoire. L’activité se mesure en becquerels (Bq).",
+        "chips": []
+      },
+      {
+        "img": "stories",
+        "title": "5 · Histoires mémorables",
+        "body": "Radon des maisons, potassium-40 du corps, datation au carbone-14 et imagerie médicale donnent des indices mémorables. Le jeu utilise les associations documentées sur ses cartes.",
+        "chips": []
+      }
+    ],
+    "intermediate": [
+      {
+        "img": "nucleus",
+        "title": "1 · Protons et neutrons",
+        "body": "Les protons déterminent l’élément. Ses isotopes partagent le nombre de protons mais ont des nombres de neutrons différents. Demandez s’il possède plus de vingt protons ou trente neutrons.",
+        "chips": [
+          "Z / A / N"
+        ]
+      },
+      {
+        "img": "half-life-clock",
+        "title": "2 · Échelles de temps",
+        "body": "Interrogez secondes, minutes, heures, jours, mois ou années, ou utilisez une comparaison numérique. Les niveaux intermédiaire et expert permettent deux questions temporelles par joueur. Les valeurs affichées sont arrondies ; les comparaisons utilisent les secondes complètes.",
+        "chips": []
+      },
+      {
+        "img": "mean-life",
+        "title": "3 · Période et vie moyenne",
+        "body": "Pour une décroissance exponentielle, N(t) = N₀ exp(−λt), T½ = ln 2 / λ et τ = 1 / λ = T½ / ln 2. Période et vie moyenne partagent la limite des questions temporelles.",
+        "chips": []
+      },
+      {
+        "img": "chemistry",
+        "title": "4 · Propriétés de l’élément",
+        "body": "Famille chimique, état et température de fusion décrivent l’élément. Désintégration et période décrivent le radionucléide. Distinguez métaux alcalins et alcalino-terreux, métaux de transition et post-transition.",
+        "chips": []
+      },
+      {
+        "img": "applications",
+        "title": "5 · Du quotidien à l’espace",
+        "body": "Médecine, nature, maisons, aliments, industrie et espace sont de grandes catégories. Commencez par des questions larges, puis précisez les applications lorsqu’il reste peu de cartes.",
+        "chips": []
+      }
+    ],
+    "expert": [
+      {
+        "img": "expert-map",
+        "title": "1 · Questions expertes",
+        "body": "Explorez Z/A/N, familles chimiques, état physique, fusion, désintégrations et applications nucléaires. Une valeur absente ne signifie jamais zéro. Vérifiez l’interprétation avant de confirmer.",
+        "chips": []
+      },
+      {
+        "img": "mean-life",
+        "title": "2 · Période et vie moyenne",
+        "body": "Pour une décroissance exponentielle, N(t) = N₀ exp(−λt), T½ = ln 2 / λ et τ = 1 / λ = T½ / ln 2. Période et vie moyenne partagent la limite des questions temporelles.",
+        "chips": []
+      },
+      {
+        "img": "capture",
+        "title": "3 · Capture neutronique",
+        "body": "La section efficace se mesure en barns et dépend de la cible, de la réaction et de l’énergie. La capture (n,γ) diffère de l’absorption totale. Les cinq valeurs héritées concernent les neutrons thermiques à 2200 m/s.",
+        "chips": []
+      },
+      {
+        "img": "ngatlas",
+        "title": "4 · Données NGATLAS",
+        "body": "NGATLAS fournit la capture en fonction de l’énergie. Cette version conserve cinq valeurs du jeu précédent. L’import étendu n’a pas été validé et reste désactivé. Une donnée absente ne signifie pas zéro.",
+        "chips": []
+      },
+      {
+        "img": "decay-chain",
+        "title": "5 · Chaînes et relations",
+        "body": "Un radionucléide peut être produit de fission, membre d’une chaîne naturelle, parent ou fils d’un générateur, ou produit d’activation. Ce sont des relations différentes.",
+        "chips": []
+      }
+    ]
+  }
+}

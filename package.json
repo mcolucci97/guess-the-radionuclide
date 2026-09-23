@@ -1,0 +1,35 @@
+{
+  "name": "guess-the-radionuclide",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A multilingual, evidence-based radionuclide deduction game by Michele Colucci",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:e2e": "node tests/browser.mjs",
+    "train": "node scripts/train-intents.mjs",
+    "data:refresh": "python3 scripts/import_iaea.py",
+    "verify": "npm test && npm run build",
+    "train:llm:prepare": "node scripts/prepare-llm.mjs",
+    "data:curate": "python3 scripts/curate_data.py",
+    "test:llm": "node tests/browser-llm.mjs"
+  },
+  "dependencies": {
+    "@mlc-ai/web-llm": "0.2.79",
+    "lucide-react": "0.468.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.55.1",
+    "acorn": "8.15.0",
+    "esbuild": "0.25.10",
+    "jsdom": "^26.1.0",
+    "prettier": "3.6.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

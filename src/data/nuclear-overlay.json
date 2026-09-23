@@ -1,0 +1,2669 @@
+{
+  "Tb-149": {
+    "halfLifeSeconds": 14832.0,
+    "halfLifeDisplay": "4.12 h",
+    "halfLifeUncertaintySeconds": 108.0,
+    "halfLifeUncertaintyENSDF": "3",
+    "branches": [
+      {
+        "mode": "EC+B+",
+        "percent": 83.3,
+        "uncertainty": "1.7"
+      },
+      {
+        "mode": "A",
+        "percent": 16.7,
+        "uncertainty": "1.7"
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": true,
+      "positronIntensitySum": 7.1153,
+      "electronCaptureIntensitySum": 76.2884,
+      "positronObserved": true,
+      "electronCaptureObserved": true,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=149tb&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 352.24,
+        "intensityPercent": 29.8,
+        "uncertaintyKeV": 0.02,
+        "daughter": "Gd-149"
+      },
+      {
+        "keV": 164.98,
+        "intensityPercent": 26.7,
+        "uncertaintyKeV": 0.02,
+        "daughter": "Gd-149"
+      },
+      {
+        "keV": 388.57,
+        "intensityPercent": 18.6,
+        "uncertaintyKeV": 0.02,
+        "daughter": "Gd-149"
+      },
+      {
+        "keV": 652.12,
+        "intensityPercent": 16.5,
+        "uncertaintyKeV": 0.02,
+        "daughter": "Gd-149"
+      },
+      {
+        "keV": 853.43,
+        "intensityPercent": 15.7,
+        "uncertaintyKeV": 0.01,
+        "daughter": "Gd-149"
+      },
+      {
+        "keV": 817.1,
+        "intensityPercent": 11.8,
+        "uncertaintyKeV": 0.2,
+        "daughter": "Gd-149"
+      },
+      {
+        "keV": 861.86,
+        "intensityPercent": 7.6,
+        "uncertaintyKeV": 0.02,
+        "daughter": "Gd-149"
+      },
+      {
+        "keV": 464.85,
+        "intensityPercent": 5.73,
+        "uncertaintyKeV": 0.02,
+        "daughter": "Gd-149"
+      },
+      {
+        "keV": 187.22,
+        "intensityPercent": 4.36,
+        "uncertaintyKeV": 0.02,
+        "daughter": "Gd-149"
+      },
+      {
+        "keV": 1175.4,
+        "intensityPercent": 3.31,
+        "uncertaintyKeV": null,
+        "daughter": "Gd-149"
+      },
+      {
+        "keV": 1640.26,
+        "intensityPercent": 3.22,
+        "uncertaintyKeV": 0.06,
+        "daughter": "Gd-149"
+      },
+      {
+        "keV": 1341.19,
+        "intensityPercent": 2.33,
+        "uncertaintyKeV": 0.06,
+        "daughter": "Gd-149"
+      },
+      {
+        "keV": 772.65,
+        "intensityPercent": 1.63,
+        "uncertaintyKeV": 0.03,
+        "daughter": "Gd-149"
+      },
+      {
+        "keV": 1040.65,
+        "intensityPercent": 1.48,
+        "uncertaintyKeV": 0.04,
+        "daughter": "Gd-149"
+      },
+      {
+        "keV": 1135.3,
+        "intensityPercent": 1.2,
+        "uncertaintyKeV": 0.1,
+        "daughter": "Gd-149"
+      },
+      {
+        "keV": 1827.5,
+        "intensityPercent": 1.11,
+        "uncertaintyKeV": null,
+        "daughter": "Gd-149"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=149tb&rad_types=g",
+    "evaluationCutoff": "23-Aug-2022",
+    "evaluators": "Balraj Singh and Jun Chen",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=149tb",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "At-211": {
+    "halfLifeSeconds": 25970.4,
+    "halfLifeDisplay": "7.214 h",
+    "halfLifeUncertaintySeconds": 25.2,
+    "halfLifeUncertaintyENSDF": "7",
+    "branches": [
+      {
+        "mode": "EC",
+        "percent": 58.2,
+        "uncertainty": "0.08"
+      },
+      {
+        "mode": "A",
+        "percent": 41.8,
+        "uncertainty": "0.08"
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=211at&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=211at&rad_types=g",
+    "evaluationCutoff": "28-FEB-2013",
+    "evaluators": "B. SINGH and  S. SINGH and  H.X. Nguyen and  M. Patial",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=211at",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "O-15": {
+    "halfLifeSeconds": 122.24,
+    "halfLifeDisplay": "122.24 s",
+    "halfLifeUncertaintySeconds": 0.16,
+    "halfLifeUncertaintyENSDF": "16",
+    "branches": [
+      {
+        "mode": "EC+B+",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": true,
+      "positronIntensitySum": 99.9003,
+      "electronCaptureIntensitySum": 0.0997,
+      "positronObserved": true,
+      "electronCaptureObserved": true,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=15o&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=15o&rad_types=g",
+    "evaluationCutoff": "1-Jul-1990",
+    "evaluators": "F. AJZENBERG-SELOVE",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=15o",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "N-13": {
+    "halfLifeSeconds": 597.9,
+    "halfLifeDisplay": "9.965 m",
+    "halfLifeUncertaintySeconds": 0.24,
+    "halfLifeUncertaintyENSDF": "4",
+    "branches": [
+      {
+        "mode": "EC+B+",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": true,
+      "positronIntensitySum": 99.803,
+      "electronCaptureIntensitySum": 0.197,
+      "positronObserved": true,
+      "electronCaptureObserved": true,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=13n&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=13n&rad_types=g",
+    "evaluationCutoff": "23-Apr-1986",
+    "evaluators": "F. AJZENBERG-SELOVE and  J.H. KELLEY AND C.D. NESARAJA",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=13n",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "F-18": {
+    "halfLifeSeconds": 6586.2,
+    "halfLifeDisplay": "109.77 m",
+    "halfLifeUncertaintySeconds": 3.0,
+    "halfLifeUncertaintyENSDF": "5",
+    "branches": [
+      {
+        "mode": "EC+B+",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": true,
+      "positronIntensitySum": 96.73,
+      "electronCaptureIntensitySum": 3.27,
+      "positronObserved": true,
+      "electronCaptureObserved": true,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=18f&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=18f&rad_types=g",
+    "evaluationCutoff": "31-OCT-1994",
+    "evaluators": "TILLEY and  WELLER and  CHEVES and  CHASTELER",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=18f",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "I-123": {
+    "halfLifeSeconds": 47602.8,
+    "halfLifeDisplay": "13.2230 h",
+    "halfLifeUncertaintySeconds": 6.84,
+    "halfLifeUncertaintyENSDF": "19",
+    "branches": [
+      {
+        "mode": "EC+B+",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": true,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 99.994,
+      "positronObserved": false,
+      "electronCaptureObserved": true,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=123i&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 159.0,
+        "intensityPercent": 83.6,
+        "uncertaintyKeV": 0.05,
+        "daughter": "Te-123"
+      },
+      {
+        "keV": 528.97,
+        "intensityPercent": 1.27,
+        "uncertaintyKeV": 0.05,
+        "daughter": "Te-123"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=123i&rad_types=g",
+    "evaluationCutoff": "15-Apr-2021",
+    "evaluators": "Jun Chen",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=123i",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "I-125": {
+    "halfLifeSeconds": 5132764.8,
+    "halfLifeDisplay": "59.407 d",
+    "halfLifeUncertaintySeconds": 864.0,
+    "halfLifeUncertaintyENSDF": "10",
+    "branches": [
+      {
+        "mode": "EC",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=125i&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 35.4925,
+        "intensityPercent": 6.68,
+        "uncertaintyKeV": 0.0005,
+        "daughter": "Te-125"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=125i&rad_types=g",
+    "evaluationCutoff": "1-Jan-2010",
+    "evaluators": "J. KATAKURA",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=125i",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "C-14": {
+    "halfLifeSeconds": 179874478055.1744,
+    "halfLifeDisplay": "5700 Y",
+    "halfLifeUncertaintySeconds": 946707779.23776,
+    "halfLifeUncertaintyENSDF": "30",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=14c&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": false,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=14c&rad_types=g",
+    "evaluationCutoff": "1-JUL-1990",
+    "evaluators": "F. AJZENBERG-SELOVE",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=14c",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "H-3": {
+    "halfLifeSeconds": 388781328.00697345,
+    "halfLifeDisplay": "12.32 Y",
+    "halfLifeUncertaintySeconds": 631138.51949184,
+    "halfLifeUncertaintyENSDF": "2",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=3h&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": false,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=3h&rad_types=g",
+    "evaluationCutoff": "30-Jun-2015",
+    "evaluators": "J.E. Purcell{+#} and  C.G. Sheu{+*}",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=3h",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "I-131": {
+    "halfLifeSeconds": 693377.28,
+    "halfLifeDisplay": "8.0252 d",
+    "halfLifeUncertaintySeconds": 51.84,
+    "halfLifeUncertaintyENSDF": "6",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=131i&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 364.489,
+        "intensityPercent": 81.5,
+        "uncertaintyKeV": 0.005,
+        "daughter": "Xe-131"
+      },
+      {
+        "keV": 636.989,
+        "intensityPercent": 7.1557,
+        "uncertaintyKeV": 0.004,
+        "daughter": "Xe-131"
+      },
+      {
+        "keV": 284.305,
+        "intensityPercent": 6.12065,
+        "uncertaintyKeV": 0.005,
+        "daughter": "Xe-131"
+      },
+      {
+        "keV": 80.185,
+        "intensityPercent": 2.61615,
+        "uncertaintyKeV": 0.002,
+        "daughter": "Xe-131"
+      },
+      {
+        "keV": 722.911,
+        "intensityPercent": 1.76855,
+        "uncertaintyKeV": 0.005,
+        "daughter": "Xe-131"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=131i&rad_types=g",
+    "evaluationCutoff": "17-Jul-2006",
+    "evaluators": "YU. KHAZOV and  I. MITROPOLSKY and  A. RODIONOV",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=131i",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Co-60": {
+    "halfLifeSeconds": 166344192.0,
+    "halfLifeDisplay": "1925.28 d",
+    "halfLifeUncertaintySeconds": 12096.0,
+    "halfLifeUncertaintyENSDF": "14",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=60co&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 1332.492,
+        "intensityPercent": 99.9826,
+        "uncertaintyKeV": 0.004,
+        "daughter": "Ni-60"
+      },
+      {
+        "keV": 1173.228,
+        "intensityPercent": 99.85,
+        "uncertaintyKeV": 0.003,
+        "daughter": "Ni-60"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=60co&rad_types=g",
+    "evaluationCutoff": "31-Dec-2012",
+    "evaluators": "E. BROWNE and  J. K. TULI",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=60co",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Tb-161": {
+    "halfLifeSeconds": 595296.0,
+    "halfLifeDisplay": "6.89 d",
+    "halfLifeUncertaintySeconds": 1728.0,
+    "halfLifeUncertaintyENSDF": "2",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=161tb&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 25.65135,
+        "intensityPercent": 23.154,
+        "uncertaintyKeV": 3e-05,
+        "daughter": "Dy-161"
+      },
+      {
+        "keV": 48.91533,
+        "intensityPercent": 17.034,
+        "uncertaintyKeV": 5e-05,
+        "daughter": "Dy-161"
+      },
+      {
+        "keV": 74.56669,
+        "intensityPercent": 10.2,
+        "uncertaintyKeV": 6e-05,
+        "daughter": "Dy-161"
+      },
+      {
+        "keV": 57.1917,
+        "intensityPercent": 1.785,
+        "uncertaintyKeV": 0.0003,
+        "daughter": "Dy-161"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=161tb&rad_types=g",
+    "evaluationCutoff": "1-Jun-2011",
+    "evaluators": "C. W. Reich",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=161tb",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Cs-137": {
+    "halfLifeSeconds": 949232333.3157274,
+    "halfLifeDisplay": "30.08 Y",
+    "halfLifeUncertaintySeconds": 2840123.33771328,
+    "halfLifeUncertaintyENSDF": "9",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=137cs&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 661.657,
+        "intensityPercent": 85.1,
+        "uncertaintyKeV": 0.003,
+        "daughter": "Ba-137"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=137cs&rad_types=g",
+    "evaluationCutoff": "1-Oct-2006",
+    "evaluators": "E. BROWNE and  J. K. TULI",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=137cs",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Y-90": {
+    "halfLifeSeconds": 230580.0,
+    "halfLifeDisplay": "64.05 h",
+    "halfLifeUncertaintySeconds": 180.0,
+    "halfLifeUncertaintyENSDF": "5",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=90y&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=90y&rad_types=g",
+    "evaluationCutoff": "1-Mar-2020",
+    "evaluators": "S. K. Basu and  E.A. MCCUTCHAN",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=90y",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Sr-89": {
+    "halfLifeSeconds": 4368643.2,
+    "halfLifeDisplay": "50.563 d",
+    "halfLifeUncertaintySeconds": 2160.0,
+    "halfLifeUncertaintyENSDF": "25",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=89sr&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=89sr&rad_types=g",
+    "evaluationCutoff": "20-Oct-2012",
+    "evaluators": "BALRAJ SINGH",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=89sr",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Lu-177": {
+    "halfLifeSeconds": 574067.52,
+    "halfLifeDisplay": "6.6443 d",
+    "halfLifeUncertaintySeconds": 77.76,
+    "halfLifeUncertaintyENSDF": "9",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=177lu&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 208.3662,
+        "intensityPercent": 10.41,
+        "uncertaintyKeV": 0.0004,
+        "daughter": "Hf-177"
+      },
+      {
+        "keV": 112.9498,
+        "intensityPercent": 6.23,
+        "uncertaintyKeV": 0.0004,
+        "daughter": "Hf-177"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=177lu&rad_types=g",
+    "evaluationCutoff": "30-Aug-2019",
+    "evaluators": "F.G. KONDEV",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=177lu",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Ir-192": {
+    "halfLifeSeconds": 6378825.6,
+    "halfLifeDisplay": "73.829 d",
+    "halfLifeUncertaintySeconds": 950.4,
+    "halfLifeUncertaintyENSDF": "11",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 95.24,
+        "uncertainty": "0.04"
+      },
+      {
+        "mode": "EC",
+        "percent": 4.76,
+        "uncertainty": "0.04"
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=192ir&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 316.50618,
+        "intensityPercent": 82.86,
+        "uncertaintyKeV": 0.00017,
+        "daughter": "Pt-192"
+      },
+      {
+        "keV": 468.06885,
+        "intensityPercent": 47.84,
+        "uncertaintyKeV": 0.00026,
+        "daughter": "Pt-192"
+      },
+      {
+        "keV": 308.45507,
+        "intensityPercent": 29.7,
+        "uncertaintyKeV": 0.00017,
+        "daughter": "Pt-192"
+      },
+      {
+        "keV": 295.9565,
+        "intensityPercent": 28.71,
+        "uncertaintyKeV": 0.00015,
+        "daughter": "Pt-192"
+      },
+      {
+        "keV": 604.41105,
+        "intensityPercent": 8.216,
+        "uncertaintyKeV": 0.00025,
+        "daughter": "Pt-192"
+      },
+      {
+        "keV": 612.46215,
+        "intensityPercent": 5.34,
+        "uncertaintyKeV": 0.00026,
+        "daughter": "Pt-192"
+      },
+      {
+        "keV": 588.581,
+        "intensityPercent": 4.522,
+        "uncertaintyKeV": 0.0007,
+        "daughter": "Pt-192"
+      },
+      {
+        "keV": 205.7943,
+        "intensityPercent": 3.31,
+        "uncertaintyKeV": 9e-05,
+        "daughter": "Os-192"
+      },
+      {
+        "keV": 484.5751,
+        "intensityPercent": 3.19,
+        "uncertaintyKeV": 0.0004,
+        "daughter": "Os-192"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=192ir&rad_types=g",
+    "evaluationCutoff": "15-Jun-2012",
+    "evaluators": "Coral M. Baglin",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=192ir",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Kr-85": {
+    "halfLifeSeconds": 338889828.0411435,
+    "halfLifeDisplay": "10.739 Y",
+    "halfLifeUncertaintySeconds": 441796.963644288,
+    "halfLifeUncertaintyENSDF": "14",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=85kr&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=85kr&rad_types=g",
+    "evaluationCutoff": "31-Dec-2013",
+    "evaluators": "BALRAJ SINGH AND JUN CHEN",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=85kr",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Be-7": {
+    "halfLifeSeconds": 4598208.0,
+    "halfLifeDisplay": "53.22 d",
+    "halfLifeUncertaintySeconds": 5184.0,
+    "halfLifeUncertaintyENSDF": "6",
+    "branches": [
+      {
+        "mode": "EC",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=7be&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 477.6035,
+        "intensityPercent": 10.44,
+        "uncertaintyKeV": 0.002,
+        "daughter": "Li-7"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=7be&rad_types=g",
+    "evaluationCutoff": "23-Aug-2001",
+    "evaluators": "HU and  TILLEY and  KELLEY and  GODWIN et al.",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=7be",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "U-235": {
+    "halfLifeSeconds": 2.221607588611277e+16,
+    "halfLifeDisplay": "7.04E+8 Y",
+    "halfLifeUncertaintySeconds": 31556925974592.0,
+    "halfLifeUncertaintyENSDF": "1",
+    "branches": [
+      {
+        "mode": "A",
+        "percent": 100.0,
+        "uncertainty": ""
+      },
+      {
+        "mode": "SF",
+        "percent": 7e-09,
+        "uncertainty": "0.000000002"
+      },
+      {
+        "mode": "{+25}Ne",
+        "percent": 8e-10,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=235u&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 185.713,
+        "intensityPercent": 57.2,
+        "uncertaintyKeV": 0.002,
+        "daughter": "Th-231"
+      },
+      {
+        "keV": 143.765,
+        "intensityPercent": 10.93,
+        "uncertaintyKeV": 0.002,
+        "daughter": "Th-231"
+      },
+      {
+        "keV": 163.357,
+        "intensityPercent": 5.07,
+        "uncertaintyKeV": 0.002,
+        "daughter": "Th-231"
+      },
+      {
+        "keV": 205.311,
+        "intensityPercent": 5.03,
+        "uncertaintyKeV": 0.002,
+        "daughter": "Th-231"
+      },
+      {
+        "keV": 109.176,
+        "intensityPercent": 1.64,
+        "uncertaintyKeV": 0.031,
+        "daughter": "Th-231"
+      },
+      {
+        "keV": 202.11,
+        "intensityPercent": 1.07,
+        "uncertaintyKeV": 0.003,
+        "daughter": "Th-231"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=235u&rad_types=g",
+    "evaluationCutoff": "1-Feb-2014",
+    "evaluators": "E. BROWNE and  J. K. TULI",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=235u",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "U-238": {
+    "halfLifeSeconds": 1.4099634525447706e+17,
+    "halfLifeDisplay": "4.468E9 Y",
+    "halfLifeUncertaintySeconds": 189341555847552.0,
+    "halfLifeUncertaintyENSDF": "6",
+    "branches": [
+      {
+        "mode": "A",
+        "percent": 100.0,
+        "uncertainty": ""
+      },
+      {
+        "mode": "SF",
+        "percent": 5.45e-05,
+        "uncertainty": "0.0000007"
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=238u&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=238u&rad_types=g",
+    "evaluationCutoff": "1-Jun-2014",
+    "evaluators": "E. BROWNE and  J. K. TULI",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=238u",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Rn-222": {
+    "halfLifeSeconds": 330350.4,
+    "halfLifeDisplay": "3.8235 d",
+    "halfLifeUncertaintySeconds": 25.92,
+    "halfLifeUncertaintyENSDF": "3",
+    "branches": [
+      {
+        "mode": "A",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=222rn&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=222rn&rad_types=g",
+    "evaluationCutoff": "31-Mar-2011",
+    "evaluators": "Sukhjeet Singh and  A. K. Jain and  Jagdish K. Tuli",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=222rn",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Ra-226": {
+    "halfLifeSeconds": 50491081559.3472,
+    "halfLifeDisplay": "1600 Y",
+    "halfLifeUncertaintySeconds": 220898481.822144,
+    "halfLifeUncertaintyENSDF": "7",
+    "branches": [
+      {
+        "mode": "A",
+        "percent": 100.0,
+        "uncertainty": ""
+      },
+      {
+        "mode": "14C",
+        "percent": 3.2e-09,
+        "uncertainty": "0.0000000016"
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=226ra&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 186.211,
+        "intensityPercent": 3.565,
+        "uncertaintyKeV": 0.013,
+        "daughter": "Rn-222"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=226ra&rad_types=g",
+    "evaluationCutoff": "1-Feb-1996",
+    "evaluators": "Y. A. AKOVALI",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=226ra",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Th-232": {
+    "halfLifeSeconds": 4.41796963644288e+17,
+    "halfLifeDisplay": "1.40E10 Y",
+    "halfLifeUncertaintySeconds": 3155692597459200.0,
+    "halfLifeUncertaintyENSDF": "1",
+    "branches": [
+      {
+        "mode": "A",
+        "percent": 100.0,
+        "uncertainty": ""
+      },
+      {
+        "mode": "SF",
+        "percent": 1.1e-09,
+        "uncertainty": "0.0000000004"
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=232th&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=232th&rad_types=g",
+    "evaluationCutoff": "1-Nov-2004",
+    "evaluators": "E. BROWNE",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=232th",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "K-40": {
+    "halfLifeSeconds": 3.938304361629082e+16,
+    "halfLifeDisplay": "1.248E+9 Y",
+    "halfLifeUncertaintySeconds": 94670777923776.0,
+    "halfLifeUncertaintyENSDF": "3",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 89.28,
+        "uncertainty": "0.11"
+      },
+      {
+        "mode": "EC+B+",
+        "percent": 10.72,
+        "uncertainty": "0.11"
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": true,
+      "positronIntensitySum": 0.001,
+      "electronCaptureIntensitySum": 10.715,
+      "positronObserved": true,
+      "electronCaptureObserved": true,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=40k&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 1460.82,
+        "intensityPercent": 10.66,
+        "uncertaintyKeV": 0.005,
+        "daughter": "Ar-40"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=40k&rad_types=g",
+    "evaluationCutoff": "30-Sep-2015",
+    "evaluators": "JUN CHEN",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=40k",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Tc-99m": {
+    "halfLifeSeconds": 21625.92,
+    "halfLifeDisplay": "6.0072 h",
+    "halfLifeUncertaintySeconds": null,
+    "halfLifeUncertaintyENSDF": "3.24",
+    "branches": [
+      {
+        "mode": "IT",
+        "percent": 99.9963,
+        "uncertainty": "0.0006"
+      },
+      {
+        "mode": "B-",
+        "percent": 0.0037,
+        "uncertainty": "0.0006"
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=99tc&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 140.511,
+        "intensityPercent": 89.0,
+        "uncertaintyKeV": 0.001,
+        "daughter": "Tc-99"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=99tc&rad_types=g",
+    "evaluationCutoff": "1-Jul-2017",
+    "evaluators": "E. BROWNE and  J. K. TULI",
+    "sourceExtractionDate": "2026-09-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=levels&nuclides=99tc",
+    "retrievedDate": "2026-09-18",
+    "isomer": true,
+    "energyKeV": 142.6836
+  },
+  "Ga-68": {
+    "halfLifeSeconds": 4062.6,
+    "halfLifeDisplay": "67.71 m",
+    "halfLifeUncertaintySeconds": 4.8,
+    "halfLifeUncertaintyENSDF": "8",
+    "branches": [
+      {
+        "mode": "EC+B+",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": true,
+      "positronIntensitySum": 88.910258,
+      "electronCaptureIntensitySum": 11.0887,
+      "positronObserved": true,
+      "electronCaptureObserved": true,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=68ga&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 1077.34,
+        "intensityPercent": 3.22,
+        "uncertaintyKeV": 0.05,
+        "daughter": "Zn-68"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=68ga&rad_types=g",
+    "evaluationCutoff": "1-Mar-2012",
+    "evaluators": "E.A. McCutchan",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=68ga",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Cu-64": {
+    "halfLifeSeconds": 45722.16,
+    "halfLifeDisplay": "12.7006 h",
+    "halfLifeUncertaintySeconds": 7.2,
+    "halfLifeUncertaintyENSDF": "20",
+    "branches": [
+      {
+        "mode": "EC+B+",
+        "percent": 61.5,
+        "uncertainty": "0.3"
+      },
+      {
+        "mode": "B-",
+        "percent": 38.5,
+        "uncertainty": "0.3"
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": true,
+      "positronIntensitySum": 17.49,
+      "electronCaptureIntensitySum": 44.072,
+      "positronObserved": true,
+      "electronCaptureObserved": true,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=64cu&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=64cu&rad_types=g",
+    "evaluationCutoff": "12-Nov-2021",
+    "evaluators": "Balraj Singh and Jun Chen",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=64cu",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Zr-89": {
+    "halfLifeSeconds": 282276.0,
+    "halfLifeDisplay": "78.41 h",
+    "halfLifeUncertaintySeconds": 432.0,
+    "halfLifeUncertaintyENSDF": "12",
+    "branches": [
+      {
+        "mode": "EC+B+",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": true,
+      "positronIntensitySum": 22.74,
+      "electronCaptureIntensitySum": 77.25699999999999,
+      "positronObserved": true,
+      "electronCaptureObserved": true,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=89zr&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 909.15,
+        "intensityPercent": 99.04,
+        "uncertaintyKeV": 0.15,
+        "daughter": "Y-89"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=89zr&rad_types=g",
+    "evaluationCutoff": "20-Oct-2012",
+    "evaluators": "BALRAJ SINGH",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=89zr",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Ac-225": {
+    "halfLifeSeconds": 857088.0,
+    "halfLifeDisplay": "9.920 d",
+    "halfLifeUncertaintySeconds": 259.2,
+    "halfLifeUncertaintyENSDF": "3",
+    "branches": [
+      {
+        "mode": "A",
+        "percent": 100.0,
+        "uncertainty": ""
+      },
+      {
+        "mode": "14C",
+        "percent": 5.3e-10,
+        "uncertainty": "0.00000000013"
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=225ac&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 99.8,
+        "intensityPercent": 1.0,
+        "uncertaintyKeV": 0.1,
+        "daughter": "Fr-221"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=225ac&rad_types=g",
+    "evaluationCutoff": "25-OCT-2019",
+    "evaluators": "BALRAJ SINGH",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=225ac",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Ra-223": {
+    "halfLifeSeconds": 987552.0,
+    "halfLifeDisplay": "11.43 d",
+    "halfLifeUncertaintySeconds": 4320.0,
+    "halfLifeUncertaintyENSDF": "5",
+    "branches": [
+      {
+        "mode": "A",
+        "percent": 100.0,
+        "uncertainty": ""
+      },
+      {
+        "mode": "14C",
+        "percent": 8.9e-08,
+        "uncertainty": "0.000000004"
+      },
+      {
+        "mode": "14C",
+        "percent": 7.7e-08,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=223ra&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 269.463,
+        "intensityPercent": 13.3042,
+        "uncertaintyKeV": 0.01,
+        "daughter": "Rn-219"
+      },
+      {
+        "keV": 154.208,
+        "intensityPercent": 6.02,
+        "uncertaintyKeV": 0.01,
+        "daughter": "Rn-219"
+      },
+      {
+        "keV": 323.871,
+        "intensityPercent": 3.6421,
+        "uncertaintyKeV": 0.01,
+        "daughter": "Rn-219"
+      },
+      {
+        "keV": 144.235,
+        "intensityPercent": 3.47354,
+        "uncertaintyKeV": 0.01,
+        "daughter": "Rn-219"
+      },
+      {
+        "keV": 338.282,
+        "intensityPercent": 2.60064,
+        "uncertaintyKeV": 0.01,
+        "daughter": "Rn-219"
+      },
+      {
+        "keV": 122.319,
+        "intensityPercent": 1.304534,
+        "uncertaintyKeV": 0.01,
+        "daughter": "Rn-219"
+      },
+      {
+        "keV": 445.033,
+        "intensityPercent": 1.218448,
+        "uncertaintyKeV": 0.012,
+        "daughter": "Rn-219"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=223ra&rad_types=g",
+    "evaluationCutoff": "1-May-2001",
+    "evaluators": "E. BROWNE",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=223ra",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Sm-153": {
+    "halfLifeSeconds": 166622.4,
+    "halfLifeDisplay": "46.284 h",
+    "halfLifeUncertaintySeconds": 14.4,
+    "halfLifeUncertaintyENSDF": "4",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=153sm&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 103.18012,
+        "intensityPercent": 29.14,
+        "uncertaintyKeV": 0.00017,
+        "daughter": "Eu-153"
+      },
+      {
+        "keV": 69.673,
+        "intensityPercent": 4.668228,
+        "uncertaintyKeV": 0.00013,
+        "daughter": "Eu-153"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=153sm&rad_types=g",
+    "evaluationCutoff": "16-Aug-2020",
+    "evaluators": "N. NICA",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=153sm",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "P-32": {
+    "halfLifeSeconds": 1232755.2,
+    "halfLifeDisplay": "14.268 d",
+    "halfLifeUncertaintySeconds": 432.0,
+    "halfLifeUncertaintyENSDF": "5",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=32p&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": false,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=32p&rad_types=g",
+    "evaluationCutoff": "24-Aug-2011",
+    "evaluators": "CHRISTIAN OUELLET and  BALRAJ SINGH",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=32p",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Mo-99": {
+    "halfLifeSeconds": 237326.4,
+    "halfLifeDisplay": "65.924 h",
+    "halfLifeUncertaintySeconds": 21.6,
+    "halfLifeUncertaintyENSDF": "6",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=99mo&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 739.5,
+        "intensityPercent": 12.2,
+        "uncertaintyKeV": 0.017,
+        "daughter": "Tc-99"
+      },
+      {
+        "keV": 181.068,
+        "intensityPercent": 6.0512,
+        "uncertaintyKeV": 0.008,
+        "daughter": "Tc-99"
+      },
+      {
+        "keV": 777.921,
+        "intensityPercent": 4.3066,
+        "uncertaintyKeV": 0.02,
+        "daughter": "Tc-99"
+      },
+      {
+        "keV": 366.421,
+        "intensityPercent": 1.20048,
+        "uncertaintyKeV": 0.015,
+        "daughter": "Tc-99"
+      },
+      {
+        "keV": 40.58323,
+        "intensityPercent": 1.03822,
+        "uncertaintyKeV": 0.00017,
+        "daughter": "Tc-99"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=99mo&rad_types=g",
+    "evaluationCutoff": "1-Jul-2017",
+    "evaluators": "E. BROWNE and  J. K. TULI",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=99mo",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Ge-68": {
+    "halfLifeSeconds": 23408352.0,
+    "halfLifeDisplay": "270.93 d",
+    "halfLifeUncertaintySeconds": 11232.0,
+    "halfLifeUncertaintyENSDF": "13",
+    "branches": [
+      {
+        "mode": "EC",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=68ge&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=68ge&rad_types=g",
+    "evaluationCutoff": "1-Mar-2012",
+    "evaluators": "E.A. McCutchan",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=68ge",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "C-11": {
+    "halfLifeSeconds": 1221.84,
+    "halfLifeDisplay": "20.364 m",
+    "halfLifeUncertaintySeconds": 0.84,
+    "halfLifeUncertaintyENSDF": "14",
+    "branches": [
+      {
+        "mode": "EC+B+",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": true,
+      "positronIntensitySum": 99.7669,
+      "electronCaptureIntensitySum": 0.233,
+      "positronObserved": true,
+      "electronCaptureObserved": true,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=11c&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=11c&rad_types=g",
+    "evaluationCutoff": "1-Jan-2011",
+    "evaluators": "J.H. KELLEY and  C.G. SHEU",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=11c",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Cs-134": {
+    "halfLifeSeconds": 65171363.5227274,
+    "halfLifeDisplay": "2.0652 Y",
+    "halfLifeUncertaintySeconds": 12622.7703898368,
+    "halfLifeUncertaintyENSDF": "4",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 99.9997,
+        "uncertainty": "0.0001"
+      },
+      {
+        "mode": "EC",
+        "percent": 0.0003,
+        "uncertainty": "0.0001"
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=134cs&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 604.721,
+        "intensityPercent": 97.62,
+        "uncertaintyKeV": 0.002,
+        "daughter": "Ba-134"
+      },
+      {
+        "keV": 795.864,
+        "intensityPercent": 85.46,
+        "uncertaintyKeV": 0.004,
+        "daughter": "Ba-134"
+      },
+      {
+        "keV": 569.331,
+        "intensityPercent": 15.373,
+        "uncertaintyKeV": 0.003,
+        "daughter": "Ba-134"
+      },
+      {
+        "keV": 801.953,
+        "intensityPercent": 8.688,
+        "uncertaintyKeV": 0.004,
+        "daughter": "Ba-134"
+      },
+      {
+        "keV": 563.246,
+        "intensityPercent": 8.338,
+        "uncertaintyKeV": 0.005,
+        "daughter": "Ba-134"
+      },
+      {
+        "keV": 1365.185,
+        "intensityPercent": 3.017,
+        "uncertaintyKeV": 0.007,
+        "daughter": "Ba-134"
+      },
+      {
+        "keV": 1167.968,
+        "intensityPercent": 1.79,
+        "uncertaintyKeV": 0.005,
+        "daughter": "Ba-134"
+      },
+      {
+        "keV": 475.365,
+        "intensityPercent": 1.477,
+        "uncertaintyKeV": 0.002,
+        "daughter": "Ba-134"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=134cs&rad_types=g",
+    "evaluationCutoff": "31-Jul-2004",
+    "evaluators": "A.A. Sonzogni",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=134cs",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Sr-90": {
+    "halfLifeSeconds": 912310729.9254547,
+    "halfLifeDisplay": "28.91 Y",
+    "halfLifeUncertaintySeconds": 946707.77923776,
+    "halfLifeUncertaintyENSDF": "3",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=90sr&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": false,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=90sr&rad_types=g",
+    "evaluationCutoff": "1-Mar-2020",
+    "evaluators": "S. K. Basu and  E.A. MCCUTCHAN",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=90sr",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "I-129": {
+    "halfLifeSeconds": 495443737801094.4,
+    "halfLifeDisplay": "1.57E+7 Y",
+    "halfLifeUncertaintySeconds": 12622770389836.8,
+    "halfLifeUncertaintyENSDF": "4",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=129i&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 39.578,
+        "intensityPercent": 7.51,
+        "uncertaintyKeV": 0.004,
+        "daughter": "Xe-129"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=129i&rad_types=g",
+    "evaluationCutoff": "31-May-2014",
+    "evaluators": "JANOS TIMAR AND ZOLTAN ELEKES and  BALRAJ SINGH",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=129i",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Tc-99": {
+    "halfLifeSeconds": 6661667073236.371,
+    "halfLifeDisplay": "2.111E+5 Y",
+    "halfLifeUncertaintySeconds": 37868311169.5104,
+    "halfLifeUncertaintyENSDF": "12",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=99tc&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=99tc&rad_types=g",
+    "evaluationCutoff": "1-Jul-2017",
+    "evaluators": "E. BROWNE and  J. K. TULI",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=99tc",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Xe-133": {
+    "halfLifeSeconds": 453384.0,
+    "halfLifeDisplay": "5.2475 d",
+    "halfLifeUncertaintySeconds": 43.2,
+    "halfLifeUncertaintyENSDF": "5",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=133xe&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 80.9979,
+        "intensityPercent": 36.9,
+        "uncertaintyKeV": 0.0011,
+        "daughter": "Cs-133"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=133xe&rad_types=g",
+    "evaluationCutoff": "31-Oct-2010",
+    "evaluators": "YU. KHAZOV AND A. RODIONOV and  F.G. KONDEV",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=133xe",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Xe-135": {
+    "halfLifeSeconds": 32904.0,
+    "halfLifeDisplay": "9.14 h",
+    "halfLifeUncertaintySeconds": 72.0,
+    "halfLifeUncertaintyENSDF": "2",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=135xe&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 249.794,
+        "intensityPercent": 90.0,
+        "uncertaintyKeV": 0.015,
+        "daughter": "Cs-135"
+      },
+      {
+        "keV": 608.185,
+        "intensityPercent": 2.898,
+        "uncertaintyKeV": 0.015,
+        "daughter": "Cs-135"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=135xe&rad_types=g",
+    "evaluationCutoff": "22-Jan-2008",
+    "evaluators": "BALRAJ SINGH and  ALEXANDER A. RODIONOV and YURI L. KHAZOV",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=135xe",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Na-22": {
+    "halfLifeSeconds": 82104810.00069347,
+    "halfLifeDisplay": "2.6018 Y",
+    "halfLifeUncertaintySeconds": 69425.2371441024,
+    "halfLifeUncertaintyENSDF": "22",
+    "branches": [
+      {
+        "mode": "EC+B+",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": true,
+      "positronIntensitySum": 89.95500000000001,
+      "electronCaptureIntensitySum": 10.040999999999999,
+      "positronObserved": true,
+      "electronCaptureObserved": true,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=22na&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 1274.537,
+        "intensityPercent": 99.94,
+        "uncertaintyKeV": 0.007,
+        "daughter": "Ne-22"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=22na&rad_types=g",
+    "evaluationCutoff": "1-Apr-2015",
+    "evaluators": "M. Shamsuzzoha Basunia",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=22na",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Al-26": {
+    "halfLifeSeconds": 22626315923782.465,
+    "halfLifeDisplay": "7.17E+5 Y",
+    "halfLifeUncertaintySeconds": 757366223390.208,
+    "halfLifeUncertaintyENSDF": "24",
+    "branches": [
+      {
+        "mode": "EC+B+",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": true,
+      "positronIntensitySum": 81.73,
+      "electronCaptureIntensitySum": 18.25,
+      "positronObserved": true,
+      "electronCaptureObserved": true,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=26al&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 1808.65,
+        "intensityPercent": 99.76,
+        "uncertaintyKeV": 0.07,
+        "daughter": "Mg-26"
+      },
+      {
+        "keV": 1129.67,
+        "intensityPercent": 2.5,
+        "uncertaintyKeV": 0.1,
+        "daughter": "Mg-26"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=26al&rad_types=g",
+    "evaluationCutoff": "1-Feb-2016",
+    "evaluators": "M.S. Basunia and A.M. Hurst",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=26al",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Fe-60": {
+    "halfLifeSeconds": 82679146053431.05,
+    "halfLifeDisplay": "2.62E+6 Y",
+    "halfLifeUncertaintySeconds": 1262277038983.68,
+    "halfLifeUncertaintyENSDF": "4",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=60fe&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 58.603,
+        "intensityPercent": 2.07,
+        "uncertaintyKeV": 0.007,
+        "daughter": "Co-60"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=60fe&rad_types=g",
+    "evaluationCutoff": "31-Dec-2012",
+    "evaluators": "E. BROWNE and  J. K. TULI",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=60fe",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Cl-36": {
+    "halfLifeSeconds": 9508101796144.57,
+    "halfLifeDisplay": "3.013E+5 Y",
+    "halfLifeUncertaintySeconds": 47335388961.888,
+    "halfLifeUncertaintyENSDF": "15",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 98.1,
+        "uncertainty": "0.1"
+      },
+      {
+        "mode": "EC+B+",
+        "percent": 1.9,
+        "uncertainty": "0.1"
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": true,
+      "positronIntensitySum": 0.014,
+      "electronCaptureIntensitySum": 1.89,
+      "positronObserved": true,
+      "electronCaptureObserved": true,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=36cl&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=36cl&rad_types=g",
+    "evaluationCutoff": "31-Dec-2011",
+    "evaluators": "NINEL NICA and  JOHN CAMERON AND BALRAJ SINGH",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=36cl",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Pb-210": {
+    "halfLifeSeconds": 700563756.6359425,
+    "halfLifeDisplay": "22.20 Y",
+    "halfLifeUncertaintySeconds": 6942523.71441024,
+    "halfLifeUncertaintyENSDF": "22",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      },
+      {
+        "mode": "A",
+        "percent": 1.9e-06,
+        "uncertainty": "0.0000004"
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=210pb&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 46.539,
+        "intensityPercent": 4.25,
+        "uncertaintyKeV": 0.001,
+        "daughter": "Bi-210"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=210pb&rad_types=g",
+    "evaluationCutoff": "31-Mar-2014",
+    "evaluators": "M. SHAMSUZZOHA BASUNIA",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=210pb",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Po-210": {
+    "halfLifeSeconds": 11955686.4,
+    "halfLifeDisplay": "138.376 d",
+    "halfLifeUncertaintySeconds": 172.8,
+    "halfLifeUncertaintyENSDF": "2",
+    "branches": [
+      {
+        "mode": "A",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=210po&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=210po&rad_types=g",
+    "evaluationCutoff": "31-Mar-2014",
+    "evaluators": "M. SHAMSUZZOHA BASUNIA",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=210po",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Am-241": {
+    "halfLifeSeconds": 13651526176.6085,
+    "halfLifeDisplay": "432.6 Y",
+    "halfLifeUncertaintySeconds": 18934155.5847552,
+    "halfLifeUncertaintyENSDF": "6",
+    "branches": [
+      {
+        "mode": "A",
+        "percent": 100.0,
+        "uncertainty": ""
+      },
+      {
+        "mode": "SF",
+        "percent": 3.6e-10,
+        "uncertainty": "0.00000000009"
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=241am&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 59.5409,
+        "intensityPercent": 35.9,
+        "uncertaintyKeV": 0.0001,
+        "daughter": "Np-237"
+      },
+      {
+        "keV": 26.3446,
+        "intensityPercent": 2.27,
+        "uncertaintyKeV": 0.0002,
+        "daughter": "Np-237"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=241am&rad_types=g",
+    "evaluationCutoff": "30-Sep-2015",
+    "evaluators": "C.D. NESARAJA",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=241am",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Pu-238": {
+    "halfLifeSeconds": 2767542407.9717183,
+    "halfLifeDisplay": "87.7 Y",
+    "halfLifeUncertaintySeconds": 3155692.5974592,
+    "halfLifeUncertaintyENSDF": "1",
+    "branches": [
+      {
+        "mode": "A",
+        "percent": 100.0,
+        "uncertainty": ""
+      },
+      {
+        "mode": "SF",
+        "percent": 1.9e-07,
+        "uncertainty": "0.00000001"
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=238pu&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=238pu&rad_types=g",
+    "evaluationCutoff": "1-Jun-2014",
+    "evaluators": "E. BROWNE and  J. K. TULI",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=238pu",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Pu-239": {
+    "halfLifeSeconds": 760837485247.4131,
+    "halfLifeDisplay": "24110 Y",
+    "halfLifeUncertaintySeconds": 946707779.23776,
+    "halfLifeUncertaintyENSDF": "30",
+    "branches": [
+      {
+        "mode": "A",
+        "percent": 100.0,
+        "uncertainty": ""
+      },
+      {
+        "mode": "SF",
+        "percent": 3.1e-10,
+        "uncertainty": "0.00000000006"
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=239pu&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=239pu&rad_types=g",
+    "evaluationCutoff": "30-Jun-2013",
+    "evaluators": "E. BROWNE and  J. K. TULI",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=239pu",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Np-237": {
+    "halfLifeSeconds": 67658049289525.25,
+    "halfLifeDisplay": "2.144E+6 Y",
+    "halfLifeUncertaintySeconds": 220898481822.144,
+    "halfLifeUncertaintyENSDF": "7",
+    "branches": [
+      {
+        "mode": "A",
+        "percent": 100.0,
+        "uncertainty": ""
+      },
+      {
+        "mode": "SF",
+        "percent": 2e-10,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=237np&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 29.374,
+        "intensityPercent": 14.5,
+        "uncertaintyKeV": 0.01,
+        "daughter": "Pa-233"
+      },
+      {
+        "keV": 86.484,
+        "intensityPercent": 12.2,
+        "uncertaintyKeV": 0.01,
+        "daughter": "Pa-233"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=237np&rad_types=g",
+    "evaluationCutoff": "15-Mar-2006",
+    "evaluators": "M.S. Basunia",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=237np",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Cm-244": {
+    "halfLifeSeconds": 571495929.3998611,
+    "halfLifeDisplay": "18.11 Y",
+    "halfLifeUncertaintySeconds": 946707.77923776,
+    "halfLifeUncertaintyENSDF": "3",
+    "branches": [
+      {
+        "mode": "A",
+        "percent": 100.0,
+        "uncertainty": ""
+      },
+      {
+        "mode": "SF",
+        "percent": 0.000137,
+        "uncertainty": "0.000002"
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=244cm&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=244cm&rad_types=g",
+    "evaluationCutoff": "31-Aug-2017",
+    "evaluators": "C.D. Nesaraja",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=244cm",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Cf-252": {
+    "halfLifeSeconds": 83531183.05474502,
+    "halfLifeDisplay": "2.647 Y",
+    "halfLifeUncertaintySeconds": 94670.777923776,
+    "halfLifeUncertaintyENSDF": "3",
+    "branches": [
+      {
+        "mode": "A",
+        "percent": 96.898,
+        "uncertainty": "0.003"
+      },
+      {
+        "mode": "SF",
+        "percent": 3.102,
+        "uncertainty": "0.003"
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=252cf&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=252cf&rad_types=g",
+    "evaluationCutoff": "1-Jan-2021",
+    "evaluators": "A.M. MATTERA and  S. ZHU and  A.B. HAYES and  E.A. MCCUTCHAN",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=252cf",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Co-57": {
+    "halfLifeSeconds": 23478336.0,
+    "halfLifeDisplay": "271.74 d",
+    "halfLifeUncertaintySeconds": 5184.0,
+    "halfLifeUncertaintyENSDF": "6",
+    "branches": [
+      {
+        "mode": "EC",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=57co&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 122.06065,
+        "intensityPercent": 85.6,
+        "uncertaintyKeV": 0.00012,
+        "daughter": "Fe-57"
+      },
+      {
+        "keV": 136.47356,
+        "intensityPercent": 10.68,
+        "uncertaintyKeV": 0.00029,
+        "daughter": "Fe-57"
+      },
+      {
+        "keV": 14.4129,
+        "intensityPercent": 9.16,
+        "uncertaintyKeV": 0.0006,
+        "daughter": "Fe-57"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=57co&rad_types=g",
+    "evaluationCutoff": "24-Sep-1998",
+    "evaluators": "M. R. BHAT",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=57co",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "In-111": {
+    "halfLifeSeconds": 242326.08,
+    "halfLifeDisplay": "2.8047 d",
+    "halfLifeUncertaintySeconds": 34.56,
+    "halfLifeUncertaintyENSDF": "4",
+    "branches": [
+      {
+        "mode": "EC",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=111in&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 245.35,
+        "intensityPercent": 94.09,
+        "uncertaintyKeV": 0.04,
+        "daughter": "Cd-111"
+      },
+      {
+        "keV": 171.28,
+        "intensityPercent": 90.65,
+        "uncertaintyKeV": 0.03,
+        "daughter": "Cd-111"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=111in&rad_types=g",
+    "evaluationCutoff": "1-Feb-2008",
+    "evaluators": "Jean Blachot",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=111in",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Se-75": {
+    "halfLifeSeconds": 10348992.0,
+    "halfLifeDisplay": "119.78 d",
+    "halfLifeUncertaintySeconds": 4320.0,
+    "halfLifeUncertaintyENSDF": "5",
+    "branches": [
+      {
+        "mode": "EC",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=75se&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 264.6576,
+        "intensityPercent": 58.9,
+        "uncertaintyKeV": 0.0009,
+        "daughter": "As-75"
+      },
+      {
+        "keV": 136.0001,
+        "intensityPercent": 58.5466,
+        "uncertaintyKeV": 0.0006,
+        "daughter": "As-75"
+      },
+      {
+        "keV": 279.5422,
+        "intensityPercent": 25.02072,
+        "uncertaintyKeV": 0.001,
+        "daughter": "As-75"
+      },
+      {
+        "keV": 121.1155,
+        "intensityPercent": 17.20469,
+        "uncertaintyKeV": 0.0011,
+        "daughter": "As-75"
+      },
+      {
+        "keV": 400.6572,
+        "intensityPercent": 11.41482,
+        "uncertaintyKeV": 0.0008,
+        "daughter": "As-75"
+      },
+      {
+        "keV": 96.734,
+        "intensityPercent": 3.448595,
+        "uncertaintyKeV": 0.0009,
+        "daughter": "As-75"
+      },
+      {
+        "keV": 198.606,
+        "intensityPercent": 1.49606,
+        "uncertaintyKeV": 0.0012,
+        "daughter": "As-75"
+      },
+      {
+        "keV": 303.9236,
+        "intensityPercent": 1.314648,
+        "uncertaintyKeV": 0.001,
+        "daughter": "As-75"
+      },
+      {
+        "keV": 66.0518,
+        "intensityPercent": 1.111443,
+        "uncertaintyKeV": 0.0008,
+        "daughter": "As-75"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=75se&rad_types=g",
+    "evaluationCutoff": "30-Jun-2013",
+    "evaluators": "ALEXANDRU NEGRET and  BALRAJ SINGH",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=75se",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Au-198": {
+    "halfLifeSeconds": 232770.24,
+    "halfLifeDisplay": "2.6941 d",
+    "halfLifeUncertaintySeconds": 17.28,
+    "halfLifeUncertaintyENSDF": "2",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=198au&rad_types=bp"
+    },
+    "gammaLines": [
+      {
+        "keV": 411.80205,
+        "intensityPercent": 95.62,
+        "uncertaintyKeV": 0.00017,
+        "daughter": "Hg-198"
+      }
+    ],
+    "gammaDatasetAvailable": true,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=198au&rad_types=g",
+    "evaluationCutoff": "1-Dec-2015",
+    "evaluators": "Huang Xiaolong and Kang Mengxiao",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=198au",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  },
+  "Rb-87": {
+    "halfLifeSeconds": 1.5683792209372224e+18,
+    "halfLifeDisplay": "4.97E+10 Y",
+    "halfLifeUncertaintySeconds": 9467077792377600.0,
+    "halfLifeUncertaintyENSDF": "3",
+    "branches": [
+      {
+        "mode": "B-",
+        "percent": 100.0,
+        "uncertainty": ""
+      }
+    ],
+    "ecBetaEvidence": {
+      "available": false,
+      "positronIntensitySum": 0,
+      "electronCaptureIntensitySum": 0,
+      "positronObserved": false,
+      "electronCaptureObserved": false,
+      "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=87rb&rad_types=bp"
+    },
+    "gammaLines": [],
+    "gammaDatasetAvailable": false,
+    "gammaThresholdPercent": 1,
+    "gammaSourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=decay_rads&nuclides=87rb&rad_types=g",
+    "evaluationCutoff": "27-Jul-2015",
+    "evaluators": "T.D. Johnson and W.D. Kulp(a)",
+    "sourceExtractionDate": "2023-10-18",
+    "sourceUrl": "https://www-nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=87rb",
+    "retrievedDate": "2026-09-18",
+    "isomer": false,
+    "energyKeV": 0.0
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "child": {
+    "base": [
+      {
+        "img": "atom-card",
+        "title": "1 · Un atomo che cambia",
+        "body": "Un radionuclide è un tipo di atomo con un nucleo instabile: prima o poi si trasforma e manda fuori energia o particelle. Nel gioco non devi “fare fisica”: devi osservare indizi visivi e fare domande sì/no.",
+        "chips": [
+          "atomo",
+          "nucleo",
+          "si trasforma"
+        ]
+      },
+      {
+        "img": "colours",
+        "title": "2 · I colori sono un primo linguaggio",
+        "body": "Le carte usano colori per ricordare le emissioni: giallo per alfa, azzurro per beta meno, arancione per beta più o cattura elettronica. Se giochi in base puoi chiedere semplicemente se la carta contiene un colore.",
+        "chips": [
+          "giallo = α",
+          "azzurro = β⁻",
+          "arancione = β⁺/ε"
+        ]
+      },
+      {
+        "img": "applications",
+        "title": "3 · Le icone raccontano storie",
+        "body": "Le icone aiutano a riconoscere a vista grandi famiglie: ospedale, natura, cibo/corpo, casa/radon, spazio, industria, incidenti. Sono indizi più larghi di “banane” o “rilevatore di fumo”, quindi fanno durare di più la partita.",
+        "chips": [
+          "🏥 ospedale",
+          "🌿 natura",
+          "🏠 casa",
+          "🚀 spazio"
+        ]
+      },
+      {
+        "img": "half-life",
+        "title": "4 · La durata: 8 diventa 4",
+        "body": "Il tempo di dimezzamento dice dopo quanto tempo ne resta circa la metà. Immagina 8 palline radioattive: dopo una emivita ne restano 4, poi 2, poi 1. Non spariscono tutte subito.",
+        "chips": [
+          "8 → 4 → 2",
+          "durata breve",
+          "durata lunga"
+        ]
+      },
+      {
+        "img": "stories",
+        "title": "5 · Domande buone per iniziare",
+        "body": "All’inizio prova domande larghe: “si usa in ospedale?”, “è naturale?”, “ha a che fare con lo spazio?”, “contiene giallo?”. Gli indizi super specifici sono più utili quando restano poche carte.",
+        "chips": [
+          "domande larghe",
+          "deduzione",
+          "niente fretta"
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "img": "nucleus",
+        "title": "1 · Il nucleo ha protoni e neutroni",
+        "body": "I protoni decidono quale elemento è la carta: carbonio, iodio, uranio… I neutroni cambiano da isotopo a isotopo. Per questo puoi chiedere: “contiene più di 20 protoni?” oppure “ha più di 30 neutroni?”.",
+        "chips": [
+          "protoni",
+          "neutroni",
+          "isotopi"
+        ]
+      },
+      {
+        "img": "zan",
+        "title": "2 · Z, A e N",
+        "body": "Z è il numero di protoni. A è il numero di massa, cioè protoni più neutroni. N è il numero di neutroni e si calcola con N = A − Z. Questi numeri sono sulla scheda per fare domande di deduzione.",
+        "chips": [
+          "Z = protoni",
+          "A = p+n",
+          "N = A−Z"
+        ]
+      },
+      {
+        "img": "decays",
+        "title": "3 · Alfa, beta, gamma",
+        "body": "Alfa è una particella pesante: si ferma facilmente ma ionizza molto. Beta è più penetrante. Gamma è radiazione elettromagnetica molto penetrante. Nel gioco questi tipi diventano colori e simboli.",
+        "chips": [
+          "α si ferma presto",
+          "β passa un po’",
+          "γ penetra di più"
+        ]
+      },
+      {
+        "img": "half-life-clock",
+        "title": "4 · Ordini di grandezza",
+        "body": "Non serve ricordare il valore esatto. Puoi chiedere se l’emivita è dell’ordine dei minuti, ore, giorni, mesi, anni o milioni di anni. In Intermedio ed Esperto hai solo 2 domande sul tempo.",
+        "chips": [
+          "ore",
+          "giorni",
+          "mesi",
+          "anni"
+        ]
+      },
+      {
+        "img": "applications",
+        "title": "5 · Dalla vita quotidiana allo spazio",
+        "body": "Alcuni radionuclidi sono famosi per medicina, case, cibo, datazione, incidenti, stelle o missioni spaziali. Le schede mostrano categorie comprensibili per costruire domande non troppo facili.",
+        "chips": [
+          "medicina",
+          "ambiente",
+          "storie",
+          "spazio"
+        ]
+      }
+    ],
+    "expert": [
+      {
+        "img": "expert-map",
+        "title": "1 · Sfida da piccoli esperti",
+        "body": "Oltre a colori e storie compaiono Z, A, neutroni, famiglia chimica, stato fisico dell’elemento e punto di fusione. Le domande diventano più tecniche, ma restano sempre sì/no.",
+        "chips": [
+          "Z/A/N",
+          "chimica",
+          "fisica"
+        ]
+      },
+      {
+        "img": "mean-life",
+        "title": "2 · Emivita e vita media",
+        "body": "L’emivita dimezza il campione. La vita media è un altro modo di descrivere la stessa velocità di decadimento: è circa 1,44 volte l’emivita. Entrambe contano come domande sul tempo.",
+        "chips": [
+          "T½",
+          "τ ≈ 1,44 T½",
+          "limite 2"
+        ]
+      },
+      {
+        "img": "capture",
+        "title": "3 · Neutroni e cattura",
+        "body": "Un neutrone può essere catturato da un nucleo. La sezione d’urto, misurata in barn, indica quanto è probabile una reazione a una certa energia. Nel gioco si usa solo se il dato è curato.",
+        "chips": [
+          "neutrone",
+          "barn",
+          "(n,γ)"
+        ]
+      }
+    ]
+  },
+  "adult": {
+    "base": [
+      {
+        "img": "nucleus",
+        "title": "1 · Che cos’è un radionuclide",
+        "body": "Un radionuclide è un nuclide instabile. Il suo nucleo può trasformarsi spontaneamente in un altro nucleo emettendo particelle o radiazione. La radioattività può essere naturale o artificiale, ma le radiazioni emesse sono dello stesso tipo.",
+        "chips": [
+          "instabilità",
+          "trasformazione",
+          "radiazione"
+        ]
+      },
+      {
+        "img": "zan",
+        "title": "2 · Elemento, isotopo, carta",
+        "body": "L’elemento è definito da Z, il numero di protoni. Isotopi dello stesso elemento hanno neutroni diversi. Il numero di massa A è protoni + neutroni. La carta rappresenta un radionuclide preciso, non solo l’elemento.",
+        "chips": [
+          "Z",
+          "A",
+          "N=A−Z"
+        ]
+      },
+      {
+        "img": "decays",
+        "title": "3 · Tipi di emissione",
+        "body": "Nel gioco i colori ricordano alfa, beta e gamma. Alfa è poco penetrante ma molto ionizzante; beta è intermedia; gamma è più penetrante. Queste differenze spiegano molte applicazioni e molte domande.",
+        "chips": [
+          "α",
+          "β",
+          "γ",
+          "penetrazione"
+        ]
+      },
+      {
+        "img": "half-life",
+        "title": "4 · Tempo di dimezzamento",
+        "body": "L’emivita è il tempo necessario perché metà dei nuclei instabili decada, oppure perché l’attività si dimezzi. È una proprietà molto utile ma molto potente nel gioco: nei livelli più alti sarà limitata.",
+        "chips": [
+          "attività",
+          "Bq",
+          "metà"
+        ]
+      },
+      {
+        "img": "stories",
+        "title": "5 · Radioattività nella vita reale",
+        "body": "Radon nelle case, potassio-40 nel corpo, carbonio-14 nella datazione, radioisotopi in medicina, sorgenti industriali e fallout: il gioco trasforma questi contesti in domande controllate.",
+        "chips": [
+          "natura",
+          "medicina",
+          "ambiente",
+          "industria"
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "img": "nucleus",
+        "title": "1 · Dal linguaggio naturale ai numeri",
+        "body": "Il parser capisce che “protoni” significa Z e “neutroni” significa N. Puoi quindi chiedere “contiene più di 20 protoni?” o “ha meno di 50 neutroni?” senza usare il gergo.",
+        "chips": [
+          "protoni = Z",
+          "neutroni = A−Z"
+        ]
+      },
+      {
+        "img": "half-life-clock",
+        "title": "2 · Scale temporali, non solo numeri",
+        "body": "Oltre a “maggiore di 3 anni”, puoi chiedere se l’emivita è dell’ordine delle ore, dei giorni, dei mesi o degli anni. Questo aiuta a giocare senza memorizzare tutte le emivite.",
+        "chips": [
+          "ordine delle ore",
+          "ordine dei mesi"
+        ]
+      },
+      {
+        "img": "mean-life",
+        "title": "3 · Vita media",
+        "body": "La vita media τ è collegata all’emivita T½ dalla relazione τ = T½ / ln2. È utile agli esperti, ma nel gioco conta come domanda sul tempo: massimo 2 nei livelli Intermedio ed Esperto.",
+        "chips": [
+          "T½",
+          "τ",
+          "limite 2"
+        ]
+      },
+      {
+        "img": "chemistry",
+        "title": "4 · Proprietà dell’elemento",
+        "body": "Un radionuclide ha proprietà nucleari, ma appartiene a un elemento chimico. Puoi chiedere se l’elemento è un alogeno, un gas nobile, un attinide, un metallo, un gas, oppure se fonde sotto una temperatura.",
+        "chips": [
+          "alogeno",
+          "gas nobile",
+          "attinide",
+          "fusione"
+        ]
+      },
+      {
+        "img": "applications",
+        "title": "5 · Contesti gerarchici",
+        "body": "Le proprietà specifiche implicano famiglie più grandi: PET implica imaging medico; supernove implica spazio; Fukushima implica incidente nucleare/ambiente. Questo rende più coerenti le risposte.",
+        "chips": [
+          "PET → imaging",
+          "supernova → spazio"
+        ]
+      }
+    ],
+    "expert": [
+      {
+        "img": "expert-map",
+        "title": "1 · Cosa aggiunge Esperto",
+        "body": "Esperto espone più variabili: Z/A/N, emivita, vita media, chimica dell’elemento, fusione, emissioni, contesti nucleari, generatori, prodotti di fissione e dati neutronici quando curati.",
+        "chips": [
+          "fisica nucleare",
+          "chimica",
+          "applicazioni"
+        ]
+      },
+      {
+        "img": "mean-life",
+        "title": "2 · Legge esponenziale",
+        "body": "Il decadimento è casuale per il singolo nucleo, ma prevedibile statisticamente per molti nuclei. Emivita, vita media e costante di decadimento descrivono la stessa legge esponenziale.",
+        "chips": [
+          "casuale",
+          "statistico",
+          "λ"
+        ]
+      },
+      {
+        "img": "capture",
+        "title": "3 · Cattura neutronica",
+        "body": "La sezione d’urto non è una proprietà unica e assoluta: dipende dalla reazione, dal bersaglio e dall’energia dei neutroni. Per questo il gioco distingue cattura (n,γ) da assorbimento totale.",
+        "chips": [
+          "energia",
+          "bersaglio",
+          "reazione"
+        ]
+      },
+      {
+        "img": "ngatlas",
+        "title": "4 · Dati NGATLAS",
+        "body": "NGATLAS raccoglie sezioni d’urto di cattura neutronica in funzione dell’energia. Nel gioco il confronto numerico è abilitato solo per valori termici trascritti e revisionati.",
+        "chips": [
+          "10⁻⁵ eV–20 MeV",
+          "barn",
+          "dato curato"
+        ]
+      },
+      {
+        "img": "decay-chain",
+        "title": "5 · Non confondere i livelli",
+        "body": "Una carta può essere prodotto di fissione, membro di una catena naturale, figlio di un generatore o bersaglio/prodotto di attivazione. Le domande esperte devono tenere separati questi concetti.",
+        "chips": [
+          "catene",
+          "generatori",
+          "fissione",
+          "attivazione"
+        ]
+      }
+    ]
+  }
+}

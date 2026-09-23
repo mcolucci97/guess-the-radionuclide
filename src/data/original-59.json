@@ -1,0 +1,5082 @@
+[
+  {
+    "id": "Tb-149",
+    "name": {
+      "it": "Terbio-149",
+      "en": "Terbium-149",
+      "fr": "Terbium-149"
+    },
+    "Z": 65,
+    "A": 149,
+    "seconds": "14760",
+    "modes": [
+      "alpha",
+      "beta+",
+      "gamma"
+    ],
+    "tags": [
+      "medical",
+      "therapy"
+    ],
+    "original": true,
+    "story_it": "Candidato teranostico raro che combina emissione alfa e possibilità di imaging.",
+    "symbol": "Tb",
+    "element": {
+      "it": "Terbio",
+      "en": "Terbium",
+      "fr": "Terbium",
+      "family": "lanthanide",
+      "group": null,
+      "period": 6,
+      "state": "solid",
+      "mp": 1356
+    },
+    "story": {
+      "it": "Candidato raro per terapia alfa mirata e imaging: una carta da ricerca avanzata.",
+      "en": "A rare candidate for targeted alpha therapy and imaging: an advanced research card.",
+      "fr": "Candidat rare pour la thérapie alpha ciblée et l’imagerie : une carte de recherche avancée."
+    },
+    "concepts": [
+      "chemistry.lanthanide",
+      "medical.cancer",
+      "medical.hospital",
+      "medical.therapy"
+    ],
+    "decayModes": [
+      "alpha",
+      "beta+"
+    ],
+    "radiations": [
+      "alpha",
+      "beta+",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_therapy",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "14760",
+      "decayModes": [
+        "alpha",
+        "beta+"
+      ],
+      "displayedRadiations": [
+        "alpha",
+        "beta+",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "At-211",
+    "name": {
+      "it": "Astato-211",
+      "en": "Astatine-211",
+      "fr": "Astate-211"
+    },
+    "Z": 85,
+    "A": 211,
+    "seconds": "25970",
+    "modes": [
+      "alpha",
+      "ec",
+      "gamma"
+    ],
+    "tags": [
+      "medical",
+      "therapy"
+    ],
+    "original": true,
+    "story_it": "È studiato per terapie alfa mirate, con un raggio d’azione molto corto.",
+    "symbol": "At",
+    "element": {
+      "it": "Astato",
+      "en": "Astatine",
+      "fr": "Astate",
+      "family": "halogen",
+      "group": 17,
+      "period": 6,
+      "state": "solid",
+      "mp": 302,
+      "mpNote": "Stima: l’astato è estremamente raro e i dati macroscopici sono limitati."
+    },
+    "story": {
+      "it": "È studiato per portare particelle alfa molto vicino alle cellule tumorali.",
+      "en": "It is studied to deliver alpha particles very close to tumour cells.",
+      "fr": "Il est étudié pour délivrer des particules alpha très près des cellules tumorales."
+    },
+    "concepts": [
+      "chemistry.halogen",
+      "medical.cancer",
+      "medical.hospital",
+      "medical.therapy"
+    ],
+    "decayModes": [
+      "alpha",
+      "ec"
+    ],
+    "radiations": [
+      "alpha",
+      "ec",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_therapy",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "25970",
+      "decayModes": [
+        "alpha",
+        "ec"
+      ],
+      "displayedRadiations": [
+        "alpha",
+        "ec",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "O-15",
+    "name": {
+      "it": "Ossigeno-15",
+      "en": "Oxygen-15",
+      "fr": "Oxygène-15"
+    },
+    "Z": 8,
+    "A": 15,
+    "seconds": "122.2",
+    "modes": [
+      "beta+"
+    ],
+    "tags": [
+      "medical",
+      "pet"
+    ],
+    "original": true,
+    "story_it": "In PET può seguire processi legati all’ossigeno e al flusso sanguigno.",
+    "symbol": "O",
+    "element": {
+      "it": "Ossigeno",
+      "en": "Oxygen",
+      "fr": "Oxygène",
+      "family": "nonmetal",
+      "group": 16,
+      "period": 2,
+      "state": "gas",
+      "mp": -218.79
+    },
+    "story": {
+      "it": "Vive pochi minuti e in PET può seguire flusso sanguigno e ossigenazione.",
+      "en": "It lives for only minutes and in PET can follow blood flow and oxygenation.",
+      "fr": "Il ne vit que quelques minutes et peut suivre en TEP le débit sanguin et l’oxygénation."
+    },
+    "concepts": [
+      "chemistry.nonmetal",
+      "medical.hospital",
+      "medical.imaging",
+      "medical.pet"
+    ],
+    "decayModes": [
+      "beta+"
+    ],
+    "radiations": [
+      "beta+"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_cyclotron",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "122.2",
+      "decayModes": [
+        "beta+"
+      ],
+      "displayedRadiations": [
+        "beta+"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "N-13",
+    "name": {
+      "it": "Azoto-13",
+      "en": "Nitrogen-13",
+      "fr": "Azote-13"
+    },
+    "Z": 7,
+    "A": 13,
+    "seconds": "597.9",
+    "modes": [
+      "beta+"
+    ],
+    "tags": [
+      "medical",
+      "pet"
+    ],
+    "original": true,
+    "story_it": "È un emettitore di positroni impiegato in traccianti PET a vita breve.",
+    "symbol": "N",
+    "element": {
+      "it": "Azoto",
+      "en": "Nitrogen",
+      "fr": "Azote",
+      "family": "nonmetal",
+      "group": 15,
+      "period": 2,
+      "state": "gas",
+      "mp": -210
+    },
+    "story": {
+      "it": "Un emettitore di positroni a vita breve per traccianti PET, come l’ammoniaca marcata.",
+      "en": "A short-lived positron emitter for PET tracers such as labelled ammonia.",
+      "fr": "Un émetteur de positons à vie courte pour des traceurs TEP comme l’ammoniac marqué."
+    },
+    "concepts": [
+      "chemistry.nonmetal",
+      "medical.hospital",
+      "medical.imaging",
+      "medical.pet"
+    ],
+    "decayModes": [
+      "beta+"
+    ],
+    "radiations": [
+      "beta+"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_cyclotron",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "597.9",
+      "decayModes": [
+        "beta+"
+      ],
+      "displayedRadiations": [
+        "beta+"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "F-18",
+    "name": {
+      "it": "Fluoro-18",
+      "en": "Fluorine-18",
+      "fr": "Fluor-18"
+    },
+    "Z": 9,
+    "A": 18,
+    "seconds": "6586",
+    "modes": [
+      "beta+"
+    ],
+    "tags": [
+      "medical",
+      "pet",
+      "diagnosis"
+    ],
+    "original": true,
+    "story_it": "È il radionuclide della FDG-PET, uno degli esami più noti della diagnostica nucleare.",
+    "symbol": "F",
+    "element": {
+      "it": "Fluoro",
+      "en": "Fluorine",
+      "fr": "Fluor",
+      "family": "halogen",
+      "group": 17,
+      "period": 2,
+      "state": "gas",
+      "mp": -219.67
+    },
+    "story": {
+      "it": "È il radionuclide della FDG-PET, una delle immagini più note in oncologia nucleare.",
+      "en": "It is the radionuclide of FDG-PET, one of the best-known scans in nuclear oncology.",
+      "fr": "C’est le radionucléide de la TEP-FDG, l’un des examens les plus connus en oncologie nucléaire."
+    },
+    "concepts": [
+      "chemistry.halogen",
+      "daily.fdg_pet",
+      "medical.hospital",
+      "medical.imaging",
+      "medical.pet"
+    ],
+    "decayModes": [
+      "beta+"
+    ],
+    "radiations": [
+      "beta+"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_cyclotron",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "6586",
+      "decayModes": [
+        "beta+"
+      ],
+      "displayedRadiations": [
+        "beta+"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "I-123",
+    "name": {
+      "it": "Iodio-123",
+      "en": "Iodine-123",
+      "fr": "Iode-123"
+    },
+    "Z": 53,
+    "A": 123,
+    "seconds": "47570",
+    "modes": [
+      "ec",
+      "gamma"
+    ],
+    "tags": [
+      "medical",
+      "diagnosis",
+      "thyroid",
+      "spect"
+    ],
+    "original": true,
+    "story_it": "Poiché lo iodio viene captato dalla tiroide, è utile per imaging diagnostico.",
+    "symbol": "I",
+    "element": {
+      "it": "Iodio",
+      "en": "Iodine",
+      "fr": "Iode",
+      "family": "halogen",
+      "group": 17,
+      "period": 5,
+      "state": "solid",
+      "mp": 113.7
+    },
+    "story": {
+      "it": "Lo iodio viene captato dalla tiroide: questo isotopo è noto per l’imaging diagnostico.",
+      "en": "Iodine is taken up by the thyroid: this isotope is known for diagnostic imaging.",
+      "fr": "L’iode est capté par la thyroïde : cet isotope est connu pour l’imagerie diagnostique."
+    },
+    "concepts": [
+      "chemistry.halogen",
+      "medical.hospital",
+      "medical.imaging",
+      "medical.spect",
+      "medical.thyroid"
+    ],
+    "decayModes": [
+      "ec"
+    ],
+    "radiations": [
+      "ec",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_tc99m",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "47570",
+      "decayModes": [
+        "ec"
+      ],
+      "displayedRadiations": [
+        "ec",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "I-125",
+    "name": {
+      "it": "Iodio-125",
+      "en": "Iodine-125",
+      "fr": "Iode-125"
+    },
+    "Z": 53,
+    "A": 125,
+    "seconds": "5132765",
+    "modes": [
+      "ec",
+      "gamma"
+    ],
+    "tags": [
+      "medical",
+      "brachytherapy"
+    ],
+    "original": true,
+    "story_it": "È stato impiegato in sorgenti sigillate e brachiterapia.",
+    "symbol": "I",
+    "element": {
+      "it": "Iodio",
+      "en": "Iodine",
+      "fr": "Iode",
+      "family": "halogen",
+      "group": 17,
+      "period": 5,
+      "state": "solid",
+      "mp": 113.7
+    },
+    "story": {
+      "it": "Può essere racchiuso in piccoli semi per brachiterapia, posti vicino al tumore.",
+      "en": "It can be sealed in tiny brachytherapy seeds placed near a tumour.",
+      "fr": "Il peut être scellé dans de petites graines de curiethérapie placées près d’une tumeur."
+    },
+    "concepts": [
+      "chemistry.halogen",
+      "medical.brachytherapy",
+      "medical.hospital",
+      "medical.therapy"
+    ],
+    "decayModes": [
+      "ec"
+    ],
+    "radiations": [
+      "ec",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "5132765",
+      "decayModes": [
+        "ec"
+      ],
+      "displayedRadiations": [
+        "ec",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "C-14",
+    "name": {
+      "it": "Carbonio-14",
+      "en": "Carbon-14",
+      "fr": "Carbone-14"
+    },
+    "Z": 6,
+    "A": 14,
+    "seconds": "1.808e11",
+    "modes": [
+      "beta-"
+    ],
+    "tags": [
+      "natural",
+      "cosmogenic",
+      "dating",
+      "environment"
+    ],
+    "original": true,
+    "story_it": "È prodotto naturalmente dai raggi cosmici in atmosfera ed è l’orologio della datazione radiocarbonica.",
+    "symbol": "C",
+    "element": {
+      "it": "Carbonio",
+      "en": "Carbon",
+      "fr": "Carbone",
+      "family": "nonmetal",
+      "group": 14,
+      "period": 2,
+      "state": "solid",
+      "mp": null,
+      "mpNote": "Sublima a pressione standard; non si indica un semplice punto di fusione."
+    },
+    "story": {
+      "it": "Prodotto anche dai raggi cosmici, è l’orologio della datazione dei resti organici antichi.",
+      "en": "Also produced by cosmic rays, it is the clock used to date ancient organic remains.",
+      "fr": "Également produit par les rayons cosmiques, c’est l’horloge servant à dater des restes organiques anciens."
+    },
+    "concepts": [
+      "chemistry.nonmetal",
+      "daily.archaeology",
+      "earth.dating",
+      "environment.monitoring",
+      "nature.cosmogenic",
+      "nature.natural"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "nist_c14",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "1.808e11",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "H-3",
+    "name": {
+      "it": "Trizio",
+      "en": "Tritium",
+      "fr": "Tritium"
+    },
+    "Z": 1,
+    "A": 3,
+    "seconds": "3.889e8",
+    "modes": [
+      "beta-"
+    ],
+    "tags": [
+      "natural",
+      "cosmogenic",
+      "environment",
+      "fusion"
+    ],
+    "original": true,
+    "story_it": "È un isotopo dell’idrogeno: tracciante ambientale e candidato combustibile per la fusione.",
+    "symbol": "H",
+    "element": {
+      "it": "Idrogeno",
+      "en": "Hydrogen",
+      "fr": "Hydrogène",
+      "family": "nonmetal",
+      "group": 1,
+      "period": 1,
+      "state": "gas",
+      "mp": -259.16
+    },
+    "story": {
+      "it": "È idrogeno radioattivo: traccia le acque ed è noto anche nel contesto della fusione.",
+      "en": "It is radioactive hydrogen: it traces water and is also known in the context of fusion.",
+      "fr": "C’est de l’hydrogène radioactif : il trace l’eau et est également connu dans le contexte de la fusion."
+    },
+    "concepts": [
+      "chemistry.nonmetal",
+      "environment.monitoring",
+      "nature.cosmogenic",
+      "nature.natural",
+      "nuclear.fusion"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "3.889e8",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "I-131",
+    "name": {
+      "it": "Iodio-131",
+      "en": "Iodine-131",
+      "fr": "Iode-131"
+    },
+    "Z": 53,
+    "A": 131,
+    "seconds": "693100",
+    "modes": [
+      "beta-",
+      "gamma"
+    ],
+    "tags": [
+      "medical",
+      "therapy",
+      "fission",
+      "fallout",
+      "food",
+      "thyroid"
+    ],
+    "original": true,
+    "story_it": "Può trattare patologie tiroidee ed è anche rilevante nei rilasci di prodotti di fissione.",
+    "symbol": "I",
+    "element": {
+      "it": "Iodio",
+      "en": "Iodine",
+      "fr": "Iode",
+      "family": "halogen",
+      "group": 17,
+      "period": 5,
+      "state": "solid",
+      "mp": 113.7
+    },
+    "story": {
+      "it": "Ha due volti famosi: terapia della tiroide e monitoraggio dopo incidenti nucleari.",
+      "en": "It has two famous faces: thyroid therapy and monitoring after nuclear accidents.",
+      "fr": "Il a deux visages célèbres : thérapie de la thyroïde et surveillance après des accidents nucléaires."
+    },
+    "concepts": [
+      "chemistry.halogen",
+      "environment.fallout",
+      "environment.food_monitoring",
+      "environment.nuclear_accident",
+      "history.chernobyl",
+      "history.fukushima",
+      "medical.cancer",
+      "medical.hospital",
+      "medical.therapy",
+      "medical.thyroid",
+      "nuclear.fission_related"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_therapy",
+      "iaea_ngatlas",
+      "iaea_fukushima"
+    ],
+    "physics": {
+      "halfLifeSeconds": "693100",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Co-60",
+    "name": {
+      "it": "Cobalto-60",
+      "en": "Cobalt-60",
+      "fr": "Cobalt-60"
+    },
+    "Z": 27,
+    "A": 60,
+    "seconds": "1.663e8",
+    "modes": [
+      "beta-",
+      "gamma"
+    ],
+    "tags": [
+      "medical",
+      "industry",
+      "sterilisation"
+    ],
+    "original": true,
+    "story_it": "Le sue emissioni gamma sono associate a radioterapia storica, sterilizzazione e radiografia industriale.",
+    "symbol": "Co",
+    "element": {
+      "it": "Cobalto",
+      "en": "Cobalt",
+      "fr": "Cobalt",
+      "family": "transition_metal",
+      "group": 9,
+      "period": 4,
+      "state": "solid",
+      "mp": 1495
+    },
+    "story": {
+      "it": "I suoi gamma sono legati a radioterapia storica, sterilizzazione e radiografia industriale.",
+      "en": "Its gamma rays are linked to historical radiotherapy, sterilisation and industrial radiography.",
+      "fr": "Ses rayons gamma sont liés à la radiothérapie historique, à la stérilisation et à la radiographie industrielle."
+    },
+    "concepts": [
+      "chemistry.transition_metal",
+      "industry.application",
+      "industry.radiography",
+      "industry.sterilisation",
+      "medical.hospital"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import",
+        "selectedForFutureImport": true
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "1.663e8",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Tb-161",
+    "name": {
+      "it": "Terbio-161",
+      "en": "Terbium-161",
+      "fr": "Terbium-161"
+    },
+    "Z": 65,
+    "A": 161,
+    "seconds": "595296",
+    "modes": [
+      "beta-",
+      "gamma"
+    ],
+    "tags": [
+      "medical",
+      "therapy"
+    ],
+    "original": true,
+    "story_it": "È studiato come radionuclide terapeutico per piccole lesioni.",
+    "symbol": "Tb",
+    "element": {
+      "it": "Terbio",
+      "en": "Terbium",
+      "fr": "Terbium",
+      "family": "lanthanide",
+      "group": null,
+      "period": 6,
+      "state": "solid",
+      "mp": 1356
+    },
+    "story": {
+      "it": "È studiato come radionuclide terapeutico per colpire anche lesioni molto piccole.",
+      "en": "It is studied as a therapeutic radionuclide for targeting even very small lesions.",
+      "fr": "Il est étudié comme radionucléide thérapeutique pour cibler même de très petites lésions."
+    },
+    "concepts": [
+      "chemistry.lanthanide",
+      "medical.cancer",
+      "medical.hospital",
+      "medical.therapy"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_therapy",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "595296",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Cs-137",
+    "name": {
+      "it": "Cesio-137",
+      "en": "Caesium-137",
+      "fr": "Césium-137"
+    },
+    "Z": 55,
+    "A": 137,
+    "seconds": "9.49e8",
+    "modes": [
+      "beta-",
+      "gamma"
+    ],
+    "tags": [
+      "fission",
+      "fallout",
+      "food",
+      "environment"
+    ],
+    "original": true,
+    "story_it": "È tra i radionuclidi a lunga vita più associati a fallout e catena alimentare.",
+    "symbol": "Cs",
+    "element": {
+      "it": "Cesio",
+      "en": "Caesium",
+      "fr": "Césium",
+      "family": "alkali_metal",
+      "group": 1,
+      "period": 6,
+      "state": "solid",
+      "mp": 28.44
+    },
+    "story": {
+      "it": "A lunga vita, è un simbolo del fallout e della contaminazione di suolo e alimenti.",
+      "en": "Long-lived, it is a symbol of fallout and contamination of soil and food.",
+      "fr": "À vie longue, c’est un symbole des retombées et de la contamination des sols et des aliments."
+    },
+    "concepts": [
+      "chemistry.alkali_metal",
+      "environment.fallout",
+      "environment.food_monitoring",
+      "environment.monitoring",
+      "environment.nuclear_accident",
+      "history.chernobyl",
+      "history.fukushima",
+      "nuclear.fission_related"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_ngatlas",
+      "iaea_fukushima"
+    ],
+    "physics": {
+      "halfLifeSeconds": "9.49e8",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Y-90",
+    "name": {
+      "it": "Ittrio-90",
+      "en": "Yttrium-90",
+      "fr": "Yttrium-90"
+    },
+    "Z": 39,
+    "A": 90,
+    "seconds": "230400",
+    "modes": [
+      "beta-"
+    ],
+    "tags": [
+      "medical",
+      "therapy",
+      "fission"
+    ],
+    "original": true,
+    "story_it": "È un emettitore beta usato in terapie radionuclidiche.",
+    "symbol": "Y",
+    "element": {
+      "it": "Ittrio",
+      "en": "Yttrium",
+      "fr": "Yttrium",
+      "family": "transition_metal",
+      "group": 3,
+      "period": 5,
+      "state": "solid",
+      "mp": 1526
+    },
+    "story": {
+      "it": "È un beta-emettitore usato in terapie radionuclidiche, anche in applicazioni epatiche selezionate.",
+      "en": "It is a beta emitter used in radionuclide therapies, including selected liver applications.",
+      "fr": "C’est un émetteur bêta utilisé en thérapie radionucléidique, y compris dans certaines applications hépatiques."
+    },
+    "concepts": [
+      "chemistry.transition_metal",
+      "medical.cancer",
+      "medical.hospital",
+      "medical.therapy",
+      "nuclear.fission_related"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_therapy",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "230400",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Sr-89",
+    "name": {
+      "it": "Stronzio-89",
+      "en": "Strontium-89",
+      "fr": "Strontium-89"
+    },
+    "Z": 38,
+    "A": 89,
+    "seconds": "4360000",
+    "modes": [
+      "beta-"
+    ],
+    "tags": [
+      "medical",
+      "therapy",
+      "fission",
+      "bone"
+    ],
+    "original": true,
+    "story_it": "La chimica simile al calcio lo rende interessante per applicazioni ossee.",
+    "symbol": "Sr",
+    "element": {
+      "it": "Stronzio",
+      "en": "Strontium",
+      "fr": "Strontium",
+      "family": "alkaline_earth_metal",
+      "group": 2,
+      "period": 5,
+      "state": "solid",
+      "mp": 777
+    },
+    "story": {
+      "it": "Somiglia chimicamente al calcio: per questo è associato alle ossa e alla palliazione del dolore.",
+      "en": "It chemically resembles calcium: this is why it is associated with bone and pain palliation.",
+      "fr": "Il ressemble chimiquement au calcium : il est donc associé aux os et au soulagement de la douleur."
+    },
+    "concepts": [
+      "chemistry.alkaline_earth_metal",
+      "medical.bone",
+      "medical.cancer",
+      "medical.hospital",
+      "medical.therapy",
+      "nuclear.fission_related"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_therapy",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "4360000",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Lu-177",
+    "name": {
+      "it": "Lutezio-177",
+      "en": "Lutetium-177",
+      "fr": "Lutécium-177"
+    },
+    "Z": 71,
+    "A": 177,
+    "seconds": "574387",
+    "modes": [
+      "beta-",
+      "gamma"
+    ],
+    "tags": [
+      "medical",
+      "therapy",
+      "theranostic"
+    ],
+    "original": true,
+    "story_it": "È centrale in diverse terapie radioligandiche, associando terapia e imaging.",
+    "symbol": "Lu",
+    "element": {
+      "it": "Lutezio",
+      "en": "Lutetium",
+      "fr": "Lutécium",
+      "family": "lanthanide",
+      "group": null,
+      "period": 6,
+      "state": "solid",
+      "mp": 1663
+    },
+    "story": {
+      "it": "È uno dei simboli delle moderne terapie radioligandiche e della teranostica.",
+      "en": "It is one of the symbols of modern radioligand therapy and theranostics.",
+      "fr": "C’est l’un des symboles des thérapies radioligands modernes et de la théranostique."
+    },
+    "concepts": [
+      "chemistry.lanthanide",
+      "medical.cancer",
+      "medical.hospital",
+      "medical.theranostic",
+      "medical.therapy"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import",
+        "selectedForFutureImport": true
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_therapy",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "574387",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Ir-192",
+    "name": {
+      "it": "Iridio-192",
+      "en": "Iridium-192",
+      "fr": "Iridium-192"
+    },
+    "Z": 77,
+    "A": 192,
+    "seconds": "6380000",
+    "modes": [
+      "beta-",
+      "gamma"
+    ],
+    "tags": [
+      "medical",
+      "brachytherapy",
+      "industry"
+    ],
+    "original": true,
+    "story_it": "È utilizzato in brachiterapia e controlli radiografici industriali.",
+    "symbol": "Ir",
+    "element": {
+      "it": "Iridio",
+      "en": "Iridium",
+      "fr": "Iridium",
+      "family": "transition_metal",
+      "group": 9,
+      "period": 6,
+      "state": "solid",
+      "mp": 2466
+    },
+    "story": {
+      "it": "Può essere usato vicino al tumore in brachiterapia o per radiografare componenti industriali.",
+      "en": "It can be used near a tumour in brachytherapy or to radiograph industrial components.",
+      "fr": "Il peut être utilisé près d’une tumeur en curiethérapie ou pour radiographier des composants industriels."
+    },
+    "concepts": [
+      "chemistry.transition_metal",
+      "industry.application",
+      "industry.radiography",
+      "medical.brachytherapy",
+      "medical.hospital",
+      "medical.therapy"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "6380000",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Kr-85",
+    "name": {
+      "it": "Kripton-85",
+      "en": "Krypton-85",
+      "fr": "Krypton-85"
+    },
+    "Z": 36,
+    "A": 85,
+    "seconds": "3.389e8",
+    "modes": [
+      "beta-",
+      "gamma"
+    ],
+    "tags": [
+      "fission",
+      "environment",
+      "noble-gas"
+    ],
+    "original": true,
+    "story_it": "Gas nobile di fissione, può tracciare attività del ciclo del combustibile.",
+    "symbol": "Kr",
+    "element": {
+      "it": "Kripton",
+      "en": "Krypton",
+      "fr": "Krypton",
+      "family": "noble_gas",
+      "group": 18,
+      "period": 4,
+      "state": "gas",
+      "mp": -157.36
+    },
+    "story": {
+      "it": "È un gas nobile radioattivo collegato alla fissione e utile nel monitoraggio ambientale.",
+      "en": "It is a radioactive noble gas linked to fission and useful in environmental monitoring.",
+      "fr": "C’est un gaz noble radioactif lié à la fission et utile pour la surveillance environnementale."
+    },
+    "concepts": [
+      "chemistry.noble_gas",
+      "environment.monitoring",
+      "nuclear.fission_related"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "3.389e8",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Be-7",
+    "name": {
+      "it": "Berillio-7",
+      "en": "Beryllium-7",
+      "fr": "Béryllium-7"
+    },
+    "Z": 4,
+    "A": 7,
+    "seconds": "4598200",
+    "modes": [
+      "ec",
+      "gamma"
+    ],
+    "tags": [
+      "natural",
+      "cosmogenic",
+      "environment"
+    ],
+    "original": true,
+    "story_it": "È prodotto dai raggi cosmici nell’atmosfera e aiuta a studiare la deposizione atmosferica.",
+    "symbol": "Be",
+    "element": {
+      "it": "Berillio",
+      "en": "Beryllium",
+      "fr": "Béryllium",
+      "family": "alkaline_earth_metal",
+      "group": 2,
+      "period": 2,
+      "state": "solid",
+      "mp": 1287
+    },
+    "story": {
+      "it": "Nasce nell’atmosfera grazie ai raggi cosmici e aiuta a studiare aerosol e deposizione.",
+      "en": "It is born in the atmosphere through cosmic rays and helps study aerosols and deposition.",
+      "fr": "Il naît dans l’atmosphère grâce aux rayons cosmiques et aide à étudier les aérosols et les dépôts."
+    },
+    "concepts": [
+      "chemistry.alkaline_earth_metal",
+      "environment.monitoring",
+      "nature.cosmogenic",
+      "nature.natural"
+    ],
+    "decayModes": [
+      "ec"
+    ],
+    "radiations": [
+      "ec",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "4598200",
+      "decayModes": [
+        "ec"
+      ],
+      "displayedRadiations": [
+        "ec",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "U-235",
+    "name": {
+      "it": "Uranio-235",
+      "en": "Uranium-235",
+      "fr": "Uranium-235"
+    },
+    "Z": 92,
+    "A": 235,
+    "seconds": "2.221e16",
+    "modes": [
+      "alpha",
+      "sf",
+      "gamma"
+    ],
+    "tags": [
+      "natural",
+      "norm",
+      "fuel",
+      "fission"
+    ],
+    "original": true,
+    "story_it": "È naturale e fissile: protagonista della storia dell’energia nucleare.",
+    "symbol": "U",
+    "element": {
+      "it": "Uranio",
+      "en": "Uranium",
+      "fr": "Uranium",
+      "family": "actinide",
+      "group": null,
+      "period": 7,
+      "state": "solid",
+      "mp": 1132.2
+    },
+    "story": {
+      "it": "È il più celebre isotopo naturale fissile, legato a reattori e storia delle armi nucleari.",
+      "en": "It is the best-known natural fissile isotope, linked to reactors and nuclear-weapons history.",
+      "fr": "C’est l’isotope fissile naturel le plus connu, lié aux réacteurs et à l’histoire des armes nucléaires."
+    },
+    "concepts": [
+      "chemistry.actinide",
+      "history.weapons",
+      "nature.natural",
+      "nuclear.fissile",
+      "nuclear.fission_related",
+      "nuclear.reactor_fuel"
+    ],
+    "decayModes": [
+      "alpha",
+      "sf"
+    ],
+    "radiations": [
+      "alpha",
+      "sf",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import",
+        "selectedForFutureImport": true
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "2.221e16",
+      "decayModes": [
+        "alpha",
+        "sf"
+      ],
+      "displayedRadiations": [
+        "alpha",
+        "sf",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "U-238",
+    "name": {
+      "it": "Uranio-238",
+      "en": "Uranium-238",
+      "fr": "Uranium-238"
+    },
+    "Z": 92,
+    "A": 238,
+    "seconds": "1.410e17",
+    "modes": [
+      "alpha",
+      "sf",
+      "gamma"
+    ],
+    "tags": [
+      "natural",
+      "norm",
+      "fuel",
+      "radon"
+    ],
+    "original": true,
+    "story_it": "È il principale isotopo dell’uranio naturale e capostipite della catena del radon-222.",
+    "symbol": "U",
+    "element": {
+      "it": "Uranio",
+      "en": "Uranium",
+      "fr": "Uranium",
+      "family": "actinide",
+      "group": null,
+      "period": 7,
+      "state": "solid",
+      "mp": 1132.2
+    },
+    "story": {
+      "it": "È l’uranio naturale più abbondante e la sua catena conduce fino al radon-222.",
+      "en": "It is the most abundant natural uranium isotope and its chain leads to radon-222.",
+      "fr": "C’est l’isotope naturel de l’uranium le plus abondant et sa chaîne mène au radon-222."
+    },
+    "concepts": [
+      "chemistry.actinide",
+      "nature.natural",
+      "nature.radon_chain",
+      "nuclear.reactor_fuel"
+    ],
+    "decayModes": [
+      "alpha",
+      "sf"
+    ],
+    "radiations": [
+      "alpha",
+      "sf",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": 2.68,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_indc_440",
+        "atlasReference": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": 2.68,
+        "uncertaintyBarn": 0.019,
+        "thermalDefinition": "2200 m/s neutron capture",
+        "status": "curated_thermal_value"
+      },
+      "neutronNote": "Valore termico di cattura (n,γ) verificato da IAEA INDC(NDS)-440; NGATLAS resta il riferimento per la dipendenza dall’energia."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "who_radon",
+      "iaea_indc_440",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "1.410e17",
+      "decayModes": [
+        "alpha",
+        "sf"
+      ],
+      "displayedRadiations": [
+        "alpha",
+        "sf",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Rn-222",
+    "name": {
+      "it": "Radon-222",
+      "en": "Radon-222",
+      "fr": "Radon-222"
+    },
+    "Z": 86,
+    "A": 222,
+    "seconds": "330350",
+    "modes": [
+      "alpha",
+      "gamma"
+    ],
+    "tags": [
+      "natural",
+      "norm",
+      "radon",
+      "environment"
+    ],
+    "original": true,
+    "story_it": "Gas radioattivo naturale, può accumularsi negli ambienti chiusi.",
+    "symbol": "Rn",
+    "element": {
+      "it": "Radon",
+      "en": "Radon",
+      "fr": "Radon",
+      "family": "noble_gas",
+      "group": 18,
+      "period": 6,
+      "state": "gas",
+      "mp": -71
+    },
+    "story": {
+      "it": "È il gas radioattivo naturale invisibile che può accumularsi nelle case.",
+      "en": "It is the invisible natural radioactive gas that can accumulate in homes.",
+      "fr": "C’est le gaz radioactif naturel invisible qui peut s’accumuler dans les maisons."
+    },
+    "concepts": [
+      "chemistry.noble_gas",
+      "daily.home_radon",
+      "environment.indoor_air",
+      "environment.monitoring",
+      "nature.natural",
+      "nature.radon_chain"
+    ],
+    "decayModes": [
+      "alpha"
+    ],
+    "radiations": [
+      "alpha",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "who_radon",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "330350",
+      "decayModes": [
+        "alpha"
+      ],
+      "displayedRadiations": [
+        "alpha",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Ra-226",
+    "name": {
+      "it": "Radio-226",
+      "en": "Radium-226",
+      "fr": "Radium-226"
+    },
+    "Z": 88,
+    "A": 226,
+    "seconds": "5.049e10",
+    "modes": [
+      "alpha",
+      "gamma"
+    ],
+    "tags": [
+      "natural",
+      "norm",
+      "radon",
+      "history"
+    ],
+    "original": true,
+    "story_it": "È il genitore del radon-222 ed è legato alla storia delle pitture luminescenti.",
+    "symbol": "Ra",
+    "element": {
+      "it": "Radio",
+      "en": "Radium",
+      "fr": "Radium",
+      "family": "alkaline_earth_metal",
+      "group": 2,
+      "period": 7,
+      "state": "solid",
+      "mp": 700
+    },
+    "story": {
+      "it": "Genitore del radon-222, richiama il radio, Marie Curie e le vecchie vernici luminescenti.",
+      "en": "Parent of radon-222, it recalls radium, Marie Curie and old luminous paints.",
+      "fr": "Parent du radon-222, il évoque le radium, Marie Curie et les anciennes peintures luminescentes."
+    },
+    "concepts": [
+      "chemistry.alkaline_earth_metal",
+      "daily.luminous_paint",
+      "history.marie_curie",
+      "nature.natural",
+      "nature.radon_chain"
+    ],
+    "decayModes": [
+      "alpha"
+    ],
+    "radiations": [
+      "alpha",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "who_radon",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "5.049e10",
+      "decayModes": [
+        "alpha"
+      ],
+      "displayedRadiations": [
+        "alpha",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Th-232",
+    "name": {
+      "it": "Torio-232",
+      "en": "Thorium-232",
+      "fr": "Thorium-232"
+    },
+    "Z": 90,
+    "A": 232,
+    "seconds": "4.434e17",
+    "modes": [
+      "alpha",
+      "gamma"
+    ],
+    "tags": [
+      "natural",
+      "norm"
+    ],
+    "original": true,
+    "story_it": "Capostipite di una catena naturale, è presente in minerali e materiali terrestri.",
+    "symbol": "Th",
+    "element": {
+      "it": "Torio",
+      "en": "Thorium",
+      "fr": "Thorium",
+      "family": "actinide",
+      "group": null,
+      "period": 7,
+      "state": "solid",
+      "mp": 1750
+    },
+    "story": {
+      "it": "È il capostipite di una catena radioattiva naturale presente nelle rocce.",
+      "en": "It heads a natural radioactive chain found in rocks.",
+      "fr": "Il est à la tête d’une chaîne radioactive naturelle présente dans les roches."
+    },
+    "concepts": [
+      "chemistry.actinide",
+      "nature.natural"
+    ],
+    "decayModes": [
+      "alpha"
+    ],
+    "radiations": [
+      "alpha",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": 7.35,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_indc_440",
+        "atlasReference": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": 7.35,
+        "uncertaintyBarn": 0.03,
+        "thermalDefinition": "2200 m/s neutron capture",
+        "status": "curated_thermal_value"
+      },
+      "neutronNote": "Valore termico di cattura (n,γ) verificato da IAEA INDC(NDS)-440; NGATLAS resta il riferimento per la dipendenza dall’energia."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_indc_440",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "4.434e17",
+      "decayModes": [
+        "alpha"
+      ],
+      "displayedRadiations": [
+        "alpha",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "K-40",
+    "name": {
+      "it": "Potassio-40",
+      "en": "Potassium-40",
+      "fr": "Potassium-40"
+    },
+    "Z": 19,
+    "A": 40,
+    "seconds": "3.938e16",
+    "modes": [
+      "beta-",
+      "ec",
+      "gamma",
+      "beta+"
+    ],
+    "tags": [
+      "natural",
+      "norm",
+      "food",
+      "dating"
+    ],
+    "original": true,
+    "story_it": "È naturalmente presente nel potassio: anche il corpo umano ne contiene una piccola attività.",
+    "symbol": "K",
+    "element": {
+      "it": "Potassio",
+      "en": "Potassium",
+      "fr": "Potassium",
+      "family": "alkali_metal",
+      "group": 1,
+      "period": 4,
+      "state": "solid",
+      "mp": 63.38
+    },
+    "story": {
+      "it": "È il radionuclide delle “banane radioattive”: il potassio naturale è anche nel nostro corpo.",
+      "en": "It is the radionuclide behind “radioactive bananas”: natural potassium is also in our bodies.",
+      "fr": "C’est le radionucléide des « bananes radioactives » : le potassium naturel est aussi dans notre corps."
+    },
+    "concepts": [
+      "chemistry.alkali_metal",
+      "daily.bananas",
+      "earth.dating",
+      "environment.food_monitoring",
+      "nature.in_body",
+      "nature.in_food",
+      "nature.natural"
+    ],
+    "decayModes": [
+      "beta-",
+      "ec",
+      "beta+"
+    ],
+    "radiations": [
+      "beta-",
+      "ec",
+      "gamma",
+      "beta+"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": 30,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_indc_440",
+        "atlasReference": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": 30,
+        "uncertaintyBarn": 4,
+        "thermalDefinition": "2200 m/s neutron capture",
+        "status": "curated_thermal_value"
+      },
+      "neutronNote": "Valore termico di cattura (n,γ) verificato da IAEA INDC(NDS)-440; NGATLAS resta il riferimento per la dipendenza dall’energia."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_fukushima",
+      "nist_c14",
+      "iaea_indc_440",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "3.938e16",
+      "decayModes": [
+        "beta-",
+        "ec",
+        "beta+"
+      ],
+      "displayedRadiations": [
+        "beta-",
+        "ec",
+        "gamma",
+        "beta+"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Tc-99m",
+    "name": {
+      "it": "Tecnezio-99m",
+      "en": "Technetium-99m",
+      "fr": "Technétium-99m"
+    },
+    "Z": 43,
+    "A": 99,
+    "seconds": "21624",
+    "modes": [
+      "it",
+      "gamma"
+    ],
+    "tags": [
+      "medical",
+      "diagnosis",
+      "spect",
+      "generator"
+    ],
+    "original": true,
+    "story_it": "Figlio del molibdeno-99, è un protagonista dell’imaging diagnostico SPECT.",
+    "symbol": "Tc",
+    "element": {
+      "it": "Tecnezio",
+      "en": "Technetium",
+      "fr": "Technétium",
+      "family": "transition_metal",
+      "group": 7,
+      "period": 5,
+      "state": "solid",
+      "mp": 2157
+    },
+    "story": {
+      "it": "Figlio del Mo-99, è la grande star quotidiana delle scintigrafie/SPECT ospedaliere.",
+      "en": "Daughter of Mo-99, it is the everyday star of hospital scintigraphy/SPECT scans.",
+      "fr": "Fils du Mo-99, c’est la grande vedette quotidienne des scintigraphies/TEMP hospitalières."
+    },
+    "concepts": [
+      "chemistry.transition_metal",
+      "daily.scintigraphy",
+      "medical.generator",
+      "medical.hospital",
+      "medical.imaging",
+      "medical.spect"
+    ],
+    "decayModes": [
+      "it"
+    ],
+    "radiations": [
+      "it",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_tc99m",
+      "iaea_generators",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "21624",
+      "decayModes": [
+        "it"
+      ],
+      "displayedRadiations": [
+        "it",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Ga-68",
+    "name": {
+      "it": "Gallio-68",
+      "en": "Gallium-68",
+      "fr": "Gallium-68"
+    },
+    "Z": 31,
+    "A": 68,
+    "seconds": "4076",
+    "modes": [
+      "beta+"
+    ],
+    "tags": [
+      "medical",
+      "pet",
+      "generator"
+    ],
+    "original": false,
+    "story_it": "Può essere ottenuto da un generatore e usato in PET.",
+    "symbol": "Ga",
+    "element": {
+      "it": "Gallio",
+      "en": "Gallium",
+      "fr": "Gallium",
+      "family": "post_transition_metal",
+      "group": 13,
+      "period": 4,
+      "state": "solid",
+      "mp": 29.76
+    },
+    "story": {
+      "it": "Può provenire da un generatore ed è noto nella PET di bersagli tumorali come PSMA.",
+      "en": "It can come from a generator and is known in PET imaging of tumour targets such as PSMA.",
+      "fr": "Il peut provenir d’un générateur et est connu en TEP de cibles tumorales comme PSMA."
+    },
+    "concepts": [
+      "chemistry.post_transition_metal",
+      "medical.generator",
+      "medical.hospital",
+      "medical.imaging",
+      "medical.pet"
+    ],
+    "decayModes": [
+      "beta+"
+    ],
+    "radiations": [
+      "beta+"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_cyclotron",
+      "iaea_generators",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "4076",
+      "decayModes": [
+        "beta+"
+      ],
+      "displayedRadiations": [
+        "beta+"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Cu-64",
+    "name": {
+      "it": "Rame-64",
+      "en": "Copper-64",
+      "fr": "Cuivre-64"
+    },
+    "Z": 29,
+    "A": 64,
+    "seconds": "45720",
+    "modes": [
+      "beta+",
+      "beta-",
+      "ec"
+    ],
+    "tags": [
+      "medical",
+      "pet",
+      "theranostic"
+    ],
+    "original": false,
+    "story_it": "Il suo decadimento versatile è interessante per diagnostica e teranostica.",
+    "symbol": "Cu",
+    "element": {
+      "it": "Rame",
+      "en": "Copper",
+      "fr": "Cuivre",
+      "family": "transition_metal",
+      "group": 11,
+      "period": 4,
+      "state": "solid",
+      "mp": 1084.62
+    },
+    "story": {
+      "it": "Un radionuclide di rame versatile, studiato per PET e applicazioni teranostiche.",
+      "en": "A versatile copper radionuclide studied for PET and theranostic applications.",
+      "fr": "Un radionucléide du cuivre polyvalent, étudié pour la TEP et les applications théranostiques."
+    },
+    "concepts": [
+      "chemistry.transition_metal",
+      "medical.hospital",
+      "medical.imaging",
+      "medical.pet",
+      "medical.theranostic"
+    ],
+    "decayModes": [
+      "beta+",
+      "beta-",
+      "ec"
+    ],
+    "radiations": [
+      "beta+",
+      "beta-",
+      "ec"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_cyclotron",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "45720",
+      "decayModes": [
+        "beta+",
+        "beta-",
+        "ec"
+      ],
+      "displayedRadiations": [
+        "beta+",
+        "beta-",
+        "ec"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Zr-89",
+    "name": {
+      "it": "Zirconio-89",
+      "en": "Zirconium-89",
+      "fr": "Zirconium-89"
+    },
+    "Z": 40,
+    "A": 89,
+    "seconds": "282240",
+    "modes": [
+      "beta+"
+    ],
+    "tags": [
+      "medical",
+      "pet",
+      "antibody"
+    ],
+    "original": false,
+    "story_it": "La sua durata è compatibile con studi PET di alcune biomolecole lente.",
+    "symbol": "Zr",
+    "element": {
+      "it": "Zirconio",
+      "en": "Zirconium",
+      "fr": "Zirconium",
+      "family": "transition_metal",
+      "group": 4,
+      "period": 5,
+      "state": "solid",
+      "mp": 1855
+    },
+    "story": {
+      "it": "La sua durata relativamente lunga si abbina alla PET con anticorpi.",
+      "en": "Its relatively long life pairs well with PET using antibodies.",
+      "fr": "Sa durée de vie relativement longue s’accorde bien avec la TEP utilisant des anticorps."
+    },
+    "concepts": [
+      "chemistry.transition_metal",
+      "medical.hospital",
+      "medical.imaging",
+      "medical.pet"
+    ],
+    "decayModes": [
+      "beta+"
+    ],
+    "radiations": [
+      "beta+"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_cyclotron",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "282240",
+      "decayModes": [
+        "beta+"
+      ],
+      "displayedRadiations": [
+        "beta+"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Ac-225",
+    "name": {
+      "it": "Attinio-225",
+      "en": "Actinium-225",
+      "fr": "Actinium-225"
+    },
+    "Z": 89,
+    "A": 225,
+    "seconds": "857000",
+    "modes": [
+      "alpha"
+    ],
+    "tags": [
+      "medical",
+      "therapy"
+    ],
+    "original": false,
+    "story_it": "È tra i radionuclidi emergenti nella terapia alfa mirata.",
+    "symbol": "Ac",
+    "element": {
+      "it": "Attinio",
+      "en": "Actinium",
+      "fr": "Actinium",
+      "family": "actinide",
+      "group": null,
+      "period": 7,
+      "state": "solid",
+      "mp": 1050
+    },
+    "story": {
+      "it": "È uno dei protagonisti emergenti della terapia alfa mirata in oncologia.",
+      "en": "It is one of the emerging stars of targeted alpha therapy in oncology.",
+      "fr": "C’est l’un des acteurs émergents de la thérapie alpha ciblée en oncologie."
+    },
+    "concepts": [
+      "chemistry.actinide",
+      "medical.cancer",
+      "medical.hospital",
+      "medical.therapy"
+    ],
+    "decayModes": [
+      "alpha"
+    ],
+    "radiations": [
+      "alpha"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_therapy",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "857000",
+      "decayModes": [
+        "alpha"
+      ],
+      "displayedRadiations": [
+        "alpha"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Ra-223",
+    "name": {
+      "it": "Radio-223",
+      "en": "Radium-223",
+      "fr": "Radium-223"
+    },
+    "Z": 88,
+    "A": 223,
+    "seconds": "987000",
+    "modes": [
+      "alpha"
+    ],
+    "tags": [
+      "medical",
+      "therapy",
+      "bone"
+    ],
+    "original": false,
+    "story_it": "La chimica affine al calcio lo associa a terapie in ambito osseo.",
+    "symbol": "Ra",
+    "element": {
+      "it": "Radio",
+      "en": "Radium",
+      "fr": "Radium",
+      "family": "alkaline_earth_metal",
+      "group": 2,
+      "period": 7,
+      "state": "solid",
+      "mp": 700
+    },
+    "story": {
+      "it": "Cerca le ossa come un parente chimico del calcio ed è impiegato in alcune metastasi ossee.",
+      "en": "It seeks bone like a chemical relative of calcium and is used in certain bone metastases.",
+      "fr": "Il cible les os comme un parent chimique du calcium et est utilisé pour certaines métastases osseuses."
+    },
+    "concepts": [
+      "chemistry.alkaline_earth_metal",
+      "medical.bone",
+      "medical.cancer",
+      "medical.hospital",
+      "medical.therapy"
+    ],
+    "decayModes": [
+      "alpha"
+    ],
+    "radiations": [
+      "alpha"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_therapy",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "987000",
+      "decayModes": [
+        "alpha"
+      ],
+      "displayedRadiations": [
+        "alpha"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Sm-153",
+    "name": {
+      "it": "Samario-153",
+      "en": "Samarium-153",
+      "fr": "Samarium-153"
+    },
+    "Z": 62,
+    "A": 153,
+    "seconds": "166320",
+    "modes": [
+      "beta-",
+      "gamma"
+    ],
+    "tags": [
+      "medical",
+      "therapy",
+      "bone"
+    ],
+    "original": false,
+    "story_it": "È associato ad applicazioni terapeutiche per il dolore da metastasi ossee.",
+    "symbol": "Sm",
+    "element": {
+      "it": "Samario",
+      "en": "Samarium",
+      "fr": "Samarium",
+      "family": "lanthanide",
+      "group": null,
+      "period": 6,
+      "state": "solid",
+      "mp": 1072
+    },
+    "story": {
+      "it": "È associato a radiofarmaci che raggiungono l’osso per la palliazione del dolore.",
+      "en": "It is associated with radiopharmaceuticals that reach bone for pain palliation.",
+      "fr": "Il est associé à des radiopharmaceutiques atteignant l’os pour soulager la douleur."
+    },
+    "concepts": [
+      "chemistry.lanthanide",
+      "medical.bone",
+      "medical.cancer",
+      "medical.hospital",
+      "medical.therapy"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import",
+        "selectedForFutureImport": true
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_therapy",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "166320",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "P-32",
+    "name": {
+      "it": "Fosforo-32",
+      "en": "Phosphorus-32",
+      "fr": "Phosphore-32"
+    },
+    "Z": 15,
+    "A": 32,
+    "seconds": "1.232e6",
+    "modes": [
+      "beta-"
+    ],
+    "tags": [
+      "medical",
+      "biology",
+      "tracer"
+    ],
+    "original": false,
+    "story_it": "È stato un importante tracciante biologico ed è stato impiegato anche in terapia.",
+    "symbol": "P",
+    "element": {
+      "it": "Fosforo",
+      "en": "Phosphorus",
+      "fr": "Phosphore",
+      "family": "nonmetal",
+      "group": 15,
+      "period": 3,
+      "state": "solid",
+      "mp": 44.15,
+      "mpNote": "Valore riferito al fosforo bianco; il comportamento dipende dall’allotropo."
+    },
+    "story": {
+      "it": "È un beta-emettitore storico: tracciante biologico e radionuclide terapeutico in applicazioni selezionate.",
+      "en": "It is a historic beta emitter: biological tracer and therapeutic radionuclide in selected applications.",
+      "fr": "C’est un émetteur bêta historique : traceur biologique et radionucléide thérapeutique dans certaines applications."
+    },
+    "concepts": [
+      "chemistry.nonmetal",
+      "medical.hospital"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "1.232e6",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Mo-99",
+    "name": {
+      "it": "Molibdeno-99",
+      "en": "Molybdenum-99",
+      "fr": "Molybdène-99"
+    },
+    "Z": 42,
+    "A": 99,
+    "seconds": "237600",
+    "modes": [
+      "beta-",
+      "gamma"
+    ],
+    "tags": [
+      "medical",
+      "generator",
+      "fission"
+    ],
+    "original": false,
+    "story_it": "È il genitore del Tc-99m nei generatori per la diagnostica ospedaliera.",
+    "symbol": "Mo",
+    "element": {
+      "it": "Molibdeno",
+      "en": "Molybdenum",
+      "fr": "Molybdène",
+      "family": "transition_metal",
+      "group": 6,
+      "period": 5,
+      "state": "solid",
+      "mp": 2623
+    },
+    "story": {
+      "it": "È il “genitore” del Tc-99m nei generatori che riforniscono la medicina nucleare.",
+      "en": "It is the “parent” of Tc-99m in generators supplying nuclear medicine.",
+      "fr": "C’est le « parent » du Tc-99m dans les générateurs alimentant la médecine nucléaire."
+    },
+    "concepts": [
+      "chemistry.transition_metal",
+      "medical.generator",
+      "medical.generator_parent",
+      "medical.hospital",
+      "nuclear.fission_related"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_generators",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "237600",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Ge-68",
+    "name": {
+      "it": "Germanio-68",
+      "en": "Germanium-68",
+      "fr": "Germanium-68"
+    },
+    "Z": 32,
+    "A": 68,
+    "seconds": "2.341e7",
+    "modes": [
+      "ec"
+    ],
+    "tags": [
+      "medical",
+      "generator",
+      "pet"
+    ],
+    "original": false,
+    "story_it": "È il genitore del Ga-68 nei generatori utilizzati per applicazioni PET.",
+    "symbol": "Ge",
+    "element": {
+      "it": "Germanio",
+      "en": "Germanium",
+      "fr": "Germanium",
+      "family": "metalloid",
+      "group": 14,
+      "period": 4,
+      "state": "solid",
+      "mp": 938.25
+    },
+    "story": {
+      "it": "È il genitore del Ga-68 nei generatori per applicazioni PET.",
+      "en": "It is the parent of Ga-68 in generators for PET applications.",
+      "fr": "C’est le parent du Ga-68 dans les générateurs destinés aux applications TEP."
+    },
+    "concepts": [
+      "chemistry.metalloid",
+      "medical.generator",
+      "medical.generator_parent",
+      "medical.hospital",
+      "medical.imaging",
+      "medical.pet"
+    ],
+    "decayModes": [
+      "ec"
+    ],
+    "radiations": [
+      "ec"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_generators",
+      "iaea_cyclotron",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "2.341e7",
+      "decayModes": [
+        "ec"
+      ],
+      "displayedRadiations": [
+        "ec"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "C-11",
+    "name": {
+      "it": "Carbonio-11",
+      "en": "Carbon-11",
+      "fr": "Carbone-11"
+    },
+    "Z": 6,
+    "A": 11,
+    "seconds": "1220",
+    "modes": [
+      "beta+"
+    ],
+    "tags": [
+      "medical",
+      "pet"
+    ],
+    "original": false,
+    "story_it": "Permette di marcare molecole organiche per PET, ma richiede produzione vicina all’uso.",
+    "symbol": "C",
+    "element": {
+      "it": "Carbonio",
+      "en": "Carbon",
+      "fr": "Carbone",
+      "family": "nonmetal",
+      "group": 14,
+      "period": 2,
+      "state": "solid",
+      "mp": null,
+      "mpNote": "Sublima a pressione standard; non si indica un semplice punto di fusione."
+    },
+    "story": {
+      "it": "Permette di marcare molecole organiche per PET, ma dura così poco da richiedere produzione vicina.",
+      "en": "It labels organic molecules for PET but lives so briefly that nearby production is required.",
+      "fr": "Il marque des molécules organiques pour la TEP mais vit si peu qu’une production proche est nécessaire."
+    },
+    "concepts": [
+      "chemistry.nonmetal",
+      "medical.hospital",
+      "medical.imaging",
+      "medical.pet"
+    ],
+    "decayModes": [
+      "beta+"
+    ],
+    "radiations": [
+      "beta+"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_cyclotron",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "1220",
+      "decayModes": [
+        "beta+"
+      ],
+      "displayedRadiations": [
+        "beta+"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Cs-134",
+    "name": {
+      "it": "Cesio-134",
+      "en": "Caesium-134",
+      "fr": "Césium-134"
+    },
+    "Z": 55,
+    "A": 134,
+    "seconds": "6.51e7",
+    "modes": [
+      "beta-",
+      "gamma"
+    ],
+    "tags": [
+      "fission",
+      "fallout",
+      "food",
+      "environment"
+    ],
+    "original": false,
+    "story_it": "Con il Cs-137 può contribuire a caratterizzare contaminazioni da reattore.",
+    "symbol": "Cs",
+    "element": {
+      "it": "Cesio",
+      "en": "Caesium",
+      "fr": "Césium",
+      "family": "alkali_metal",
+      "group": 1,
+      "period": 6,
+      "state": "solid",
+      "mp": 28.44
+    },
+    "story": {
+      "it": "Insieme al Cs-137 è un indizio importante di contaminazione recente da reattore, come Fukushima.",
+      "en": "Together with Cs-137 it is an important clue of recent reactor contamination, such as Fukushima.",
+      "fr": "Avec le Cs-137, c’est un indice important de contamination récente de réacteur, comme à Fukushima."
+    },
+    "concepts": [
+      "chemistry.alkali_metal",
+      "environment.fallout",
+      "environment.food_monitoring",
+      "environment.monitoring",
+      "environment.nuclear_accident",
+      "history.fukushima",
+      "nuclear.fission_related"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_ngatlas",
+      "iaea_fukushima"
+    ],
+    "physics": {
+      "halfLifeSeconds": "6.51e7",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Sr-90",
+    "name": {
+      "it": "Stronzio-90",
+      "en": "Strontium-90",
+      "fr": "Strontium-90"
+    },
+    "Z": 38,
+    "A": 90,
+    "seconds": "9.08e8",
+    "modes": [
+      "beta-"
+    ],
+    "tags": [
+      "fission",
+      "fallout",
+      "food",
+      "bone"
+    ],
+    "original": false,
+    "story_it": "Prodotto di fissione a lunga vita, segue chimicamente il calcio.",
+    "symbol": "Sr",
+    "element": {
+      "it": "Stronzio",
+      "en": "Strontium",
+      "fr": "Strontium",
+      "family": "alkaline_earth_metal",
+      "group": 2,
+      "period": 5,
+      "state": "solid",
+      "mp": 777
+    },
+    "story": {
+      "it": "Prodotto di fissione longevo, è noto perché la sua chimica ricorda quella del calcio e delle ossa.",
+      "en": "A long-lived fission product, it is known because its chemistry resembles calcium and bone.",
+      "fr": "Produit de fission à vie longue, il est connu car sa chimie ressemble au calcium et aux os."
+    },
+    "concepts": [
+      "chemistry.alkaline_earth_metal",
+      "environment.fallout",
+      "environment.food_monitoring",
+      "environment.nuclear_accident",
+      "history.chernobyl",
+      "medical.bone",
+      "nuclear.fission_related"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_ngatlas",
+      "iaea_fukushima"
+    ],
+    "physics": {
+      "halfLifeSeconds": "9.08e8",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "I-129",
+    "name": {
+      "it": "Iodio-129",
+      "en": "Iodine-129",
+      "fr": "Iode-129"
+    },
+    "Z": 53,
+    "A": 129,
+    "seconds": "4.95e14",
+    "modes": [
+      "beta-"
+    ],
+    "tags": [
+      "fission",
+      "environment",
+      "waste"
+    ],
+    "original": false,
+    "story_it": "La lunghissima emivita lo rende rilevante nello studio di rilasci e rifiuti.",
+    "symbol": "I",
+    "element": {
+      "it": "Iodio",
+      "en": "Iodine",
+      "fr": "Iode",
+      "family": "halogen",
+      "group": 17,
+      "period": 5,
+      "state": "solid",
+      "mp": 113.7
+    },
+    "story": {
+      "it": "La sua vita lunghissima lo rende importante per rifiuti radioattivi e studi ambientali di lungo periodo.",
+      "en": "Its extremely long life makes it important for radioactive waste and long-term environmental studies.",
+      "fr": "Sa durée de vie extrêmement longue le rend important pour les déchets radioactifs et les études environnementales à long terme."
+    },
+    "concepts": [
+      "chemistry.halogen",
+      "environment.monitoring",
+      "environment.radioactive_waste",
+      "nuclear.fission_related"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "4.95e14",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Tc-99",
+    "name": {
+      "it": "Tecnezio-99",
+      "en": "Technetium-99",
+      "fr": "Technétium-99"
+    },
+    "Z": 43,
+    "A": 99,
+    "seconds": "6.66e12",
+    "modes": [
+      "beta-"
+    ],
+    "tags": [
+      "fission",
+      "waste",
+      "environment"
+    ],
+    "original": false,
+    "story_it": "È longevo e mobile in alcune forme chimiche: rilevante per i rifiuti radioattivi.",
+    "symbol": "Tc",
+    "element": {
+      "it": "Tecnezio",
+      "en": "Technetium",
+      "fr": "Technétium",
+      "family": "transition_metal",
+      "group": 7,
+      "period": 5,
+      "state": "solid",
+      "mp": 2157
+    },
+    "story": {
+      "it": "È longevo e può essere mobile nell’ambiente in forma pertecnetato: interessa gli studi sui rifiuti.",
+      "en": "It is long-lived and can be mobile in the environment as pertechnetate: it matters in waste studies.",
+      "fr": "Il est à vie longue et peut être mobile dans l’environnement sous forme de pertechnétate : il intéresse les études sur les déchets."
+    },
+    "concepts": [
+      "chemistry.transition_metal",
+      "environment.monitoring",
+      "environment.radioactive_waste",
+      "nuclear.fission_related"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": 20,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_indc_440",
+        "atlasReference": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": 20,
+        "uncertaintyBarn": 1,
+        "thermalDefinition": "2200 m/s neutron capture",
+        "status": "curated_thermal_value"
+      },
+      "neutronNote": "Valore termico di cattura (n,γ) verificato da IAEA INDC(NDS)-440; NGATLAS resta il riferimento per la dipendenza dall’energia."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_ngatlas",
+      "iaea_indc_440"
+    ],
+    "physics": {
+      "halfLifeSeconds": "6.66e12",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Xe-133",
+    "name": {
+      "it": "Xeno-133",
+      "en": "Xenon-133",
+      "fr": "Xénon-133"
+    },
+    "Z": 54,
+    "A": 133,
+    "seconds": "453100",
+    "modes": [
+      "beta-",
+      "gamma"
+    ],
+    "tags": [
+      "fission",
+      "noble-gas",
+      "monitoring"
+    ],
+    "original": false,
+    "story_it": "Gas nobile di fissione, è importante nel monitoraggio di rilasci atmosferici.",
+    "symbol": "Xe",
+    "element": {
+      "it": "Xeno",
+      "en": "Xenon",
+      "fr": "Xénon",
+      "family": "noble_gas",
+      "group": 18,
+      "period": 5,
+      "state": "gas",
+      "mp": -111.75
+    },
+    "story": {
+      "it": "Gas nobile di fissione, può essere cercato nell’aria dopo eventi nucleari.",
+      "en": "A fission noble gas, it can be searched for in air after nuclear events.",
+      "fr": "Gaz noble de fission, il peut être recherché dans l’air après des événements nucléaires."
+    },
+    "concepts": [
+      "chemistry.noble_gas",
+      "environment.air_monitoring",
+      "environment.nuclear_accident",
+      "nuclear.fission_related"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "453100",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Xe-135",
+    "name": {
+      "it": "Xeno-135",
+      "en": "Xenon-135",
+      "fr": "Xénon-135"
+    },
+    "Z": 54,
+    "A": 135,
+    "seconds": "32900",
+    "modes": [
+      "beta-"
+    ],
+    "tags": [
+      "fission",
+      "reactor",
+      "neutron"
+    ],
+    "original": false,
+    "story_it": "In reattore è famoso per l’assorbimento neutronico e l’effetto sulla potenza.",
+    "symbol": "Xe",
+    "element": {
+      "it": "Xeno",
+      "en": "Xenon",
+      "fr": "Xénon",
+      "family": "noble_gas",
+      "group": 18,
+      "period": 5,
+      "state": "gas",
+      "mp": -111.75
+    },
+    "story": {
+      "it": "In un reattore è celebre come “veleno” neutronico: assorbe neutroni in modo eccezionale.",
+      "en": "In a reactor it is famous as a neutron “poison”: it absorbs neutrons exceptionally strongly.",
+      "fr": "Dans un réacteur, il est célèbre comme « poison » neutronique : il absorbe exceptionnellement les neutrons."
+    },
+    "concepts": [
+      "chemistry.noble_gas",
+      "expert.neutron_relevance",
+      "expert.xenon_poison",
+      "nuclear.fission_related"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import",
+        "selectedForFutureImport": true
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "32900",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Na-22",
+    "name": {
+      "it": "Sodio-22",
+      "en": "Sodium-22",
+      "fr": "Sodium-22"
+    },
+    "Z": 11,
+    "A": 22,
+    "seconds": "8.21e7",
+    "modes": [
+      "beta+",
+      "gamma"
+    ],
+    "tags": [
+      "natural",
+      "cosmogenic",
+      "calibration"
+    ],
+    "original": false,
+    "story_it": "È cosmogenico ed è utilizzato anche in attività di misura e calibrazione.",
+    "symbol": "Na",
+    "element": {
+      "it": "Sodio",
+      "en": "Sodium",
+      "fr": "Sodium",
+      "family": "alkali_metal",
+      "group": 1,
+      "period": 3,
+      "state": "solid",
+      "mp": 97.79
+    },
+    "story": {
+      "it": "È un positron-emettitore cosmogenico utilizzato anche come sorgente di riferimento in misura.",
+      "en": "It is a cosmogenic positron emitter also used as a reference source in measurement.",
+      "fr": "C’est un émetteur de positons cosmogénique également utilisé comme source de référence en mesure."
+    },
+    "concepts": [
+      "chemistry.alkali_metal",
+      "nature.cosmogenic",
+      "nature.natural"
+    ],
+    "decayModes": [
+      "beta+"
+    ],
+    "radiations": [
+      "beta+",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "8.21e7",
+      "decayModes": [
+        "beta+"
+      ],
+      "displayedRadiations": [
+        "beta+",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Al-26",
+    "name": {
+      "it": "Alluminio-26",
+      "en": "Aluminium-26",
+      "fr": "Aluminium-26"
+    },
+    "Z": 13,
+    "A": 26,
+    "seconds": "2.26e13",
+    "modes": [
+      "beta+",
+      "gamma"
+    ],
+    "tags": [
+      "stellar",
+      "space",
+      "meteorite"
+    ],
+    "original": false,
+    "story_it": "La sua emissione gamma racconta nucleosintesi recente nella Galassia.",
+    "symbol": "Al",
+    "element": {
+      "it": "Alluminio",
+      "en": "Aluminium",
+      "fr": "Aluminium",
+      "family": "post_transition_metal",
+      "group": 13,
+      "period": 3,
+      "state": "solid",
+      "mp": 660.32
+    },
+    "story": {
+      "it": "È una firma gamma della Via Lattea e racconta la nucleosintesi recente e il primo Sistema Solare.",
+      "en": "It is a gamma signature of the Milky Way, telling of recent nucleosynthesis and the early Solar System.",
+      "fr": "C’est une signature gamma de la Voie lactée, racontant la nucléosynthèse récente et le jeune Système solaire."
+    },
+    "concepts": [
+      "chemistry.post_transition_metal",
+      "space.application",
+      "space.meteorites",
+      "space.stellar"
+    ],
+    "decayModes": [
+      "beta+"
+    ],
+    "radiations": [
+      "beta+",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "esa_integral",
+      "nasa_rps",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "2.26e13",
+      "decayModes": [
+        "beta+"
+      ],
+      "displayedRadiations": [
+        "beta+",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Fe-60",
+    "name": {
+      "it": "Ferro-60",
+      "en": "Iron-60",
+      "fr": "Fer-60"
+    },
+    "Z": 26,
+    "A": 60,
+    "seconds": "8.27e13",
+    "modes": [
+      "beta-",
+      "gamma"
+    ],
+    "tags": [
+      "stellar",
+      "supernova"
+    ],
+    "original": false,
+    "story_it": "Può lasciare tracce di supernove avvenute vicino alla Terra.",
+    "symbol": "Fe",
+    "element": {
+      "it": "Ferro",
+      "en": "Iron",
+      "fr": "Fer",
+      "family": "transition_metal",
+      "group": 8,
+      "period": 4,
+      "state": "solid",
+      "mp": 1538
+    },
+    "story": {
+      "it": "È ferro radioattivo capace di raccontare supernove avvenute relativamente vicino alla Terra.",
+      "en": "It is radioactive iron capable of telling of supernovae relatively close to Earth.",
+      "fr": "C’est du fer radioactif capable de raconter des supernovæ relativement proches de la Terre."
+    },
+    "concepts": [
+      "chemistry.transition_metal",
+      "space.stellar",
+      "space.supernova"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "esa_integral",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "8.27e13",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Cl-36",
+    "name": {
+      "it": "Cloro-36",
+      "en": "Chlorine-36",
+      "fr": "Chlore-36"
+    },
+    "Z": 17,
+    "A": 36,
+    "seconds": "9.49e12",
+    "modes": [
+      "beta-"
+    ],
+    "tags": [
+      "natural",
+      "cosmogenic",
+      "dating",
+      "environment"
+    ],
+    "original": false,
+    "story_it": "Radionuclide cosmogenico utile nello studio di acque e tempi geologici.",
+    "symbol": "Cl",
+    "element": {
+      "it": "Cloro",
+      "en": "Chlorine",
+      "fr": "Chlore",
+      "family": "halogen",
+      "group": 17,
+      "period": 3,
+      "state": "gas",
+      "mp": -101.5
+    },
+    "story": {
+      "it": "Cosmogenico e molto longevo, aiuta a studiare acque sotterranee antiche.",
+      "en": "Cosmogenic and very long-lived, it helps study ancient groundwater.",
+      "fr": "Cosmogénique et à très longue vie, il aide à étudier les eaux souterraines anciennes."
+    },
+    "concepts": [
+      "chemistry.halogen",
+      "earth.dating",
+      "environment.monitoring",
+      "nature.cosmogenic",
+      "nature.natural"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "nist_c14",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "9.49e12",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Pb-210",
+    "name": {
+      "it": "Piombo-210",
+      "en": "Lead-210",
+      "fr": "Plomb-210"
+    },
+    "Z": 82,
+    "A": 210,
+    "seconds": "7.04e8",
+    "modes": [
+      "beta-",
+      "gamma"
+    ],
+    "tags": [
+      "natural",
+      "radon",
+      "environment",
+      "dating"
+    ],
+    "original": false,
+    "story_it": "Discendente del radon, è impiegato nello studio di sedimenti e deposizioni recenti.",
+    "symbol": "Pb",
+    "element": {
+      "it": "Piombo",
+      "en": "Lead",
+      "fr": "Plomb",
+      "family": "post_transition_metal",
+      "group": 14,
+      "period": 6,
+      "state": "solid",
+      "mp": 327.46
+    },
+    "story": {
+      "it": "Discendente della catena del radon, può funzionare da orologio per sedimenti recenti.",
+      "en": "A descendant of the radon chain, it can act as a clock for recent sediments.",
+      "fr": "Descendant de la chaîne du radon, il peut servir d’horloge pour les sédiments récents."
+    },
+    "concepts": [
+      "chemistry.post_transition_metal",
+      "earth.dating",
+      "earth.sediment_dating",
+      "environment.monitoring",
+      "nature.natural",
+      "nature.radon_chain"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "who_radon",
+      "nist_c14",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "7.04e8",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Po-210",
+    "name": {
+      "it": "Polonio-210",
+      "en": "Polonium-210",
+      "fr": "Polonium-210"
+    },
+    "Z": 84,
+    "A": 210,
+    "seconds": "1.196e7",
+    "modes": [
+      "alpha"
+    ],
+    "tags": [
+      "natural",
+      "food",
+      "history"
+    ],
+    "original": false,
+    "story_it": "Emettitore alfa della catena naturale dell’uranio, con una storia nota anche fuori dai laboratori.",
+    "symbol": "Po",
+    "element": {
+      "it": "Polonio",
+      "en": "Polonium",
+      "fr": "Polonium",
+      "family": "post_transition_metal",
+      "group": 16,
+      "period": 6,
+      "state": "solid",
+      "mp": 254
+    },
+    "story": {
+      "it": "Emettitore alfa naturale nella catena dell’uranio, è noto anche per eventi di contaminazione intenzionale.",
+      "en": "A natural alpha emitter in the uranium chain, it is also known from intentional contamination events.",
+      "fr": "Émetteur alpha naturel de la chaîne de l’uranium, il est aussi connu pour des événements de contamination intentionnelle."
+    },
+    "concepts": [
+      "chemistry.post_transition_metal",
+      "environment.food_monitoring",
+      "nature.natural"
+    ],
+    "decayModes": [
+      "alpha"
+    ],
+    "radiations": [
+      "alpha"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_fukushima",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "1.196e7",
+      "decayModes": [
+        "alpha"
+      ],
+      "displayedRadiations": [
+        "alpha"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Am-241",
+    "name": {
+      "it": "Americio-241",
+      "en": "Americium-241",
+      "fr": "Américium-241"
+    },
+    "Z": 95,
+    "A": 241,
+    "seconds": "1.365e10",
+    "modes": [
+      "alpha",
+      "gamma"
+    ],
+    "tags": [
+      "waste",
+      "industry",
+      "smoke"
+    ],
+    "original": false,
+    "story_it": "È noto per l’impiego in alcuni rivelatori di fumo a ionizzazione.",
+    "symbol": "Am",
+    "element": {
+      "it": "Americio",
+      "en": "Americium",
+      "fr": "Américium",
+      "family": "actinide",
+      "group": null,
+      "period": 7,
+      "state": "solid",
+      "mp": 1176
+    },
+    "story": {
+      "it": "È il radionuclide nascosto in molti rilevatori di fumo a ionizzazione.",
+      "en": "It is the radionuclide hidden inside many ionisation smoke detectors.",
+      "fr": "C’est le radionucléide caché dans de nombreux détecteurs de fumée à ionisation."
+    },
+    "concepts": [
+      "chemistry.actinide",
+      "daily.smoke_detector",
+      "environment.radioactive_waste",
+      "industry.application"
+    ],
+    "decayModes": [
+      "alpha"
+    ],
+    "radiations": [
+      "alpha",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import",
+        "selectedForFutureImport": true
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "nrc_smoke",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "1.365e10",
+      "decayModes": [
+        "alpha"
+      ],
+      "displayedRadiations": [
+        "alpha",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Pu-238",
+    "name": {
+      "it": "Plutonio-238",
+      "en": "Plutonium-238",
+      "fr": "Plutonium-238"
+    },
+    "Z": 94,
+    "A": 238,
+    "seconds": "2.77e9",
+    "modes": [
+      "alpha"
+    ],
+    "tags": [
+      "space",
+      "energy",
+      "rtg"
+    ],
+    "original": false,
+    "story_it": "Il calore del suo decadimento ha alimentato generatori radioisotopici per missioni spaziali.",
+    "symbol": "Pu",
+    "element": {
+      "it": "Plutonio",
+      "en": "Plutonium",
+      "fr": "Plutonium",
+      "family": "actinide",
+      "group": null,
+      "period": 7,
+      "state": "solid",
+      "mp": 640
+    },
+    "story": {
+      "it": "Il calore del suo decadimento alimenta sonde e rover spaziali tramite generatori radioisotopici.",
+      "en": "Heat from its decay powers space probes and rovers through radioisotope generators.",
+      "fr": "La chaleur de sa décroissance alimente sondes et rovers spatiaux grâce à des générateurs radioisotopiques."
+    },
+    "concepts": [
+      "chemistry.actinide",
+      "space.application",
+      "space.spacecraft_power"
+    ],
+    "decayModes": [
+      "alpha"
+    ],
+    "radiations": [
+      "alpha"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "nasa_rps",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "2.77e9",
+      "decayModes": [
+        "alpha"
+      ],
+      "displayedRadiations": [
+        "alpha"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Pu-239",
+    "name": {
+      "it": "Plutonio-239",
+      "en": "Plutonium-239",
+      "fr": "Plutonium-239"
+    },
+    "Z": 94,
+    "A": 239,
+    "seconds": "7.60e11",
+    "modes": [
+      "alpha",
+      "sf"
+    ],
+    "tags": [
+      "fuel",
+      "waste",
+      "fission"
+    ],
+    "original": false,
+    "story_it": "È fissile e centrale nella storia del combustibile nucleare e della non proliferazione.",
+    "symbol": "Pu",
+    "element": {
+      "it": "Plutonio",
+      "en": "Plutonium",
+      "fr": "Plutonium",
+      "family": "actinide",
+      "group": null,
+      "period": 7,
+      "state": "solid",
+      "mp": 640
+    },
+    "story": {
+      "it": "È fissile ed è strettamente legato alla storia dei reattori, del combustibile e delle armi nucleari.",
+      "en": "It is fissile and closely linked to the history of reactors, fuel and nuclear weapons.",
+      "fr": "Il est fissile et étroitement lié à l’histoire des réacteurs, du combustible et des armes nucléaires."
+    },
+    "concepts": [
+      "chemistry.actinide",
+      "environment.radioactive_waste",
+      "history.weapons",
+      "nuclear.fissile",
+      "nuclear.fission_related",
+      "nuclear.reactor_fuel"
+    ],
+    "decayModes": [
+      "alpha",
+      "sf"
+    ],
+    "radiations": [
+      "alpha",
+      "sf"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import",
+        "selectedForFutureImport": true
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "7.60e11",
+      "decayModes": [
+        "alpha",
+        "sf"
+      ],
+      "displayedRadiations": [
+        "alpha",
+        "sf"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Np-237",
+    "name": {
+      "it": "Nettunio-237",
+      "en": "Neptunium-237",
+      "fr": "Neptunium-237"
+    },
+    "Z": 93,
+    "A": 237,
+    "seconds": "6.75e13",
+    "modes": [
+      "alpha"
+    ],
+    "tags": [
+      "waste",
+      "actinide"
+    ],
+    "original": false,
+    "story_it": "La lunga vita lo rende di interesse nella gestione a lungo termine dei rifiuti.",
+    "symbol": "Np",
+    "element": {
+      "it": "Nettunio",
+      "en": "Neptunium",
+      "fr": "Neptunium",
+      "family": "actinide",
+      "group": null,
+      "period": 7,
+      "state": "solid",
+      "mp": 644
+    },
+    "story": {
+      "it": "È un attinide a lunga vita rilevante per l’evoluzione dei rifiuti radioattivi.",
+      "en": "It is a long-lived actinide relevant to the evolution of radioactive waste.",
+      "fr": "C’est un actinide à vie longue pertinent pour l’évolution des déchets radioactifs."
+    },
+    "concepts": [
+      "chemistry.actinide",
+      "environment.radioactive_waste"
+    ],
+    "decayModes": [
+      "alpha"
+    ],
+    "radiations": [
+      "alpha"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import",
+        "selectedForFutureImport": true
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "6.75e13",
+      "decayModes": [
+        "alpha"
+      ],
+      "displayedRadiations": [
+        "alpha"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Cm-244",
+    "name": {
+      "it": "Curio-244",
+      "en": "Curium-244",
+      "fr": "Curium-244"
+    },
+    "Z": 96,
+    "A": 244,
+    "seconds": "5.71e8",
+    "modes": [
+      "alpha",
+      "sf"
+    ],
+    "tags": [
+      "waste",
+      "space",
+      "neutron"
+    ],
+    "original": false,
+    "story_it": "Emette calore e neutroni da fissione spontanea.",
+    "symbol": "Cm",
+    "element": {
+      "it": "Curio",
+      "en": "Curium",
+      "fr": "Curium",
+      "family": "actinide",
+      "group": null,
+      "period": 7,
+      "state": "solid",
+      "mp": 1340
+    },
+    "story": {
+      "it": "È un alfa-emettitore che produce calore e può contribuire a sorgenti neutroniche da fissione spontanea.",
+      "en": "It is an alpha emitter producing heat and contributing to neutron sources through spontaneous fission.",
+      "fr": "C’est un émetteur alpha produisant de la chaleur et pouvant contribuer à des sources neutroniques par fission spontanée."
+    },
+    "concepts": [
+      "chemistry.actinide",
+      "environment.radioactive_waste",
+      "expert.neutron_relevance",
+      "expert.neutron_source",
+      "space.application"
+    ],
+    "decayModes": [
+      "alpha",
+      "sf"
+    ],
+    "radiations": [
+      "alpha",
+      "sf"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import",
+        "selectedForFutureImport": true
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "nasa_rps",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "5.71e8",
+      "decayModes": [
+        "alpha",
+        "sf"
+      ],
+      "displayedRadiations": [
+        "alpha",
+        "sf"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Cf-252",
+    "name": {
+      "it": "Californio-252",
+      "en": "Californium-252",
+      "fr": "Californium-252"
+    },
+    "Z": 98,
+    "A": 252,
+    "seconds": "8.35e7",
+    "modes": [
+      "alpha",
+      "sf"
+    ],
+    "tags": [
+      "industry",
+      "neutron",
+      "research"
+    ],
+    "original": false,
+    "story_it": "La fissione spontanea lo rende una sorgente intensa di neutroni.",
+    "symbol": "Cf",
+    "element": {
+      "it": "Californio",
+      "en": "Californium",
+      "fr": "Californium",
+      "family": "actinide",
+      "group": null,
+      "period": 7,
+      "state": "solid",
+      "mp": 900
+    },
+    "story": {
+      "it": "La fissione spontanea lo rende una sorgente compatta e intensa di neutroni.",
+      "en": "Spontaneous fission makes it a compact and intense neutron source.",
+      "fr": "Sa fission spontanée en fait une source compacte et intense de neutrons."
+    },
+    "concepts": [
+      "chemistry.actinide",
+      "expert.neutron_relevance",
+      "expert.neutron_source",
+      "industry.application"
+    ],
+    "decayModes": [
+      "alpha",
+      "sf"
+    ],
+    "radiations": [
+      "alpha",
+      "sf"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import",
+        "selectedForFutureImport": true
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "8.35e7",
+      "decayModes": [
+        "alpha",
+        "sf"
+      ],
+      "displayedRadiations": [
+        "alpha",
+        "sf"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Co-57",
+    "name": {
+      "it": "Cobalto-57",
+      "en": "Cobalt-57",
+      "fr": "Cobalt-57"
+    },
+    "Z": 27,
+    "A": 57,
+    "seconds": "2.35e7",
+    "modes": [
+      "ec",
+      "gamma"
+    ],
+    "tags": [
+      "medical",
+      "calibration"
+    ],
+    "original": false,
+    "story_it": "Le emissioni gamma sono utili in controlli e calibrazioni strumentali.",
+    "symbol": "Co",
+    "element": {
+      "it": "Cobalto",
+      "en": "Cobalt",
+      "fr": "Cobalt",
+      "family": "transition_metal",
+      "group": 9,
+      "period": 4,
+      "state": "solid",
+      "mp": 1495
+    },
+    "story": {
+      "it": "Le sue emissioni sono utilizzate in controlli e calibrazioni di strumenti gamma.",
+      "en": "Its emissions are used in checks and calibration of gamma instruments.",
+      "fr": "Ses émissions sont utilisées pour le contrôle et l’étalonnage d’instruments gamma."
+    },
+    "concepts": [
+      "chemistry.transition_metal",
+      "medical.hospital"
+    ],
+    "decayModes": [
+      "ec"
+    ],
+    "radiations": [
+      "ec",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "2.35e7",
+      "decayModes": [
+        "ec"
+      ],
+      "displayedRadiations": [
+        "ec",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "In-111",
+    "name": {
+      "it": "Indio-111",
+      "en": "Indium-111",
+      "fr": "Indium-111"
+    },
+    "Z": 49,
+    "A": 111,
+    "seconds": "242000",
+    "modes": [
+      "ec",
+      "gamma"
+    ],
+    "tags": [
+      "medical",
+      "diagnosis",
+      "spect"
+    ],
+    "original": false,
+    "story_it": "È stato utilizzato in imaging medico con traccianti marcati.",
+    "symbol": "In",
+    "element": {
+      "it": "Indio",
+      "en": "Indium",
+      "fr": "Indium",
+      "family": "post_transition_metal",
+      "group": 13,
+      "period": 5,
+      "state": "solid",
+      "mp": 156.6
+    },
+    "story": {
+      "it": "È stato impiegato in imaging medico con traccianti marcati e rivelazione gamma.",
+      "en": "It has been used in medical imaging with labelled tracers and gamma detection.",
+      "fr": "Il a été employé en imagerie médicale avec des traceurs marqués et une détection gamma."
+    },
+    "concepts": [
+      "chemistry.post_transition_metal",
+      "medical.hospital",
+      "medical.imaging",
+      "medical.spect"
+    ],
+    "decayModes": [
+      "ec"
+    ],
+    "radiations": [
+      "ec",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_tc99m",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "242000",
+      "decayModes": [
+        "ec"
+      ],
+      "displayedRadiations": [
+        "ec",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Se-75",
+    "name": {
+      "it": "Selenio-75",
+      "en": "Selenium-75",
+      "fr": "Sélénium-75"
+    },
+    "Z": 34,
+    "A": 75,
+    "seconds": "1.034e7",
+    "modes": [
+      "ec",
+      "gamma"
+    ],
+    "tags": [
+      "industry",
+      "research"
+    ],
+    "original": false,
+    "story_it": "Può essere usato come sorgente gamma per controlli industriali non distruttivi.",
+    "symbol": "Se",
+    "element": {
+      "it": "Selenio",
+      "en": "Selenium",
+      "fr": "Sélénium",
+      "family": "nonmetal",
+      "group": 16,
+      "period": 4,
+      "state": "solid",
+      "mp": 221
+    },
+    "story": {
+      "it": "È una sorgente gamma usata in alcune applicazioni di radiografia industriale.",
+      "en": "It is a gamma source used in some industrial radiography applications.",
+      "fr": "C’est une source gamma utilisée dans certaines applications de radiographie industrielle."
+    },
+    "concepts": [
+      "chemistry.nonmetal",
+      "industry.application",
+      "industry.radiography"
+    ],
+    "decayModes": [
+      "ec"
+    ],
+    "radiations": [
+      "ec",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import"
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "1.034e7",
+      "decayModes": [
+        "ec"
+      ],
+      "displayedRadiations": [
+        "ec",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Au-198",
+    "name": {
+      "it": "Oro-198",
+      "en": "Gold-198",
+      "fr": "Or-198"
+    },
+    "Z": 79,
+    "A": 198,
+    "seconds": "232800",
+    "modes": [
+      "beta-",
+      "gamma"
+    ],
+    "tags": [
+      "medical",
+      "tracer",
+      "history"
+    ],
+    "original": false,
+    "story_it": "Racconta la storia dei traccianti e di alcune applicazioni terapeutiche.",
+    "symbol": "Au",
+    "element": {
+      "it": "Oro",
+      "en": "Gold",
+      "fr": "Or",
+      "family": "transition_metal",
+      "group": 11,
+      "period": 6,
+      "state": "solid",
+      "mp": 1064.18
+    },
+    "story": {
+      "it": "Racconta la storia dei radiotraccianti e di alcune applicazioni terapeutiche dell’oro radioattivo.",
+      "en": "It tells the history of radiotracers and some therapeutic applications of radioactive gold.",
+      "fr": "Il raconte l’histoire des radiotraceurs et de certaines applications thérapeutiques de l’or radioactif."
+    },
+    "concepts": [
+      "chemistry.transition_metal",
+      "medical.hospital"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-",
+      "gamma"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": null,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": null,
+        "status": "awaiting_numeric_import",
+        "selectedForFutureImport": true
+      },
+      "neutronNote": "IAEA NGATLAS fornisce sezioni d’urto (n,γ) in funzione dell’energia; il valore quantitativo non è ancora stato trascritto nella carta."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "iaea_medicine",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "232800",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-",
+        "gamma"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  },
+  {
+    "id": "Rb-87",
+    "name": {
+      "it": "Rubidio-87",
+      "en": "Rubidium-87",
+      "fr": "Rubidium-87"
+    },
+    "Z": 37,
+    "A": 87,
+    "seconds": "1.54e18",
+    "modes": [
+      "beta-"
+    ],
+    "tags": [
+      "natural",
+      "dating",
+      "geology"
+    ],
+    "original": false,
+    "story_it": "Il sistema rubidio-stronzio è un orologio per ricostruire la storia delle rocce.",
+    "symbol": "Rb",
+    "element": {
+      "it": "Rubidio",
+      "en": "Rubidium",
+      "fr": "Rubidium",
+      "family": "alkali_metal",
+      "group": 1,
+      "period": 5,
+      "state": "solid",
+      "mp": 39.31
+    },
+    "story": {
+      "it": "Il sistema rubidio-stronzio è un orologio per ricostruire l’età e la storia delle rocce.",
+      "en": "The rubidium-strontium system is a clock used to reconstruct the age and history of rocks.",
+      "fr": "Le système rubidium-strontium est une horloge servant à reconstruire l’âge et l’histoire des roches."
+    },
+    "concepts": [
+      "chemistry.alkali_metal",
+      "earth.dating",
+      "earth.geology_dating",
+      "nature.natural"
+    ],
+    "decayModes": [
+      "beta-"
+    ],
+    "radiations": [
+      "beta-"
+    ],
+    "expert": {
+      "thermalNeutronCaptureBarn": 0.12,
+      "thermalNeutronAbsorptionBarn": null,
+      "neutronCapture": {
+        "reaction": "(n,γ)",
+        "source": "iaea_indc_440",
+        "atlasReference": "iaea_ngatlas",
+        "energyRange": "1e-5 eV – 20 MeV",
+        "thermalBarn": 0.12,
+        "uncertaintyBarn": 0.03,
+        "thermalDefinition": "2200 m/s neutron capture",
+        "status": "curated_thermal_value"
+      },
+      "neutronNote": "Valore termico di cattura (n,γ) verificato da IAEA INDC(NDS)-440; NGATLAS resta il riferimento per la dipendenza dall’energia."
+    },
+    "sourceKeys": [
+      "lnhb_lara",
+      "iaea_livechart",
+      "rsc_elements",
+      "nist_c14",
+      "iaea_indc_440",
+      "iaea_ngatlas"
+    ],
+    "physics": {
+      "halfLifeSeconds": "1.54e18",
+      "decayModes": [
+        "beta-"
+      ],
+      "displayedRadiations": [
+        "beta-"
+      ],
+      "note": {
+        "it": "Le icone della carta mostrano i decadimenti o le radiazioni utili al gioco; per i dati completi consultare LARAweb.",
+        "en": "Card icons show decay or radiation useful for the game; consult LARAweb for complete data.",
+        "fr": "Les icônes de la carte montrent les désintégrations ou rayonnements utiles au jeu ; consulter LARAweb pour les données complètes."
+      }
+    }
+  }
+]
