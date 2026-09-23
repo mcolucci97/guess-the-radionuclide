@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-20T14:23:26.434Z",
+  "checks": [
+    "Desktop home",
+    "IT/EN/FR switching",
+    "English and French lesson content and diagrams",
+    "Atlas, sources and keyboard close",
+    "Confirm question; no same-turn guess",
+    "Computer turn",
+    "No missing-model download offered; offline interpreter available",
+    "Complete local match and private device handoff",
+    "Offline reload and 59 cards",
+    "Mobile and 200% text"
+  ],
+  "passed": 10,
+  "pageErrors": [],
+  "llmInference": "Generative inference not part of the game test; missing-model state verified, WebGPU disabled deliberately"
+}

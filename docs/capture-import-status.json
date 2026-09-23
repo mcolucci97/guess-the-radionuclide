@@ -1,0 +1,356 @@
+{
+  "Tb-149": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Tb149-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "At-211": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/At211-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "O-15": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/O15-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "N-13": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/N13-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "F-18": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/F18-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "I-123": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/I123-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "I-125": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/I125-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "C-14": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/C14-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "H-3": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/H3-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "I-131": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/I131-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Co-60": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Co60-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Tb-161": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Tb161-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Cs-137": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Cs137-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Y-90": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Y90-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Sr-89": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Sr89-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Lu-177": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Lu177-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Ir-192": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Ir192-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Kr-85": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Kr85-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Be-7": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Be7-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "U-235": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/U235-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "U-238": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/U238-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Rn-222": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Rn222-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Ra-226": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Ra226-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Th-232": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Th232-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "K-40": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/K40-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Tc-99m": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Tc99m-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Ga-68": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Ga68-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Cu-64": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Cu64-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Zr-89": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Zr89-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Ac-225": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Ac225-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Ra-223": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Ra223-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Sm-153": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Sm153-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "P-32": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/P32-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Mo-99": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Mo99-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Ge-68": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Ge68-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "C-11": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/C11-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Cs-134": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Cs134-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Sr-90": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Sr90-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "I-129": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/I129-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Tc-99": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Tc99-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Xe-133": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Xe133-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Xe-135": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Xe135-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Na-22": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Na22-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Al-26": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Al26-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Fe-60": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Fe60-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Cl-36": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Cl36-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Pb-210": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Pb210-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Po-210": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Po210-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Am-241": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Am241-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Pu-238": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Pu238-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Pu-239": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Pu239-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Np-237": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Np237-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Cm-244": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Cm244-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Cf-252": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Cf252-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Co-57": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Co57-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "In-111": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/In111-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Se-75": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Se75-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Au-198": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Au198-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "Rb-87": {
+    "barn": null,
+    "sourceUrl": "https://www-nds.iaea.org/ngatlas2/dat/Rb87-102.dat",
+    "status": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+}

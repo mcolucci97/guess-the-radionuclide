@@ -1,0 +1,266 @@
+[
+  {
+    "id": "Tb-149",
+    "oldSeconds": "14760",
+    "evaluatedSeconds": 14832.0,
+    "relativeChange": 0.0048543689320388345
+  },
+  {
+    "id": "O-15",
+    "oldSeconds": "122.2",
+    "evaluatedSeconds": 122.24,
+    "relativeChange": 0.00032722513088998727
+  },
+  {
+    "id": "I-123",
+    "oldSeconds": "47570",
+    "evaluatedSeconds": 47602.8,
+    "relativeChange": 0.0006890350987757633
+  },
+  {
+    "id": "C-14",
+    "oldSeconds": "1.808e11",
+    "evaluatedSeconds": 179874478055.1744,
+    "relativeChange": -0.005145376680630027
+  },
+  {
+    "id": "H-3",
+    "oldSeconds": "3.889e8",
+    "evaluatedSeconds": 388781328.00697345,
+    "relativeChange": -0.00030524097861105615
+  },
+  {
+    "id": "I-131",
+    "oldSeconds": "693100",
+    "evaluatedSeconds": 693377.28,
+    "relativeChange": 0.00039989772955933593
+  },
+  {
+    "id": "Co-60",
+    "oldSeconds": "1.663e8",
+    "evaluatedSeconds": 166344192.0,
+    "relativeChange": 0.00026566602337399313
+  },
+  {
+    "id": "Cs-137",
+    "oldSeconds": "9.49e8",
+    "evaluatedSeconds": 949232333.3157274,
+    "relativeChange": 0.00024475916756417097
+  },
+  {
+    "id": "Y-90",
+    "oldSeconds": "230400",
+    "evaluatedSeconds": 230580.0,
+    "relativeChange": 0.00078064012490242
+  },
+  {
+    "id": "Sr-89",
+    "oldSeconds": "4360000",
+    "evaluatedSeconds": 4368643.2,
+    "relativeChange": 0.0019784632446065145
+  },
+  {
+    "id": "Lu-177",
+    "oldSeconds": "574387",
+    "evaluatedSeconds": 574067.52,
+    "relativeChange": -0.0005565199020491202
+  },
+  {
+    "id": "Ir-192",
+    "oldSeconds": "6380000",
+    "evaluatedSeconds": 6378825.6,
+    "relativeChange": -0.0001841091250402539
+  },
+  {
+    "id": "U-235",
+    "oldSeconds": "2.221e16",
+    "evaluatedSeconds": 2.221607588611277e+16,
+    "relativeChange": 0.00027349051848378074
+  },
+  {
+    "id": "Th-232",
+    "oldSeconds": "4.434e17",
+    "evaluatedSeconds": 4.41796963644288e+17,
+    "relativeChange": -0.003628445841929058
+  },
+  {
+    "id": "Ga-68",
+    "oldSeconds": "4076",
+    "evaluatedSeconds": 4062.6,
+    "relativeChange": -0.0032983803475606977
+  },
+  {
+    "id": "Zr-89",
+    "oldSeconds": "282240",
+    "evaluatedSeconds": 282276.0,
+    "relativeChange": 0.00012753475322025253
+  },
+  {
+    "id": "Ac-225",
+    "oldSeconds": "857000",
+    "evaluatedSeconds": 857088.0,
+    "relativeChange": 0.00010267323775388292
+  },
+  {
+    "id": "Ra-223",
+    "oldSeconds": "987000",
+    "evaluatedSeconds": 987552.0,
+    "relativeChange": 0.0005589579080392729
+  },
+  {
+    "id": "Sm-153",
+    "oldSeconds": "166320",
+    "evaluatedSeconds": 166622.4,
+    "relativeChange": 0.0018148820326678418
+  },
+  {
+    "id": "P-32",
+    "oldSeconds": "1.232e6",
+    "evaluatedSeconds": 1232755.2,
+    "relativeChange": 0.0006126114900995376
+  },
+  {
+    "id": "Mo-99",
+    "oldSeconds": "237600",
+    "evaluatedSeconds": 237326.4,
+    "relativeChange": -0.0011528426673139012
+  },
+  {
+    "id": "C-11",
+    "oldSeconds": "1220",
+    "evaluatedSeconds": 1221.84,
+    "relativeChange": 0.0015059254894257172
+  },
+  {
+    "id": "Cs-134",
+    "oldSeconds": "6.51e7",
+    "evaluatedSeconds": 65171363.5227274,
+    "relativeChange": 0.0010950134977997393
+  },
+  {
+    "id": "Sr-90",
+    "oldSeconds": "9.08e8",
+    "evaluatedSeconds": 912310729.9254547,
+    "relativeChange": 0.004725067659575775
+  },
+  {
+    "id": "I-129",
+    "oldSeconds": "4.95e14",
+    "evaluatedSeconds": 495443737801094.4,
+    "relativeChange": 0.0008956371172714716
+  },
+  {
+    "id": "Tc-99",
+    "oldSeconds": "6.66e12",
+    "evaluatedSeconds": 6661667073236.371,
+    "relativeChange": 0.0002502486566866507
+  },
+  {
+    "id": "Xe-133",
+    "oldSeconds": "453100",
+    "evaluatedSeconds": 453384.0,
+    "relativeChange": 0.0006264005787588446
+  },
+  {
+    "id": "Xe-135",
+    "oldSeconds": "32900",
+    "evaluatedSeconds": 32904.0,
+    "relativeChange": 0.00012156576707999027
+  },
+  {
+    "id": "Al-26",
+    "oldSeconds": "2.26e13",
+    "evaluatedSeconds": 22626315923782.465,
+    "relativeChange": 0.0011630671060684802
+  },
+  {
+    "id": "Fe-60",
+    "oldSeconds": "8.27e13",
+    "evaluatedSeconds": 82679146053431.05,
+    "relativeChange": -0.00025222740635802345
+  },
+  {
+    "id": "Cl-36",
+    "oldSeconds": "9.49e12",
+    "evaluatedSeconds": 9508101796144.57,
+    "relativeChange": 0.0019038286014050028
+  },
+  {
+    "id": "Pb-210",
+    "oldSeconds": "7.04e8",
+    "evaluatedSeconds": 700563756.6359425,
+    "relativeChange": -0.004904968793358849
+  },
+  {
+    "id": "Po-210",
+    "oldSeconds": "1.196e7",
+    "evaluatedSeconds": 11955686.4,
+    "relativeChange": -0.00036079902530729036
+  },
+  {
+    "id": "Am-241",
+    "oldSeconds": "1.365e10",
+    "evaluatedSeconds": 13651526176.6085,
+    "relativeChange": 0.0001117953105576274
+  },
+  {
+    "id": "Pu-238",
+    "oldSeconds": "2.77e9",
+    "evaluatedSeconds": 2767542407.9717183,
+    "relativeChange": -0.0008880051923333719
+  },
+  {
+    "id": "Pu-239",
+    "oldSeconds": "7.60e11",
+    "evaluatedSeconds": 760837485247.4131,
+    "relativeChange": 0.0011007413063260786
+  },
+  {
+    "id": "Np-237",
+    "oldSeconds": "6.75e13",
+    "evaluatedSeconds": 67658049289525.25,
+    "relativeChange": 0.002336001276787018
+  },
+  {
+    "id": "Cm-244",
+    "oldSeconds": "5.71e8",
+    "evaluatedSeconds": 571495929.3998611,
+    "relativeChange": 0.0008677741596197936
+  },
+  {
+    "id": "Cf-252",
+    "oldSeconds": "8.35e7",
+    "evaluatedSeconds": 83531183.05474502,
+    "relativeChange": 0.0003733103447676732
+  },
+  {
+    "id": "Co-57",
+    "oldSeconds": "2.35e7",
+    "evaluatedSeconds": 23478336.0,
+    "relativeChange": -0.0009227229732124117
+  },
+  {
+    "id": "In-111",
+    "oldSeconds": "242000",
+    "evaluatedSeconds": 242326.08,
+    "relativeChange": 0.0013456248704224788
+  },
+  {
+    "id": "Se-75",
+    "oldSeconds": "1.034e7",
+    "evaluatedSeconds": 10348992.0,
+    "relativeChange": 0.0008688768915851901
+  },
+  {
+    "id": "Au-198",
+    "oldSeconds": "232800",
+    "evaluatedSeconds": 232770.24,
+    "relativeChange": -0.00012785139543615762
+  },
+  {
+    "id": "Rb-87",
+    "oldSeconds": "1.54e18",
+    "evaluatedSeconds": 1.5683792209372224e+18,
+    "relativeChange": 0.018094616760010198
+  }
+]

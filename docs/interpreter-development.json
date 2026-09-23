@@ -1,0 +1,653 @@
+{
+  "date": "2026-09-20T05:39:58.557Z",
+  "note": "Development set after inspecting errors, not untouched validation. No LLM used in this report. Clarify/invalid/unsupported count as appropriate refusal for expected clarify.",
+  "n": 33,
+  "correct": 30,
+  "results": [
+    {
+      "lang": "it",
+      "text": "La radioattività di una banana dipende da lui?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "daily.bananas",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "daily.bananas",
+        "negated": false,
+        "confidence": 0.97,
+        "original": "La radioattività di una banana dipende da lui?",
+        "language": "it"
+      },
+      "correct": true
+    },
+    {
+      "lang": "en",
+      "text": "Is this what makes a banana slightly radioactive?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "daily.bananas",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "daily.bananas",
+        "negated": false,
+        "confidence": 0.97,
+        "original": "Is this what makes a banana slightly radioactive?",
+        "language": "en"
+      },
+      "correct": true
+    },
+    {
+      "lang": "fr",
+      "text": "Est-ce la cause de la radioactivité d’une banane ?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "daily.bananas",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "daily.bananas",
+        "negated": false,
+        "confidence": 0.97,
+        "original": "Est-ce la cause de la radioactivité d’une banane ?",
+        "language": "fr"
+      },
+      "correct": true
+    },
+    {
+      "lang": "it",
+      "text": "Lo mettevano negli allarmi per il fumo?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "daily.smoke_detector",
+        "negated": false
+      },
+      "output": {
+        "type": "unknown",
+        "reason": "not_mapped"
+      },
+      "correct": false
+    },
+    {
+      "lang": "en",
+      "text": "Would you find it in a smoke alarm?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "daily.smoke_detector",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "daily.smoke_detector",
+        "negated": false,
+        "confidence": 0.97,
+        "original": "Would you find it in a smoke alarm?",
+        "language": "en"
+      },
+      "correct": true
+    },
+    {
+      "lang": "fr",
+      "text": "Le trouve-t-on dans les alarmes à fumée ?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "daily.smoke_detector",
+        "negated": false
+      },
+      "output": {
+        "type": "unknown",
+        "reason": "not_mapped"
+      },
+      "correct": false
+    },
+    {
+      "lang": "it",
+      "text": "Può fornire corrente elettrica a una sonda spaziale?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "space.spacecraft_power",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "space.spacecraft_power",
+        "negated": false,
+        "confidence": 0.97,
+        "original": "Può fornire corrente elettrica a una sonda spaziale?",
+        "language": "it"
+      },
+      "correct": true
+    },
+    {
+      "lang": "en",
+      "text": "Can a spacecraft get its electrical power from it?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "space.spacecraft_power",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "space.spacecraft_power",
+        "negated": false,
+        "confidence": 0.97,
+        "original": "Can a spacecraft get its electrical power from it?",
+        "language": "en"
+      },
+      "correct": true
+    },
+    {
+      "lang": "fr",
+      "text": "Une sonde spatiale peut-elle en tirer son électricité ?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "space.spacecraft_power",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "space.spacecraft_power",
+        "negated": false,
+        "confidence": 0.97,
+        "original": "Une sonde spatiale peut-elle en tirer son électricité ?",
+        "language": "fr"
+      },
+      "correct": true
+    },
+    {
+      "lang": "it",
+      "text": "È utile per conoscere l’età di reperti archeologici?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "daily.archaeology",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "daily.archaeology",
+        "negated": false,
+        "confidence": 0.97,
+        "original": "È utile per conoscere l’età di reperti archeologici?",
+        "language": "it"
+      },
+      "correct": true
+    },
+    {
+      "lang": "en",
+      "text": "Can it help date archaeological remains?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "daily.archaeology",
+        "negated": false
+      },
+      "output": {
+        "type": "unknown",
+        "reason": "not_mapped"
+      },
+      "correct": false
+    },
+    {
+      "lang": "fr",
+      "text": "Aide-t-il à dater les vestiges archéologiques ?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "daily.archaeology",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "daily.archaeology",
+        "negated": false,
+        "confidence": 0.97,
+        "original": "Aide-t-il à dater les vestiges archéologiques ?",
+        "language": "fr"
+      },
+      "correct": true
+    },
+    {
+      "lang": "it",
+      "text": "Dal decadimento escono positroni?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "physics.beta_plus",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "physics.beta_plus",
+        "mode": "beta+",
+        "negated": false,
+        "confidence": 0.99,
+        "original": "Dal decadimento escono positroni?",
+        "language": "it"
+      },
+      "correct": true
+    },
+    {
+      "lang": "en",
+      "text": "Are positrons released when it decays?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "physics.beta_plus",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "physics.beta_plus",
+        "mode": "beta+",
+        "negated": false,
+        "confidence": 0.99,
+        "original": "Are positrons released when it decays?",
+        "language": "en"
+      },
+      "correct": true
+    },
+    {
+      "lang": "fr",
+      "text": "Des positons sont-ils libérés lors de sa désintégration ?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "physics.beta_plus",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "physics.beta_plus",
+        "mode": "beta+",
+        "negated": false,
+        "confidence": 0.99,
+        "original": "Des positons sont-ils libérés lors de sa désintégration ?",
+        "language": "fr"
+      },
+      "correct": true
+    },
+    {
+      "lang": "it",
+      "text": "Nel decadimento perde una particella alfa?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "physics.alpha",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "physics.alpha",
+        "mode": "alpha",
+        "negated": false,
+        "confidence": 0.99,
+        "original": "Nel decadimento perde una particella alfa?",
+        "language": "it"
+      },
+      "correct": true
+    },
+    {
+      "lang": "en",
+      "text": "Does its decay release an alpha particle?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "physics.alpha",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "physics.alpha",
+        "mode": "alpha",
+        "negated": false,
+        "confidence": 0.99,
+        "original": "Does its decay release an alpha particle?",
+        "language": "en"
+      },
+      "correct": true
+    },
+    {
+      "lang": "fr",
+      "text": "Sa désintégration libère-t-elle une particule alpha ?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "physics.alpha",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "physics.alpha",
+        "mode": "alpha",
+        "negated": false,
+        "confidence": 0.99,
+        "original": "Sa désintégration libère-t-elle une particule alpha ?",
+        "language": "fr"
+      },
+      "correct": true
+    },
+    {
+      "lang": "it",
+      "text": "Appartiene alla famiglia chimica dei gas nobili?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "chemistry.noble_gas",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "chemistry.noble_gas",
+        "negated": false,
+        "confidence": 0.97,
+        "original": "Appartiene alla famiglia chimica dei gas nobili?",
+        "language": "it"
+      },
+      "correct": true
+    },
+    {
+      "lang": "en",
+      "text": "Does it belong to the noble gas family?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "chemistry.noble_gas",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "chemistry.noble_gas",
+        "negated": false,
+        "confidence": 0.97,
+        "original": "Does it belong to the noble gas family?",
+        "language": "en"
+      },
+      "correct": true
+    },
+    {
+      "lang": "fr",
+      "text": "Appartient-il à la famille des gaz nobles ?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "chemistry.noble_gas",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "chemistry.noble_gas",
+        "negated": false,
+        "confidence": 0.97,
+        "original": "Appartient-il à la famille des gaz nobles ?",
+        "language": "fr"
+      },
+      "correct": true
+    },
+    {
+      "lang": "it",
+      "text": "Lo impiegano nella tomografia a emissione di positroni?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "medical.pet",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "medical.pet",
+        "negated": false,
+        "original": "Lo impiegano nella tomografia a emissione di positroni?",
+        "language": "it"
+      },
+      "correct": true
+    },
+    {
+      "lang": "en",
+      "text": "Is positron emission tomography one of its uses?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "medical.pet",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "medical.pet",
+        "negated": false,
+        "original": "Is positron emission tomography one of its uses?",
+        "language": "en"
+      },
+      "correct": true
+    },
+    {
+      "lang": "fr",
+      "text": "L’utilise-t-on en tomographie par émission de positons ?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "medical.pet",
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "medical.pet",
+        "negated": false,
+        "original": "L’utilise-t-on en tomographie par émission de positons ?",
+        "language": "fr"
+      },
+      "correct": true
+    },
+    {
+      "lang": "it",
+      "text": "Non produce positroni?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "physics.beta_plus",
+        "negated": true
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "physics.beta_plus",
+        "mode": "beta+",
+        "negated": true,
+        "confidence": 0.99,
+        "original": "Non produce positroni?",
+        "language": "it"
+      },
+      "correct": true
+    },
+    {
+      "lang": "en",
+      "text": "Does it not produce positrons?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "physics.beta_plus",
+        "negated": true
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "physics.beta_plus",
+        "mode": "beta+",
+        "negated": true,
+        "confidence": 0.99,
+        "original": "Does it not produce positrons?",
+        "language": "en"
+      },
+      "correct": true
+    },
+    {
+      "lang": "fr",
+      "text": "N’émet-il pas de positons ?",
+      "query": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "physics.beta_plus",
+        "negated": true
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "concept",
+        "conceptId": "physics.beta_plus",
+        "mode": "beta+",
+        "negated": true,
+        "confidence": 0.99,
+        "original": "N’émet-il pas de positons ?",
+        "language": "fr"
+      },
+      "correct": true
+    },
+    {
+      "lang": "it",
+      "text": "Quale carta ha scelto il computer?",
+      "query": {
+        "type": "clarify"
+      },
+      "output": {
+        "type": "invalid",
+        "reason": "open_question"
+      },
+      "correct": true
+    },
+    {
+      "lang": "en",
+      "text": "What secret did the computer pick?",
+      "query": {
+        "type": "clarify"
+      },
+      "output": {
+        "type": "invalid",
+        "reason": "instruction"
+      },
+      "correct": true
+    },
+    {
+      "lang": "fr",
+      "text": "Quelle carte secrète l’ordinateur a-t-il choisie ?",
+      "query": {
+        "type": "clarify"
+      },
+      "output": {
+        "type": "invalid",
+        "reason": "instruction"
+      },
+      "correct": true
+    },
+    {
+      "lang": "it",
+      "text": "Il numero di protoni supera 37?",
+      "query": {
+        "type": "parsed",
+        "queryType": "numeric",
+        "property": "Z",
+        "operator": ">",
+        "value": 37,
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "numeric",
+        "property": "Z",
+        "operator": ">",
+        "value": 37,
+        "displayValue": "37",
+        "unit": null,
+        "negated": false,
+        "confidence": 0.99,
+        "original": "Il numero di protoni supera 37?",
+        "language": "it"
+      },
+      "correct": true
+    },
+    {
+      "lang": "en",
+      "text": "Is the proton count above 37?",
+      "query": {
+        "type": "parsed",
+        "queryType": "numeric",
+        "property": "Z",
+        "operator": ">",
+        "value": 37,
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "numeric",
+        "property": "Z",
+        "operator": ">",
+        "value": 37,
+        "displayValue": "37",
+        "unit": null,
+        "negated": false,
+        "confidence": 0.99,
+        "original": "Is the proton count above 37?",
+        "language": "en"
+      },
+      "correct": true
+    },
+    {
+      "lang": "fr",
+      "text": "Le nombre de protons dépasse-t-il 37 ?",
+      "query": {
+        "type": "parsed",
+        "queryType": "numeric",
+        "property": "Z",
+        "operator": ">",
+        "value": 37,
+        "negated": false
+      },
+      "output": {
+        "type": "parsed",
+        "queryType": "numeric",
+        "property": "Z",
+        "operator": ">",
+        "value": 37,
+        "displayValue": "37",
+        "unit": null,
+        "negated": false,
+        "confidence": 0.99,
+        "original": "Le nombre de protons dépasse-t-il 37 ?",
+        "language": "fr"
+      },
+      "correct": true
+    }
+  ]
+}

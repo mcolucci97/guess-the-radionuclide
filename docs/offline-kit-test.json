@@ -1,0 +1,11 @@
+{
+  "test": "Tiny random local Qwen2 model, CPU only",
+  "passed": [
+    "Training checkpoints include optimizer/scheduler/RNG",
+    "Incomplete checkpoint skipped; resume reproduces identical final adapter tensors",
+    "Warm start from adapter",
+    "Evaluation retains all 3 rows",
+    "Adapter merge exports safetensors"
+  ],
+  "limitations": "Not a scientific-model training run; CUDA and full-scale new Trainer workflow not executed."
+}
