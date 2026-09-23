@@ -1,0 +1,8 @@
+mean_energy,unc_me,intensity_beta,unc_ib,daughter_level_hl,daughter_level_energy,energy_ec,unc_eec,intensity_ec,unc_ie,log_ft,unc_lf,transition_type,nu_mean_energy,unc_ame,p_z,p_n,p_symbol,p_energy_shift,p_energy,unc_pe,jp,half_life,operator_hl,unc_hl,unit_hl,half_life_sec,unc_hls,decay,decay_%,unc_d,q,unc_q,d_z,d_n,d_symbol,ensdf_publication_cut-off,ensdf_authors,Extraction_date
+,,,,,2338.48,582.6,1.2,0.0955,0.0022,5.754,0.011,A,,,31,37,Ga,,0,,1+,67.71,,8,m,4062.6,4.8,EC+B+,100,,2921.1,16,30,38,Zn,1-Mar-2012,E.A. McCutchan,2026-09-18
+,,,,,2821.86,99.2,1.2,0.0104,0.0005,5.113,0.024,A,,,31,37,Ga,,0,,1+,67.71,,8,m,4062.6,4.8,EC+B+,100,,2921.1,16,30,38,Zn,1-Mar-2012,E.A. McCutchan,2026-09-18
+,,,,,1883.16,1037.9,1.2,0.230,0.004,5.879,0.008,A,7.6,0.6,31,37,Ga,,0,,1+,67.71,,8,m,4062.6,4.8,EC+B+,100,,2921.1,16,30,38,Zn,1-Mar-2012,E.A. McCutchan,2026-09-18
+107.53,0.51,0.000258,0.000014,,1655.87,1265.2,1.2,0.0328,0.0017,6.898,0.023,A,135.8,0.7,31,37,Ga,,0,,1+,67.71,,8,m,4062.6,4.8,EC+B+,100,,2921.1,16,30,38,Zn,1-Mar-2012,E.A. McCutchan,2026-09-18
+352.59,0.52,1.19,0.01,,1077.36,1843.7,1.2,1.80,0.02,5.489,0.005,A,469.4,0.7,31,37,Ga,,0,,1+,67.71,,8,m,4062.6,4.8,EC+B+,100,,2921.1,16,30,38,Zn,1-Mar-2012,E.A. McCutchan,2026-09-18
+836.02,0.56,87.72,0.09,,0.0,2912,10,8.92,0.08,5.1942,0.0013,A,1063.9,0.6,31,37,Ga,,0,,1+,67.71,,8,m,4062.6,4.8,EC+B+,100,,2921.1,16,30,38,Zn,1-Mar-2012,E.A. McCutchan,2026-09-18
+

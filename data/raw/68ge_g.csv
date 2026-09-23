@@ -1,0 +1,8 @@
+energy,unc_en,intensity,unc_i,start_level_hl,start_level_energy,end_level_hl,end_level_energy,multipolarity,mixing_ratio,unc_mr,conversion_coeff,unc_cc,p_z,p_n,p_symbol,p_energy_shift,p_energy,unc_pe,jp,half_life,operator_hl,unc_hl,unit_hl,half_life_sec,unc_hls,decay,decay_%,unc_d,q,unc_q,d_z,d_n,d_symbol,ensdf_publication_cut-off,ensdf_authors,Extraction_date
+1.127,,1.51654449,0.04951461918127599,,,,,,,,,,32,36,Ge,,0,,0+,270.93,,13,d,23408352,11232,EC,100,,107.3,24,31,37,Ga,1-Mar-2012,E.A. McCutchan,2026-09-18
+9.225,,13.254289646008262,0.12417017311469727,,,,,,,,,,32,36,Ge,,0,,0+,270.93,,13,d,23408352,11232,EC,100,,107.3,24,31,37,Ga,1-Mar-2012,E.A. McCutchan,2026-09-18
+9.252,,25.75648979014431,0.2063149736079707,,,,,,,,,,32,36,Ge,,0,,0+,270.93,,13,d,23408352,11232,EC,100,,107.3,24,31,37,Ga,1-Mar-2012,E.A. McCutchan,2026-09-18
+10.306,,5.649970739410964,0.06478908981507331,,,,,,,,,,32,36,Ge,,0,,0+,270.93,,13,d,23408352,11232,EC,100,,107.3,24,31,37,Ga,1-Mar-2012,E.A. McCutchan,2026-09-18
+10.313,,5.68387056384743,0.06462448380037321,,,,,,,,,,32,36,Ge,,0,,0+,270.93,,13,d,23408352,11232,EC,100,,107.3,24,31,37,Ga,1-Mar-2012,E.A. McCutchan,2026-09-18
+10.365,,0.03389982443646578,0.008483866783087563,,,,,,,,,,32,36,Ge,,0,,0+,270.93,,13,d,23408352,11232,EC,100,,107.3,24,31,37,Ga,1-Mar-2012,E.A. McCutchan,2026-09-18
+
