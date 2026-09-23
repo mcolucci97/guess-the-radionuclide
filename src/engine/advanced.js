@@ -52,11 +52,24 @@ export function ze(text,lang='it'){
  const m=s.match(/(\d+(?:\.\d+)?)\s*(kev|mev)/),op=/(?:maggiore|superiore|greater|above|over|superieur)/.test(s)?'>':/(?:minore|inferiore|less|below|under|inferieur)/.test(s)?'<':null;
  return m&&op?{type:'parsed',queryType:'numeric',property:'principalGammaKeV',operator:op,value:Number(m[1])*(m[2]==='mev'?1000:1),negated:old.Pe(s),original:text,language:lang}:{type:'clarify',reason:'gamma_comparison'};}
  if(/gamma.*(?:kev|mev)|(?:kev|mev).*gamma|auger|conversion electron|elettron.*conversion|section.*absorp|cross section.*absorp/.test(s))return {type:'unsupported',reason:'unavailable_quantity'};
- const specific=[[/tomograf.*positron|positron.*tomograph|tomograph.*posit(?:r)?on/,'medical.pet'],[/alcalino[- ]?terr|alkaline[- ]?earth/,'chemistry.alkaline_earth_metal'],[/post[- ]?(?:transizion|transition)/,'chemistry.post_transition_metal'],[/(?:natur.*(?:cibo|food|aliment)|(?:cibo|food|aliment).*natur)/,'nature.in_food'],[/(?:catena.*radon|radon.*chain|chaine.*radon)/,'nature.radon_chain'],[/orologio naturale|natural clock|horloge naturelle/,'earth.dating'],[/radiograph.*industr|radiograf.*industr/,'industry.radiography']].find(([re])=>re.test(s));
+ const specific=[
+   [/tomograf.*positron|positron.*tomograph|tomograph.*posit(?:r)?on/,'medical.pet'],
+   [/medecine\s+nucleair|nucleair.*medecine/,'medical.hospital'],
+   [/alcalino[- ]?terr|alkaline[- ]?earth/,'chemistry.alkaline_earth_metal'],
+   [/post[- ]?(?:transizion|transition)/,'chemistry.post_transition_metal'],
+   [/(?:natur.*(?:cibo|food|aliment)|(?:cibo|food|aliment).*natur)/,'nature.in_food'],
+   [/(?:catena.*radon|radon.*chain|chaine.*radon)/,'nature.radon_chain'],
+   [/orologio naturale|natural clock|horloge naturelle/,'earth.dating'],
+   [/radiograph.*industr|radiograf.*industr/,'industry.radiography']
+ ].find(([re])=>re.test(s));
  if(specific)return {type:'parsed',queryType:'concept',conceptId:specific[1],negated:old.Pe(s),original:text,language:lang};
  let q=old.ze(s,lang);
  if(q.type==='parsed')return {...q,original:text,language:lang};
- if(q.type==='unknown'){const scores=classify(s,model);if(scores[0]?.score>=.83&&scores[0].score-(scores[1]?.score||0)>=.15)return {type:'parsed',queryType:'concept',conceptId:scores[0].label,negated:old.Pe(s),original:text,language:lang,confidence:scores[0].score,via:'trained-intent'};}
+ if(q.type==='unknown'){
+   const scores=classify(s,model);
+   if(scores[0]?.score>=.30&&scores[0].score-(scores[1]?.score||0)>=.10)
+     return {type:'parsed',queryType:'concept',conceptId:scores[0].label,negated:old.Pe(s),original:text,language:lang,confidence:scores[0].score,via:'trained-intent'};
+ }
  return q;
 }
 export function Ue(card,q,lang='it'){
