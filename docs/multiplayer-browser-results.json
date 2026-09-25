@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-24T23:01:33.708Z",
+  "backend": "Firebase Auth + RTDB emulators; production SDK and actual Security Rules",
+  "checks": [
+    "Two anonymous phones, create/invite/join, exact shared deck, private selections, host starts",
+    "Third identity cannot take a seat",
+    "Exact raw unknown text, mandatory failure escape, manual YES, private manual board, turn sync",
+    "Verbal YES without text; assistance OFF/ON, no auto-answer, successful-parse rejection, confirmed automatic filter",
+    "Mobile layout, refresh retains identity/phase/board, network recovery, browser reopen, no disconnect victory or extra turn",
+    "Confirmed wrong/correct guesses, private responder check, synchronized winner/reveal",
+    "Online IT/EN/FR",
+    "Finished match reset and explicit leave without replacing seats"
+  ],
+  "passed": 8,
+  "pageErrors": []
+}
