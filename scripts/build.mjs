@@ -2,7 +2,10 @@ import fs from 'node:fs/promises';import path from 'node:path';import {build} fr
 const hasLLM=!!(await fs.stat('models/rn-qwen/ndarray-cache.json').catch(()=>null));
 if(hasLLM){const cache=JSON.parse(await fs.readFile('models/rn-qwen/ndarray-cache.json'));for(const name of ['model.wasm','mlc-chat-config.json','tokenizer.json',...cache.records.map(r=>r.dataPath)])await fs.access('models/rn-qwen/'+name);}
 await fs.rm('dist',{recursive:true,force:true});await fs.mkdir('dist',{recursive:true});
-await build({define:{__RN_LLM_AVAILABLE__:JSON.stringify(hasLLM)},entryPoints:['src/App.js','src/engine/llm.worker.js'],outdir:'dist',entryNames:'[name]',chunkNames:'chunks/[name]-[hash]',bundle:true,splitting:true,format:'esm',minify:true,target:'es2022',metafile:true,logLevel:'info'});
+await build({define:{__RN_LLM_AVAILABLE__:JSON.stringify(hasLLM),__RN_EMULATORS__:JSON.stringify(process.env.RN_EMULATORS==='1')},entryPoints:['src/App.js','src/engine/llm.worker.js'],outdir:'dist',entryNames:'[name]',chunkNames:'chunks/[name]-[hash]',bundle:true,splitting:true,format:'esm',minify:true,target:'es2022',metafile:true,logLevel:'info'});
+// Public web config only; offline modes do not need it.
+const firebaseConfig=process.env.RN_FIREBASE_CONFIG||await fs.readFile('firebase-config.json','utf8').catch(()=>null);
+if(firebaseConfig)await fs.writeFile('dist/firebase-config.json',JSON.stringify(JSON.parse(firebaseConfig)));
 await fs.copyFile('src/style.css','dist/style.css');await fs.copyFile('src/upgrade.css','dist/upgrade.css');
 for(const name of ['tutorial','logos'])await fs.cp(name,'dist/'+name,{recursive:true});
 await fs.copyFile('favicon.svg','dist/favicon.svg');

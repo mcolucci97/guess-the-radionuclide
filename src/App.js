@@ -1,4 +1,6 @@
 import tutorialIT from "./data/tutorial-it.json";
+import {multiplayerText} from "./multiplayer/i18n.js";
+import {OnlineGame} from "./multiplayer/OnlineGame.jsx";
 import tutorialEN from "./data/tutorial-en.json";
 import tutorialFR from "./data/tutorial-fr.json";
 const tutorials={it:tutorialIT,en:tutorialEN,fr:tutorialFR};
@@ -731,6 +733,7 @@ function kt({
         (0, j.jsx)(`button`, {
           type: `button`,
           onClick: a.onClick,
+          disabled: a.disabled,
           className: `mx-4 mb-4 w-[calc(100%-2rem)] rounded-lg border border-slate-300 bg-slate-50 px-3 py-2 text-xs font-bold hover:bg-slate-100`,
           children: a.label,
         }),
@@ -1033,6 +1036,7 @@ function Pt({ lang: e, context: t, close: n }) {
   });
 }
 function Ft() {
+  const [guessCandidate,setGuessCandidate]=_.useState(null);
   const [pendingQuery,setPendingQuery]=_.useState(null);
   const busyRef=_.useRef(false);
   const [questionBusy,setQuestionBusy]=_.useState(false);
@@ -1041,7 +1045,7 @@ function Ft() {
   let [e, t] = (0, _.useState)(`it`),
     n = gt[e],
     r = _t[e],
-    [i, a] = (0, _.useState)(`home`),
+    [i, a] = (0, _.useState)(new URL(location.href).searchParams.has('room') ? 'online' : 'home'),
     [o, s] = (0, _.useState)({
       mode: `soloEasy`,
       audience: `adult`,
@@ -1132,6 +1136,8 @@ function Ft() {
       ke(!0));
   }
   function Ye() {
+    setGuessCandidate(null);
+    if(o.mode === 'online'){a('online');return;}
     setPendingQuery(null);setPrivacy(null);
     let e = [...be]; for(let i=e.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[e[i],e[j]]=[e[j],e[i]];} e=e.slice(0,o.deckSize);
     (l(e),
@@ -1342,8 +1348,7 @@ function Ft() {
       o.mode.startsWith(`solo`) ? nt() : (setPrivacy(g===1?2:1),v((e) => (e === 1 ? 2 : 1))));
   }
   function lt(e) {
-    o.assist !== `manual` ||
-      y !== `showAnswer` ||
+    !(o.mode === 'local' && y === 'ask' || o.assist === 'manual' && y === 'showAnswer') ||
       w((t) => ({
         ...t,
         [dt]: t[dt].includes(e) ? t[dt].filter((t) => t !== e) : [...t[dt], e],
@@ -1492,6 +1497,7 @@ function Ft() {
                 [`soloEasy`, n.soloEasy],
                 [`soloHard`, n.soloHard],
                 [`local`, n.local],
+                ['online', multiplayerText[e].online],
               ].map(([e, t]) =>
                 (0, j.jsx)(
                   Et,
@@ -1557,7 +1563,7 @@ function Ft() {
                 ),
               ],
             }),
-            (0, j.jsx)(jt, {
+            o.mode !== 'local' && (0, j.jsx)(jt, {
               title: n.assistance,
               children: [
                 [`assisted`, n.assisted],
@@ -1600,6 +1606,7 @@ function Ft() {
             }),
           ],
         }),
+      i === 'online' && j.jsx(OnlineGame,{lang:e,config:o,Card:kt,Modal:At,showDetail:ye,onBack:()=>a('home')}),
       i === `pick` &&
         (0, j.jsxs)(`main`, {
           className: `mx-auto max-w-6xl px-5 py-8`,
@@ -1705,7 +1712,12 @@ function Ft() {
                                   }),
                                 ],
                               }),
-                            y === `ask` &&
+                            o.mode === 'local' && y === 'ask' && j.jsxs(j.Fragment,{children:[
+                              j.jsx('p',{className:'mb-3 rounded-xl bg-blue-50 p-3',children:multiplayerText[e].localHint}),
+                              j.jsx('button',{className:'mt-2 w-full rounded-xl bg-slate-900 py-3 font-bold text-white',onClick:()=>{if(privacy)return;ve(false);setGuessCandidate(null);at();},children:multiplayerText[e].endTurn}),
+                              j.jsx('button',{className:'mt-2 w-full rounded-xl border py-3 font-bold',onClick:()=>ve(!_e),children:_e?multiplayerText[e].cancel:n.guess}),
+                            ]}),
+                            o.mode !== 'local' && y === `ask` &&
                               (0, j.jsxs)(j.Fragment, {
                                 children: [
                                   (0, j.jsx)(`h2`, {
@@ -2010,11 +2022,10 @@ function Ft() {
                                     inactive:
                                       !te[dt].includes(t.id) ||
                                       re[dt].includes(t.id),
-                                    onClick: () => (_e ? ct(t) : ye(t)),
+                                    onClick: () => (_e ? (o.mode === 'local' ? setGuessCandidate(t) : ct(t)) : ye(t)),
                                     action:
                                       !_e &&
-                                      o.assist === `manual` &&
-                                      y === `showAnswer` &&
+                                      (o.mode === 'local' && y === 'ask' || o.assist === 'manual' && y === 'showAnswer') &&
                                       te[dt].includes(t.id)
                                         ? {
                                             label: re[dt].includes(t.id)
@@ -2526,6 +2537,7 @@ function Ft() {
         }),
       pendingQuery && j.jsxs(At,{close:()=>setPendingQuery(null),children:[j.jsxs('div',{className:'confirm-query',children:[j.jsx('h2',{children:({it:'Conferma la domanda',en:'Confirm the question',fr:'Confirmez la question'})[e]}),j.jsx('p',{children:pendingQuery.text}),j.jsx('p',{children:formatQuery(pendingQuery.query,e)}),j.jsx('button',{className:'confirm',onClick:()=>{const p=pendingQuery;setPendingQuery(null);rt(p.text,p.query);},children:({it:'Sì, chiedi questo',en:'Yes, ask this',fr:'Oui, posez cette question'})[e]}),j.jsx('button',{onClick:()=>setPendingQuery(null),children:({it:'Modifica',en:'Edit',fr:'Modifier'})[e]})]})]}),
       privacy && j.jsxs('div',{className:'privacy-screen',role:'dialog','aria-modal':true,children:[j.jsx('h2',{children:({it:'Passa il dispositivo al giocatore ',en:'Pass the device to player ',fr:'Passez l’appareil au joueur '})[e]+privacy}),j.jsx('button',{onClick:()=>setPrivacy(null),children:({it:'Sono pronto',en:'I am ready',fr:'Je suis prêt'})[e]})]}),
+      guessCandidate && j.jsxs(At,{close:()=>setGuessCandidate(null),children:[j.jsx('h2',{children:multiplayerText[e].confirmGuess}),j.jsx('p',{children:guessCandidate.name[e]}),j.jsx('button',{className:'confirm',onClick:()=>{const card=guessCandidate;setGuessCandidate(null);ct(card);},children:multiplayerText[e].confirmGuess}),j.jsx('button',{onClick:()=>setGuessCandidate(null),children:multiplayerText[e].cancel})]}),
       Oe && (0, j.jsx)(Pt, { lang: e, context: Ae, close: () => ke(!1) }),
     ],
   });

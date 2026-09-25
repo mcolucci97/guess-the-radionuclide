@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-20T14:23:26.434Z",
+  "date": "2026-09-24T23:02:02.876Z",
   "checks": [
     "Desktop home",
     "IT/EN/FR switching",
@@ -8,11 +8,12 @@
     "Confirm question; no same-turn guess",
     "Computer turn",
     "No missing-model download offered; offline interpreter available",
-    "Complete local match and private device handoff",
+    "Local spoken/manual play, independent boards, privacy, confirmed wrong/correct guesses",
     "Offline reload and 59 cards",
-    "Mobile and 200% text"
+    "Mobile and 200% text",
+    "Missing Firebase config and offline online-entry explain limits without breaking other modes"
   ],
-  "passed": 10,
+  "passed": 11,
   "pageErrors": [],
   "llmInference": "Generative inference not part of the game test; missing-model state verified, WebGPU disabled deliberately"
 }
