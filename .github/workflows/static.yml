@@ -36,6 +36,8 @@ jobs:
         run: npm ci
 
       - name: Build game
+        env:
+          RN_FIREBASE_CONFIG: ${{ vars.RN_FIREBASE_CONFIG }}
         run: npm run build
 
       - name: Setup Pages
