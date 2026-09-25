@@ -1,0 +1,72 @@
+import {chromium,expect} from '@playwright/test';
+import http from 'node:http';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {execFileSync} from 'node:child_process';
+const demoConfig={apiKey:'demo-key',authDomain:'localhost',databaseURL:'https://demo-radionuclide-default-rtdb.firebaseio.com',projectId:'demo-radionuclide',appId:'demo-app'};
+execFileSync(process.execPath,['scripts/build.mjs'],{stdio:'inherit',env:{...process.env,RN_EMULATORS:'1',RN_FIREBASE_CONFIG:JSON.stringify(demoConfig)}});
+const server=http.createServer(async(req,res)=>{try{
+ let p=decodeURIComponent(new URL(req.url,'http://localhost').pathname).replace(/^\/guess-the-radionuclide/,'');if(p.endsWith('/'))p+='index.html';
+ const file=path.resolve('dist','.'+p);if(!file.startsWith(path.resolve('dist')+path.sep))throw Error();
+ res.setHeader('Content-Type',({'html':'text/html','js':'application/javascript','css':'text/css','svg':'image/svg+xml','json':'application/json','webmanifest':'application/manifest+json'})[file.split('.').pop()]||'application/octet-stream');res.end(await fs.readFile(file));
+}catch{res.writeHead(404);res.end();}});
+await new Promise(resolve=>server.listen(4174,'127.0.0.1',resolve));
+let browser,p1,p2,p3;
+try {
+browser=await chromium.launch({headless:true});
+const errors=[],checks=[];
+const contexts=await Promise.all([1,2,3].map(()=>browser.newContext({viewport:{width:390,height:844}})));
+[p1,p2,p3]=await Promise.all(contexts.map(c=>c.newPage()));
+for(const p of [p1,p2,p3])p.on('pageerror',e=>errors.push(e.message));
+const base='http://127.0.0.1:4174/guess-the-radionuclide/';
+const click=(p,name)=>p.getByRole('button',{name,exact:true}).click();
+const turn=(p,label='Your turn')=>expect(p.getByTestId('turn')).toHaveText(label);
+const card=(p,id)=>p.locator(`[data-card-id="${id}"]`);
+const down=(p,id)=>card(p,id).evaluate(el=>el.classList.contains('opacity-40'));
+const authUid=p=>p.evaluate(()=>{const key=Object.keys(localStorage).find(k=>k.startsWith('firebase:authUser:'));return key?JSON.parse(localStorage[key]).uid:null;});
+async function verbalRound(asker,responder) {await click(asker,'I asked it verbally');await click(responder,'YES');await click(asker,'End turn');}
+async function askParsed(){await p1.getByLabel('Write and send a question').fill('Does it emit positrons?');await click(p1,'Send question');}
+ await p1.goto(base);await click(p1,'English');await click(p1,'Play');await click(p1,'Two players · online');await click(p1,'All');await click(p1,'Start match');
+ await click(p1,'Create game');await expect(p1.getByTestId('room-code')).toBeVisible();const code=await p1.getByTestId('room-code').innerText();assert.match(code,/^[A-HJ-NP-Z2-9]{6}$/);
+ await p2.goto(base+'?room='+code);await click(p2,'English');await click(p2,'Join game');
+ await expect(p1.getByRole('heading',{name:'Choose your secret card'})).toBeVisible();
+ await expect(p2.getByRole('heading',{name:'Choose your secret card'})).toBeVisible();
+ assert.deepEqual((await p1.locator('[data-card-id]').evaluateAll(els=>els.map(e=>e.dataset.cardId))).sort(),(await p2.locator('[data-card-id]').evaluateAll(els=>els.map(e=>e.dataset.cardId))).sort());
+ await card(p1,'H-3').getByRole('button').first().click();await click(p1,'Confirm secret card');
+ await card(p2,'F-18').getByRole('button').first().click();await click(p2,'Confirm secret card');await turn(p1);await turn(p2,'Opponent’s turn');
+ const uid1=await authUid(p1),uid2=await authUid(p2);assert(uid1&&uid2&&uid1!==uid2);checks.push('Two anonymous phones, create/invite/join, exact shared deck, private selections, host starts');
+ await p3.goto(base+'?room='+code);await click(p3,'English');await click(p3,'Join game');await expect(p3.getByRole('alert')).toContainText('Game is full');checks.push('Third identity cannot take a seat');
+ const raw='  zqxw?!  \n';await p1.getByLabel('Write and send a question').fill(raw);await click(p1,'Send question');
+ await expect(p2.getByTestId('received-question')).toHaveText(raw,{useInnerText:false});assert.equal(await p2.getByTestId('received-question').textContent(),raw);
+ await expect(p2.getByText('I couldn’t interpret this question.',{exact:true})).toBeVisible();assert.equal(await p2.getByRole('button',{name:'YES',exact:true}).count(),0);
+ await click(p2,'I understood the question · answer anyway');await click(p2,'YES');
+ await card(p1,'C-14').getByRole('button',{name:'Eliminate card'}).click();await expect(card(p1,'C-14').getByRole('button',{name:'Restore card'})).toBeVisible();assert.equal(await down(p2,'C-14'),false);
+ await click(p1,'End turn');await turn(p2);checks.push('Exact raw unknown text, mandatory failure escape, manual YES, private manual board, turn sync');
+ await p2.getByLabel('Answer assistance').uncheck();await verbalRound(p2,p1);await turn(p1);
+ await askParsed();assert.equal(await p2.getByTestId('suggestion').count(),0);await click(p2,'YES');await expect(p1.getByRole('button',{name:'End turn'})).toBeEnabled();assert.equal(await down(p1,'H-3'),false);
+ await click(p1,'End turn');await turn(p2);await p2.getByLabel('Answer assistance').check();await verbalRound(p2,p1);await turn(p1);
+ await askParsed();await expect(p2.getByTestId('suggestion')).toContainText('YES');await expect(p1.getByText('Waiting for answer',{exact:true})).toBeVisible();
+ await click(p2,'Interpretation is incorrect · answer manually');await click(p2,'YES');await expect(p1.getByRole('button',{name:'End turn'})).toBeEnabled();assert.equal(await down(p1,'H-3'),false);
+ await click(p1,'End turn');await turn(p2);await verbalRound(p2,p1);await turn(p1);
+ await askParsed();await click(p2,'Confirm suggested answer');await expect(p1.getByRole('button',{name:'End turn'})).toBeEnabled();assert.equal(await down(p1,'H-3'),true);assert.equal(await down(p1,'F-18'),false);
+ checks.push('Verbal YES without text; assistance OFF/ON, no auto-answer, successful-parse rejection, confirmed automatic filter');
+ await fs.mkdir('docs/screenshots',{recursive:true});await p1.evaluate(()=>scrollTo(0,0));await p1.screenshot({path:'docs/screenshots/multiplayer-phone.png',fullPage:true});await p1.screenshot({path:'docs/screenshots/multiplayer-viewport.png'});
+ assert(await p1.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));assert(await p2.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+ await p1.reload();await click(p1,'English');await expect(p1.getByRole('button',{name:'End turn'})).toBeEnabled();assert.equal(await authUid(p1),uid1);assert.equal(await down(p1,'H-3'),true);assert.equal(await down(p1,'C-14'),true);
+ await contexts[0].setOffline(true);await expect(p1.getByTestId('connection')).toHaveText('Reconnecting…');await expect(p1.getByRole('button',{name:'End turn'})).toBeDisabled();
+ await contexts[0].setOffline(false);await expect(p1.getByTestId('connection')).toHaveText('Connected');await expect(p1.getByRole('button',{name:'End turn'})).toBeEnabled();
+ await p2.close();await expect(p1.getByText('Opponent disconnected',{exact:true})).toBeVisible({timeout:20000});assert.equal(await p1.getByText('You won!',{exact:true}).count(),0);
+ p2=await contexts[1].newPage();p2.on('pageerror',e=>errors.push(e.message));await p2.goto(base+'?room='+code);await click(p2,'English');await turn(p2,'Opponent’s turn');assert.equal(await authUid(p2),uid2);
+ await click(p1,'End turn');await turn(p2);checks.push('Mobile layout, refresh retains identity/phase/board, network recovery, browser reopen, no disconnect victory or extra turn');
+ await click(p2,'Make a guess');await card(p2,'C-14').getByRole('button').first().click();await click(p2,'Confirm guess');await turn(p1);await expect(p1.getByText('Wrong guess: the match continues.',{exact:true})).toBeVisible();
+ await click(p1,'Make a guess');await card(p1,'F-18').getByRole('button').first().click();await click(p1,'Confirm guess');
+ await expect(p1.getByRole('heading',{name:'You won!'})).toBeVisible();await expect(p2.getByRole('heading',{name:'Your opponent won.'})).toBeVisible();
+ checks.push('Confirmed wrong/correct guesses, private responder check, synchronized winner/reveal');
+ await click(p1,'Français');await expect(p1.getByRole('heading',{name:'Vous avez gagné !'})).toBeVisible();await click(p2,'Italiano');await expect(p2.getByRole('heading',{name:'Ha vinto l’avversario.'})).toBeVisible();checks.push('Online IT/EN/FR');
+ await click(p1,'Créer une partie');await expect(p1.getByRole('button',{name:'Rejoindre une partie'})).toBeVisible();
+ await click(p2,'Lascia questa partita');await p2.getByRole('dialog').getByRole('button',{name:'Lascia questa partita',exact:true}).click();await expect(p2.getByRole('button',{name:'Unisciti alla partita'})).toBeVisible();
+ checks.push('Finished match reset and explicit leave without replacing seats');
+ assert.deepEqual(errors,[]);const report={date:new Date().toISOString(),backend:'Firebase Auth + RTDB emulators; production SDK and actual Security Rules',checks,passed:checks.length,pageErrors:errors};await fs.writeFile('docs/multiplayer-browser-results.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
+}catch(err){for(const [i,p] of [p1,p2,p3].entries())if(p&&!p.isClosed()){console.log('PHONE '+(i+1),await p.locator('body').innerText());await p.screenshot({path:`/tmp/rn-online-failure-${i+1}.png`,fullPage:true});}throw err;}
+finally{await browser?.close();await new Promise(resolve=>server.close(resolve));execFileSync(process.execPath,['scripts/build.mjs'],{stdio:'inherit',env:{...process.env,RN_EMULATORS:'0',RN_FIREBASE_CONFIG:''}});}
