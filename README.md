@@ -35,3 +35,13 @@ npm test
 npm run build
 node scripts/evaluate-intents.mjs training/parser-corpus-v2.jsonl test
 ```
+
+## Multiplayer extension
+
+Local two-player mode supports spoken questions, independent manual boards and private handoff. Online two-player mode uses Firebase Anonymous Authentication and Realtime Database, without an LLM or audio features.
+
+- [Firebase setup and deployment](docs/MULTIPLAYER_FIREBASE_SETUP.md)
+- [Implementation report and test results](docs/MULTIPLAYER_REPORT.md)
+- [Recovery checkpoint](docs/MULTIPLAYER_PROGRESS.md)
+
+The multiplayer branch is an extension of V3; the scientific data and interpreter are unchanged. Production Firebase configuration is required only for online play.
