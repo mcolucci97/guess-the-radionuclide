@@ -22,7 +22,8 @@
     "test:learning": "node --test tests/learning.test.mjs",
     "test:learning:e2e": "node tests/browser-learning.mjs",
     "test:tutorial": "node --test tests/tutorial.test.mjs",
-    "test:tutorial:e2e": "node tests/browser-tutorial.mjs"
+    "test:tutorial:e2e": "node tests/browser-tutorial.mjs",
+    "test:research": "node --test tests/research.test.mjs"
   },
   "dependencies": {
     "@mlc-ai/web-llm": "0.2.79",

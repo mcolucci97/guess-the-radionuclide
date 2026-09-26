@@ -20,6 +20,7 @@ export class LearningEngine {
       this.hydrated=true; for(const fn of this.early.splice(0))fn();return this;
     });
   }
+  setResearchTransport(research=defaultResearchTransport()) { this.research?.dispose?.(); this.research=research; return research; }
   persist() {
     this.profile.activeMatch=this.match;this.profile.lastUpdated=this.now();
     this.profile.storageRevision=(this.profile.storageRevision||0)+1;
@@ -34,8 +35,7 @@ export class LearningEngine {
     this.profile.selectedLevel=learningLevel(level);
     this.match={version:1,id,level:learningLevel(level),mode,budget:newBudget(),encountered:[],seen:[],
       questionIndex:0,questions:[],finished:false,recap:null,assistedActions:[]};
-    this.emit('MATCH_STARTED','start',{level:this.match.level,mode,deckIds});
-    this.research.startSession({sessionId:id,level:this.match.level,mode});return id;
+    this.emit('MATCH_STARTED','start',{level:this.match.level,mode,deckIds});return id;
   }
   emit(type,actionId,payload={},actor='player') {
     if(!this.hydrated){this.early.push(()=>this.emit(type,actionId,payload,actor));return false;}
@@ -50,7 +50,7 @@ export class LearningEngine {
     if(!this.hydrated){this.early.push(()=>this.answer(description,false));return null;}
     if(!this.match||this.match.finished)return null;
     const d=structuredClone(description);
-    if(!this.emit('QUESTION_ASKED',d.actionId,{query:d.query,reliable:d.reliable,spontaneous:d.spontaneous,conceptIds:d.conceptIds,candidateIds:d.candidateIds}))return null;
+    if(!this.emit('QUESTION_ASKED',d.actionId,{query:d.query,reliable:d.reliable,spontaneous:d.spontaneous,conceptIds:d.conceptIds,candidateIds:d.candidateIds,candidateCountBefore:d.candidateIds.length,yesCount:d.yesIds.length,noCount:d.noIds.length,informationValueCategory:d.quality?.informationValue,learningValueCategory:d.quality?.learningValue}))return null;
     this.emit('ANSWER_RECEIVED',d.actionId,{query:d.query,answer:d.answer,conceptIds:d.conceptIds});
     this.match.questionIndex++;this.match.questions=[...this.match.questions,d].slice(-30);this.persist();
     return d.automatic&&schedule?this.plan(d,'answer'):null;
@@ -84,7 +84,7 @@ export class LearningEngine {
     const d=description, assessment=d.reliable&&d.unknownIds.length===0?eliminationAssessment(d.candidateIds,selectedIds,d.expectedIds):null;
     this.emit('CARDS_SELECTED_FOR_ELIMINATION',d.actionId,{selectedIds,conceptIds:d.conceptIds});
     const fresh=this.emit('CARDS_ELIMINATED',d.actionId,{query:d.query,conceptIds:d.conceptIds,eliminatedIds:selectedIds,
-      expectedIds:d.expectedIds,automatic,assisted:assisted||this.match.assistedActions.includes(d.actionId),correct:assessment?.correct});
+      expectedIds:d.expectedIds,candidateCountBefore:d.candidateIds.length,candidateCountAfter:Math.max(0,d.candidateIds.length-selectedIds.length),automatic,assisted:assisted||this.match.assistedActions.includes(d.actionId),correct:assessment?.correct});
     return fresh&&!automatic?this.plan(d,'review',assessment):null;
   }
   automatic(description) {
@@ -146,6 +146,6 @@ export class LearningEngine {
     if(item)this.emit('RETRIEVAL_REQUESTED','recap',{conceptIds:item.conceptIds});
     this.profile.completedMatches++;
     this.profile.matchHistorySummary=[...this.profile.matchHistorySummary,{id:this.match.id,at:this.now(),conceptIds:ids,interventions:this.match.budget.used}].slice(-50);
-    this.research.finishSession({sessionId:this.match.id,outcome});this.persist();return this.match.recap;
+    this.persist();return this.match.recap;
   }
 }

@@ -9,7 +9,8 @@ export const EVENT_TYPES = Object.freeze([
 // No raw question, secret, auth UID or transport objects in this contract.
 const fields = ['level','mode','deckIds','query','reliable','conceptIds','candidateIds',
   'eliminatedIds','selectedIds','expectedIds','answer','correct','assisted','spontaneous',
-  'automatic','misconceptionId','interventionType','outcome','cardId','choiceId'];
+  'automatic','misconceptionId','interventionType','outcome','cardId','choiceId',
+  'candidateCountBefore','candidateCountAfter','yesCount','noCount','informationValueCategory','learningValueCategory'];
 const queryFields = ['type','queryType','negated','conceptId','property','operator','value','min','max','unit','language'];
 export function semanticEvent(type, {matchId, actionId, actor = 'player', at = Date.now(), payload = {}}) {
   if (!EVENT_TYPES.includes(type) || !matchId || !actionId) throw new TypeError('Invalid semantic event');

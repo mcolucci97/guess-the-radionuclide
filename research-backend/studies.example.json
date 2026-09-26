@@ -1,0 +1,29 @@
+[
+  {
+    "studyId": "pilot-2026",
+    "active": false,
+    "title": "Guess the Radionuclide pilot",
+    "participantInformationVersion": "DRAFT-NOT-APPROVED",
+    "minimumAge": 18,
+    "ageBands": ["18-20", "21-25", "26-39", "40+"],
+    "requiresParticipantConfirmation": true,
+    "minorParticipationEnabled": false,
+    "requiresParentalAuthorizationUnder18": false,
+    "requiresMinorAssent": false,
+    "parentalAuthorizationMode": "none",
+    "allowRemoteParticipation": false,
+    "accessCodeRequired": true,
+    "accessCodeSha256": "REPLACE_WITH_SHA256_OF_STUDY_CODE",
+    "allowedOrigins": ["https://YOUR_GITHUB_PAGES_OR_INFN_ORIGIN"],
+    "information": {
+      "it": {
+        "title": "Studio sull'efficacia formativa di Indovina il Radionuclide",
+        "paragraphs": [
+          "TESTO DI ESEMPIO: sostituire con l'informativa approvata da INFN/DPO prima di attivare lo studio.",
+          "La partecipazione alla ricerca è volontaria e il gioco normale resta disponibile senza raccolta di dati di ricerca."
+        ],
+        "dataItems": ["fascia di età", "risposte ai test", "azioni di gioco strutturate", "tempi e interventi didattici"]
+      }
+    }
+  }
+]

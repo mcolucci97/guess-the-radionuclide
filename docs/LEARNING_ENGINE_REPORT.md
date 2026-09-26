@@ -103,7 +103,7 @@ Almeno `ceil(0,8 × dimensione)` estrazioni uniformi senza reinserimento. Solo i
 
 ## 20. Ricerca
 
-Default `DisabledResearchTransport`. `InMemoryResearchTransport` disponibile per test e sviluppo; nessun trasporto di rete implementato. Metodi: `startSession`, `recordEvent`, `submitPreTest`, `submitPostTest`, `finishSession`. Nessun backend, schema Firebase di ricerca, raccolta remota educativa o questionario pre/post in gioco. Il trasporto normale delle domande fra i giocatori online rimane invariato.
+Default `DisabledResearchTransport`: il gioco normale continua a non produrre traffico di ricerca. È ora disponibile anche `HttpResearchTransport`, attivato soltanto dopo un gate di studio esplicito (`?study=...`) e configurazione di un endpoint separato. Sono implementati consenso/partecipazione configurabile, `participantId` pseudonimo, `sessionId`, coda strutturata e backend separato Cloudflare Worker + D1. Nessuno schema Firebase di ricerca è stato aggiunto e le domande naturali non vengono caricate. Le API `submitPreTest`/`submitPostTest` sono pronte, ma la UI dei questionari resta da integrare. Dettagli in `docs/RESEARCH_IMPLEMENTATION.md`.
 
 ## 21. Modifiche multiplayer
 
@@ -134,7 +134,7 @@ Report browser: `docs/browser-results.json`, `docs/learning-browser-results.json
 
 ## 25. Limiti e rinvii intenzionali
 
-Nessun collaudo fisico fra dispositivi o deploy in produzione durante questo lavoro; le prove online usano emulatori. Nessuna inferenza generativa LLM eseguita: verificato il fallback senza download del modello, lasciando il sottosistema invariato. Il profilo è locale, senza fusione fra dispositivi o gestione di identità separate su un dispositivo condiviso. Sono rinviati backend/consenso/test pre-post di ricerca, validazione esperta definitiva dei contenuti, produzione dei radionuclidi, sezioni d’urto, curriculum esaustivo per ogni nodo e spiegazioni avanzate dell’attivazione. La tassonomia completa non equivale a una batteria esaustiva di esercizi per ogni concetto.
+Nessun collaudo fisico fra dispositivi o deploy in produzione durante questo lavoro; le prove online usano emulatori. Nessuna inferenza generativa LLM eseguita: verificato il fallback senza download del modello, lasciando il sottosistema invariato. Il profilo è locale, senza fusione fra dispositivi o gestione di identità separate su un dispositivo condiviso. Sono rinviati l'integrazione UI dei test pre/post e l'attivazione di uno studio reale (che richiede configurazione/approvazione), oltre a validazione esperta definitiva dei contenuti, produzione dei radionuclidi, sezioni d’urto, curriculum esaustivo per ogni nodo e spiegazioni avanzate dell’attivazione. La tassonomia completa non equivale a una batteria esaustiva di esercizi per ogni concetto.
 
 ## 26. Applicare manualmente lo ZIP a GitHub
 
@@ -143,4 +143,4 @@ Nessun collaudo fisico fra dispositivi o deploy in produzione durante questo lav
 3. Controllare i file aggiunti/modificati elencati in `docs/LEARNING_ENGINE_FILES.txt`. Con GitHub Desktop o il proprio client creare un commit e caricarlo manualmente. In alternativa, usare «Add file → Upload files» nella radice del repository e caricare le cartelle/file estratti in più gruppi. I percorsi devono rimanere identici.
 4. Lo ZIP include anche `.github/workflows/` e `.gitignore`; verificare che siano visibili nel programma di estrazione. Non include `.git`, `node_modules`, `dist`, cache, log degli emulatori o configurazioni personali ignorate. Tutti i sorgenti e asset già tracciati nella base sono inclusi.
 5. Per verificare localmente: Node 22 o successivo, `npm ci`, `npm run build`; per i browser installare Chromium con `npx playwright install chromium`. Le regole richiedono Java e gli emulatori Firebase. Eseguire i comandi della tabella, tenendo conto del manifest mancante preesistente.
-6. Mantenere l’attuale variabile GitHub Actions `RN_FIREBASE_CONFIG`, il progetto Firebase e le regole già in produzione. Non occorre creare un nuovo backend. Dopo il proprio caricamento su main, il workflow Pages esistente continuerà a usare tale variabile. Eseguire infine un breve collaudo su due dispositivi reali.
+6. Mantenere l’attuale variabile GitHub Actions `RN_FIREBASE_CONFIG`, il progetto Firebase e le regole già in produzione. Il multiplayer non richiede alcun nuovo backend. Il Research Mode usa invece il backend separato descritto in `research-backend/`, configurato solo quando si attiva uno studio. Dopo il proprio caricamento su main, il workflow Pages esistente continuerà a usare tale variabile. Eseguire infine un breve collaudo su due dispositivi reali.

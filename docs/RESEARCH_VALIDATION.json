@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-26",
+  "baseline_package": "guess-rn-tutorial-v3-complete.zip",
+  "checks": {
+    "learning_and_research_unit_tests": {"passed": 37, "failed": 0},
+    "research_backend_node_syntax": "passed",
+    "modified_non_jsx_client_node_syntax": "passed",
+    "production_build": "not rerun in this container because npm dependencies were not available after extraction"
+  },
+  "notes": [
+    "Normal gameplay still defaults to DisabledResearchTransport.",
+    "No production research endpoint or live study configuration is included.",
+    "The existing GitHub Pages workflow still runs npm ci followed by npm run build and now passes the optional RN_RESEARCH_CONFIG variable."
+  ]
+}

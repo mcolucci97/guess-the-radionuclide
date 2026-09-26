@@ -38,7 +38,7 @@ Verificati refresh durante previsione pendente senza evidenza duplicata, annulla
 
 `tests/engine.test.mjs:7` fallisce perché `data/raw/manifest.json` manca già nella base. Il test e i dati sono rimasti invariati. `npm test` e `npm run verify` quindi non sono completamente verdi.
 
-Nessun test fisico su dispositivi reali, deploy o inferenza generativa LLM in questa sessione. Profilo solo locale; nessun account o sincronizzazione. Ricerca, raccolta pre/post, sezioni d’urto, produzione e revisione scientifica definitiva restano fuori V1. Il gioco parlato non viene valutato scientificamente.
+Nessun test fisico su dispositivi reali, deploy o inferenza generativa LLM in questa sessione. Profilo solo locale; nessun account o sincronizzazione. Il gate di ricerca, l'identità pseudonima e il backend separato sono ora implementati; la UI pre/post e l'attivazione reale dello studio restano da fare. Sezioni d’urto, produzione e revisione scientifica definitiva restano fuori V1. Il gioco parlato non viene valutato scientificamente.
 
 ## Stato corrente e passo successivo
 

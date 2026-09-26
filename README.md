@@ -1,5 +1,6 @@
 # Parser V2 integration patch
 
+This bundle is ready to copy into the repository root.
 
 ## What changes
 
@@ -47,7 +48,7 @@ The multiplayer branch is an extension of V3; the scientific data and interprete
 
 ## Learning Engine V1
 
-The normal game has two scientific levels: **Explorer** (assisted elimination with occasional prediction) and **Scientist** (manual elimination with delayed feedback). Learning evidence stays on the device; educational research collection is disabled. Existing Firebase rooms and the `RN_FIREBASE_CONFIG` deployment contract remain compatible.
+The normal game has two scientific levels: **Explorer** (assisted elimination with occasional prediction) and **Scientist** (manual elimination with delayed feedback). Learning evidence stays on the device. Educational research collection remains disabled in normal play, but an explicit study link can now activate the separate, consent-gated Research Mode when an approved research endpoint is configured. Existing Firebase rooms and the `RN_FIREBASE_CONFIG` deployment contract remain compatible. See `docs/RESEARCH_IMPLEMENTATION.md`.
 
 - [Implementation, exact test results and manual ZIP installation](docs/LEARNING_ENGINE_REPORT.md)
 - [Recovery/progress record](docs/LEARNING_ENGINE_PROGRESS.md)

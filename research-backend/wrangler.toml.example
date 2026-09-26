@@ -1,0 +1,11 @@
+name = "guess-rn-research"
+main = "worker.js"
+compatibility_date = "2026-09-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "guess-rn-research"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+
+# Set RESEARCH_STUDIES_JSON as a Worker secret/variable rather than committing study codes.
+# wrangler secret put RESEARCH_STUDIES_JSON

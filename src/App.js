@@ -7,6 +7,7 @@ import {describeQuestion, propertyText} from "./learning/gameplay.js";
 import {LEVELS, learningLevel, legacyLevel, normalConfig} from "./learning/levels.js";
 import {learningText} from "./learning/i18n.js";
 import {multiplayerText} from "./multiplayer/i18n.js";
+import {ResearchGate} from "./research/ResearchGate.jsx";
 import {OnlineGame} from "./multiplayer/OnlineGame.jsx";
 import {formatQuery} from "./engine/advanced.js";
 import {EvidencePanel} from "./ui/EvidencePanel.js";
@@ -917,7 +918,10 @@ function Pt({ lang: e, context: t, close: n }) {
   });
 }
 function Ft() {
+  const initialParams=new URL(location.href).searchParams;
+  const studyId=initialParams.get('study');
   const learning=useLearning();
+  const [researchActive,setResearchActive]=_.useState(false);
   const [levelSelected,setLevelSelected]=_.useState(false);
   const localTurnStart=_.useRef([]);
   const [guessCandidate,setGuessCandidate]=_.useState(null);
@@ -929,7 +933,7 @@ function Ft() {
   let [e, t] = (0, _.useState)(`it`),
     n = gt[e],
     r = _t[e],
-    [i, a] = (0, _.useState)(new URL(location.href).searchParams.has('room') ? 'online' : 'home'),
+    [i, a] = (0, _.useState)(studyId ? 'research' : initialParams.has('room') ? 'online' : 'home'),
     [o, s] = (0, _.useState)({
       mode: `soloEasy`,
       audience: `adult`,
@@ -1262,6 +1266,8 @@ function Ft() {
         ).includes(n);
       return (!n || r) && (we === `all` || t.tags.includes(we));
     });
+  const researchAccepted=()=>{setResearchActive(true);a(new URL(location.href).searchParams.has('room')?'online':'setup');};
+  const researchDeclined=()=>{setResearchActive(false);const url=new URL(location.href);url.searchParams.delete('study');history.replaceState(null,'',url);a(url.searchParams.has('room')?'online':'home');};
   _.useEffect(()=>{if(i==='game'&&y==='end')learning.finish(he==='AI'?'lost':'won');},[i,y,he]);
   _.useEffect(()=>{if(o.mode==='local'&&y==='ask')localTurnStart.current=$e(dt).map(c=>c.id);},[g,y,i]);
   return (0, j.jsxs)(`div`, {
@@ -1284,6 +1290,7 @@ function Ft() {
           (0, j.jsxs)(`div`, {
             className: `flex items-center gap-2`,
             children: [
+              researchActive && (0,j.jsx)(`span`,{className:`rounded-full bg-green-50 px-2 py-1 text-xs font-bold text-green-900`,children:({it:'Studio attivo',en:'Study active',fr:'Étude active'})[e]}),
               (0, j.jsx)(oe, { className: `h-4 w-4 text-slate-500` }),
               [`it`, `en`, `fr`].map((n) =>
                 (0, j.jsx)(
@@ -1302,6 +1309,7 @@ function Ft() {
           }),
         ],
       }),
+      i === `research` && studyId && (0,j.jsx)(ResearchGate,{studyId,lang:e,engine:learning.engine,onAccepted:researchAccepted,onDeclined:researchDeclined}),
       i === `home` &&
         (0, j.jsx)(`main`, {
           className: `mx-auto max-w-6xl px-5 py-10`,
