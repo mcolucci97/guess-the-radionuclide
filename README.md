@@ -1,6 +1,5 @@
 # Parser V2 integration patch
 
-This bundle is ready to copy into the repository root.
 
 ## What changes
 
