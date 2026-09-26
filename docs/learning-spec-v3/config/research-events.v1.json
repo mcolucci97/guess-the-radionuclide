@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "principles": [
+    "No research upload without active study gate",
+    "Do not upload normal free-text gameplay questions by default",
+    "Use pseudonymous study participant IDs, not Firebase UID as scientific ID"
+  ],
+  "eventTypes": [
+    "match_started",
+    "match_finished",
+    "question_asked_structured",
+    "question_answered",
+    "verbal_question_used",
+    "manual_elimination",
+    "automatic_elimination",
+    "prediction_prompted",
+    "prediction_submitted",
+    "self_explanation_prompted",
+    "self_explanation_submitted",
+    "feedback_shown",
+    "board_lens_used",
+    "guess_made",
+    "recap_shown",
+    "retrieval_submitted"
+  ],
+  "commonFields": [
+    "studyId",
+    "participantId",
+    "sessionId",
+    "eventId",
+    "clientEventIndex",
+    "relativeTimeMs",
+    "gameVersion",
+    "learningEngineVersion",
+    "level",
+    "mode"
+  ]
+}

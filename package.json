@@ -18,7 +18,9 @@
     "verify": "npm test && npm run build",
     "train:llm:prepare": "node scripts/prepare-llm.mjs",
     "data:curate": "python3 scripts/curate_data.py",
-    "test:llm": "node tests/browser-llm.mjs"
+    "test:llm": "node tests/browser-llm.mjs",
+    "test:learning": "node --test tests/learning.test.mjs",
+    "test:learning:e2e": "node tests/browser-learning.mjs"
   },
   "dependencies": {
     "@mlc-ai/web-llm": "0.2.79",

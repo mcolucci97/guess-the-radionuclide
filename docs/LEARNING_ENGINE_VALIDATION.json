@@ -1,0 +1,102 @@
+{
+  "date": "2026-09-26",
+  "baseCommit": "35b7a71218355101006bc4b7b3f62130c3a080c5",
+  "implementationCommit": "0eb0264e81101c18062ae7b7ded1840ca2b48bed",
+  "unit": {
+    "total": 691,
+    "passed": 690,
+    "failed": 1,
+    "baselinePassed": 657,
+    "baselineFailed": 1
+  },
+  "learningUnit": {
+    "passed": 30,
+    "failed": 0
+  },
+  "multiplayerUnitAndRecovery": {
+    "passed": 22,
+    "failed": 0
+  },
+  "firebaseRules": {
+    "passed": 7,
+    "failed": 0,
+    "backend": "Firebase Auth and Realtime Database emulators"
+  },
+  "browserReports": {
+    "browser-results.json": {
+      "date": "2026-09-26T13:42:10.548Z",
+      "checks": [
+        "Desktop home",
+        "IT/EN/FR switching",
+        "English and French lesson content and diagrams",
+        "Atlas, sources and keyboard close",
+        "Confirm question; no same-turn guess",
+        "Computer turn",
+        "No missing-model download offered; offline interpreter available",
+        "Local spoken/manual play, independent boards, privacy, confirmed wrong/correct guesses",
+        "Offline reload and 59 cards",
+        "Mobile and 200% text",
+        "Missing Firebase config and offline online-entry explain limits without breaking other modes"
+      ],
+      "passed": 11,
+      "pageErrors": [],
+      "llmInference": "Generative inference not part of the game test; missing-model state verified, WebGPU disabled deliberately"
+    },
+    "learning-browser-results.json": {
+      "date": "2026-09-26T13:42:15.975Z",
+      "passed": 5,
+      "checks": [
+        "Only Explorer/Scientist in IT/EN/FR; prediction precedes filtering and is graded against deterministic card properties",
+        "Completed solo match, optional one-item recap, actual IndexedDB persistence and refresh",
+        "Scientist permits wrong manual elimination and gives a scientific correction only after completed review",
+        "Optional chemistry lens counts as assistance; mobile and 200 percent text fit",
+        "Blocked browser persistence falls back without blocking gameplay"
+      ],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    "multiplayer-browser-results.json": {
+      "date": "2026-09-26T13:42:31.519Z",
+      "backend": "Firebase Auth + RTDB emulators; production SDK and actual Security Rules",
+      "checks": [
+        "Two anonymous phones, create/invite/join, exact shared deck, private selections, host starts",
+        "Third identity cannot take a seat",
+        "Exact raw unknown text, mandatory failure escape, manual YES, private manual board, turn sync",
+        "Refresh during a pending prediction safely recovers the filter without repeating the intervention or evidence",
+        "Verbal YES without text; assistance OFF/ON, no auto-answer, successful-parse rejection, confirmed automatic filter",
+        "Mobile layout, refresh retains identity/phase/board, network recovery, browser reopen, no disconnect victory or extra turn",
+        "Confirmed wrong/correct guesses, private responder check, synchronized winner/reveal",
+        "Online IT/EN/FR",
+        "Finished match reset and explicit leave without replacing seats"
+      ],
+      "passed": 9,
+      "pageErrors": []
+    }
+  },
+  "build": "passed, production build restored after emulator browser test",
+  "knownFailure": {
+    "test": "tests/engine.test.mjs:7 - All nuclear snapshots match their content hashes",
+    "cause": "ENOENT: data/raw/manifest.json absent in baseline; original test and data unchanged"
+  },
+  "v3ConceptsAndAnchors": "byte-identical to supplied configuration files",
+  "protectedPathsUnchanged": [
+    "src/engine",
+    "src/data",
+    "data",
+    "src/llm",
+    "database.rules.json",
+    "src/multiplayer/stateMachine.js",
+    "src/multiplayer/roomService.js",
+    "src/multiplayer/firebaseTransport.js",
+    ".github",
+    "scripts/build.mjs",
+    "package-lock.json"
+  ],
+  "githubWrites": false,
+  "productionDeployment": false,
+  "limits": [
+    "Chromium headless and emulators; no physical-device production test",
+    "LLM fallback verified; generative inference not run",
+    "Local learning profile, no remote research"
+  ]
+}

@@ -49,7 +49,17 @@ async function askParsed(){await p1.getByLabel('Write and send a question').fill
  await askParsed();await expect(p2.getByTestId('suggestion')).toContainText('YES');await expect(p1.getByText('Waiting for answer',{exact:true})).toBeVisible();
  await click(p2,'Interpretation is incorrect · answer manually');await click(p2,'YES');await expect(p1.getByRole('button',{name:'End turn'})).toBeEnabled();assert.equal(await down(p1,'H-3'),false);
  await click(p1,'End turn');await turn(p2);await verbalRound(p2,p1);await turn(p1);
- await askParsed();await click(p2,'Confirm suggested answer');await expect(p1.getByRole('button',{name:'End turn'})).toBeEnabled();assert.equal(await down(p1,'H-3'),true);assert.equal(await down(p1,'F-18'),false);
+ await askParsed();await click(p2,'Confirm suggested answer');
+ await expect(p1.getByTestId('prediction-cards')).toBeVisible();assert.equal(await down(p1,'H-3'),false);
+ await expect(p1.getByRole('button',{name:'End turn'})).toBeDisabled();
+ const learningBefore=await p1.evaluate(()=>JSON.parse(localStorage.getItem('rn-learning-v1:primary')));
+ assert.equal(learningBefore.activeMatch.budget.used,1);
+ await p1.reload();await click(p1,'English');
+ await expect(p1.getByRole('button',{name:'End turn'})).toBeEnabled();assert.equal(await down(p1,'H-3'),true);assert.equal(await down(p1,'F-18'),false);
+ const learningAfter=await p1.evaluate(()=>JSON.parse(localStorage.getItem('rn-learning-v1:primary')));
+ assert.equal(learningAfter.activeMatch.budget.used,1);assert.equal(learningAfter.concepts['decay.beta_plus'].spontaneousUses,1);
+ assert.equal(await p1.getByTestId('prediction-cards').count(),0);
+ checks.push('Refresh during a pending prediction safely recovers the filter without repeating the intervention or evidence');
  checks.push('Verbal YES without text; assistance OFF/ON, no auto-answer, successful-parse rejection, confirmed automatic filter');
  await fs.mkdir('docs/screenshots',{recursive:true});await p1.evaluate(()=>scrollTo(0,0));await p1.screenshot({path:'docs/screenshots/multiplayer-phone.png',fullPage:true});await p1.screenshot({path:'docs/screenshots/multiplayer-viewport.png'});
  assert(await p1.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));assert(await p2.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));

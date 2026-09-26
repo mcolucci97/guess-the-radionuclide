@@ -45,3 +45,13 @@ Local two-player mode supports spoken questions, independent manual boards and p
 - [Recovery checkpoint](docs/MULTIPLAYER_PROGRESS.md)
 
 The multiplayer branch is an extension of V3; the scientific data and interpreter are unchanged. Production Firebase configuration is required only for online play.
+
+## Learning Engine V1
+
+The normal game has two scientific levels: **Explorer** (assisted elimination with occasional prediction) and **Scientist** (manual elimination with delayed feedback). Learning evidence stays on the device; educational research collection is disabled. Existing Firebase rooms and the `RN_FIREBASE_CONFIG` deployment contract remain compatible.
+
+- [Implementation, exact test results and manual ZIP installation](docs/LEARNING_ENGINE_REPORT.md)
+- [Recovery/progress record](docs/LEARNING_ENGINE_PROGRESS.md)
+- [Changed-file inventory](docs/LEARNING_ENGINE_FILES.txt)
+
+Dedicated checks: `npm run test:learning` and, after building, `npm run test:learning:e2e`. The full unit suite retains the documented baseline failure caused by the missing `data/raw/manifest.json`; the production build passes.

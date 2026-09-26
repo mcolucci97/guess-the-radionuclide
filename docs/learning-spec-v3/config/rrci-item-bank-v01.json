@@ -1,0 +1,1558 @@
+{
+  "version": "0.1",
+  "language": "it",
+  "status": "candidate item bank after scientific design decisions; NOT VALIDATED",
+  "sourceLegend": {
+    "MORALES2022": "Morales López & Tuzón Marco (2022), Science & Education, doi:10.1007/s11191-021-00251-w",
+    "SIERSMA2021": "Siersma et al. (2021), International Journal of Science Education, doi:10.1080/09500693.2020.1864504",
+    "PRATHER2005": "Prather (2005), Journal of Geoscience Education, doi:10.5408/1089-9995-53.4.345",
+    "NAKIBOGLU2006": "Nakiboglu & Tekin (2006), Journal of Chemical Education, doi:10.1021/ed083p1712",
+    "IAEA_PET": "IAEA Human Health Series: PET physics; positron annihilation and 511 keV photons",
+    "IAEA_THERAPY": "IAEA training material: therapeutic radiopharmaceuticals; beta-, alpha and Auger emitters",
+    "IAEA_NATURAL": "IAEA Radiation, People and the Environment: natural radionuclides including K-40 and C-14",
+    "NETERE2024": "Netere et al. (2024), Frontiers in Education, doi:10.3389/feduc.2024.1442833",
+    "RAD_RATINGS": "Lu et al. (2025), Decked Out for Success, Journal of Chemical Education, doi:10.1021/acs.jchemed.4c00603",
+    "IAEA_GLOSSARY": "IAEA Nuclear Security Glossary: alpha particle = helium nucleus (2p+2n); annihilation terminology.",
+    "FDA_FOOD_IRRADIATION": "U.S. FDA, Food Irradiation: What You Need to Know; approved food irradiation does not make food radioactive.",
+    "IAEA_FOOD_ACTIVATION": "IAEA-TECDOC-1287, Natural and Induced Radioactivity in Food; activation depends on radiation type/energy and irradiation conditions.",
+    "IAEA_PET_RADIATION_PROTECTION": "IAEA PET/CT radiation protection guidance; patients administered positron-emitting radiopharmaceuticals are external radiation sources."
+  },
+  "explorerItems": [
+    {
+      "id": "E01",
+      "level": "explorer",
+      "conceptIds": [
+        "radioactivity.natural_and_artificial"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Quale affermazione descrive meglio l’origine della radioattività?",
+      "options_it": [
+        "Può esistere in natura oppure essere prodotta artificialmente.",
+        "Esiste solo nei materiali prodotti dall’uomo.",
+        "Esiste solo vicino a reattori o acceleratori.",
+        "I materiali naturali non possono essere radioattivi."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "La radioattività è presente sia in radionuclidi naturali sia in radionuclidi prodotti artificialmente.",
+      "misconceptionIds": [
+        "misconception.radioactive_means_artificial"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022",
+        "IAEA_NATURAL"
+      ],
+      "parallelFamily": "NAT_ORIGIN_A",
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E02",
+      "level": "explorer",
+      "conceptIds": [
+        "radioactivity.natural_and_artificial",
+        "application.radon"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "Quale situazione è compatibile con la radioattività naturale?",
+      "options_it": [
+        "Nel corpo e negli alimenti può essere presente una piccola quantità di potassio-40 e dal suolo può provenire radon.",
+        "La radioattività compare solo dopo un incidente nucleare.",
+        "Una roccia naturale non può contenere radionuclidi.",
+        "Solo gli oggetti sottoposti a raggi X diventano radioattivi."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "K-40 è naturalmente presente nell’organismo e nella dieta; il radon deriva da catene di decadimento naturali nel suolo e nelle rocce.",
+      "misconceptionIds": [
+        "misconception.radioactive_means_artificial"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022",
+        "IAEA_NATURAL"
+      ],
+      "parallelFamily": "NAT_ORIGIN_B",
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E03",
+      "level": "explorer",
+      "conceptIds": [
+        "nuclide.element_vs_isotope"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Carbonio-12 e carbonio-14 sono:",
+      "options_it": [
+        "due isotopi dello stesso elemento: stesso numero di protoni, diverso numero di neutroni.",
+        "due elementi diversi perché hanno numero di massa diverso.",
+        "lo stesso nuclide con nomi diversi.",
+        "atomi che differiscono solo per il numero di elettroni."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Gli isotopi dello stesso elemento hanno lo stesso numero atomico Z e differiscono nel numero di neutroni, quindi nel numero di massa A.",
+      "misconceptionIds": [
+        "misconception.different_isotope_means_different_element"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022",
+        "NAKIBOGLU2006"
+      ],
+      "parallelFamily": "ISOTOPE_A",
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E04",
+      "level": "explorer",
+      "conceptIds": [
+        "nuclide.element_vs_isotope"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Uranio-235 e uranio-238 sono:",
+      "options_it": [
+        "isotopi dello stesso elemento.",
+        "due elementi chimici diversi.",
+        "lo stesso isotopo in due stati energetici.",
+        "due atomi con lo stesso numero di neutroni e diverso numero di protoni."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Sono entrambi uranio perché hanno lo stesso Z; differiscono per il numero di neutroni e quindi per A.",
+      "misconceptionIds": [
+        "misconception.different_isotope_means_different_element"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022"
+      ],
+      "parallelFamily": "ISOTOPE_B",
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E05",
+      "level": "explorer",
+      "conceptIds": [
+        "radioactivity.phenomenon"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Quale descrizione è più vicina al significato fisico di “nucleo radioattivo”?",
+      "options_it": [
+        "Un nucleo instabile che può trasformarsi spontaneamente emettendo radiazione e/o particelle.",
+        "Un atomo con troppi elettroni negli orbitali esterni.",
+        "Un materiale che ha assorbito abbastanza radiazione da immagazzinarla.",
+        "Un elemento che si trova necessariamente in una centrale nucleare."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "La radioattività riguarda l’instabilità e la trasformazione del nucleo, non l’accumulo di radiazione o il solo assetto elettronico.",
+      "misconceptionIds": [
+        "misconception.radiation_accumulates",
+        "misconception.radioactive_means_artificial"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E06",
+      "level": "explorer",
+      "conceptIds": [
+        "radioactivity.risk_context"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Una persona esegue una normale radiografia diagnostica e nessun materiale radioattivo viene introdotto nel corpo. Quale descrizione è corretta?",
+      "options_it": [
+        "È stata irradiata, ma questo non significa che sia stata contaminata da materiale radioattivo.",
+        "È stata contaminata perché i raggi X restano nel corpo.",
+        "È diventata un radionuclide per alcune ore.",
+        "Irradiazione e contaminazione indicano sempre lo stesso fenomeno."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Irradiazione significa esposizione a radiazione; contaminazione richiede la presenza indesiderata di materiale radioattivo.",
+      "misconceptionIds": [
+        "misconception.irradiation_equals_contamination",
+        "misconception.radiation_accumulates"
+      ],
+      "tier2": {
+        "prompt_it": "Qual è il motivo principale?",
+        "options_it": [
+          "L’irradiazione non implica trasferimento di materiale radioattivo.",
+          "La radiazione viene neutralizzata dall’aria.",
+          "Tutte le radiazioni mediche sono non ionizzanti."
+        ],
+        "correctOption": 0
+      },
+      "sourceKeys": [
+        "MORALES2022",
+        "SIERSMA2021"
+      ],
+      "parallelFamily": "IRRAD_CONTAM_A",
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E07",
+      "level": "explorer",
+      "conceptIds": [
+        "radioactivity.risk_context"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "Una goccia di soluzione contenente iodio-131 cade su un guanto e vi rimane. Come descriveresti la situazione?",
+      "options_it": [
+        "Il guanto è contaminato da materiale radioattivo e può anche essere una sorgente di irradiazione.",
+        "Il guanto è soltanto irradiato: non contiene materiale radioattivo.",
+        "Il guanto ha accumulato “radiazione” ma non materia.",
+        "Non c’è alcun problema perché la radioattività esiste solo nei nuclei, non negli oggetti."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Qui materiale radioattivo è fisicamente presente sul guanto: è contaminazione; quel materiale può emettere radiazione.",
+      "misconceptionIds": [
+        "misconception.irradiation_equals_contamination"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022",
+        "SIERSMA2021"
+      ],
+      "parallelFamily": "IRRAD_CONTAM_B",
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E08",
+      "level": "explorer",
+      "conceptIds": [
+        "radioactivity.risk_context"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Dopo una normale radiografia con raggi X, il paziente:",
+      "options_it": [
+        "non diventa normalmente radioattivo per il solo fatto di essere stato irradiato.",
+        "continua a emettere raggi X finché la dose non “esce” dal corpo.",
+        "rimane sempre radioattivo per almeno un’emivita.",
+        "diventa contaminato anche se nessun materiale radioattivo è stato somministrato."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Nella radiografia diagnostica i fotoni attraversano/interagiscono con il corpo; non restano immagazzinati come una sostanza radioattiva.",
+      "misconceptionIds": [
+        "misconception.irradiation_equals_contamination",
+        "misconception.radiation_accumulates"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022",
+        "SIERSMA2021"
+      ],
+      "parallelFamily": "XRAY_A",
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E09",
+      "level": "explorer",
+      "conceptIds": [
+        "radioactivity.risk_context"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Quale frase distingue meglio “radiazione” da “materiale radioattivo”?",
+      "options_it": [
+        "La radiazione trasporta energia; un materiale radioattivo contiene nuclei instabili che possono emetterla.",
+        "Sono due parole perfettamente intercambiabili.",
+        "La radiazione è una sostanza che si accumula nei materiali.",
+        "Il materiale radioattivo esiste solo mentre sta emettendo un fotone."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "La distinzione tra radiazione e sorgente/materiale radioattivo è fondamentale per comprendere irradiazione e contaminazione.",
+      "misconceptionIds": [
+        "misconception.radiation_equals_radioactive_material",
+        "misconception.radiation_accumulates"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E10",
+      "level": "explorer",
+      "conceptIds": [
+        "radioactivity.risk_context"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "Due situazioni comuni: (1) un alimento viene trattato con un processo di irraggiamento autorizzato per ridurre microrganismi o insetti; (2) una persona resta per un po’ vicino a un paziente a cui è stato somministrato un radiofarmaco per una PET. Quale affermazione è corretta per la persona o per l’alimento che riceve soltanto la radiazione?",
+      "options_it": [
+        "L’esposizione alla radiazione, da sola, non li rende radioattivi.",
+        "Diventano radioattivi perché assorbono e poi riemettono la radiazione ricevuta.",
+        "Diventano necessariamente contaminati da radionuclidi.",
+        "Rimangono radioattivi per almeno un’emivita della sorgente che li ha irradiati."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "L’irradiazione è esposizione a radiazione, non trasferimento automatico di materiale radioattivo. Nei processi autorizzati di irraggiamento alimentare il trattamento non rende il cibo radioattivo. Stare vicino a un paziente PET può comportare esposizione esterna, ma non rende radioattiva la persona esposta.",
+      "misconceptionIds": [
+        "misconception.irradiation_equals_contamination",
+        "misconception.radiation_accumulates",
+        "misconception.irradiation_always_makes_radioactive"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022",
+        "SIERSMA2021",
+        "FDA_FOOD_IRRADIATION",
+        "IAEA_PET_RADIATION_PROTECTION"
+      ],
+      "parallelFamily": null,
+      "transferItem": true,
+      "reviewNotes": "Explorer intentionally teaches the practical rule; activation exceptions are reserved for Scientist S13."
+    },
+    {
+      "id": "E11",
+      "level": "explorer",
+      "conceptIds": [
+        "radioactivity.risk_context"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "Sai soltanto che due sorgenti sono “radioattive”. Puoi stabilire quale comporta più rischio?",
+      "options_it": [
+        "No: servono informazioni come attività/quantità, tipo ed energia della radiazione, distanza/tempo di esposizione e possibilità di incorporazione.",
+        "Sì: è sempre più pericolosa quella con emivita più lunga.",
+        "Sì: è sempre più pericolosa quella artificiale.",
+        "Sì: basta sapere quale ha il numero di massa maggiore."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "“Radioattivo” da solo non quantifica il rischio; il rischio radiologico dipende dallo scenario e dall’esposizione.",
+      "misconceptionIds": [
+        "misconception.radioactive_means_always_extremely_dangerous",
+        "misconception.longer_half_life_means_more_dangerous"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E12",
+      "level": "explorer",
+      "conceptIds": [
+        "half_life.concept"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Il tempo di dimezzamento di un radionuclide è:",
+      "options_it": [
+        "il tempo in cui, in media, il numero di nuclei radioattivi (e quindi l’attività, a parità di condizioni) si riduce alla metà.",
+        "il tempo dopo il quale tutti i nuclei sono decaduti.",
+        "il tempo necessario affinché metà della radiazione rimanga intrappolata nel materiale.",
+        "un tempo scelto dall’operatore in base alla quantità di campione."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Il decadimento è statistico ed esponenziale: dopo un’emivita resta in media metà dei nuclei radioattivi iniziali.",
+      "misconceptionIds": [
+        "misconception.radioactivity_is_permanent",
+        "misconception.half_life_means_all_gone"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022",
+        "PRATHER2005",
+        "NAKIBOGLU2006"
+      ],
+      "parallelFamily": "HALF_DEF_A",
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E13",
+      "level": "explorer",
+      "conceptIds": [
+        "half_life.concept"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "Un campione contiene inizialmente 1000 nuclei radioattivi di un certo radionuclide. Dopo un tempo pari a un’emivita, quanti nuclei radioattivi ci si aspetta rimangano, in media?",
+      "options_it": [
+        "circa 500",
+        "circa 750",
+        "circa 250",
+        "zero"
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Dopo una emivita la popolazione radioattiva attesa è dimezzata.",
+      "misconceptionIds": [
+        "misconception.half_life_linear",
+        "misconception.half_life_means_all_gone"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "PRATHER2005",
+        "NAKIBOGLU2006"
+      ],
+      "parallelFamily": "HALF_DEF_B",
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E14",
+      "level": "explorer",
+      "conceptIds": [
+        "half_life.order_of_magnitude"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "Dopo due emivite, quale frazione della quantità iniziale di un radionuclide rimane, in media?",
+      "options_it": [
+        "1/4",
+        "1/2",
+        "1/3",
+        "zero"
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Ogni emivita dimezza ciò che rimane: 1 → 1/2 → 1/4.",
+      "misconceptionIds": [
+        "misconception.half_life_linear"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "PRATHER2005",
+        "NAKIBOGLU2006"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E15",
+      "level": "explorer",
+      "conceptIds": [
+        "half_life.concept"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Due campioni contengono quantità diverse dello stesso radionuclide e si trovano nelle stesse condizioni ordinarie. Il loro tempo di dimezzamento:",
+      "options_it": [
+        "è lo stesso: è una proprietà del radionuclide.",
+        "è maggiore nel campione che contiene più nuclei.",
+        "è minore nel campione più radioattivo.",
+        "dipende direttamente dal volume del contenitore."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "La quantità iniziale cambia il numero di decadimenti/attività, non il valore dell’emivita del radionuclide.",
+      "misconceptionIds": [
+        "misconception.half_life_depends_on_amount"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "PRATHER2005",
+        "NAKIBOGLU2006"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E16",
+      "level": "explorer",
+      "conceptIds": [
+        "radioactivity.risk_context",
+        "half_life.concept"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Un radionuclide ha un’emivita molto più lunga di un altro. Quale conclusione è corretta?",
+      "options_it": [
+        "L’emivita da sola non basta per dire quale sia più pericoloso.",
+        "Quello con emivita più lunga è sempre più pericoloso.",
+        "Quello con emivita più corta è sempre innocuo.",
+        "Quello con emivita più lunga emette necessariamente particelle alfa."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Il rischio non dipende in modo monotono dall’emivita: contano attività, quantità, emissioni, energia, esposizione e biocinetica.",
+      "misconceptionIds": [
+        "misconception.longer_half_life_means_more_dangerous"
+      ],
+      "tier2": {
+        "prompt_it": "Perché?",
+        "options_it": [
+          "Perché il rischio dipende da più variabili oltre all’emivita.",
+          "Perché l’emivita non ha alcuna relazione con il decadimento.",
+          "Perché tutti i radionuclidi hanno la stessa attività."
+        ],
+        "correctOption": 0
+      },
+      "sourceKeys": [
+        "MORALES2022"
+      ],
+      "parallelFamily": "RISK_HALF_A",
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E17",
+      "level": "explorer",
+      "conceptIds": [
+        "half_life.order_of_magnitude",
+        "medical.pet",
+        "medical.spect"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "Per un radionuclide diagnostico, quale criterio sull’emivita è generalmente più sensato?",
+      "options_it": [
+        "Deve essere abbastanza lunga per preparazione/esame, ma non inutilmente lunga rispetto alla procedura.",
+        "Deve essere sempre la più lunga possibile.",
+        "Deve essere sempre inferiore a un minuto.",
+        "L’emivita non ha mai importanza in medicina nucleare."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "La scelta dell’emivita è un compromesso legato alla logistica, alla biologia e alla dose; non esiste un valore universalmente migliore.",
+      "misconceptionIds": [
+        "misconception.longer_half_life_always_better",
+        "misconception.shorter_half_life_always_better"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "IAEA_PET"
+      ],
+      "parallelFamily": null,
+      "transferItem": true,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E18",
+      "level": "explorer",
+      "conceptIds": [
+        "decay.alpha"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "remember",
+      "stem_it": "Una particella alfa è:",
+      "options_it": [
+        "un nucleo di elio formato da due protoni e due neutroni.",
+        "un elettrone proveniente da un orbitale atomico.",
+        "un fotone gamma.",
+        "un positrone."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "La particella alfa è composta da 2 protoni e 2 neutroni.",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [
+        "IAEA_GLOSSARY"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E19",
+      "level": "explorer",
+      "conceptIds": [
+        "decay.beta_minus"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Quale descrizione di base del decadimento β− è corretta?",
+      "options_it": [
+        "Nel nucleo un neutrone si trasforma in un protone e viene emesso un elettrone β−.",
+        "Il nucleo espelle semplicemente uno degli elettroni che già orbitavano attorno all’atomo.",
+        "Due protoni e due neutroni vengono emessi insieme.",
+        "Un protone viene emesso dal nucleo e diventa un elettrone fuori dall’atomo."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "A livello Explorer è sufficiente riconoscere che β− è una trasformazione nucleare e che l’elettrone emesso non è un normale elettrone orbitale espulso. I dettagli su antineutrino ed energia condivisa non sono richiesti.",
+      "misconceptionIds": [
+        "misconception.beta_minus_is_orbital_electron"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E20",
+      "level": "explorer",
+      "conceptIds": [
+        "decay.beta_plus"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Quale descrizione di base del decadimento β+ è corretta?",
+      "options_it": [
+        "Nel nucleo un protone si trasforma in un neutrone e viene emesso un positrone.",
+        "Il nucleo emette un protone che viene poi chiamato positrone.",
+        "Il nucleo emette direttamente due fotoni da 511 keV senza produrre un positrone.",
+        "Un elettrone orbitale entra nel nucleo e viene emesso di nuovo con carica positiva."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "A livello Explorer è sufficiente il meccanismo essenziale: β+ comporta una trasformazione protone → neutrone con emissione di un positrone. I dettagli sul neutrino non sono richiesti.",
+      "misconceptionIds": [
+        "misconception.beta_plus_equals_gamma"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "IAEA_PET"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E21",
+      "level": "explorer",
+      "conceptIds": [
+        "decay.electron_capture"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Quale descrizione di base della cattura elettronica (EC) è corretta?",
+      "options_it": [
+        "Il nucleo cattura un elettrone atomico; nel nucleo un protone viene convertito in un neutrone.",
+        "È semplicemente un altro nome per l’emissione β−.",
+        "Un detector cattura un fotone gamma proveniente dall’atomo.",
+        "Un elettrone viene catturato dalla nube elettronica senza alcun cambiamento nel nucleo."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "A livello Explorer basta riconoscere che EC coinvolge realmente il nucleo: un elettrone atomico viene catturato e la composizione nucleare cambia. I dettagli sul neutrino e sul riassestamento atomico non sono richiesti.",
+      "misconceptionIds": [
+        "misconception.ec_only_changes_electrons"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E22",
+      "level": "explorer",
+      "conceptIds": [
+        "radiation.gamma",
+        "concept.decay_mode_vs_radiation"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Un fotone γ emesso da un nucleo è:",
+      "options_it": [
+        "radiazione elettromagnetica di alta energia che può essere emessa quando il nucleo si de-eccita.",
+        "una particella formata da due protoni e due neutroni.",
+        "un positrone che ha perso la carica.",
+        "un elettrone orbitale."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "La radiazione gamma è elettromagnetica e può accompagnare la de-eccitazione di un nucleo.",
+      "misconceptionIds": [
+        "misconception.gamma_is_identical_to_beta_decay_mode"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E23",
+      "level": "explorer",
+      "conceptIds": [
+        "concept.decay_mode_vs_radiation",
+        "decay.beta_minus",
+        "radiation.gamma"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "Un radionuclide decade β− e il nucleo figlio, inizialmente eccitato, emette poi un fotone γ. Quale frase è più corretta?",
+      "options_it": [
+        "Il β− descrive la trasformazione nucleare; il γ può essere una radiazione successiva di de-eccitazione.",
+        "β− e γ sono necessariamente lo stesso modo di decadimento.",
+        "L’emissione γ dimostra che non è avvenuto alcun decadimento β−.",
+        "Un nucleo non può emettere più di un tipo di radiazione nella stessa catena di eventi."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "“Modo di decadimento” e “radiazione osservata” non sono categorie sempre sovrapponibili.",
+      "misconceptionIds": [
+        "misconception.gamma_is_identical_to_beta_decay_mode"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022"
+      ],
+      "parallelFamily": null,
+      "transferItem": true,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E24",
+      "level": "explorer",
+      "conceptIds": [
+        "medical.pet",
+        "medical.pet_beta_plus_link",
+        "decay.beta_plus"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "Stai scegliendo un radionuclide per un tracciante PET. Quale proprietà è particolarmente rilevante?",
+      "options_it": [
+        "Che sia un emettitore di positroni (β+), tra gli altri requisiti pratici e biologici.",
+        "Che emetta soltanto particelle alfa.",
+        "Che abbia necessariamente un’emivita di molti anni.",
+        "Che sia un elemento naturale."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "La PET utilizza radionuclidi che decadono con emissione di positroni; poi il sistema rileva i fotoni di annichilazione.",
+      "misconceptionIds": [
+        "misconception.beta_plus_equals_gamma"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "IAEA_PET"
+      ],
+      "parallelFamily": "PET_A",
+      "transferItem": true,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E25",
+      "level": "explorer",
+      "conceptIds": [
+        "medical.spect",
+        "medical.spect_gamma_link",
+        "radiation.gamma"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "Stai scegliendo un radionuclide per imaging SPECT. Quale caratteristica è tipicamente utile?",
+      "options_it": [
+        "Emissione di fotoni gamma rilevabili con una gamma camera, insieme a caratteristiche energetiche e biologiche adatte.",
+        "Emissione esclusiva di particelle alfa molto energetiche.",
+        "Un’emivita necessariamente superiore a cento anni.",
+        "L’assenza completa di qualunque radiazione penetrante."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "La SPECT è una tecnica di imaging a singolo fotone e usa tipicamente radionuclidi con emissioni gamma adatte alla rivelazione.",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [
+        "IAEA_PET"
+      ],
+      "parallelFamily": "SPECT_A",
+      "transferItem": true,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E26",
+      "level": "explorer",
+      "conceptIds": [
+        "medical.pet",
+        "medical.spect",
+        "concept.decay_mode_vs_radiation"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Quale confronto è più corretto?",
+      "options_it": [
+        "PET usa radionuclidi emettitori di positroni; SPECT usa tipicamente radionuclidi che forniscono fotoni gamma rilevabili.",
+        "PET e SPECT richiedono sempre esattamente lo stesso tipo di decadimento.",
+        "PET usa solo particelle alfa; SPECT solo β−.",
+        "PET e SPECT non usano radionuclidi."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Le due tecniche hanno principi di rivelazione differenti; non bisogna ridurre PET a “un’altra tecnica gamma” senza distinguere l’origine dei fotoni.",
+      "misconceptionIds": [
+        "misconception.beta_plus_equals_gamma"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "IAEA_PET"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E27",
+      "level": "explorer",
+      "conceptIds": [
+        "medical.therapy",
+        "medical.pet",
+        "medical.spect"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Quale distinzione descrive meglio diagnosi e terapia con radionuclidi?",
+      "options_it": [
+        "Nell’imaging si vuole soprattutto rivelare il segnale del tracciante; nella terapia si vuole depositare energia nel bersaglio biologico.",
+        "Nella terapia non si usa mai radiazione ionizzante.",
+        "Nell’imaging si cerca sempre di distruggere le cellule marcate.",
+        "Sono esattamente la stessa procedura con nomi diversi."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Imaging e terapia hanno obiettivi fisici/clinici differenti anche quando condividono concetti di targeting.",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [
+        "IAEA_THERAPY"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E28",
+      "level": "explorer",
+      "conceptIds": [
+        "medical.therapy"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Quale caratteristica è coerente con l’uso terapeutico di un radionuclide?",
+      "options_it": [
+        "La possibilità di depositare una dose di radiazione ionizzante nel bersaglio biologico, insieme a proprietà fisiche e biologiche adatte.",
+        "L’assenza completa di qualunque emissione ionizzante.",
+        "Il fatto di essere necessariamente un emettitore di positroni per PET.",
+        "Un’emivita obbligatoriamente di migliaia di anni."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "In terapia il radionuclide deve contribuire a depositare energia nel bersaglio; il tipo specifico di emissione terapeutica viene approfondito al livello Scientist.",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [
+        "IAEA_THERAPY"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": "Explorer: intenzionalmente non distingue ancora alpha/beta-/Auger; tale distinzione è Scientist."
+    },
+    {
+      "id": "E29",
+      "level": "explorer",
+      "conceptIds": [
+        "medical.pet",
+        "medical.spect",
+        "half_life.order_of_magnitude"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "transfer",
+      "stem_it": "Due candidati hanno proprietà biologiche simili. Uno ha emivita di 90 minuti, l’altro di 90 anni. Per un esame diagnostico che dura alcune ore, quale conclusione è più ragionevole?",
+      "options_it": [
+        "Il candidato da 90 minuti potrebbe essere più compatibile con la scala temporale dell’esame, se le altre proprietà sono adatte.",
+        "Quello da 90 anni è sempre migliore perché dura di più.",
+        "Sono equivalenti perché l’emivita non influisce sulla pianificazione.",
+        "Quello da 90 minuti è sicuramente terapeutico e non può essere diagnostico."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "È un item di trasferimento sull’ordine di grandezza, non una regola assoluta: la scelta reale dipende da più parametri.",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [
+        "IAEA_PET"
+      ],
+      "parallelFamily": null,
+      "transferItem": true,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E30",
+      "level": "explorer",
+      "conceptIds": [
+        "application.radon",
+        "radioactivity.natural_and_artificial"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Il radon presente in alcune abitazioni è un esempio di:",
+      "options_it": [
+        "radioattività naturale che può avere rilevanza ambientale e sanitaria.",
+        "radioattività prodotta esclusivamente da centrali nucleari.",
+        "radiazione elettromagnetica non associata ad alcun radionuclide.",
+        "un gas stabile che diventa radioattivo solo entrando nei polmoni."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Il radon è un gas radioattivo naturale derivante dalle catene di decadimento presenti nella crosta terrestre.",
+      "misconceptionIds": [
+        "misconception.radioactive_means_artificial"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022",
+        "IAEA_NATURAL"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E31",
+      "level": "explorer",
+      "conceptIds": [
+        "application.dating_geoscience",
+        "application.cosmogenic_astronomy"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Perché il carbonio-14 è utile nella datazione di materiali organici?",
+      "options_it": [
+        "Perché è un radionuclide incorporato nel ciclo del carbonio e la sua diminuzione nel tempo può fornire informazione temporale.",
+        "Perché trasforma qualsiasi reperto in uranio.",
+        "Perché la sua quantità aumenta indefinitamente dopo la morte.",
+        "Perché non è radioattivo finché non viene misurato."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "L’uso del C-14 sfrutta il decadimento radioattivo nel tempo e il suo ruolo nel ciclo del carbonio.",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [
+        "IAEA_NATURAL"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E32",
+      "level": "explorer",
+      "conceptIds": [
+        "radioactivity.natural_and_artificial"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Quale affermazione sul potassio-40 (K-40) è corretta?",
+      "options_it": [
+        "È un radionuclide naturale presente anche nel corpo umano perché il potassio fa parte della normale composizione biologica.",
+        "Può esistere solo come contaminante proveniente da incidenti nucleari.",
+        "È prodotto dal corpo quando riceve una radiografia.",
+        "La sua presenza dimostra che il corpo umano è pericolosamente contaminato."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Una piccola radioattività naturale interna è normale; K-40 è una delle sue componenti.",
+      "misconceptionIds": [
+        "misconception.radioactive_means_artificial",
+        "misconception.radioactive_means_always_extremely_dangerous"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "IAEA_NATURAL"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E33",
+      "level": "explorer",
+      "conceptIds": [
+        "application.industry",
+        "application.research",
+        "medical.therapy",
+        "medical.pet",
+        "medical.spect"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Quale elenco contiene soltanto esempi plausibili di uso o studio della radioattività?",
+      "options_it": [
+        "Medicina nucleare, traccianti nella ricerca, datazione, alcuni controlli industriali e monitoraggio ambientale.",
+        "Solo bombe e centrali nucleari.",
+        "Wi-Fi, onde sonore e magneti permanenti.",
+        "Qualsiasi apparecchio elettrico acceso."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Le applicazioni dei radionuclidi sono molto più ampie di energia e armi.",
+      "misconceptionIds": [
+        "misconception.radioactivity_only_nuclear_energy_or_weapons"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022",
+        "RAD_RATINGS"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E34",
+      "level": "explorer",
+      "conceptIds": [
+        "application.cosmogenic_astronomy",
+        "radioactivity.natural_and_artificial"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Le interazioni dei raggi cosmici con l’atmosfera possono:",
+      "options_it": [
+        "produrre radionuclidi cosmogenici, come il carbonio-14.",
+        "rendere impossibile qualunque radioattività naturale.",
+        "produrre soltanto elementi stabili.",
+        "avvenire solo vicino a un reattore nucleare."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "I raggi cosmici possono produrre radionuclidi naturali nell’atmosfera.",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [
+        "IAEA_NATURAL"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E35",
+      "level": "explorer",
+      "conceptIds": [
+        "radioactivity.phenomenon",
+        "application.research"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Quale frase descrive meglio il rapporto tra radioattività e tecnologia nucleare?",
+      "options_it": [
+        "La tecnologia nucleare è uno dei contesti in cui la radioattività è rilevante, ma il fenomeno esiste anche in natura, medicina, ambiente e ricerca.",
+        "Radioattività e produzione di energia nucleare sono sinonimi.",
+        "La radioattività compare soltanto quando l’uomo divide un nucleo.",
+        "La radioattività naturale è una contraddizione."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "La radioattività è un fenomeno fisico più generale delle sue applicazioni energetiche.",
+      "misconceptionIds": [
+        "misconception.radioactivity_only_nuclear_energy_or_weapons",
+        "misconception.radioactive_means_artificial"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E38",
+      "level": "explorer",
+      "conceptIds": [
+        "medical.pet",
+        "medical.pet_beta_plus_link",
+        "half_life.order_of_magnitude"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "transfer",
+      "stem_it": "Un radionuclide X, che non hai mai visto nel gioco, emette β+ e ha un’emivita di circa 75 minuti. Quale applicazione è più coerente da considerare per prima, assumendo che anche chimica e biologia siano adatte?",
+      "options_it": [
+        "PET.",
+        "Una terapia basata esclusivamente su emissione α.",
+        "Datazione di reperti di migliaia di anni.",
+        "Nessuna applicazione può essere collegata a queste proprietà."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "È un item di trasferimento: l’emissione β+ rende plausibile PET e l’emivita è compatibile con una scala clinica breve.",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [
+        "IAEA_PET"
+      ],
+      "parallelFamily": "PET_B",
+      "transferItem": true,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E39",
+      "level": "explorer",
+      "conceptIds": [
+        "medical.spect",
+        "medical.spect_gamma_link",
+        "half_life.order_of_magnitude"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "transfer",
+      "stem_it": "Un radionuclide Y emette fotoni γ adatti alla rivelazione, non emette positroni e ha un’emivita di alcune ore. Quale applicazione diagnostica è, tra queste, più coerente?",
+      "options_it": [
+        "SPECT.",
+        "PET basata su annichilazione di positroni.",
+        "Una terapia alfa perché ogni fotone gamma è una particella alfa.",
+        "Datazione geologica di miliardi di anni."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "È un item di trasferimento che richiede di distinguere imaging a singolo fotone da PET.",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [
+        "IAEA_PET"
+      ],
+      "parallelFamily": "SPECT_B",
+      "transferItem": true,
+      "reviewNotes": ""
+    },
+    {
+      "id": "E40",
+      "level": "explorer",
+      "conceptIds": [
+        "radioactivity.phenomenon",
+        "application.environment",
+        "application.research",
+        "application.industry",
+        "medical.pet",
+        "medical.spect",
+        "medical.therapy",
+        "application.dating_geoscience",
+        "application.cosmogenic_astronomy"
+      ],
+      "itemType": "open",
+      "cognitiveLevel": "generate",
+      "stem_it": "Scrivi fino a cinque contesti, fenomeni o applicazioni nei quali la radioattività può essere presente, importante o utilizzata.",
+      "options_it": [],
+      "correctOption": null,
+      "correctRationale_it": "",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": "Outcome separato: breadth of radioactivity representation. Non assegnare un unico punteggio “conoscenza”; codificare categorie a priori e risposte errate."
+    }
+  ],
+  "scientistExtensionItems": [
+    {
+      "id": "S01",
+      "level": "scientist",
+      "conceptIds": [
+        "nuclide.N_equals_A_minus_Z",
+        "nuclide.A",
+        "nuclide.Z",
+        "nuclide.N"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "Per ²³⁵U (Z = 92), quanti neutroni contiene il nucleo?",
+      "options_it": [
+        "143",
+        "92",
+        "235",
+        "327"
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "N = A − Z = 235 − 92 = 143.",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "S02",
+      "level": "scientist",
+      "conceptIds": [
+        "nuclide.element_vs_isotope",
+        "nuclide.Z",
+        "nuclide.A"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Due nuclidi hanno lo stesso Z ma valori diversi di A. Sono:",
+      "options_it": [
+        "isotopi dello stesso elemento.",
+        "isobari dello stesso nuclide.",
+        "necessariamente isotoni.",
+        "due elementi diversi per definizione."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Lo stesso Z identifica lo stesso elemento; A diverso significa diverso numero di neutroni.",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022",
+        "NAKIBOGLU2006"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "S03",
+      "level": "scientist",
+      "conceptIds": [
+        "decay.alpha",
+        "nuclide.Z",
+        "nuclide.A"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "In un decadimento α, come cambiano A e Z del nucleo padre?",
+      "options_it": [
+        "A diminuisce di 4 e Z di 2.",
+        "A resta costante e Z aumenta di 1.",
+        "A resta costante e Z diminuisce di 1.",
+        "A diminuisce di 1 e Z resta costante."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "La particella α contiene 2 protoni e 2 neutroni.",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "S04",
+      "level": "scientist",
+      "conceptIds": [
+        "decay.beta_minus",
+        "nuclide.Z",
+        "nuclide.A"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "Nel decadimento β− di un nucleo, ignorando l’eventuale de-eccitazione successiva:",
+      "options_it": [
+        "A resta costante e Z aumenta di 1.",
+        "A resta costante e Z diminuisce di 1.",
+        "A diminuisce di 4 e Z di 2.",
+        "A e Z restano sempre invariati."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Un neutrone si trasforma in protone con emissione di elettrone e antineutrino.",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "S05",
+      "level": "scientist",
+      "conceptIds": [
+        "decay.beta_plus",
+        "nuclide.Z",
+        "nuclide.A"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "Nel decadimento β+ di un nucleo:",
+      "options_it": [
+        "A resta costante e Z diminuisce di 1.",
+        "A resta costante e Z aumenta di 1.",
+        "A diminuisce di 4 e Z di 2.",
+        "A aumenta di 1 e Z resta costante."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Un protone si trasforma in neutrone con emissione di positrone e neutrino.",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "S06",
+      "level": "scientist",
+      "conceptIds": [
+        "decay.electron_capture",
+        "decay.beta_plus",
+        "nuclide.Z",
+        "nuclide.A"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "Nella cattura elettronica (EC), quale variazione di A e Z avviene nel nucleo?",
+      "options_it": [
+        "A resta costante e Z diminuisce di 1.",
+        "A resta costante e Z aumenta di 1.",
+        "A diminuisce di 4 e Z di 2.",
+        "A e Z aumentano entrambi di 1."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "La cattura di un elettrone da parte del nucleo converte un protone in neutrone; come nel β+, Z diminuisce di 1 ma il meccanismo è diverso.",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "S07",
+      "level": "scientist",
+      "conceptIds": [
+        "radiation.gamma_transition",
+        "concept.decay_mode_vs_radiation",
+        "nuclide.Z",
+        "nuclide.A"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "Un nucleo eccitato emette un fotone γ senza altre trasformazioni concomitanti. Che cosa accade ad A e Z?",
+      "options_it": [
+        "Restano invariati.",
+        "A diminuisce di 1 e Z resta invariato.",
+        "A resta invariato e Z aumenta di 1.",
+        "A diminuisce di 4 e Z di 2."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "L’emissione gamma può de-eccitare il nucleo senza cambiare il numero di protoni o neutroni.",
+      "misconceptionIds": [
+        "misconception.gamma_is_identical_to_beta_decay_mode"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "MORALES2022"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "S08",
+      "level": "scientist",
+      "conceptIds": [
+        "half_life.concept",
+        "reasoning.quantitative_threshold"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "Un radionuclide ha T½ = 6 h. Se inizialmente ci sono N₀ nuclei radioattivi, quale frazione resta dopo 18 h, in media?",
+      "options_it": [
+        "1/8",
+        "1/3",
+        "1/6",
+        "3/4"
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "18 h corrispondono a tre emivite: (1/2)^3 = 1/8.",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [
+        "PRATHER2005"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "S09",
+      "level": "scientist",
+      "conceptIds": [
+        "half_life.concept",
+        "reasoning.quantitative_threshold",
+        "radioactivity.risk_context"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "Due campioni contengono lo stesso numero N di nuclei radioattivi, ma il radionuclide X ha un’emivita dieci volte più lunga di Y. Trascurando ramificazioni, quale relazione qualitativa vale per l’attività iniziale A = λN?",
+      "options_it": [
+        "X ha attività iniziale circa dieci volte più bassa di Y.",
+        "X ha attività iniziale circa dieci volte più alta di Y.",
+        "Le attività sono necessariamente uguali perché N è uguale.",
+        "Non esiste relazione tra emivita e costante di decadimento."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "λ = ln2/T½: a parità di N, un’emivita più lunga implica una costante di decadimento e quindi un’attività più basse.",
+      "misconceptionIds": [
+        "misconception.longer_half_life_means_more_dangerous"
+      ],
+      "tier2": null,
+      "sourceKeys": [],
+      "parallelFamily": null,
+      "transferItem": true,
+      "reviewNotes": ""
+    },
+    {
+      "id": "S10",
+      "level": "scientist",
+      "conceptIds": [
+        "half_life.log_scale"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "Confronta un’emivita di 1 ora con una di 1 anno. Qual è l’ordine di grandezza del rapporto tra le due scale temporali?",
+      "options_it": [
+        "circa 10⁴",
+        "circa 10¹",
+        "circa 10²",
+        "circa 10⁸"
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Un anno è circa 8760 ore, quindi il rapporto è vicino a 10⁴.",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "S11",
+      "level": "scientist",
+      "conceptIds": [
+        "medical.pet_annihilation",
+        "medical.pet",
+        "decay.beta_plus"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Qual è l’origine principale dei fotoni rilevati in PET?",
+      "options_it": [
+        "L’annichilazione positrone-elettrone, che produce due fotoni da 511 keV emessi quasi in direzioni opposte.",
+        "Una transizione γ diretta obbligatoria del radionuclide PET a 511 keV.",
+        "La cattura neutronica nel paziente.",
+        "La fluorescenza elettronica degli atomi del detector nel corpo."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Il positrone perde energia e si annichila con un elettrone; la PET sfrutta la rivelazione in coincidenza dei fotoni di annichilazione.",
+      "misconceptionIds": [
+        "misconception.pet_nuclide_directly_emits_pet_gammas",
+        "misconception.beta_plus_equals_gamma"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "IAEA_PET"
+      ],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": ""
+    },
+    {
+      "id": "S12",
+      "level": "scientist",
+      "conceptIds": [
+        "medical.therapy_alpha",
+        "medical.therapy_beta_minus",
+        "medical.therapy"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Quale confronto qualitativo è generalmente corretto tra particelle α e β− in terapia radionuclidica?",
+      "options_it": [
+        "Le α hanno tipicamente LET più elevato e range più corto; le β− hanno range più lungo e LET più basso.",
+        "Le β− hanno sempre LET maggiore e range più corto delle α.",
+        "Sono identiche dal punto di vista della deposizione di energia.",
+        "Le α non ionizzano la materia."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Le differenze di LET e range sono centrali nella scelta e nell’interpretazione delle terapie con emettitori alfa e beta-minus.",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [
+        "IAEA_THERAPY"
+      ],
+      "parallelFamily": null,
+      "transferItem": true,
+      "reviewNotes": ""
+    },
+    {
+      "id": "S13",
+      "level": "scientist",
+      "conceptIds": [
+        "radioactivity.risk_context",
+        "nuclear.activation"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "Quale affermazione descrive correttamente il rapporto tra irraggiamento e attivazione nucleare?",
+      "options_it": [
+        "L’irraggiamento non rende automaticamente radioattivo un materiale, ma radiazioni/particelle di tipo ed energia adeguati possono in alcuni casi indurre reazioni nucleari e produrre radionuclidi.",
+        "Qualsiasi fotone ionizzante rende sempre radioattivo il materiale che attraversa.",
+        "L’attivazione è impossibile: un materiale irradiato non può mai produrre nuovi radionuclidi.",
+        "L’attivazione può avvenire solo nei tessuti biologici."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "L’attivazione richiede una reazione nucleare energeticamente e fisicamente possibile; non è una conseguenza generale dell’esposizione a radiazione. I processi autorizzati di irraggiamento alimentare sono progettati entro condizioni che non rendono il cibo radioattivo, mentre neutroni o altre radiazioni/energie appropriate possono produrre attivazione in contesti specifici.",
+      "misconceptionIds": [
+        "misconception.irradiation_always_makes_radioactive",
+        "misconception.irradiation_can_never_activate"
+      ],
+      "tier2": null,
+      "sourceKeys": [
+        "FDA_FOOD_IRRADIATION",
+        "IAEA_FOOD_ACTIVATION",
+        "IAEA_GLOSSARY"
+      ],
+      "parallelFamily": null,
+      "transferItem": true,
+      "reviewNotes": "Scientist-only nuance; intentionally excluded from Explorer explanations."
+    }
+  ],
+  "gameplayProcessItems": [
+    {
+      "id": "G01",
+      "level": "gameplay_process",
+      "conceptIds": [
+        "reasoning.discriminating_question"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "apply",
+      "stem_it": "Hai 20 radionuclidi ancora possibili. Una domanda dividerebbe i candidati in 10 “sì” e 10 “no”; un’altra in 19 e 1. Senza altre informazioni, quale domanda tende a essere più utile per restringere il campo?",
+      "options_it": [
+        "Quella che divide 10 e 10.",
+        "Quella che divide 19 e 1.",
+        "Sono sempre identiche dal punto di vista informativo.",
+        "È impossibile confrontarle anche in linea generale."
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Una domanda bilanciata tende a ridurre maggiormente l’incertezza attesa, anche se il valore didattico di una domanda è una dimensione distinta.",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": "",
+      "scoringStatus": "not_in_RRCI_prepost"
+    },
+    {
+      "id": "G02",
+      "level": "gameplay_process",
+      "conceptIds": [
+        "reasoning.yes_no_classification"
+      ],
+      "itemType": "mcq",
+      "cognitiveLevel": "understand",
+      "stem_it": "Quale domanda rispetta meglio la regola “una domanda a cui si può rispondere sì/no”?",
+      "options_it": [
+        "Emette positroni?",
+        "Come decade questo radionuclide?",
+        "Raccontami la sua storia.",
+        "Quali sono tutte le sue applicazioni?"
+      ],
+      "correctOption": 0,
+      "correctRationale_it": "Una domanda binaria deve poter essere valutata come sì/no rispetto alla carta segreta.",
+      "misconceptionIds": [],
+      "tier2": null,
+      "sourceKeys": [],
+      "parallelFamily": null,
+      "transferItem": false,
+      "reviewNotes": "",
+      "scoringStatus": "not_in_RRCI_prepost"
+    }
+  ]
+}

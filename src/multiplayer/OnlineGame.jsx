@@ -1,3 +1,10 @@
+import {useLearning} from '../learning/useLearning.js';
+import {LearningPanel,LearningRecap} from '../learning/LearningPanel.jsx';
+import {describeQuestion,propertyText} from '../learning/gameplay.js';
+import {selectDeck} from '../learning/adaptiveDeck.js';
+import {learningLevel} from '../learning/levels.js';
+import {safeQuery} from './questions.js';
+import {onlineConfig} from '../learning/levels.js';
 import React, {useState, useEffect, useMemo} from 'react';
 import {be, xe} from '../engine/advanced.js';
 import {multiplayerText} from './i18n.js';
@@ -7,14 +14,42 @@ import {useOnlineRoom} from './useOnlineRoom.js';
 
 export function OnlineGame({lang, config, Card, Modal, showDetail, onBack}) {
   const text = multiplayerText[lang];
+  const learning = useLearning();
+  const startLearning = ({room,code,seat}) => learning.engine.start({id:`${code}:${room.createdAt}:p${seat}`,
+    level:learningLevel(room.config.level),mode:'online',deckIds:room.config.deckIds});
+  const descriptionFor = ({room,board}) => describeQuestion({
+    actionId:room.event.id,query:safeQuery(room.event.acceptedQueryJson),
+    cards:room.config.deckIds.filter(id=>board.remaining[id]&&!board.manuallyDown[id]).map(id=>xe[id]),
+    answer:room.event.answer==='yes',level:learningLevel(room.config.level),language:room.event.language,
+    automatic:room.config.assist==='assisted'&&!!safeQuery(room.event.acceptedQueryJson),
+    spontaneous:room.event.kind==='written',reliable:!!safeQuery(room.event.acceptedQueryJson)});
   const invite = normalizeCode(new URL(location.href).searchParams.get('room') || '');
   const [inputCode,setInputCode] = useState(invite), [question,setQuestion] = useState(''), [chosen,setChosen] = useState(null);
   const [guessMode,setGuessMode] = useState(false), [guess,setGuess] = useState(null), [bypass,setBypass] = useState(false), [copied,setCopied] = useState(false);
   const [answerAssist,setAnswerAssist] = useState(true);
   const [leaving,setLeaving] = useState(false);
-  const online = useOnlineRoom(invite);
+  const online = useOnlineRoom(invite, {
+    beforeApplyAnswer: async context => {
+      await learning.engine.ready;startLearning(context);
+      await new Promise(resolve=>learning.prepare(descriptionFor(context),resolve));
+    },
+    afterApplyAnswer: ({room}) => {
+      const d=learning.engine.match?.questions.find(q=>q.actionId===room.event.id);
+      if(d?.automatic)learning.engine.automatic(d);
+    },
+  });
   const {service,code,room,board,seat,connected,busy,error,run,open,syncing,presence} = online;
   const disabled = !connected || busy || syncing;
+  useEffect(()=>{
+    if(!room||!board||!seat||!learning.ready)return;
+    startLearning({room,code,seat});
+    if(room.phase==='review'&&room.current===seat&&board.appliedEvent===room.event.id&&learning.current?.actionId!==room.event.id) {
+      const previous=learning.engine.match?.questions.find(q=>q.actionId===room.event.id);
+      // An already applied response is observed, never predicted or filtered again.
+      learning.observe(previous||descriptionFor({room,board}));
+    }
+    if(room.phase==='finished')learning.finish(room.winner===seat?'won':'lost');
+  },[code,room?.phase,room?.event.id,board?.appliedEvent,seat,learning.ready]);
   const cards = useMemo(()=>room?.config.deckIds.map(id=>xe[id]).filter(Boolean) || [],[room?.config]);
   const myTurn = room?.current === seat;
   const answering = room?.phase === 'answer' && !myTurn;
@@ -28,10 +63,14 @@ export function OnlineGame({lang, config, Card, Modal, showDetail, onBack}) {
   const respond = (yes,query = null) => run(()=>service.answer(code,room,yes,query));
   const confirmSecret = () => run(()=>service.selectSecret(code,chosen.id));
   const create = () => open(()=> {
-    const deck = [...be];
-    for (let i=deck.length-1;i>0;i--) { const j=Math.floor(Math.random()*(i+1)); [deck[i],deck[j]]=[deck[j],deck[i]]; }
-    return service.create({...config,deckIds:deck.slice(0,config.deckSize).map(c=>c.id)});
+    const deck = selectDeck(be,config.deckSize,{mode:'online'});
+    return service.create({...onlineConfig(config),deckIds:deck.map(c=>c.id)});
   });
+  const endReview = () => {
+    const d=learning.current;
+    const selected=d?.candidateIds.filter(id=>!board.remaining[id]||board.manuallyDown[id])||[];
+    learning.review(selected,()=>run(()=>service.end(code,room)));
+  };
   const copy = async () => {
     const url = new URL(location.href); url.searchParams.set('room',code);
     try { await navigator.clipboard.writeText(url.href); setCopied(true); } catch { setCopied(false); }
@@ -70,6 +109,7 @@ export function OnlineGame({lang, config, Card, Modal, showDetail, onBack}) {
         <div className="mp-top"><h2 data-testid="turn">{myTurn?text.yourTurn:text.opponentTurn}</h2><p>{cards.filter(c=>board.remaining[c.id]&&!board.manuallyDown[c.id]).length} {text.candidates}</p></div>
         <div className="mp-layout">
           <aside className="mp-panel">
+            {myTurn&&<LearningPanel learning={learning} lang={lang}/>}
             <p>{text.secret}: <strong>{ownSecret?.name[lang]}</strong></p>
             <label className="mp-check"><input type="checkbox" checked={answerAssist} disabled={disabled} onChange={async e=>{const value=e.target.checked;setAnswerAssist(value);if(!await run(()=>service.setAssistance(code,value)))setAnswerAssist(board.answerAssistance);}}/>{text.assistance}</label>
             <p>{text.elimination}: {room.config.assist==='assisted'?text.automatic:text.manual}</p>
@@ -94,22 +134,24 @@ export function OnlineGame({lang, config, Card, Modal, showDetail, onBack}) {
             {room.phase === 'review' && <>
               <p className="mp-question">{room.event.kind==='written'?room.event.rawText:text.verbalEvent}</p>
               <h3>{text.answer}: {room.event.answer==='yes'?text.yes:text.no}</h3>
-              {myTurn && <><p>{room.event.acceptedQueryJson&&room.config.assist==='assisted'?text.autoHint:text.manualHint}</p>
-                <button disabled={disabled} onClick={()=>run(()=>service.end(code,room))}>{text.endTurn}</button></>}
+              {myTurn && <>{!learning.active&&<p>{room.event.acceptedQueryJson&&room.config.assist==='assisted'?text.autoHint:text.manualHint}</p>}
+                <button disabled={disabled||learning.active} onClick={endReview}>{text.endTurn}</button></>}
             </>}
             {room.phase === 'guess' && <p>{text.waitingGuess}</p>}
           </aside>
           <div className="mp-board">{cards.map(card=>{
             const down = !board.remaining[card.id] || board.manuallyDown[card.id];
             return <Card key={card.id} item={card} lang={lang} compact audience={room.config.audience} level={room.config.level} inactive={down}
-              onClick={()=>guessMode&&myTurn&&room.phase==='ask'?setGuess(card):showDetail(card)}
-              action={!guessMode&&myTurn&&room.phase==='review'?{label:down?text.restore:text.eliminate,disabled,onClick:()=>run(()=>service.toggleCard(code,card.id))}:null}/>;
+              lens={myTurn&&learning.lens&&learning.current?propertyText(card,learning.current.query,lang):null}
+              onClick={()=>guessMode&&myTurn&&room.phase==='ask'?setGuess(card):(learning.markAssisted(),showDetail(card))}
+              action={!guessMode&&myTurn&&room.phase==='review'?{label:down?text.restore:text.eliminate,disabled:disabled||learning.active,onClick:()=>run(()=>service.toggleCard(code,card.id))}:null}/>;
           })}</div>
         </div>
       </>}
+      {room.phase === 'finished' && <LearningRecap learning={learning} lang={lang}/>}
       {room.phase === 'finished' && <section className="mp-panel"><h2>{room.winner===seat?text.won:text.lost}</h2><p>{text.reveal}: {xe[room.event.cardId]?.name[lang]}</p><button onClick={()=>{online.forgetRoom();setChosen(null);}}>{text.create}</button><button onClick={back}>{text.leave}</button></section>}
     </>}
-    {guess && <Modal close={()=>setGuess(null)}><h2>{text.confirmGuess}</h2><p>{guess.name[lang]}</p><button className="confirm" disabled={disabled} onClick={async()=>{if(await run(()=>service.guess(code,room,guess.id)))setGuess(null);}}>{text.confirmGuess}</button><button onClick={()=>setGuess(null)}>{text.cancel}</button></Modal>}
+    {guess && <Modal close={()=>setGuess(null)}><h2>{text.confirmGuess}</h2><p>{guess.name[lang]}</p><button className="confirm" disabled={disabled} onClick={async()=>{if(await run(()=>service.guess(code,room,guess.id))){learning.engine.emit("GUESS_MADE",room.event.id+":guess",{cardId:guess.id});setGuess(null);}}}>{text.confirmGuess}</button><button onClick={()=>setGuess(null)}>{text.cancel}</button></Modal>}
     {leaving && <Modal close={()=>setLeaving(false)}><h2>{text.leaveRoom}</h2><p>{text.leaveHint}</p><button className="confirm" onClick={()=>{online.forgetRoom();setChosen(null);setLeaving(false);}}>{text.leaveRoom}</button><button onClick={()=>setLeaving(false)}>{text.cancel}</button></Modal>}
   </main>;
 }

@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "policy": {
+    "purpose": "stable mental reference points, not a fixed deck",
+    "adaptation": "light",
+    "maxRecommendedWeightMultiplier": 1.5
+  },
+  "anchors": [
+    {"id":"F-18","reason":["PET","beta+","short half-life"]},
+    {"id":"Tc-99m","reason":["SPECT","gamma","medical diagnostics"]},
+    {"id":"I-131","reason":["medicine","beta-","gamma","therapy/diagnostic context"]},
+    {"id":"Lu-177","reason":["beta- therapy","nuclear medicine"]},
+    {"id":"Ra-226","reason":["natural decay chains","historical/public perception"]},
+    {"id":"At-211","reason":["alpha therapy","research medicine"]},
+    {"id":"C-14","reason":["natural/cosmogenic","dating"]},
+    {"id":"K-40","reason":["natural radioactivity","everyday body/environment"]},
+    {"id":"Rn-222","reason":["natural radioactivity","environment","risk context"]},
+    {"id":"Co-60","reason":["gamma","medicine/industry"]},
+    {"id":"Cs-137","reason":["environment","fallout","gamma/beta context"]},
+    {"id":"U-235","reason":["natural radionuclide","fission/energy context"]},
+    {"id":"U-238","reason":["natural radionuclide","decay chain","geological timescale"]}
+  ]
+}

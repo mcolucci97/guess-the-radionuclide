@@ -11,11 +11,17 @@ const errorCode = error => {
   return ['configError','roomFull','invalidCode','missingRoom','stale','offline'].includes(code) ? code : 'error';
 };
 
-export function useOnlineRoom(invite) {
+export function useOnlineRoom(invite, learningHooks = {}) {
+  // Optional local presentation barrier; no learning state enters the room/transport.
+  const learningHooksRef = useRef(learningHooks);
+  learningHooksRef.current = learningHooks;
   const [service,setService] = useState(null), [code,setCode] = useState('');
   const [room,setRoom] = useState(null), [board,setBoard] = useState(null), [presence,setPresence] = useState({});
   const [connected,setConnected] = useState(false), [busy,setBusy] = useState(false), [error,setError] = useState(''), [attempt,setAttempt] = useState(0);
   const busyRef = useRef(false), resumed = useRef(false);
+  const activeRoom = useRef(null);
+  activeRoom.current = {service,code};
+  useEffect(() => () => { activeRoom.current = null; }, []);
   const repairAttempt = useRef('');
   const report = useCallback(err => setError(errorCode(err)), []);
   const run = useCallback(async fn => {
@@ -67,7 +73,13 @@ export function useOnlineRoom(invite) {
     if (repairAttempt.current === key) return;
     repairAttempt.current = key;
     if (needsReady) run(() => service.markReady(code));
-    else if (needsAnswer) run(() => service.applyAnswer(code,room,room.config.deckIds.map(id=>xe[id])));
+    else if (needsAnswer) run(async () => {
+      // Storage/content failures must not prevent the existing answer recovery.
+      try { await learningHooksRef.current.beforeApplyAnswer?.({room,board,seat,code}); } catch {}
+      if (activeRoom.current?.service !== service || activeRoom.current?.code !== code) return;
+      await service.applyAnswer(code,room,room.config.deckIds.map(id=>xe[id]));
+      try { learningHooksRef.current.afterApplyAnswer?.({room,board,seat,code}); } catch {}
+    });
     else if (needsGuess) run(() => service.resolveGuess(code,room,board.secretId));
   }, [service,connected,busy,room?.seq,board?.secretId,board?.appliedEvent,seat,code,needsReady,needsAnswer,needsGuess,run]);
   const open = fn => run(async () => { const next = await fn(); setCode(next); });

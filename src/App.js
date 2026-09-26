@@ -1,3 +1,10 @@
+import {useLearning} from "./learning/useLearning.js";
+import {LearningPanel, LearningRecap} from "./learning/LearningPanel.jsx";
+import {selectDeck} from "./learning/adaptiveDeck.js";
+import {localId} from "./learning/playerModel.js";
+import {describeQuestion, propertyText} from "./learning/gameplay.js";
+import {LEVELS, learningLevel, legacyLevel, normalConfig} from "./learning/levels.js";
+import {learningText} from "./learning/i18n.js";
 import tutorialIT from "./data/tutorial-it.json";
 import {multiplayerText} from "./multiplayer/i18n.js";
 import {OnlineGame} from "./multiplayer/OnlineGame.jsx";
@@ -522,9 +529,11 @@ function Ct(e) {
   );
 }
 function wt(e) {
+  e = legacyLevel(e);
   return [`intermediate`, `expert`].includes(e) ? 2 : 1 / 0;
 }
 function Tt(e, t = `adult`, n = `base`) {
+  n = legacyLevel(n);
   let r = [`identity.name_starts_with`];
   (t === `child` &&
     r.push(
@@ -587,7 +596,7 @@ function Tt(e, t = `adult`, n = `base`) {
               e === `space.general` ||
               e.startsWith(`physics.`),
           )
-        : n === `expert`
+        : legacyLevel(n) === `expert`
           ? a
           : a.filter((e) => !e.startsWith(`expert.`));
 }
@@ -682,6 +691,7 @@ function kt({
   action: a = null,
   audience: o = `adult`,
   level: s = `base`,
+  lens = null,
 }) {
   return (0, j.jsxs)(`article`, {
     "data-card-id": e.id,
@@ -729,6 +739,7 @@ function kt({
           ],
         }),
       }),
+      lens && j.jsx('p',{className:'learning-lens',children:lens}),
       a &&
         (0, j.jsx)(`button`, {
           type: `button`,
@@ -799,7 +810,7 @@ function Nt({
           ? `Construit à partir de ressources pédagogiques Orano, AIEA et BBC Bitesize, puis adapté au jeu de cartes.`
           : `Costruito a partire da risorse didattiche Orano, IAEA e BBC Bitesize, poi adattato al gioco di carte.`,
     l = tutorials[e],
-    u = l[t]?.[n] || l.adult.base, imageLang=e;
+    u = l[t]?.[legacyLevel(n)] || l.adult.base, imageLang=e;
   return (0, j.jsxs)(`main`, {
     className: `mx-auto max-w-6xl px-5 py-8`,
     children: [
@@ -814,7 +825,7 @@ function Nt({
               }),
               (0, j.jsxs)(`p`, {
                 className: `mt-2 max-w-3xl text-slate-600`,
-                children: [s.audienceHint, ` `, s.depthHint],
+                children: learningText[e].intro,
               }),
               (0, j.jsx)(`p`, {
                 className: `mt-2 max-w-3xl text-xs font-semibold text-slate-500`,
@@ -832,24 +843,10 @@ function Nt({
       (0, j.jsxs)(`div`, {
         className: `mt-6 flex flex-wrap gap-3`,
         children: [
-          (0, j.jsx)(Et, {
-            active: t === `child`,
-            onClick: () => r(`child`),
-            children: s.child,
-          }),
-          (0, j.jsx)(Et, {
-            active: t === `adult`,
-            onClick: () => r(`adult`),
-            children: s.adult,
-          }),
-          (0, j.jsx)(`span`, { className: `mx-2 h-10 border-l` }),
-          [`base`, `intermediate`, `expert`].map((e) =>
-            (0, j.jsx)(
-              Et,
-              { active: n === e, onClick: () => i(e), children: s[e] },
-              e,
-            ),
-          ),
+          LEVELS.map(level => j.jsx(Et, {
+            active: learningLevel(n) === level, onClick: () => i(level),
+            children: learningText[e][level],
+          }, level)),
         ],
       }),
       (0, j.jsxs)(`div`, {
@@ -860,7 +857,7 @@ function Nt({
             children:
               t === `child`
                 ? ({it:`Percorso visivo e narrativo`,en:`Visual stories`,fr:`Parcours visuel`})[e]
-                : n === `expert`
+                : legacyLevel(n) === `expert`
                   ? ({it:`Percorso fisico e tecnico`,en:`Physics and technical concepts`,fr:`Physique et concepts techniques`})[e]
                   : ({it:`Percorso scientifico guidato`,en:`Guided science`,fr:`Parcours scientifique`})[e],
           }),
@@ -1036,6 +1033,8 @@ function Pt({ lang: e, context: t, close: n }) {
   });
 }
 function Ft() {
+  const learning=useLearning();
+  const localTurnStart=_.useRef([]);
   const [guessCandidate,setGuessCandidate]=_.useState(null);
   const [pendingQuery,setPendingQuery]=_.useState(null);
   const busyRef=_.useRef(false);
@@ -1049,7 +1048,7 @@ function Ft() {
     [o, s] = (0, _.useState)({
       mode: `soloEasy`,
       audience: `adult`,
-      level: `base`,
+      level: `explorer`,
       assist: `assisted`,
       deckSize: 26,
     }),
@@ -1139,7 +1138,8 @@ function Ft() {
     setGuessCandidate(null);
     if(o.mode === 'online'){a('online');return;}
     setPendingQuery(null);setPrivacy(null);
-    let e = [...be]; for(let i=e.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[e[i],e[j]]=[e[j],e[i]];} e=e.slice(0,o.deckSize);
+    let e = selectDeck(be,o.deckSize,{profile:learning.engine.profile,mode:o.mode});
+    learning.start({id:localId(),level:o.level,mode:o.mode,deckIds:e.map(c=>c.id)});
     (l(e),
       p(null),
       h(null),
@@ -1169,16 +1169,15 @@ function Ft() {
   function $e(e) {
     return c.filter((t) => te[e].includes(t.id) && !re[e].includes(t.id));
   }
-  function et(t, n, r, i = null) {
-    o.assist === `assisted` &&
-      ne((a) => ({
-        ...a,
-        [t]: a[t].filter((t) => {
-          let a = c.find((e) => e.id === t),
-            o = i ? Ge(a, i, e) : We(a, n, e);
-          return o.type !== `ok` || o.yes === r;
-        }),
-      }));
+  function et(t, n, r, i = null, spontaneous = false) {
+    const description=describeQuestion({query:i,cards:$e(t),answer:r,level:o.level,language:e,
+      automatic:o.assist==='assisted',spontaneous,actionId:localId()});
+    learning.prepare(description,()=>{
+      if(o.assist==='assisted') {
+        ne(a=>({...a,[t]:a[t].filter(id=>!description.expectedIds.includes(id))}));
+        learning.engine.automatic(description);
+      }
+    });
   }
   function nt() {
     let t = c.filter((e) => le.includes(e.id));
@@ -1192,7 +1191,7 @@ function Ft() {
         b(`computerAnswer`));
       return;
     }
-    let n = Qe(t, o.mode === `soloEasy`, o.audience, o.level, e);
+    let n = Qe(t, o.mode === `soloEasy`, o.audience, legacyLevel(o.level), e);
     (C(
       n
         ? { kind: `computerQuestion`, q: n }
@@ -1204,7 +1203,7 @@ function Ft() {
     ),
       b(`computerAnswer`));
   }
-  async function rt(t = x, approved=null) {
+  async function rt(t = x, approved=null, spontaneous=true) {
     if(y!=="ask" || busyRef.current)return;
     busyRef.current=true;setQuestionBusy(true);
     try {
@@ -1251,15 +1250,15 @@ function Ft() {
       );
       return;
     }
-    if(!approved){setPendingQuery({text:i,query:c});return;}
+    if(!approved){setPendingQuery({text:i,query:c,spontaneous});return;}
     (Ct(c) &&
       Number.isFinite(u) &&
       Ne((e) => ({ ...e, [dt]: (e[dt] || 0) + 1 })),
       k(``),
       ee(``),
       o.mode.startsWith(`solo`)
-        ? (et(1, i, l.yes, c),
-          Ke({ who: 1, q: i, answer: l.yes, explanation: l.explanation }),
+        ? (et(1, i, l.yes, c, spontaneous),
+          Ke({ who: 1, q: i, answer: l.yes }),
           C({
             kind: `shownAnswer`,
             q: i,
@@ -1298,10 +1297,20 @@ function Ft() {
       setPrivacy(g), b(`showAnswer`));
   }
   function at() {
-    let e = S?.next;
-    (C(null),
-      k(``),
-      e === `computer` ? nt() : (setPrivacy(g===1?2:1), v((e) => (e === 1 ? 2 : 1)), b(`ask`)));
+    const advance=()=>{
+      let next=S?.next;
+      C(null);k('');
+      if(next==='computer')nt();
+      else {setPrivacy(g===1?2:1);v(value=>value===1?2:1);b('ask');}
+    };
+    if(o.mode==='local') {
+      const before=localTurnStart.current;
+      learning.verbal(before,before.filter(id=>!$e(dt).some(c=>c.id===id)),`player${g}`);
+      advance();
+    } else {
+      const d=learning.current;
+      learning.review(d?.candidateIds.filter(id=>!$e(dt).some(c=>c.id===id))||[],advance);
+    }
   }
   function st(t) {
     if (S.kind === `computerGuess`) {
@@ -1338,6 +1347,7 @@ function Ft() {
   }
   function ct(t) {
     if(y!=="ask")return;
+    learning.engine.emit("GUESS_MADE",localId(),{cardId:t.id},`player${g}`);
     let r = o.mode.startsWith(`solo`) || g === 1 ? m : f,
       i = t.id === r.id;
     if ((Ke({ who: g, q: `${n.guess}: ${t.name[e]}`, answer: i }), ve(!1), i)) {
@@ -1348,6 +1358,7 @@ function Ft() {
       o.mode.startsWith(`solo`) ? nt() : (setPrivacy(g===1?2:1),v((e) => (e === 1 ? 2 : 1))));
   }
   function lt(e) {
+    if(learning.active)return;
     !(o.mode === 'local' && y === 'ask' || o.assist === 'manual' && y === 'showAnswer') ||
       w((t) => ({
         ...t,
@@ -1365,6 +1376,8 @@ function Ft() {
         ).includes(n);
       return (!n || r) && (we === `all` || t.tags.includes(we));
     });
+  _.useEffect(()=>{if(i==='game'&&y==='end')learning.finish(he==='AI'?'lost':'won');},[i,y,he]);
+  _.useEffect(()=>{if(o.mode==='local'&&y==='ask')localTurnStart.current=$e(dt).map(c=>c.id);},[g,y,i]);
   return (0, j.jsxs)(`div`, {
     className: `min-h-screen bg-[#fffdf8] text-slate-900`,
     children: [
@@ -1479,7 +1492,7 @@ function Ft() {
           audience: o.audience,
           level: o.level,
           setAudience: (e) => s({ ...o, audience: e }),
-          setLevel: (e) => s({ ...o, level: e }),
+          setLevel: (e) => s(normalConfig({ ...o, level: e })),
           close: () => a(`home`),
           start: () => a(`setup`),
         }),
@@ -1510,75 +1523,15 @@ function Ft() {
                 ),
               ),
             }),
-            (0, j.jsxs)(jt, {
-              title: r.audience,
-              children: [
-                (0, j.jsx)(`div`, {
-                  className: `w-full text-sm text-slate-500`,
-                  children: r.audienceHint,
-                }),
-                [
-                  [`child`, r.child],
-                  [`adult`, r.adult],
-                ].map(([e, t]) =>
-                  (0, j.jsx)(
-                    Et,
-                    {
-                      active: o.audience === e,
-                      onClick: () => s({ ...o, audience: e }),
-                      children: t,
-                    },
-                    e,
-                  ),
-                ),
-              ],
-            }),
-            (0, j.jsxs)(jt, {
-              title: r.depth,
-              children: [
-                (0, j.jsx)(`div`, {
-                  className: `w-full text-sm text-slate-500`,
-                  children: r.depthHint,
-                }),
-                [
-                  [`base`, r.base, r.baseHint],
-                  [`intermediate`, r.intermediate, r.intermediateHint],
-                  [`expert`, r.expert, r.expertHint],
-                ].map(([e, t, n]) =>
-                  (0, j.jsxs)(
-                    `button`,
-                    {
-                      onClick: () => s({ ...o, level: e }),
-                      className: `min-w-[190px] rounded-2xl border p-4 text-left transition ${o.level === e ? `border-slate-900 bg-slate-900 text-white` : `bg-white hover:border-slate-400`}`,
-                      children: [
-                        (0, j.jsx)(`b`, { children: t }),
-                        (0, j.jsx)(`span`, {
-                          className: `mt-1 block text-xs ${o.level === e ? `text-slate-200` : `text-slate-500`}`,
-                          children: n,
-                        }),
-                      ],
-                    },
-                    e,
-                  ),
-                ),
-              ],
-            }),
-            o.mode !== 'local' && (0, j.jsx)(jt, {
-              title: n.assistance,
-              children: [
-                [`assisted`, n.assisted],
-                [`manual`, n.manual],
-              ].map(([e, t]) =>
-                (0, j.jsx)(
-                  Et,
-                  {
-                    active: o.assist === e,
-                    onClick: () => s({ ...o, assist: e }),
-                    children: t,
-                  },
-                  e,
-                ),
-              ),
+            j.jsx(jt, {
+              title: learningText[e].level,
+              children: LEVELS.map(level => j.jsxs('button', {
+                'data-learning-level': level,
+                onClick: () => s(normalConfig({...o, level})),
+                className: `min-w-[190px] rounded-2xl border p-4 text-left transition ${o.level === level ? 'border-slate-900 bg-slate-900 text-white' : 'bg-white hover:border-slate-400'}`,
+                children: [j.jsx('b', {children: learningText[e][level]}),
+                  j.jsx('span', {className:'mt-1 block text-xs', children:learningText[e][level+'Hint']})],
+              }, level)),
             }),
             (0, j.jsx)(jt, {
               title: n.deck,
@@ -1694,6 +1647,7 @@ function Ft() {
                         (0, j.jsxs)(`aside`, {
                           className: `h-fit rounded-3xl border bg-white p-5`,
                           children: [
+                            j.jsx(LearningPanel,{learning,lang:e}),
                             mt &&
                               (0, j.jsxs)(`div`, {
                                 className: `mb-5 rounded-2xl bg-slate-50 p-3`,
@@ -1703,7 +1657,7 @@ function Ft() {
                                     children: [n.secret, `: `, mt.name[e]],
                                   }),
                                   (0, j.jsxs)(`button`, {
-                                    onClick: () => ye(mt),
+                                    onClick: () => {learning.markAssisted();ye(mt);},
                                     className: `flex w-full justify-center gap-2 rounded-xl border bg-white px-3 py-2 text-sm font-semibold`,
                                     children: [
                                       (0, j.jsx)(se, { className: `h-4 w-4` }),
@@ -1806,12 +1760,12 @@ function Ft() {
                                   }),
                                   (0, j.jsx)(`div`, {
                                     className: `flex flex-wrap gap-2`,
-                                    children: qe(o.audience, o.level, e).map(
+                                    children: qe(o.audience, legacyLevel(o.level), e).map(
                                       (e) =>
                                         (0, j.jsx)(
                                           `button`,
                                           {
-                                            onClick: () => rt(e),
+                                            onClick: () => rt(e,null,false),
                                             disabled: questionBusy,
                                             className: `rounded-lg bg-slate-100 px-3 py-2 text-left text-xs`,
                                             children: e,
@@ -1842,28 +1796,19 @@ function Ft() {
                                       }),
                                     ],
                                   }),
-                                  (0, j.jsxs)(`div`, {
-                                    className: `mt-4 rounded-xl bg-blue-50 p-4 text-sm text-blue-950`,
-                                    children: [
-                                      (0, j.jsxs)(`b`, {
-                                        children: [n.learn, `:`],
-                                      }),
-                                      ` `,
-                                      S.explanation,
-                                    ],
-                                  }),
                                   (0, j.jsx)(`p`, {
                                     className: `mt-4 text-sm font-medium text-slate-600`,
                                     children:
                                       o.assist === `manual`
                                         ? n.answerInstruction
-                                        : n.automaticInstruction,
+                                        : learning.active ? learningText[e].predictHint : n.automaticInstruction,
                                   }),
                                   (0, j.jsxs)(`div`, {
                                     className: `mt-4 flex flex-col gap-2`,
                                     children: [
                                       (0, j.jsx)(`button`, {
                                         onClick: at,
+                                        disabled: learning.active,
                                         className: `w-full rounded-xl bg-slate-900 py-3 font-bold text-white`,
                                         children: n.nextTurn,
                                       }),
@@ -2008,7 +1953,7 @@ function Ft() {
                               children:
                                 o.assist === `manual`
                                   ? n.answerInstruction
-                                  : n.automaticInstruction,
+                                  : learning.active ? learningText[e].predictHint : n.automaticInstruction,
                             }),
                             (0, j.jsx)(`div`, {
                               className: `grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-4`,
@@ -2022,7 +1967,8 @@ function Ft() {
                                     inactive:
                                       !te[dt].includes(t.id) ||
                                       re[dt].includes(t.id),
-                                    onClick: () => (_e ? (o.mode === 'local' ? setGuessCandidate(t) : ct(t)) : ye(t)),
+                                    onClick: () => (_e ? (o.mode === 'local' ? setGuessCandidate(t) : ct(t)) : (learning.markAssisted(),ye(t))),
+                                    lens:learning.lens&&learning.current?propertyText(t,learning.current.query,e):null,
                                     action:
                                       !_e &&
                                       (o.mode === 'local' && y === 'ask' || o.assist === 'manual' && y === 'showAnswer') &&
@@ -2054,6 +2000,7 @@ function Ft() {
                   ],
                 }),
         }),
+      i === 'game' && y === 'end' && j.jsx(LearningRecap,{learning,lang:e}),
       i === `atlas` &&
         (0, j.jsxs)(`main`, {
           className: `mx-auto max-w-7xl px-5 py-8`,
@@ -2275,8 +2222,8 @@ function Ft() {
                   }),
                 ],
               }),
-            ((o.audience === `adult` && o.level !== `base`) ||
-              (o.audience === `child` && o.level === `expert`)) &&
+            ((o.audience === `adult` && legacyLevel(o.level) !== `base`) ||
+              (o.audience === `child` && legacyLevel(o.level) === `expert`)) &&
               (0, j.jsxs)(`dl`, {
                 className: `grid grid-cols-3 gap-3 rounded-2xl bg-slate-50 p-4 text-center`,
                 children: [
@@ -2329,8 +2276,8 @@ function Ft() {
               className: `mt-2 text-slate-700`,
               children: A.story[e],
             }),
-            ((o.audience === `adult` && o.level !== `base`) ||
-              (o.audience === `child` && o.level === `expert`)) &&
+            ((o.audience === `adult` && legacyLevel(o.level) !== `base`) ||
+              (o.audience === `child` && legacyLevel(o.level) === `expert`)) &&
               (0, j.jsxs)(j.Fragment, {
                 children: [
                   (0, j.jsx)(`h3`, {
@@ -2449,7 +2396,7 @@ function Ft() {
                 ),
               ),
             }),
-            o.level === `expert` &&
+            legacyLevel(o.level) === `expert` &&
               (0, j.jsxs)(j.Fragment, {
                 children: [
                   (0, j.jsx)(`h3`, {
@@ -2535,7 +2482,7 @@ function Ft() {
             }),
           ],
         }),
-      pendingQuery && j.jsxs(At,{close:()=>setPendingQuery(null),children:[j.jsxs('div',{className:'confirm-query',children:[j.jsx('h2',{children:({it:'Conferma la domanda',en:'Confirm the question',fr:'Confirmez la question'})[e]}),j.jsx('p',{children:pendingQuery.text}),j.jsx('p',{children:formatQuery(pendingQuery.query,e)}),j.jsx('button',{className:'confirm',onClick:()=>{const p=pendingQuery;setPendingQuery(null);rt(p.text,p.query);},children:({it:'Sì, chiedi questo',en:'Yes, ask this',fr:'Oui, posez cette question'})[e]}),j.jsx('button',{onClick:()=>setPendingQuery(null),children:({it:'Modifica',en:'Edit',fr:'Modifier'})[e]})]})]}),
+      pendingQuery && j.jsxs(At,{close:()=>setPendingQuery(null),children:[j.jsxs('div',{className:'confirm-query',children:[j.jsx('h2',{children:({it:'Conferma la domanda',en:'Confirm the question',fr:'Confirmez la question'})[e]}),j.jsx('p',{children:pendingQuery.text}),j.jsx('p',{children:formatQuery(pendingQuery.query,e)}),j.jsx('button',{className:'confirm',onClick:()=>{const p=pendingQuery;setPendingQuery(null);rt(p.text,p.query,p.spontaneous);},children:({it:'Sì, chiedi questo',en:'Yes, ask this',fr:'Oui, posez cette question'})[e]}),j.jsx('button',{onClick:()=>setPendingQuery(null),children:({it:'Modifica',en:'Edit',fr:'Modifier'})[e]})]})]}),
       privacy && j.jsxs('div',{className:'privacy-screen',role:'dialog','aria-modal':true,children:[j.jsx('h2',{children:({it:'Passa il dispositivo al giocatore ',en:'Pass the device to player ',fr:'Passez l’appareil au joueur '})[e]+privacy}),j.jsx('button',{onClick:()=>setPrivacy(null),children:({it:'Sono pronto',en:'I am ready',fr:'Je suis prêt'})[e]})]}),
       guessCandidate && j.jsxs(At,{close:()=>setGuessCandidate(null),children:[j.jsx('h2',{children:multiplayerText[e].confirmGuess}),j.jsx('p',{children:guessCandidate.name[e]}),j.jsx('button',{className:'confirm',onClick:()=>{const card=guessCandidate;setGuessCandidate(null);ct(card);},children:multiplayerText[e].confirmGuess}),j.jsx('button',{onClick:()=>setGuessCandidate(null),children:multiplayerText[e].cancel})]}),
       Oe && (0, j.jsx)(Pt, { lang: e, context: Ae, close: () => ke(!1) }),
