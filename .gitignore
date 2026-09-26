@@ -1,6 +1,7 @@
 node_modules/
 dist/
 firebase-config.json
+research-config.json
 .firebase/
 *-debug.log
 test-results/
