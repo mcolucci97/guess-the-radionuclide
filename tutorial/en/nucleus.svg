@@ -1,14 +1,35 @@
-<?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
-  <defs>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.16" /></filter>
-    <style>text{font-family:Arial, Helvetica, sans-serif;fill:#0f172a} .small{font-size:24px;font-weight:700} .tiny{font-size:18px;font-weight:600;fill:#334155} .label{font-size:28px;font-weight:900} .card{fill:#fff;stroke:#cbd5e1;stroke-width:3;rx:28;filter:url(#shadow)} .p{fill:#f97316} .n{fill:#38bdf8} .e{fill:#a78bfa} .alpha{fill:#fde006} .beta{fill:#63b5c1} .orange{fill:#ff744f} .gamma{fill:#ffd0c5}</style>
-  </defs>
-  <rect width="100%" height="100%" fill="#f8fafc" rx="32" />
-
-  <text x="110" y="75" class="label">Protons and neutrons</text>
-  <circle cx="450" cy="260" r="135" fill="#e0f2fe" stroke="#0369a1" stroke-width="6" />
-  <g><circle cx="390" cy="220" r="28" class="p" /><text x="382" y="230" class="small">p</text><circle cx="455" cy="215" r="28" class="n" /><text x="446" y="225" class="small">n</text><circle cx="510" cy="260" r="28" class="p" /><text x="502" y="270" class="small">p</text><circle cx="425" cy="300" r="28" class="n" /><text x="416" y="310" class="small">n</text><circle cx="480" cy="325" r="28" class="n" /><text x="471" y="335" class="small">n</text></g>
-  <text x="95" y="455" class="tiny" />
-
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img">
+<defs>
+  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+    <stop offset="0" stop-color="#fffdf8"/>
+    <stop offset="1" stop-color="#eef7fb"/>
+  </linearGradient>
+  <linearGradient id="card" x1="0" x2="1">
+    <stop offset="0" stop-color="#ffffff"/>
+    <stop offset="1" stop-color="#f8fbfd"/>
+  </linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="9" stdDeviation="11" flood-color="#17324d" flood-opacity="0.14"/>
+  </filter>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="7"/>
+  </filter>
+  <style>
+    text{font-family:Inter,Arial,Helvetica,sans-serif;fill:#102a43}
+    .big{font-size:42px;font-weight:850}
+    .mid{font-size:29px;font-weight:800}
+    .label{font-size:23px;font-weight:750}
+    .small{font-size:18px;font-weight:700}
+    .tiny{font-size:15px;font-weight:650}
+    .muted{fill:#52697d}
+    .panel{fill:url(#card);stroke:#d5e2ea;stroke-width:2.5;filter:url(#shadow)}
+    .thin{stroke:#6b879c;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .arrow{stroke:#4c9bd4;stroke-width:6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  </style>
+</defs>
+<rect width="900" height="520" rx="28" fill="url(#bg)"/>
+<circle cx="808" cy="60" r="80" fill="#4c9bd4" opacity="0.06"/>
+<circle cx="82" cy="470" r="110" fill="#3aa17e" opacity="0.055"/>
+<circle cx="315" cy="255" r="82" fill="#7ec8f5" opacity="0.07"/><circle cx="277" cy="229" r="24" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="306" cy="221" r="24" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="337" cy="227" r="24" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="357" cy="249" r="24" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="281" cy="259" r="24" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="312" cy="251" r="24" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="343" cy="258" r="24" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="291" cy="288" r="24" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="323" cy="286" r="24" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="352" cy="283" r="24" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="262" cy="277" r="24" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="235" cy="174" r="20" fill="#ef5b72"/><text x="235" y="181" text-anchor="middle" class="small" fill="#fff">p+</text><circle cx="392" cy="330" r="20" fill="#468ed8"/><text x="392" y="337" text-anchor="middle" class="small" fill="#fff">n</text><path d="M182 130 L223 160 M223 160 L208.0 159.4 M223 160 L217.9 145.9" stroke="#ef5b72" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M430 370 L405 346 M405 346 L419.8 348.6 M405 346 L408.2 360.7" stroke="#468ed8" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="540" y="115" width="280" height="270" rx="26" fill="#ffffff" stroke="#d5e2ea" stroke-width="2.3" filter="url(#shadow)"/><text x="680" y="165" text-anchor="middle" class="mid">same Z</text><circle cx="587" cy="219" r="12" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="616" cy="211" r="12" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="647" cy="217" r="12" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="667" cy="239" r="12" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="591" cy="249" r="12" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="622" cy="241" r="12" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="653" cy="248" r="12" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="601" cy="278" r="12" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="633" cy="276" r="12" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="662" cy="273" r="12" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="716" cy="219" r="12" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="745" cy="211" r="12" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="776" cy="217" r="12" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="796" cy="239" r="12" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="720" cy="249" r="12" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="751" cy="241" r="12" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="782" cy="248" r="12" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="730" cy="278" r="12" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="762" cy="276" r="12" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="791" cy="273" r="12" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="701" cy="267" r="12" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="807" cy="262" r="12" fill="#468ed8" stroke="#fff" stroke-width="2"/><text x="625" y="345" text-anchor="middle" class="small">isotope 1</text><text x="754" y="345" text-anchor="middle" class="small">isotope 2</text><text x="680" y="390" text-anchor="middle" class="label muted">different n</text>
 </svg>

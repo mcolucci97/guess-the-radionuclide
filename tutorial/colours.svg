@@ -1,13 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
-  <defs>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.16"/></filter>
-    <style>text{font-family:Arial, Helvetica, sans-serif;fill:#0f172a} .small{font-size:24px;font-weight:700} .tiny{font-size:18px;font-weight:600;fill:#334155} .label{font-size:28px;font-weight:900} .card{fill:#fff;stroke:#cbd5e1;stroke-width:3;rx:28;filter:url(#shadow)} .p{fill:#f97316} .n{fill:#38bdf8} .e{fill:#a78bfa} .alpha{fill:#fde006} .beta{fill:#63b5c1} .orange{fill:#ff744f} .gamma{fill:#ffd0c5}</style>
-  </defs>
-  <rect width="100%" height="100%" fill="#f8fafc" rx="32"/>
-
-  <rect x="80" y="90" width="210" height="300" class="card"/><rect x="80" y="90" width="210" height="300" class="alpha" rx="28"/><text x="145" y="245" class="label">α</text><text x="116" y="330" class="small">giallo</text>
-  <rect x="345" y="90" width="210" height="300" class="card"/><rect x="345" y="90" width="210" height="300" class="beta" rx="28"/><text x="410" y="245" class="label">β⁻</text><text x="376" y="330" class="small">azzurro</text>
-  <rect x="610" y="90" width="210" height="300" class="card"/><rect x="610" y="90" width="210" height="300" class="orange" rx="28"/><text x="675" y="245" class="label">β⁺/ε</text><text x="635" y="330" class="small">arancio</text>
-  <text x="105" y="455" class="tiny">Nel livello bambin* il colore è un indizio visivo; dopo diventa un concetto fisico.</text>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img">
+<defs>
+  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+    <stop offset="0" stop-color="#fffdf8"/>
+    <stop offset="1" stop-color="#eef7fb"/>
+  </linearGradient>
+  <linearGradient id="card" x1="0" x2="1">
+    <stop offset="0" stop-color="#ffffff"/>
+    <stop offset="1" stop-color="#f8fbfd"/>
+  </linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="9" stdDeviation="11" flood-color="#17324d" flood-opacity="0.14"/>
+  </filter>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="7"/>
+  </filter>
+  <style>
+    text{font-family:Inter,Arial,Helvetica,sans-serif;fill:#102a43}
+    .big{font-size:42px;font-weight:850}
+    .mid{font-size:29px;font-weight:800}
+    .label{font-size:23px;font-weight:750}
+    .small{font-size:18px;font-weight:700}
+    .tiny{font-size:15px;font-weight:650}
+    .muted{fill:#52697d}
+    .panel{fill:url(#card);stroke:#d5e2ea;stroke-width:2.5;filter:url(#shadow)}
+    .thin{stroke:#6b879c;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .arrow{stroke:#7b61d1;stroke-width:6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  </style>
+</defs>
+<rect width="900" height="520" rx="28" fill="url(#bg)"/>
+<circle cx="808" cy="60" r="80" fill="#7b61d1" opacity="0.06"/>
+<circle cx="82" cy="470" r="110" fill="#3aa17e" opacity="0.055"/>
+<text x="450" y="64" text-anchor="middle" class="mid">decay mode ≠ emitted radiation</text><circle cx="90" cy="195" r="48" fill="#ef5b72" opacity="0.18"/><circle cx="90" cy="195" r="33" fill="#ef5b72"/><text x="90" y="208" text-anchor="middle" font-size="34" font-weight="900" fill="#fff">α</text><circle cx="235" cy="195" r="48" fill="#468ed8" opacity="0.18"/><circle cx="235" cy="195" r="33" fill="#468ed8"/><text x="235" y="208" text-anchor="middle" font-size="34" font-weight="900" fill="#fff">e−</text><circle cx="380" cy="195" r="48" fill="#e45f86" opacity="0.18"/><circle cx="380" cy="195" r="33" fill="#e45f86"/><text x="380" y="208" text-anchor="middle" font-size="34" font-weight="900" fill="#fff">e+</text><circle cx="525" cy="195" r="48" fill="#7b61d1" opacity="0.18"/><circle cx="525" cy="195" r="33" fill="#7b61d1"/><text x="525" y="208" text-anchor="middle" font-size="34" font-weight="900" fill="#fff">ν̄ₑ</text><circle cx="670" cy="195" r="48" fill="#2f9d73" opacity="0.18"/><circle cx="670" cy="195" r="33" fill="#2f9d73"/><text x="670" y="208" text-anchor="middle" font-size="34" font-weight="900" fill="#fff">νₑ</text><circle cx="815" cy="195" r="48" fill="#e5a41a" opacity="0.18"/><circle cx="815" cy="195" r="33" fill="#e5a41a"/><text x="815" y="208" text-anchor="middle" font-size="34" font-weight="900" fill="#fff">γ</text><path d="M95 330 C230 270 320 395 450 325 S690 285 810 340" stroke="#9eb5c5" stroke-width="5" fill="none" stroke-dasharray="8 10"/><text x="450" y="438" text-anchor="middle" class="label muted">particles · neutrinos · photons</text>
 </svg>

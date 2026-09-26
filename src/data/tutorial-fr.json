@@ -3,193 +3,387 @@
     "base": [
       {
         "img": "atom-card",
-        "title": "1 · Un atome qui change",
-        "body": "Un radionucléide possède un noyau instable pouvant se transformer et émettre des particules ou des rayonnements. Observez les indices et posez des questions oui/non.",
-        "chips": []
-      },
-      {
-        "img": "colours",
-        "title": "2 · Les couleurs comme indices",
-        "body": "Le jaune représente alpha, le bleu bêta moins et l’orange les positons ou la capture électronique. Les couleurs simplifient les branches principales ; les branches faibles restent dans les données.",
-        "chips": []
-      },
-      {
-        "img": "applications",
-        "title": "3 · Du quotidien à l’espace",
-        "body": "Médecine, nature, maisons, aliments, industrie et espace sont de grandes catégories. Commencez par des questions larges, puis précisez les applications lorsqu’il reste peu de cartes.",
-        "chips": []
-      },
-      {
-        "img": "half-life",
-        "title": "4 · Période radioactive",
-        "body": "Après une période, environ la moitié des noyaux radioactifs initiaux subsiste. Huit devient quatre, puis deux : ce sont des moyennes ; chaque désintégration est aléatoire. L’activité se mesure en becquerels (Bq).",
-        "chips": []
-      },
-      {
-        "img": "stories",
-        "title": "5 · Histoires mémorables",
-        "body": "Radon des maisons, potassium-40 du corps, datation au carbone-14 et imagerie médicale donnent des indices mémorables. Le jeu utilise les associations documentées sur ses cartes.",
-        "chips": []
-      }
-    ],
-    "intermediate": [
-      {
-        "img": "nucleus",
-        "title": "1 · Protons et neutrons",
-        "body": "Les protons déterminent l’élément. Ses isotopes partagent le nombre de protons mais ont des nombres de neutrons différents. Demandez s’il possède plus de vingt protons ou trente neutrons.",
+        "title": "1 · Lire une carte",
+        "body": "Chaque carte représente un radionucléide : un isotope instable. Apprenez à reconnaître l'élément, le nombre de masse, la période radioactive, le mode de désintégration et le contexte sans tout mémoriser.",
         "chips": [
-          "Z / A / N"
+          "carte",
+          "isotope",
+          "indices"
         ]
       },
       {
-        "img": "zan",
-        "title": "2 · Z, A et N",
-        "body": "Z est le nombre de protons, A le nombre de masse et N = A − Z le nombre de neutrons. Chaque carte décrit un radionucléide précis, pas seulement son élément chimique.",
+        "img": "nucleus",
+        "title": "2 · Protons, neutrons et isotopes",
+        "body": "Les protons définissent l'élément. Les isotopes d'un même élément ont le même nombre de protons mais des nombres de neutrons différents.",
         "chips": [
-          "Z / A / N"
+          "protons",
+          "neutrons",
+          "isotopes"
         ]
       },
       {
         "img": "decays",
-        "title": "3 · Alpha, bêta et gamma",
-        "body": "Les particules alpha ont généralement un parcours court. Le rayonnement bêta est constitué d’électrons ou de positons. Les gamma sont des photons. La pénétration dépend de l’énergie et du matériau traversé.",
-        "chips": []
+        "title": "3 · Comment le noyau se transforme",
+        "body": "Les désintégrations α, β−, β+, la capture électronique et les transitions γ transforment le noyau de façons différentes. Les processus bêta impliquent aussi des neutrinos ou antineutrinos, qui interagissent très faiblement.",
+        "chips": [
+          "α",
+          "β− / β+",
+          "EC",
+          "γ",
+          "ν"
+        ]
       },
       {
-        "img": "half-life-clock",
-        "title": "4 · Échelles de temps",
-        "body": "Interrogez secondes, minutes, heures, jours, mois ou années, ou utilisez une comparaison numérique. Les niveaux intermédiaire et expert permettent deux questions temporelles par joueur. Les valeurs affichées sont arrondies ; les comparaisons utilisent les secondes complètes.",
-        "chips": []
+        "img": "half-life",
+        "title": "4 · Période radioactive",
+        "body": "La demi-vie est statistique : après une demi-vie, en moyenne, il reste la moitié des noyaux non désintégrés et l'activité est divisée par deux.",
+        "chips": [
+          "T½",
+          "8→4→2→1",
+          "statistique"
+        ]
       },
       {
         "img": "applications",
-        "title": "5 · Du quotidien à l’espace",
-        "body": "Médecine, nature, maisons, aliments, industrie et espace sont de grandes catégories. Commencez par des questions larges, puis précisez les applications lorsqu’il reste peu de cartes.",
-        "chips": []
+        "title": "5 · Où trouve-t-on les radionucléides ?",
+        "body": "Médecine, radioactivité naturelle, radon, datation, industrie et recherche montrent que la radioactivité ne correspond pas à une seule situation.",
+        "chips": [
+          "médecine",
+          "environnement",
+          "recherche"
+        ]
+      },
+      {
+        "img": "stories",
+        "title": "6 · Irradiation et contamination",
+        "body": "Être exposé à des rayonnements ne rend pas automatiquement une personne ou un objet radioactif. La contamination implique la présence de matière radioactive sur ou dans quelque chose.",
+        "chips": [
+          "exposition",
+          "contamination",
+          "risque"
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "img": "atom-card",
+        "title": "1 · De la carte à la question",
+        "body": "Une carte rassemble plusieurs propriétés d'un même radionucléide. Explorer aide à relier chaque question à une propriété scientifique, puis utilise l'élimination automatique pour comparer le raisonnement.",
+        "chips": [
+          "Explorer",
+          "propriété",
+          "déduction"
+        ]
+      },
+      {
+        "img": "nucleus",
+        "title": "2 · Élément, isotope et noyau",
+        "body": "Z est le nombre de protons et identifie l'élément. A est le nombre de masse. Les isotopes d'un élément ont le même Z mais des nombres de neutrons N = A − Z différents.",
+        "chips": [
+          "Z",
+          "A",
+          "N",
+          "isotopes"
+        ]
+      },
+      {
+        "img": "decays",
+        "title": "3 · Désintégrations et neutrinos",
+        "body": "En β−, un neutron devient un proton avec émission d'un électron et d'un antineutrino électronique. En β+, un proton devient un neutron avec émission d'un positon et d'un neutrino électronique ; la capture électronique émet aussi un neutrino. Une transition γ désexcite le noyau sans modifier A ni Z.",
+        "chips": [
+          "β− + ν̄e",
+          "β+ + νe",
+          "EC + νe",
+          "γ"
+        ]
+      },
+      {
+        "img": "colours",
+        "title": "4 · Mode de désintégration et rayonnement observé",
+        "body": "Le mode de désintégration décrit la transformation nucléaire ; les particules ou photons observés peuvent provenir de cette transformation ou de processus ultérieurs. En PET, le radionucléide émet un positon et un neutrino, tandis que les deux photons de 511 keV proviennent de l'annihilation du positon.",
+        "chips": [
+          "transformation",
+          "e− / e+",
+          "ν",
+          "γ"
+        ]
+      },
+      {
+        "img": "half-life",
+        "title": "5 · Demi-vie et échelles de temps",
+        "body": "Comparer les ordres de grandeur est souvent plus utile que mémoriser des valeurs exactes. Minutes, heures, jours, années ou milliards d'années peuvent séparer des groupes très différents.",
+        "chips": [
+          "ordres de grandeur",
+          "T½",
+          "comparaison"
+        ]
+      },
+      {
+        "img": "applications",
+        "title": "6 · Médecine, nature, environnement et recherche",
+        "body": "PET et SPECT reposent sur des propriétés d'émission différentes ; la thérapie vectorisée utilise le rayonnement pour déposer une dose dans une cible. D'autres radionucléides sont naturels, cosmogéniques ou utilisés en datation, industrie et recherche.",
+        "chips": [
+          "PET",
+          "SPECT",
+          "thérapie",
+          "nature"
+        ]
       }
     ],
     "expert": [
       {
         "img": "expert-map",
-        "title": "1 · Questions expertes",
-        "body": "Explorez Z/A/N, familles chimiques, état physique, fusion, désintégrations et applications nucléaires. Une valeur absente ne signifie jamais zéro. Vérifiez l’interprétation avant de confirmer.",
-        "chips": []
+        "title": "1 · Scientist : raisonnement explicite",
+        "body": "Scientist réduit l'étayage et utilise l'élimination manuelle. Les propriétés centrales deviennent Z, A, N, transformations nucléaires, demi-vie quantitative, applications et relations entre propriétés.",
+        "chips": [
+          "Scientist",
+          "manuel",
+          "preuve"
+        ]
+      },
+      {
+        "img": "zan",
+        "title": "2 · Z, A et N comme contraintes",
+        "body": "Z identifie l'élément, A compte les nucléons et N = A − Z. La désintégration α modifie A et Z ; les désintégrations β et la capture électronique gardent A constant et modifient Z d'une unité.",
+        "chips": [
+          "Z",
+          "A",
+          "N=A−Z"
+        ]
+      },
+      {
+        "img": "decays",
+        "title": "3 · Conservations dans les désintégrations bêta",
+        "body": "β− : n → p + e− + ν̄e. β+ : p → n + e+ + νe. Capture électronique : p + e− → n + νe. Le neutrino ou l'antineutrino est essentiel aux conservations de l'énergie, de la quantité de mouvement et du nombre leptonique.",
+        "chips": [
+          "ν̄e",
+          "νe",
+          "conservations"
+        ]
       },
       {
         "img": "mean-life",
-        "title": "2 · Période et vie moyenne",
-        "body": "Pour une décroissance exponentielle, N(t) = N₀ exp(−λt), T½ = ln 2 / λ et τ = 1 / λ = T½ / ln 2. Période et vie moyenne partagent la limite des questions temporelles.",
-        "chips": []
+        "title": "4 · Loi exponentielle",
+        "body": "Pour un ensemble de noyaux N(t)=N0e^(−λt). T½ = ln2/λ et τ = 1/λ décrivent la même probabilité de désintégration. Une désintégration individuelle reste aléatoire.",
+        "chips": [
+          "λ",
+          "T½",
+          "τ",
+          "exponentielle"
+        ]
       },
       {
-        "img": "capture",
-        "title": "3 · Capture neutronique",
-        "body": "La section efficace se mesure en barns et dépend de la cible, de la réaction et de l’énergie. La capture (n,γ) diffère de l’absorption totale. Les cinq valeurs héritées concernent les neutrons thermiques à 2200 m/s.",
-        "chips": []
+        "img": "colours",
+        "title": "5 · Désintégration et rayonnement observé",
+        "body": "Ne confondez pas la transformation nucléaire avec ce qu'un détecteur observe. Une désintégration peut laisser le noyau fils excité ; un positon peut ensuite s'annihiler ; des photons γ peuvent donc apparaître comme produits ultérieurs.",
+        "chips": [
+          "désintégration",
+          "émission",
+          "annihilation"
+        ]
+      },
+      {
+        "img": "applications",
+        "title": "6 · PET, SPECT et thérapie : la physique",
+        "body": "La PET utilise des émetteurs β+ et détecte en coïncidence les photons d'annihilation, pas le neutrino. La SPECT détecte des photons γ. En thérapie, le type de rayonnement influence le dépôt de dose et l'échelle spatiale du transfert d'énergie.",
+        "chips": [
+          "511 keV",
+          "γ",
+          "α / β−"
+        ]
       }
     ]
   },
   "adult": {
     "base": [
       {
+        "img": "atom-card",
+        "title": "1 · Comment lire une carte",
+        "body": "Chaque carte décrit un radionucléide précis. Élément, nombre de masse, période radioactive, transformations nucléaires et contexte sont des propriétés différentes utilisées pour réduire le jeu.",
+        "chips": [
+          "radionucléide",
+          "propriétés",
+          "déduction"
+        ]
+      },
+      {
         "img": "nucleus",
-        "title": "1 · Protons et neutrons",
-        "body": "Les protons déterminent l’élément. Ses isotopes partagent le nombre de protons mais ont des nombres de neutrons différents. Demandez s’il possède plus de vingt protons ou trente neutrons.",
+        "title": "2 · Élément et isotope",
+        "body": "L'élément est défini par le nombre de protons Z. Les isotopes d'un même élément partagent Z mais ont des nombres de neutrons différents.",
         "chips": [
-          "Z / A / N"
+          "Z",
+          "isotope",
+          "neutrons"
         ]
-      },
-      {
-        "img": "zan",
-        "title": "2 · Z, A et N",
-        "body": "Z est le nombre de protons, A le nombre de masse et N = A − Z le nombre de neutrons. Chaque carte décrit un radionucléide précis, pas seulement son élément chimique.",
-        "chips": [
-          "Z / A / N"
-        ]
-      },
-      {
-        "img": "decays",
-        "title": "3 · Alpha, bêta et gamma",
-        "body": "Les particules alpha ont généralement un parcours court. Le rayonnement bêta est constitué d’électrons ou de positons. Les gamma sont des photons. La pénétration dépend de l’énergie et du matériau traversé.",
-        "chips": []
       },
       {
         "img": "half-life",
-        "title": "4 · Période radioactive",
-        "body": "Après une période, environ la moitié des noyaux radioactifs initiaux subsiste. Huit devient quatre, puis deux : ce sont des moyennes ; chaque désintégration est aléatoire. L’activité se mesure en becquerels (Bq).",
-        "chips": []
-      },
-      {
-        "img": "stories",
-        "title": "5 · Histoires mémorables",
-        "body": "Radon des maisons, potassium-40 du corps, datation au carbone-14 et imagerie médicale donnent des indices mémorables. Le jeu utilise les associations documentées sur ses cartes.",
-        "chips": []
+        "title": "3 · Demi-vie",
+        "body": "La demi-vie est le temps au bout duquel le nombre moyen de noyaux non désintégrés et l'activité sont divisés par deux. Elle ne prédit pas l'instant de désintégration d'un noyau individuel.",
+        "chips": [
+          "T½",
+          "activité",
+          "statistique"
+        ]
       }
     ],
     "intermediate": [
       {
-        "img": "nucleus",
-        "title": "1 · Protons et neutrons",
-        "body": "Les protons déterminent l’élément. Ses isotopes partagent le nombre de protons mais ont des nombres de neutrons différents. Demandez s’il possède plus de vingt protons ou trente neutrons.",
+        "img": "atom-card",
+        "title": "1 · De la carte à la question",
+        "body": "Une carte rassemble plusieurs propriétés d'un même radionucléide. Explorer aide à relier chaque question à une propriété scientifique, puis utilise l'élimination automatique pour comparer le raisonnement.",
         "chips": [
-          "Z / A / N"
+          "Explorer",
+          "propriété",
+          "déduction"
         ]
       },
       {
-        "img": "half-life-clock",
-        "title": "2 · Échelles de temps",
-        "body": "Interrogez secondes, minutes, heures, jours, mois ou années, ou utilisez une comparaison numérique. Les niveaux intermédiaire et expert permettent deux questions temporelles par joueur. Les valeurs affichées sont arrondies ; les comparaisons utilisent les secondes complètes.",
-        "chips": []
+        "img": "nucleus",
+        "title": "2 · Élément, isotope et noyau",
+        "body": "Z est le nombre de protons et identifie l'élément. A est le nombre de masse. Les isotopes d'un élément ont le même Z mais des nombres de neutrons N = A − Z différents.",
+        "chips": [
+          "Z",
+          "A",
+          "N",
+          "isotopes"
+        ]
       },
       {
-        "img": "mean-life",
-        "title": "3 · Période et vie moyenne",
-        "body": "Pour une décroissance exponentielle, N(t) = N₀ exp(−λt), T½ = ln 2 / λ et τ = 1 / λ = T½ / ln 2. Période et vie moyenne partagent la limite des questions temporelles.",
-        "chips": []
+        "img": "decays",
+        "title": "3 · Désintégrations et neutrinos",
+        "body": "En β−, un neutron devient un proton avec émission d'un électron et d'un antineutrino électronique. En β+, un proton devient un neutron avec émission d'un positon et d'un neutrino électronique ; la capture électronique émet aussi un neutrino. Une transition γ désexcite le noyau sans modifier A ni Z.",
+        "chips": [
+          "β− + ν̄e",
+          "β+ + νe",
+          "EC + νe",
+          "γ"
+        ]
       },
       {
-        "img": "chemistry",
-        "title": "4 · Propriétés de l’élément",
-        "body": "Famille chimique, état et température de fusion décrivent l’élément. Désintégration et période décrivent le radionucléide. Distinguez métaux alcalins et alcalino-terreux, métaux de transition et post-transition.",
-        "chips": []
+        "img": "colours",
+        "title": "4 · Mode de désintégration et rayonnement observé",
+        "body": "Le mode de désintégration décrit la transformation nucléaire ; les particules ou photons observés peuvent provenir de cette transformation ou de processus ultérieurs. En PET, le radionucléide émet un positon et un neutrino, tandis que les deux photons de 511 keV proviennent de l'annihilation du positon.",
+        "chips": [
+          "transformation",
+          "e− / e+",
+          "ν",
+          "γ"
+        ]
+      },
+      {
+        "img": "half-life",
+        "title": "5 · Demi-vie et échelles de temps",
+        "body": "Comparer les ordres de grandeur est souvent plus utile que mémoriser des valeurs exactes. Minutes, heures, jours, années ou milliards d'années peuvent séparer des groupes très différents.",
+        "chips": [
+          "ordres de grandeur",
+          "T½",
+          "comparaison"
+        ]
       },
       {
         "img": "applications",
-        "title": "5 · Du quotidien à l’espace",
-        "body": "Médecine, nature, maisons, aliments, industrie et espace sont de grandes catégories. Commencez par des questions larges, puis précisez les applications lorsqu’il reste peu de cartes.",
-        "chips": []
+        "title": "6 · Médecine, nature, environnement et recherche",
+        "body": "PET et SPECT reposent sur des propriétés d'émission différentes ; la thérapie vectorisée utilise le rayonnement pour déposer une dose dans une cible. D'autres radionucléides sont naturels, cosmogéniques ou utilisés en datation, industrie et recherche.",
+        "chips": [
+          "PET",
+          "SPECT",
+          "thérapie",
+          "nature"
+        ]
+      },
+      {
+        "img": "stories",
+        "title": "7 · Irradiation, contamination et risque",
+        "body": "L'irradiation est une exposition aux rayonnements ; la contamination est la présence de matière radioactive. Le risque dépend de la quantité, du type et de l'énergie du rayonnement, de la voie d'exposition, du temps, de la distance et du contexte.",
+        "chips": [
+          "exposition",
+          "contamination",
+          "contexte"
+        ]
       }
     ],
     "expert": [
       {
         "img": "expert-map",
-        "title": "1 · Questions expertes",
-        "body": "Explorez Z/A/N, familles chimiques, état physique, fusion, désintégrations et applications nucléaires. Une valeur absente ne signifie jamais zéro. Vérifiez l’interprétation avant de confirmer.",
-        "chips": []
+        "title": "1 · Scientist : raisonnement explicite",
+        "body": "Scientist réduit l'étayage et utilise l'élimination manuelle. Les propriétés centrales deviennent Z, A, N, transformations nucléaires, demi-vie quantitative, applications et relations entre propriétés.",
+        "chips": [
+          "Scientist",
+          "manuel",
+          "preuve"
+        ]
+      },
+      {
+        "img": "zan",
+        "title": "2 · Z, A et N comme contraintes",
+        "body": "Z identifie l'élément, A compte les nucléons et N = A − Z. La désintégration α modifie A et Z ; les désintégrations β et la capture électronique gardent A constant et modifient Z d'une unité.",
+        "chips": [
+          "Z",
+          "A",
+          "N=A−Z"
+        ]
+      },
+      {
+        "img": "decays",
+        "title": "3 · Conservations dans les désintégrations bêta",
+        "body": "β− : n → p + e− + ν̄e. β+ : p → n + e+ + νe. Capture électronique : p + e− → n + νe. Le neutrino ou l'antineutrino est essentiel aux conservations de l'énergie, de la quantité de mouvement et du nombre leptonique.",
+        "chips": [
+          "ν̄e",
+          "νe",
+          "conservations"
+        ]
       },
       {
         "img": "mean-life",
-        "title": "2 · Période et vie moyenne",
-        "body": "Pour une décroissance exponentielle, N(t) = N₀ exp(−λt), T½ = ln 2 / λ et τ = 1 / λ = T½ / ln 2. Période et vie moyenne partagent la limite des questions temporelles.",
-        "chips": []
+        "title": "4 · Loi exponentielle",
+        "body": "Pour un ensemble de noyaux N(t)=N0e^(−λt). T½ = ln2/λ et τ = 1/λ décrivent la même probabilité de désintégration. Une désintégration individuelle reste aléatoire.",
+        "chips": [
+          "λ",
+          "T½",
+          "τ",
+          "exponentielle"
+        ]
       },
       {
-        "img": "capture",
-        "title": "3 · Capture neutronique",
-        "body": "La section efficace se mesure en barns et dépend de la cible, de la réaction et de l’énergie. La capture (n,γ) diffère de l’absorption totale. Les cinq valeurs héritées concernent les neutrons thermiques à 2200 m/s.",
-        "chips": []
+        "img": "colours",
+        "title": "5 · Désintégration et rayonnement observé",
+        "body": "Ne confondez pas la transformation nucléaire avec ce qu'un détecteur observe. Une désintégration peut laisser le noyau fils excité ; un positon peut ensuite s'annihiler ; des photons γ peuvent donc apparaître comme produits ultérieurs.",
+        "chips": [
+          "désintégration",
+          "émission",
+          "annihilation"
+        ]
       },
       {
-        "img": "ngatlas",
-        "title": "4 · Données NGATLAS",
-        "body": "NGATLAS fournit la capture en fonction de l’énergie. Cette version conserve cinq valeurs du jeu précédent. L’import étendu n’a pas été validé et reste désactivé. Une donnée absente ne signifie pas zéro.",
-        "chips": []
+        "img": "applications",
+        "title": "6 · PET, SPECT et thérapie : la physique",
+        "body": "La PET utilise des émetteurs β+ et détecte en coïncidence les photons d'annihilation, pas le neutrino. La SPECT détecte des photons γ. En thérapie, le type de rayonnement influence le dépôt de dose et l'échelle spatiale du transfert d'énergie.",
+        "chips": [
+          "511 keV",
+          "γ",
+          "α / β−"
+        ]
       },
       {
-        "img": "decay-chain",
-        "title": "5 · Chaînes et relations",
-        "body": "Un radionucléide peut être produit de fission, membre d’une chaîne naturelle, parent ou fils d’un générateur, ou produit d’activation. Ce sont des relations différentes.",
-        "chips": []
+        "img": "stories",
+        "title": "7 · Risque et activation",
+        "body": "Exposition et contamination restent distinctes. Une irradiation ordinaire ne rend pas automatiquement la matière radioactive ; l'activation est un processus nucléaire distinct nécessitant des projectiles ou photons, des énergies et des cibles appropriés.",
+        "chips": [
+          "dose",
+          "voie d'exposition",
+          "activation"
+        ]
+      },
+      {
+        "img": "chemistry",
+        "title": "8 · La chimie comme propriété d'appui",
+        "body": "Chaque radionucléide appartient à un élément avec une famille chimique et un état physique. Ces propriétés peuvent aider à la déduction, mais ne sont pas des propriétés nucléaires et ne doivent pas être confondues avec le mode de désintégration.",
+        "chips": [
+          "élément",
+          "famille",
+          "état physique"
+        ]
       }
     ]
   }

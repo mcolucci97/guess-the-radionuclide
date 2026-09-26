@@ -3,193 +3,387 @@
     "base": [
       {
         "img": "atom-card",
-        "title": "1 · An atom that changes",
-        "body": "A radionuclide has an unstable nucleus that can transform and release particles or radiation. Observe the clues and ask yes/no questions.",
-        "chips": []
-      },
-      {
-        "img": "colours",
-        "title": "2 · Colours as clues",
-        "body": "Yellow represents alpha, blue beta-minus, and orange positrons or electron capture. Colours simplify the main branches; weak branches may appear only in the scientific record.",
-        "chips": []
-      },
-      {
-        "img": "applications",
-        "title": "3 · From everyday life to space",
-        "body": "Medicine, nature, homes, food, industry and space are broad categories. Start with broad questions, then ask about specific applications when few cards remain.",
-        "chips": []
-      },
-      {
-        "img": "half-life",
-        "title": "4 · Half-life",
-        "body": "After one half-life, about half the original radioactive nuclei remain. Eight becomes four, then two: these are expected numbers; individual decays are random. Activity is measured in becquerels (Bq).",
-        "chips": []
-      },
-      {
-        "img": "stories",
-        "title": "5 · Memorable stories",
-        "body": "Radon in homes, potassium-40 in the body, carbon-14 dating and medical imaging provide memorable clues. The game tests the documented associations on its cards.",
-        "chips": []
-      }
-    ],
-    "intermediate": [
-      {
-        "img": "nucleus",
-        "title": "1 · Protons and neutrons",
-        "body": "Protons determine the element. Isotopes share the same proton number but have different neutron numbers. Ask whether there are more than twenty protons or thirty neutrons.",
+        "title": "1 · Reading a card",
+        "body": "Each card represents a radionuclide: an unstable isotope. Learn to recognise element, mass number, half-life, decay mode and context without memorising everything.",
         "chips": [
-          "Z / A / N"
+          "card",
+          "isotope",
+          "clues"
         ]
       },
       {
-        "img": "zan",
-        "title": "2 · Z, A and N",
-        "body": "Z is the proton number, A the mass number and N = A − Z the neutron number. Each card describes a particular radionuclide, not just its chemical element.",
+        "img": "nucleus",
+        "title": "2 · Protons, neutrons and isotopes",
+        "body": "Protons define the element. Isotopes of the same element have the same number of protons but different numbers of neutrons.",
         "chips": [
-          "Z / A / N"
+          "protons",
+          "neutrons",
+          "isotopes"
         ]
       },
       {
         "img": "decays",
-        "title": "3 · Alpha, beta and gamma",
-        "body": "Alpha particles usually have a short range. Beta radiation consists of electrons or positrons. Gamma rays are photons. Penetration depends on energy and the material traversed.",
-        "chips": []
+        "title": "3 · How the nucleus transforms",
+        "body": "Alpha, beta-minus, beta-plus, electron capture and gamma transitions change the nucleus in different ways. Beta processes also involve neutrinos or antineutrinos, which interact very weakly.",
+        "chips": [
+          "α",
+          "β− / β+",
+          "EC",
+          "γ",
+          "ν"
+        ]
       },
       {
-        "img": "half-life-clock",
-        "title": "4 · Time scales",
-        "body": "Ask about seconds, minutes, hours, days, months or years, or use a numeric comparison. Intermediate and expert games allow two time questions per player. Displayed values are rounded; comparisons use full stored seconds.",
-        "chips": []
+        "img": "half-life",
+        "title": "4 · Half-life",
+        "body": "Half-life is statistical: after one half-life, on average, half of the undecayed nuclei remain and the activity is halved.",
+        "chips": [
+          "T½",
+          "8→4→2→1",
+          "statistics"
+        ]
       },
       {
         "img": "applications",
-        "title": "5 · From everyday life to space",
-        "body": "Medicine, nature, homes, food, industry and space are broad categories. Start with broad questions, then ask about specific applications when few cards remain.",
-        "chips": []
+        "title": "5 · Where radionuclides appear",
+        "body": "Medicine, natural radioactivity, radon, dating, industry and research show that radioactivity is not a single scenario with a single meaning.",
+        "chips": [
+          "medicine",
+          "environment",
+          "research"
+        ]
+      },
+      {
+        "img": "stories",
+        "title": "6 · Irradiation and contamination",
+        "body": "Being exposed to radiation does not automatically make a person or object radioactive. Contamination means radioactive material is present on or inside something.",
+        "chips": [
+          "exposure",
+          "contamination",
+          "risk"
+        ]
+      }
+    ],
+    "intermediate": [
+      {
+        "img": "atom-card",
+        "title": "1 · From card to question",
+        "body": "A card combines several properties of one radionuclide. Explorer helps you connect each question to a scientific property, then uses automatic elimination so you can compare your reasoning.",
+        "chips": [
+          "Explorer",
+          "property",
+          "deduction"
+        ]
+      },
+      {
+        "img": "nucleus",
+        "title": "2 · Element, isotope and nucleus",
+        "body": "Z is the proton number and identifies the element. A is the mass number. Isotopes of one element share Z but differ in neutron number N = A − Z.",
+        "chips": [
+          "Z",
+          "A",
+          "N",
+          "isotopes"
+        ]
+      },
+      {
+        "img": "decays",
+        "title": "3 · Decays and neutrinos",
+        "body": "In β− decay a neutron becomes a proton while an electron and an electron antineutrino are emitted. In β+ decay a proton becomes a neutron while a positron and an electron neutrino are emitted; electron capture also emits a neutrino. A γ transition de-excites the nucleus without changing A or Z.",
+        "chips": [
+          "β− + ν̄e",
+          "β+ + νe",
+          "EC + νe",
+          "γ"
+        ]
+      },
+      {
+        "img": "colours",
+        "title": "4 · Decay mode is not the same as observed radiation",
+        "body": "Decay mode describes the nuclear transformation; particles or photons observed may be products of that transformation or of later processes. In PET, the radionuclide emits a positron and a neutrino, while the two 511 keV photons come from positron annihilation.",
+        "chips": [
+          "transformation",
+          "e− / e+",
+          "ν",
+          "γ"
+        ]
+      },
+      {
+        "img": "half-life",
+        "title": "5 · Half-life and time scales",
+        "body": "Comparing orders of magnitude is often more useful than memorising exact values. Minutes, hours, days, years or billions of years can separate very different radionuclide groups.",
+        "chips": [
+          "orders of magnitude",
+          "T½",
+          "comparison"
+        ]
+      },
+      {
+        "img": "applications",
+        "title": "6 · Medicine, nature, environment and research",
+        "body": "PET and SPECT rely on different emission properties; radionuclide therapy uses radiation to deposit dose in a target. Other radionuclides are natural, cosmogenic, or used in dating, industry and research.",
+        "chips": [
+          "PET",
+          "SPECT",
+          "therapy",
+          "nature"
+        ]
       }
     ],
     "expert": [
       {
         "img": "expert-map",
-        "title": "1 · Expert questions",
-        "body": "Explore Z/A/N, chemical families, physical state, melting point, decay modes and nuclear applications. Missing numerical data are never replaced by zero. Check the proposed interpretation before confirming.",
-        "chips": []
+        "title": "1 · Scientist: explicit reasoning",
+        "body": "Scientist reduces scaffolding and uses manual elimination. Core properties include Z, A, N, nuclear transformations, quantitative half-life, applications and relationships among card properties.",
+        "chips": [
+          "Scientist",
+          "manual",
+          "evidence"
+        ]
+      },
+      {
+        "img": "zan",
+        "title": "2 · Z, A and N as constraints",
+        "body": "Z identifies the element, A counts nucleons and N = A − Z. Alpha decay changes A and Z; beta decays and electron capture keep A constant while Z changes by one unit.",
+        "chips": [
+          "Z",
+          "A",
+          "N=A−Z"
+        ]
+      },
+      {
+        "img": "decays",
+        "title": "3 · Conservation in beta decay",
+        "body": "β−: n → p + e− + ν̄e. β+: p → n + e+ + νe. Electron capture: p + e− → n + νe. The neutrino or antineutrino is essential for conservation of energy, momentum and lepton number, even though it is not a direct gameplay clue.",
+        "chips": [
+          "ν̄e",
+          "νe",
+          "conservation"
+        ]
       },
       {
         "img": "mean-life",
-        "title": "2 · Half-life and mean life",
-        "body": "For exponential decay, N(t) = N₀ exp(−λt), T½ = ln 2 / λ and mean life τ = 1 / λ = T½ / ln 2. Both half-life and mean-life questions use the shared time-question allowance.",
-        "chips": []
+        "title": "4 · Exponential decay law",
+        "body": "For an ensemble of nuclei N(t)=N0e^(−λt). T½ = ln2/λ and τ = 1/λ describe the same decay probability. An individual decay remains random.",
+        "chips": [
+          "λ",
+          "T½",
+          "τ",
+          "exponential"
+        ]
       },
       {
-        "img": "capture",
-        "title": "3 · Neutron capture",
-        "body": "Cross section is measured in barns and depends on the target, reaction and neutron energy. Capture (n,γ) differs from total absorption. The five inherited numerical values refer to thermal neutrons at 2200 m/s.",
-        "chips": []
+        "img": "colours",
+        "title": "5 · Decay mode and observed radiation",
+        "body": "Do not confuse the nuclear transformation with what a detector observes. A decay may leave a daughter nucleus excited; an emitted positron may later annihilate; γ photons can therefore appear as later products.",
+        "chips": [
+          "decay",
+          "emission",
+          "annihilation"
+        ]
+      },
+      {
+        "img": "applications",
+        "title": "6 · PET, SPECT and therapy: the physics",
+        "body": "PET uses β+ emitters and detects annihilation photons in coincidence, not the neutrino. SPECT detects γ photons. In radionuclide therapy, radiation type influences dose deposition and the spatial scale of energy release.",
+        "chips": [
+          "511 keV",
+          "γ",
+          "α / β−"
+        ]
       }
     ]
   },
   "adult": {
     "base": [
       {
+        "img": "atom-card",
+        "title": "1 · How to read a card",
+        "body": "Each card describes one radionuclide. Element, mass number, half-life, nuclear transformations and context are different properties; good questions use them to narrow the deck.",
+        "chips": [
+          "radionuclide",
+          "properties",
+          "deduction"
+        ]
+      },
+      {
         "img": "nucleus",
-        "title": "1 · Protons and neutrons",
-        "body": "Protons determine the element. Isotopes share the same proton number but have different neutron numbers. Ask whether there are more than twenty protons or thirty neutrons.",
+        "title": "2 · Element and isotope",
+        "body": "The element is defined by proton number Z. Isotopes of the same element share Z but have different neutron numbers.",
         "chips": [
-          "Z / A / N"
+          "Z",
+          "isotope",
+          "neutrons"
         ]
-      },
-      {
-        "img": "zan",
-        "title": "2 · Z, A and N",
-        "body": "Z is the proton number, A the mass number and N = A − Z the neutron number. Each card describes a particular radionuclide, not just its chemical element.",
-        "chips": [
-          "Z / A / N"
-        ]
-      },
-      {
-        "img": "decays",
-        "title": "3 · Alpha, beta and gamma",
-        "body": "Alpha particles usually have a short range. Beta radiation consists of electrons or positrons. Gamma rays are photons. Penetration depends on energy and the material traversed.",
-        "chips": []
       },
       {
         "img": "half-life",
-        "title": "4 · Half-life",
-        "body": "After one half-life, about half the original radioactive nuclei remain. Eight becomes four, then two: these are expected numbers; individual decays are random. Activity is measured in becquerels (Bq).",
-        "chips": []
-      },
-      {
-        "img": "stories",
-        "title": "5 · Memorable stories",
-        "body": "Radon in homes, potassium-40 in the body, carbon-14 dating and medical imaging provide memorable clues. The game tests the documented associations on its cards.",
-        "chips": []
+        "title": "3 · Half-life",
+        "body": "Half-life is the time over which the average number of undecayed nuclei and the activity are reduced by one half. It does not predict when one nucleus will decay.",
+        "chips": [
+          "T½",
+          "activity",
+          "statistics"
+        ]
       }
     ],
     "intermediate": [
       {
-        "img": "nucleus",
-        "title": "1 · Protons and neutrons",
-        "body": "Protons determine the element. Isotopes share the same proton number but have different neutron numbers. Ask whether there are more than twenty protons or thirty neutrons.",
+        "img": "atom-card",
+        "title": "1 · From card to question",
+        "body": "A card combines several properties of one radionuclide. Explorer helps you connect each question to a scientific property, then uses automatic elimination so you can compare your reasoning.",
         "chips": [
-          "Z / A / N"
+          "Explorer",
+          "property",
+          "deduction"
         ]
       },
       {
-        "img": "half-life-clock",
-        "title": "2 · Time scales",
-        "body": "Ask about seconds, minutes, hours, days, months or years, or use a numeric comparison. Intermediate and expert games allow two time questions per player. Displayed values are rounded; comparisons use full stored seconds.",
-        "chips": []
+        "img": "nucleus",
+        "title": "2 · Element, isotope and nucleus",
+        "body": "Z is the proton number and identifies the element. A is the mass number. Isotopes of one element share Z but differ in neutron number N = A − Z.",
+        "chips": [
+          "Z",
+          "A",
+          "N",
+          "isotopes"
+        ]
       },
       {
-        "img": "mean-life",
-        "title": "3 · Half-life and mean life",
-        "body": "For exponential decay, N(t) = N₀ exp(−λt), T½ = ln 2 / λ and mean life τ = 1 / λ = T½ / ln 2. Both half-life and mean-life questions use the shared time-question allowance.",
-        "chips": []
+        "img": "decays",
+        "title": "3 · Decays and neutrinos",
+        "body": "In β− decay a neutron becomes a proton while an electron and an electron antineutrino are emitted. In β+ decay a proton becomes a neutron while a positron and an electron neutrino are emitted; electron capture also emits a neutrino. A γ transition de-excites the nucleus without changing A or Z.",
+        "chips": [
+          "β− + ν̄e",
+          "β+ + νe",
+          "EC + νe",
+          "γ"
+        ]
       },
       {
-        "img": "chemistry",
-        "title": "4 · Properties of the element",
-        "body": "Chemical family, state and melting point describe the element. Decay and half-life describe the radionuclide. Distinguish alkali metals from alkaline earth metals, and transition from post-transition metals.",
-        "chips": []
+        "img": "colours",
+        "title": "4 · Decay mode is not the same as observed radiation",
+        "body": "Decay mode describes the nuclear transformation; particles or photons observed may be products of that transformation or of later processes. In PET, the radionuclide emits a positron and a neutrino, while the two 511 keV photons come from positron annihilation.",
+        "chips": [
+          "transformation",
+          "e− / e+",
+          "ν",
+          "γ"
+        ]
+      },
+      {
+        "img": "half-life",
+        "title": "5 · Half-life and time scales",
+        "body": "Comparing orders of magnitude is often more useful than memorising exact values. Minutes, hours, days, years or billions of years can separate very different radionuclide groups.",
+        "chips": [
+          "orders of magnitude",
+          "T½",
+          "comparison"
+        ]
       },
       {
         "img": "applications",
-        "title": "5 · From everyday life to space",
-        "body": "Medicine, nature, homes, food, industry and space are broad categories. Start with broad questions, then ask about specific applications when few cards remain.",
-        "chips": []
+        "title": "6 · Medicine, nature, environment and research",
+        "body": "PET and SPECT rely on different emission properties; radionuclide therapy uses radiation to deposit dose in a target. Other radionuclides are natural, cosmogenic, or used in dating, industry and research.",
+        "chips": [
+          "PET",
+          "SPECT",
+          "therapy",
+          "nature"
+        ]
+      },
+      {
+        "img": "stories",
+        "title": "7 · Irradiation, contamination and risk",
+        "body": "Irradiation is exposure to radiation; contamination is the presence of radioactive material. Risk depends on amount, radiation type and energy, route of exposure, time, distance and context; the word “radioactive” alone does not determine risk.",
+        "chips": [
+          "exposure",
+          "contamination",
+          "context"
+        ]
       }
     ],
     "expert": [
       {
         "img": "expert-map",
-        "title": "1 · Expert questions",
-        "body": "Explore Z/A/N, chemical families, physical state, melting point, decay modes and nuclear applications. Missing numerical data are never replaced by zero. Check the proposed interpretation before confirming.",
-        "chips": []
+        "title": "1 · Scientist: explicit reasoning",
+        "body": "Scientist reduces scaffolding and uses manual elimination. Core properties include Z, A, N, nuclear transformations, quantitative half-life, applications and relationships among card properties.",
+        "chips": [
+          "Scientist",
+          "manual",
+          "evidence"
+        ]
+      },
+      {
+        "img": "zan",
+        "title": "2 · Z, A and N as constraints",
+        "body": "Z identifies the element, A counts nucleons and N = A − Z. Alpha decay changes A and Z; beta decays and electron capture keep A constant while Z changes by one unit.",
+        "chips": [
+          "Z",
+          "A",
+          "N=A−Z"
+        ]
+      },
+      {
+        "img": "decays",
+        "title": "3 · Conservation in beta decay",
+        "body": "β−: n → p + e− + ν̄e. β+: p → n + e+ + νe. Electron capture: p + e− → n + νe. The neutrino or antineutrino is essential for conservation of energy, momentum and lepton number, even though it is not a direct gameplay clue.",
+        "chips": [
+          "ν̄e",
+          "νe",
+          "conservation"
+        ]
       },
       {
         "img": "mean-life",
-        "title": "2 · Half-life and mean life",
-        "body": "For exponential decay, N(t) = N₀ exp(−λt), T½ = ln 2 / λ and mean life τ = 1 / λ = T½ / ln 2. Both half-life and mean-life questions use the shared time-question allowance.",
-        "chips": []
+        "title": "4 · Exponential decay law",
+        "body": "For an ensemble of nuclei N(t)=N0e^(−λt). T½ = ln2/λ and τ = 1/λ describe the same decay probability. An individual decay remains random.",
+        "chips": [
+          "λ",
+          "T½",
+          "τ",
+          "exponential"
+        ]
       },
       {
-        "img": "capture",
-        "title": "3 · Neutron capture",
-        "body": "Cross section is measured in barns and depends on the target, reaction and neutron energy. Capture (n,γ) differs from total absorption. The five inherited numerical values refer to thermal neutrons at 2200 m/s.",
-        "chips": []
+        "img": "colours",
+        "title": "5 · Decay mode and observed radiation",
+        "body": "Do not confuse the nuclear transformation with what a detector observes. A decay may leave a daughter nucleus excited; an emitted positron may later annihilate; γ photons can therefore appear as later products.",
+        "chips": [
+          "decay",
+          "emission",
+          "annihilation"
+        ]
       },
       {
-        "img": "ngatlas",
-        "title": "4 · NGATLAS data",
-        "body": "NGATLAS reports capture cross sections versus energy. This release preserves five values from the earlier game. The wider import was not validated and remains disabled. Missing data do not mean zero.",
-        "chips": []
+        "img": "applications",
+        "title": "6 · PET, SPECT and therapy: the physics",
+        "body": "PET uses β+ emitters and detects annihilation photons in coincidence, not the neutrino. SPECT detects γ photons. In radionuclide therapy, radiation type influences dose deposition and the spatial scale of energy release.",
+        "chips": [
+          "511 keV",
+          "γ",
+          "α / β−"
+        ]
       },
       {
-        "img": "decay-chain",
-        "title": "5 · Chains and relationships",
-        "body": "A radionuclide may be a fission product, a natural-chain member, a generator parent or daughter, or an activation product. These are different relationships.",
-        "chips": []
+        "img": "stories",
+        "title": "7 · Risk and activation",
+        "body": "Exposure and contamination remain distinct. Ordinary irradiation does not automatically make matter radioactive; activation is a separate nuclear process requiring suitable projectiles or photons, energies and targets.",
+        "chips": [
+          "dose",
+          "exposure route",
+          "activation"
+        ]
+      },
+      {
+        "img": "chemistry",
+        "title": "8 · Chemistry as a supporting property",
+        "body": "Every radionuclide belongs to an element with its own chemical family and physical state. These properties can support deduction, but they are not nuclear properties and must not be confused with decay mode.",
+        "chips": [
+          "element",
+          "family",
+          "physical state"
+        ]
       }
     ]
   }

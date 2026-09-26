@@ -1,10 +1,35 @@
-<?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
-<defs><style>text{font-family:Arial,Helvetica,sans-serif;fill:#0f172a} .title{font-size:34px;font-weight:900} .label{font-size:26px;font-weight:800} .small{font-size:20px;font-weight:700;fill:#334155} .tiny{font-size:16px;font-weight:600;fill:#475569} .box{fill:#fff;stroke:#cbd5e1;stroke-width:3;rx:24} .p{fill:#fb923c} .n{fill:#38bdf8} .alpha{fill:#fde047} .beta{fill:#67e8f9} .orange{fill:#fb7185} .gamma{fill:#fed7aa} .green{fill:#bbf7d0} .purple{fill:#ddd6fe} .blue{fill:#bfdbfe} .dark{fill:#0f172a}</style></defs>
-<rect width="900" height="520" fill="#fffdf8" />
-<text x="40" y="60" class="title">Tempo di dimezzamento: non va a zero subito</text>
-<rect class="box" x="50" y="100" width="220" height="320" /><text class="label" x="98" y="145">inizio</text>
-<g transform="translate(80 190)"><circle class="p" cx="0" cy="0" r="16" /><circle class="p" cx="40" cy="0" r="16" /><circle class="p" cx="80" cy="0" r="16" /><circle class="p" cx="120" cy="0" r="16" /><circle class="p" cx="0" cy="45" r="16" /><circle class="p" cx="40" cy="45" r="16" /><circle class="p" cx="80" cy="45" r="16" /><circle class="p" cx="120" cy="45" r="16" /></g><text class="small" x="110" y="380">8 nuclei</text>
-<path d="M285 260 L345 260" stroke="#0f172a" stroke-width="6" /><rect class="box" x="360" y="100" width="220" height="320" /><text class="label" x="400" y="145">1 T½</text><g transform="translate(410 210)"><circle class="p" cx="0" cy="0" r="18" /><circle class="p" cx="55" cy="0" r="18" /><circle class="p" cx="0" cy="55" r="18" /><circle class="p" cx="55" cy="55" r="18" /></g><text class="small" x="430" y="380">4 nuclei</text>
-<path d="M595 260 L655 260" stroke="#0f172a" stroke-width="6" /><rect class="box" x="670" y="100" width="180" height="320" /><text class="label" x="710" y="145">2 T½</text><circle class="p" cx="735" cy="250" r="20" /><circle class="p" cx="785" cy="250" r="20" /><text class="small" x="720" y="380">2 nuclei</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img">
+<defs>
+  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+    <stop offset="0" stop-color="#fffdf8"/>
+    <stop offset="1" stop-color="#eef7fb"/>
+  </linearGradient>
+  <linearGradient id="card" x1="0" x2="1">
+    <stop offset="0" stop-color="#ffffff"/>
+    <stop offset="1" stop-color="#f8fbfd"/>
+  </linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="9" stdDeviation="11" flood-color="#17324d" flood-opacity="0.14"/>
+  </filter>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="7"/>
+  </filter>
+  <style>
+    text{font-family:Inter,Arial,Helvetica,sans-serif;fill:#102a43}
+    .big{font-size:42px;font-weight:850}
+    .mid{font-size:29px;font-weight:800}
+    .label{font-size:23px;font-weight:750}
+    .small{font-size:18px;font-weight:700}
+    .tiny{font-size:15px;font-weight:650}
+    .muted{fill:#52697d}
+    .panel{fill:url(#card);stroke:#d5e2ea;stroke-width:2.5;filter:url(#shadow)}
+    .thin{stroke:#6b879c;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .arrow{stroke:#3b82f6;stroke-width:6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  </style>
+</defs>
+<rect width="900" height="520" rx="28" fill="url(#bg)"/>
+<circle cx="808" cy="60" r="80" fill="#3b82f6" opacity="0.06"/>
+<circle cx="82" cy="470" r="110" fill="#3aa17e" opacity="0.055"/>
+<rect x="55" y="95" width="175" height="270" rx="24" fill="#dceeff" stroke="#ffffff" stroke-width="2.3" filter="url(#shadow)"/><text x="142" y="138" text-anchor="middle" class="mid">0</text><circle cx="85" cy="185" r="16" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="123" cy="185" r="16" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="161" cy="185" r="16" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="199" cy="185" r="16" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="85" cy="223" r="16" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="123" cy="223" r="16" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="161" cy="223" r="16" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="199" cy="223" r="16" fill="#468ed8" stroke="#fff" stroke-width="2"/><text x="142" y="330" text-anchor="middle" font-size="38" font-weight="900">8</text><path d="M235 230 L260 230 M260 230 L247.5 238.4 M260 230 L247.5 221.6" stroke="#3b82f6" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="270" y="95" width="175" height="270" rx="24" fill="#e0f3e8" stroke="#ffffff" stroke-width="2.3" filter="url(#shadow)"/><text x="357" y="138" text-anchor="middle" class="mid">1 T½</text><circle cx="300" cy="185" r="16" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="338" cy="185" r="16" fill="#468ed8" stroke="#fff" stroke-width="2"/><circle cx="376" cy="185" r="16" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="414" cy="185" r="16" fill="#468ed8" stroke="#fff" stroke-width="2"/><text x="357" y="330" text-anchor="middle" font-size="38" font-weight="900">4</text><path d="M450 230 L475 230 M475 230 L462.5 238.4 M475 230 L462.5 221.6" stroke="#3b82f6" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="485" y="95" width="175" height="270" rx="24" fill="#fff0d2" stroke="#ffffff" stroke-width="2.3" filter="url(#shadow)"/><text x="572" y="138" text-anchor="middle" class="mid">2 T½</text><circle cx="515" cy="185" r="16" fill="#ef5b72" stroke="#fff" stroke-width="2"/><circle cx="553" cy="185" r="16" fill="#468ed8" stroke="#fff" stroke-width="2"/><text x="572" y="330" text-anchor="middle" font-size="38" font-weight="900">2</text><path d="M665 230 L690 230 M690 230 L677.5 238.4 M690 230 L677.5 221.6" stroke="#3b82f6" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="700" y="95" width="175" height="270" rx="24" fill="#e9e0ff" stroke="#ffffff" stroke-width="2.3" filter="url(#shadow)"/><text x="787" y="138" text-anchor="middle" class="mid">3 T½</text><circle cx="730" cy="185" r="16" fill="#ef5b72" stroke="#fff" stroke-width="2"/><text x="787" y="330" text-anchor="middle" font-size="38" font-weight="900">1</text><path d="M90 445 C260 420 360 410 475 435 C585 458 720 466 830 469" stroke="#a5b9c8" stroke-width="2" fill="none"/><path d="M90 395 C230 430 390 450 830 470" stroke="#3b82f6" stroke-width="6" fill="none"/><text x="110" y="400" class="small">N/N₀</text><text x="820" y="492" class="small">t</text>
 </svg>
