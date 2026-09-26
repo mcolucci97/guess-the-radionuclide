@@ -1,0 +1,14 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> guess-the-radionuclide@3.0.0 test:llm
+> node tests/browser-llm.mjs
+
+file:///workspace/scratch/0d97872d738b/guess-the-radionuclide/tests/browser-llm.mjs:4
+await fs.access('dist/models/rn-qwen/resolve/main/ndarray-cache.json').catch(()=>{throw Error('Export the trained model and run npm run build before test:llm');});
+                                                                                        ^
+
+Error: Export the trained model and run npm run build before test:llm
+    at file:///workspace/scratch/0d97872d738b/guess-the-radionuclide/tests/browser-llm.mjs:4:89
+    at async file:///workspace/scratch/0d97872d738b/guess-the-radionuclide/tests/browser-llm.mjs:4:1
+
+Node.js v24.19.0

@@ -1,0 +1,58 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> guess-the-radionuclide@3.0.0 test:online
+> firebase emulators:exec --project demo-radionuclide --only database,auth "node tests/browser-online.mjs"
+
+i  emulators: Starting emulators: auth, database
+i  emulators: Detected demo project ID "demo-radionuclide", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail.
+i  database: Database Emulator logging to database-debug.log
+i  Running script: node tests/browser-online.mjs
+
+  dist/chunks/chunk-3OG7YNOY.js                5.3mb ⚠️
+  dist/chunks/chunk-F5MXIMGY.js              670.6kb
+  dist/App.js                                323.0kb
+  dist/chunks/firebaseTransport-LAZGT24Z.js  281.7kb
+  dist/chunks/Tutorial-4HER6T4I.js            78.5kb
+  dist/chunks/chunk-N2TLFN7O.js                8.1kb
+  dist/chunks/lib-5WYJBAGO.js                  913b 
+  dist/chunks/chunk-Y6SLVHK3.js                544b 
+  dist/llm.worker.js                           128b 
+
+⚡ Done in 2622ms
+Static site built, relative paths and offline cache: rn-v3-5a823db008dd
+{
+  "date": "2026-09-26T18:19:55.737Z",
+  "backend": "Firebase Auth + RTDB emulators; production SDK and actual Security Rules",
+  "checks": [
+    "Two anonymous phones, create/invite/join, exact shared deck, private selections, host starts",
+    "Third identity cannot take a seat",
+    "Exact raw unknown text, mandatory failure escape, manual YES, private manual board, turn sync",
+    "Refresh during a pending prediction safely recovers the filter without repeating the intervention or evidence",
+    "Verbal YES without text; assistance OFF/ON, no auto-answer, successful-parse rejection, confirmed automatic filter",
+    "Mobile layout, refresh retains identity/phase/board, network recovery, browser reopen, no disconnect victory or extra turn",
+    "Confirmed wrong/correct guesses, private responder check, synchronized winner/reveal",
+    "Online IT/EN/FR",
+    "Finished match reset and explicit leave without replacing seats"
+  ],
+  "passed": 9,
+  "pageErrors": []
+}
+
+  dist/chunks/chunk-3OG7YNOY.js                5.3mb ⚠️
+  dist/chunks/chunk-F5MXIMGY.js              670.6kb
+  dist/App.js                                323.0kb
+  dist/chunks/firebaseTransport-OFAYWSUB.js  281.6kb
+  dist/chunks/Tutorial-4HER6T4I.js            78.5kb
+  dist/chunks/chunk-N2TLFN7O.js                8.1kb
+  dist/chunks/lib-5WYJBAGO.js                  913b 
+  dist/chunks/chunk-Y6SLVHK3.js                544b 
+  dist/llm.worker.js                           128b 
+
+⚡ Done in 1750ms
+Static site built, relative paths and offline cache: rn-v3-23128b72314d
+✔  Script exited successfully (code 0)
+i  emulators: Shutting down emulators.
+i  database: Stopping Database Emulator
+i  auth: Stopping Authentication Emulator
+i  hub: Stopping emulator hub
+i  logging: Stopping Logging Emulator

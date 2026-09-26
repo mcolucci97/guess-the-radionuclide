@@ -1,5 +1,8 @@
 import pathlib,json,xml.etree.ElementTree as E
 R=pathlib.Path(__file__).resolve().parents[1];source=json.loads((R/'src/data/tutorial-it.json').read_text())
+# V3 uses independently editable IT/EN/FR content; never overwrite it with V2 copy.
+if source.get('version') == 3:
+ raise SystemExit('Tutorial V3: edit src/data/tutorial-{it,en,fr}.json directly. This legacy V2 generator is disabled for V3.')
 # Authored scientific teaching text, keyed to each original diagram.
 text={
 'atom-card':('An atom that changes','A radionuclide has an unstable nucleus that can transform and release particles or radiation. Observe the clues and ask yes/no questions.','Un atome qui change','Un radionucléide possède un noyau instable pouvant se transformer et émettre des particules ou des rayonnements. Observez les indices et posez des questions oui/non.'),

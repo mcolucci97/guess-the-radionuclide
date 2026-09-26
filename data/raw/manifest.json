@@ -1,0 +1,437 @@
+[
+  {
+    "file": "data/raw/111in_g.csv",
+    "sha256": "6224a8036b6f63c1d446d9472eeb63853932c9c3701ae035f016f4763159caa2",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/11c_bp.csv",
+    "sha256": "0833066f9c362c4358077829db412f1fb75eb1b8841da73a28e7e2912c6eb369",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/11c_g.csv",
+    "sha256": "0e8ae8b9ffbc67cbfa376d2ddabc7d247c32120dd294a7d4e60882de51fcaf50",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/123i_bp.csv",
+    "sha256": "40d325e7ff8875a50176d659dfcc918c6188c80a4f7ec2799b4855736324ee4f",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/123i_g.csv",
+    "sha256": "b171a4487064416a57641d5de762a4037524d21368e59527012496d13aa053ab",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/124i_bp.csv",
+    "sha256": "6f70885894fa224dc41836c2ff8a37b7f706ebcaca1e4a7114ea7922c466f34b",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/124i_g.csv",
+    "sha256": "a3d268064a27bced89871273c02fb493db5f41b3094cf419bf3c61f9d6ef9ed2",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/125i_g.csv",
+    "sha256": "3361a9570984d976586d07a5e902cd45863ee34d8b8922a6c6f254a432fb601d",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/129i_g.csv",
+    "sha256": "f4339b0bc514a5f84167c1e75797c17d076379a2486527b818ac6fb1a16ad226",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/131i_g.csv",
+    "sha256": "82f48ee1f1ec715ea546eddba0402db6d0ebfa739875e3f52b1eb16de263e2b6",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/133xe_g.csv",
+    "sha256": "7217d7e9488d28ffdfc58407b83ff40fff3ee91d7f688b4fdfad9f63751577b7",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/134cs_g.csv",
+    "sha256": "a950143c66a38258d9cdc3ff6dd7806eeb31edf9305e2bed39e4c9d40b2740eb",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/135xe_g.csv",
+    "sha256": "9a6b20771f7c8e24022a3d064d4a76b8ebe98dbdb53e188e15edc21a85aa4613",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/137cs_g.csv",
+    "sha256": "6bb81b0ebeecc2e7adc94eaaffea5981e23a05872d5a47647a3f6b56828db015",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/13n_bp.csv",
+    "sha256": "ba5cc94f01ce2943cbe54f412d6dbf86155680cc287a2f5db036fd2ba1935679",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/13n_g.csv",
+    "sha256": "ae04eebf4240a1019c7b951526bc372dcf6435a3c749484570cb3d4460af95e9",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/149tb_bp.csv",
+    "sha256": "ec747c6d9b62a9d94599b951521de7ba7fcd85cbdf4f4716202e7b55f268aabe",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/149tb_g.csv",
+    "sha256": "caeba4141d2a788b4f972d638212820626fe53ca84c9a7117aedca05288383be",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/14c_g.csv",
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/152tb_bp.csv",
+    "sha256": "fab7ebc5badc40c0d6fcc96f02787a4b3bdbc4fb7b4e50bb56e035bfaba7601f",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/152tb_g.csv",
+    "sha256": "aafee12d0a673fefa4244c826b31bb5b1fb0518396871001335f6bbd07bd1ab5",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/153sm_g.csv",
+    "sha256": "b400ed8c3bb8cf22e59b554c9305892c73385290385fefaf9fe021cf08609093",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/155tb_g.csv",
+    "sha256": "50fae4007953919c30a76dc0769e6ca8cb189cb296d78da7ac11803ad0edcc85",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/15o_bp.csv",
+    "sha256": "465f5af0fa9c22c8d0c145bba8a2a72806adbd3b297bfce7af9faf30e287f980",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/15o_g.csv",
+    "sha256": "49d60dc3c17b379b5e6b00e2e58f1584a99d1d3995bcbc2bf614d76426f40a06",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/161tb_g.csv",
+    "sha256": "958c831bac7e945a6e9535ed9cddb9b9b5b7cde91cf698c20731a54bf95fcba3",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/166ho_g.csv",
+    "sha256": "d333e1be513378cc42e18698b3118d2e4a9661f6e937a9de306e5d90d04c7771",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/177lu_g.csv",
+    "sha256": "d8214ff378d08be53f2180a32946beaf300daa5a27a0a596a4db2c3152924fbd",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/188re_g.csv",
+    "sha256": "aaca0425dcc8ba88d8a549c252bf3e45e3d995ce41c952d9a72c12120ec2aff7",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/18f_bp.csv",
+    "sha256": "01299ba56052551a0ddaf37b22b62a23f1dbbb56da11b61a0ee88558b3b5d8de",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/18f_g.csv",
+    "sha256": "0a3ecd87fca44462b50767d37e565f18d20f9519ff676f66dc7bae7886c9ea2f",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/192ir_g.csv",
+    "sha256": "8149d7433237e9c73d47c71705a7e3d94313a2eacb6a2d09957a03354c01de0c",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/198au_g.csv",
+    "sha256": "2dad6c98419a25b899c6b2fc8f498b3da690dfcdd4afcdafdcf75edac130c6ba",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/210pb_g.csv",
+    "sha256": "0b050a503bae688a24af2c3c4b3cc6123f6d8e41d901916f0a1173dde3485ec1",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/210po_g.csv",
+    "sha256": "9f2430dd8c1aa18949ce343626163eeb65272256b10fe05e3d6c3d34103b96fc",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/211at_g.csv",
+    "sha256": "b4fd4b232227816b8609d9eda73b56e3decbf82e49e3d0308665991549a16cf0",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/212pb_g.csv",
+    "sha256": "a644405c2976640d58e83dfba02c1112f22873974cb280692161ba7053d166ec",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/213bi_g.csv",
+    "sha256": "6b4a6fe81f8b3cb72b54d59d134201ce0ca0b139d654d5f855d48694dc975dac",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/222rn_g.csv",
+    "sha256": "b385af247ab23587707ccade0c4abe5151d7d92b5c0736f7e77fadd942df3d00",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/223ra_g.csv",
+    "sha256": "f025343de38a57877ed28f763eae3c09c799fd6a935798d744e764d5f743d3b1",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/225ac_g.csv",
+    "sha256": "b94dec19ac4007b0550624f5c6be5fed8779f76079d776d901d03037b957dab8",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/226ra_g.csv",
+    "sha256": "9b3d4e0d1ddc1cee30e411b460c475d1f397f3a21b1cb2d11779a0563813a0e2",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/22na_bp.csv",
+    "sha256": "97f1cbc9fd7104cf2edd7ec2456828546f24f4ddc6bed4ac5c5b8a78b1314efe",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/22na_g.csv",
+    "sha256": "bd82870ba7239d7fd9b6a788dffe82ab41c9a91a1377911c3690027029945630",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/232th_g.csv",
+    "sha256": "575f5e9c41f06952f858a398dc381642d6a78f0f9dd648d381dc495b649e11b0",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/235u_g.csv",
+    "sha256": "61f6bff90117db9abb68ecbb943d59bdfbd16714649e6144d0adadda53f06151",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/237np_g.csv",
+    "sha256": "4df1cb17650f43fe7a89f0e8e3f723a90862c949fbb1fc0d39013a9a6f30b3b5",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/238pu_g.csv",
+    "sha256": "9907d0650940ddc0ff09c749f33deaaca2fb096e2a7f82ef646abb7a363cdaf3",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/238u_g.csv",
+    "sha256": "8824a09e5c94cd460649e700ab402f8211346b3de6e6d9799460910fcbb9fa8f",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/239pu_g.csv",
+    "sha256": "4e7bfa971d10d9f7f2cbcfc30e9fd4a8c39722e7b4bf9fbc72527685aa801fa9",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/241am_g.csv",
+    "sha256": "e17e20b2ba85553491c2b36d1ed030125fde022173439ff1626b4f2505ea275c",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/244cm_g.csv",
+    "sha256": "c1a0d896cd3c5b97e2acb349e446b6a9599c2ac8e08011c9535ad223d1242fea",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/252cf_g.csv",
+    "sha256": "2838067fdfdda28c41bb1b9f0452d2472414771f78c9be7325975c97f48af923",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/26al_bp.csv",
+    "sha256": "f41055856a63a1d3a4a337bcc2d10eee9538853867d472e0ba80bd72a158e54b",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/26al_g.csv",
+    "sha256": "672d60a76fbaaaea0ad8469c5a62d92b07ae8e92f136b9c3064219393ecc92b1",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/32p_g.csv",
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/35s_g.csv",
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/36cl_bp.csv",
+    "sha256": "4d2228759748b87887cf1df0f17fca4b3b1bd7407b4df266e4d3df4eef4d4b69",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/36cl_g.csv",
+    "sha256": "187c662d2f92f27f3f134c37af8abf0209e9747c24b760461ba15048cce89e49",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/3h_g.csv",
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/40k_bp.csv",
+    "sha256": "6394e27d696a114ffaebfc8b3a3ee47cde8f1532ba0023b8208abcfbb47dc960",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/40k_g.csv",
+    "sha256": "40e67e039665cabaf3bc2e39155c7909e5bb5b06f5512af900cacd8b7196c5ad",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/45ca_g.csv",
+    "sha256": "1ef7603784fb5bcabf4bef6e76056d6f725588ac68ba875653f64f9a15a4fddf",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/55fe_g.csv",
+    "sha256": "c4540cdda35a7a46d00026c0abd439177cbad41ea199761e472489660d48f7cd",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/57co_g.csv",
+    "sha256": "76100fabab08390a1da0e400a000bfe9cd6e5b88dd89ce705c5000ebd9164469",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/60co_g.csv",
+    "sha256": "9d7fb316063f56900c39d13c5948253937a58f0caea670681f35c08907eeaa15",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/60fe_g.csv",
+    "sha256": "8e2ba3984e7bae1ec12588d3c3727eb28112d65120881da1e10b790d29317b3e",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/64cu_bp.csv",
+    "sha256": "03c6dcad853d2e17d7a6c538ba8efbc18aaed73b310ff6d1865b2fd57105c3dc",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/64cu_g.csv",
+    "sha256": "d1b8aa177366fcef6f1818bba98cfff0da68865caf8a3b9ff661592018e0a309",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/67cu_g.csv",
+    "sha256": "99063df963b9cf766cc83db0b4f3441f6179b09b9465ed156ed0b83dba9c11b6",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/67ga_g.csv",
+    "sha256": "69d1de2f59fb99361c568a0f9717dc674797ef08b79fa1a820b8a92fde2594a5",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/68ga_bp.csv",
+    "sha256": "a1e816e736a0d987a6901dcb08cd68e96b1c32327c765ff65ba08040c61a2ef2",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/68ga_g.csv",
+    "sha256": "778da104e55e3607d995d546171ab1eeabcf4c881917a5fa26e0fe3c616ca026",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/68ge_g.csv",
+    "sha256": "a0a54d53c4cb945581e7c23444530de962bc9e17413691de9ee2661220495cd6",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/75se_g.csv",
+    "sha256": "3a3f344ac01fcf2cb033273a74d2940f58f86da6bb2b37611b7b2861c8292b85",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/7be_g.csv",
+    "sha256": "bd1edad1502fa1fb9238dfc4afe263aa4255b8b5a89ed00030dc735bf5bb9baf",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/85kr_g.csv",
+    "sha256": "e129594be19cadcbec369c32a2c913c4764ac14e9405faf00b734be50bbc2bf2",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/87rb_g.csv",
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/89sr_g.csv",
+    "sha256": "fea0953e20eeed201d34c72f183a83ccd277560f299af1843220ed7c9a4445c3",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/89zr_bp.csv",
+    "sha256": "8c7f2fff3b9d9d0c2b21e7eef83b781b2d08379082ee4a949afa48441d3cf4c9",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/89zr_g.csv",
+    "sha256": "2e50bd5d00a0d8ae7ab90958a9db2b3757c3092d62faac35adabcf1e220354b4",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/90sr_g.csv",
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/90y_g.csv",
+    "sha256": "5ac590f571c1e645fd648cae6a4db302001ed82628a032a98816a83c97b428f6",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/99mo_g.csv",
+    "sha256": "43acdb818510a6e2c0ae42c838bdd999c2ebe2df1cd33c0f3e5db26696798fdb",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/99tc_g.csv",
+    "sha256": "d16d8a01cf97f94fc6db2c61f90f09724817e83a4b7323748e11696a6e459964",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/99tc_levels.csv",
+    "sha256": "298f22448680c879f91154c9fcb64a0c8e46754ea0aaeac363e2d3905a7c41cc",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  },
+  {
+    "file": "data/raw/ground_states.csv",
+    "sha256": "8aee5dc431af1e35fcb49746387b83e927b3c300e7787defbda621a08212c795",
+    "provenance": "Unmodified repository snapshot at d8fcc4bc298590bb3aa6bacbde9669a951c4e0e4; inventory reconstructed for Tutorial V3. Original retrieval time not available."
+  }
+]

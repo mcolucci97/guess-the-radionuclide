@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "Entry: exactly two paths; new tutorial raster/module load only after entry",
+    "it/explorer: 8 chapters, science, navigation, dynamic strategy, 320/390/768/1440px",
+    "it/scientist: 9 chapters, science, navigation, dynamic strategy, 320/390/768/1440px",
+    "en/explorer: 8 chapters, science, navigation, dynamic strategy, 320/390/768/1440px",
+    "en/scientist: 9 chapters, science, navigation, dynamic strategy, 320/390/768/1440px",
+    "fr/explorer: 8 chapters, science, navigation, dynamic strategy, 320/390/768/1440px",
+    "fr/scientist: 9 chapters, science, navigation, dynamic strategy, 320/390/768/1440px",
+    "Keyboard arrows, focus after navigation, table of contents, 200% text, reduced motion",
+    "No Firebase/research requests and no Learning Engine profile changes during tutorial",
+    "Selected path opens directly on return and is preserved for match setup",
+    "Missing French asset falls back to neutral artwork",
+    "Missing all artwork keeps explanatory text and exact diagrams accessible",
+    "Offline reload: tutorial text, diagrams, stylesheet and visited artwork remain available"
+  ],
+  "passed": 13,
+  "pageErrors": []
+}

@@ -1,0 +1,55 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> guess-the-radionuclide@3.0.0 test:rules
+> firebase emulators:exec --project demo-radionuclide --only database,auth "node --test tests/multiplayer.rules.mjs"
+
+i  emulators: Starting emulators: auth, database
+i  emulators: Detected demo project ID "demo-radionuclide", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail.
+i  database: downloading firebase-database-emulator-v4.11.2.jar...
+
+i  database: Database Emulator logging to database-debug.log
+i  Running script: node --test tests/multiplayer.rules.mjs
+✔ Real rules: own private reads only; no parent/shared secret leak or room listing (1488.676067ms)
+[2026-09-26T18:13:13.269Z]  @firebase/database: FIREBASE WARNING: update at /rooms/ABC234 failed: permission_denied 
+[2026-09-26T18:13:13.305Z]  @firebase/database: FIREBASE WARNING: update at /rooms/ABC234 failed: permission_denied 
+[2026-09-26T18:13:13.331Z]  @firebase/database: FIREBASE WARNING: update at /private/ABC234/host failed: permission_denied 
+[2026-09-26T18:13:13.359Z]  @firebase/database: FIREBASE WARNING: set at /private/ABC234/host/secretId failed: permission_denied 
+[2026-09-26T18:13:13.380Z]  @firebase/database: FIREBASE WARNING: set at /private/ABC234/host failed: permission_denied 
+[2026-09-26T18:13:13.396Z]  @firebase/database: FIREBASE WARNING: set at /private/ABC234/guest failed: permission_denied 
+[2026-09-26T18:13:13.416Z]  @firebase/database: FIREBASE WARNING: set at /rooms/ABC234 failed: permission_denied 
+[2026-09-26T18:13:13.445Z]  @firebase/database: FIREBASE WARNING: set at /rooms/ABC234 failed: permission_denied 
+[2026-09-26T18:13:13.471Z]  @firebase/database: FIREBASE WARNING: set at /rooms/ABC234 failed: permission_denied 
+[2026-09-26T18:13:13.510Z]  @firebase/database: FIREBASE WARNING: set at /rooms/ABC234 failed: permission_denied 
+[2026-09-26T18:13:13.539Z]  @firebase/database: FIREBASE WARNING: set at /rooms/ABC234 failed: permission_denied 
+[2026-09-26T18:13:13.568Z]  @firebase/database: FIREBASE WARNING: set at /rooms/ABC234 failed: permission_denied 
+✔ Real rules: seat replacement, secret changes/deletion, config mutation and extra fields denied (708.36538ms)
+[2026-09-26T18:13:13.688Z]  @firebase/database: FIREBASE WARNING: set at /rooms/ABC234 failed: permission_denied 
+[2026-09-26T18:13:13.765Z]  @firebase/database: FIREBASE WARNING: set at /rooms/ABC234 failed: permission_denied 
+[2026-09-26T18:13:13.788Z]  @firebase/database: FIREBASE WARNING: set at /private/ABC234/intruder failed: permission_denied 
+✔ Real rules: no fake ready without secret; nonmembers cannot seize or write (173.047767ms)
+[2026-09-26T18:13:14.118Z]  @firebase/database: FIREBASE WARNING: set at /rooms/ABC234 failed: permission_denied 
+[2026-09-26T18:13:14.249Z]  @firebase/database: FIREBASE WARNING: set at /rooms/ABC234 failed: permission_denied 
+✔ Real rules: complete written/verbal turns; cannot submit for opponent or repeat stale action (593.013663ms)
+[2026-09-26T18:13:14.675Z]  @firebase/database: FIREBASE WARNING: set at /rooms/ABC234 failed: permission_denied 
+[2026-09-26T18:13:14.835Z]  @firebase/database: FIREBASE WARNING: update at /rooms/ABC234 failed: permission_denied 
+[2026-09-26T18:13:14.903Z]  @firebase/database: FIREBASE WARNING: update at /rooms/ABC234 failed: permission_denied 
+[2026-09-26T18:13:14.973Z]  @firebase/database: FIREBASE WARNING: update at /rooms/ABC234 failed: permission_denied 
+✔ Real rules: guesses validated against private secret, finished state immutable (591.56907ms)
+[2026-09-26T18:13:15.209Z]  @firebase/database: FIREBASE WARNING: set at /presence/ABC234/host/tab failed: permission_denied 
+✔ Real rules: presence is member-visible and connection writes owned (278.20822ms)
+[2026-09-26T18:13:15.517Z]  @firebase/database: FIREBASE WARNING: transaction at /rooms/MNL5KU failed: permission_denied 
+✔ Real adapter uses transactions for create/join/ready and resume is idempotent (402.651867ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5061.264556
+✔  Script exited successfully (code 0)
+i  emulators: Shutting down emulators.
+i  database: Stopping Database Emulator
+i  auth: Stopping Authentication Emulator
+i  hub: Stopping emulator hub
+i  logging: Stopping Logging Emulator

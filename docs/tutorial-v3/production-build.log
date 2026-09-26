@@ -1,0 +1,18 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> guess-the-radionuclide@3.0.0 build
+> node scripts/build.mjs
+
+
+  dist/chunks/chunk-3OG7YNOY.js                5.3mb ⚠️
+  dist/chunks/chunk-F5MXIMGY.js              670.6kb
+  dist/App.js                                323.0kb
+  dist/chunks/firebaseTransport-OFAYWSUB.js  281.6kb
+  dist/chunks/Tutorial-4HER6T4I.js            78.5kb
+  dist/chunks/chunk-N2TLFN7O.js                8.1kb
+  dist/chunks/lib-5WYJBAGO.js                  913b 
+  dist/chunks/chunk-Y6SLVHK3.js                544b 
+  dist/llm.worker.js                           128b 
+
+⚡ Done in 1839ms
+Static site built, relative paths and offline cache: rn-v3-8c1b9227ca8f

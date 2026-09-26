@@ -1,390 +1,487 @@
 {
-  "child": {
-    "base": [
-      {
-        "img": "atom-card",
-        "title": "1 · Leggere una carta",
-        "body": "Ogni carta rappresenta un radionuclide: un isotopo instabile. Impara a riconoscere elemento, numero di massa, emivita, modo di decadimento e contesto senza dover memorizzare tutto.",
-        "chips": [
-          "carta",
-          "isotopo",
-          "indizi"
-        ]
-      },
-      {
-        "img": "nucleus",
-        "title": "2 · Protoni, neutroni, isotopi",
-        "body": "I protoni definiscono l'elemento. Isotopi dello stesso elemento hanno lo stesso numero di protoni ma un numero diverso di neutroni.",
-        "chips": [
-          "protoni",
-          "neutroni",
-          "isotopi"
-        ]
-      },
-      {
-        "img": "decays",
-        "title": "3 · Come si trasforma il nucleo",
-        "body": "I decadimenti α, β−, β+, cattura elettronica e le transizioni γ cambiano il nucleo in modi diversi. Nei decadimenti beta compaiono anche neutrini o antineutrini, che interagiscono molto debolmente.",
-        "chips": [
-          "α",
-          "β− / β+",
-          "EC",
-          "γ",
-          "ν"
-        ]
-      },
-      {
-        "img": "half-life",
-        "title": "4 · Il tempo di dimezzamento",
-        "body": "L'emivita descrive un comportamento statistico: dopo un'emivita resta in media metà dei nuclei non decaduti e l'attività si dimezza.",
-        "chips": [
-          "T½",
-          "8→4→2→1",
-          "statistica"
-        ]
-      },
-      {
-        "img": "applications",
-        "title": "5 · Dove incontriamo i radionuclidi",
-        "body": "Medicina, radioattività naturale, radon, datazione, industria e ricerca mostrano che la radioattività non è un unico scenario e non ha un unico significato.",
-        "chips": [
-          "medicina",
-          "ambiente",
-          "ricerca"
-        ]
-      },
-      {
-        "img": "stories",
-        "title": "6 · Irraggiamento e contaminazione",
-        "body": "Essere esposti a radiazioni non significa automaticamente diventare radioattivi. La contaminazione richiede la presenza di materiale radioattivo su o dentro un oggetto o una persona.",
-        "chips": [
-          "esposizione",
-          "contaminazione",
-          "rischio"
-        ]
-      }
+  "version": 3,
+  "ui": {
+    "badge": "Impara prima di giocare",
+    "introTitle": "Piccoli nuclei. Grandi idee.",
+    "introText": "Scopri la scienza dietro le carte. Scegli il tuo percorso e costruisci gli strumenti per ragionare.",
+    "back": "Torna alla home",
+    "previous": "Precedente",
+    "next": "Successivo",
+    "play": "Configura la partita",
+    "chapter": "Capitolo",
+    "of": "di",
+    "takeaway": "PORTALO NEL GIOCO",
+    "contents": "Tutti i capitoli",
+    "choose": "Scegli il percorso",
+    "switch": "Cambia percorso",
+    "explorer": "Explorer",
+    "scientist": "Scientist",
+    "explorerDescription": "Concetti fondamentali, più guida e ragionamento visivo.",
+    "scientistDescription": "Più profondità, ragionamento nucleare e strumenti quantitativi.",
+    "explorerMeta": "7 capitoli + una prova di strategia",
+    "scientistMeta": "8 capitoli + una prova di strategia",
+    "illustrationUnavailable": "Illustrazione non disponibile. Le spiegazioni restano qui sotto.",
+    "sources": "Riferimenti scientifici",
+    "loading": "Caricamento del percorso…",
+    "loadError": "Il percorso non è stato caricato. Riprova quando la connessione è disponibile.",
+    "retry": "Riprova"
+  },
+  "labels": {
+    "nucleusAlt": "Modello concettuale di un nucleo: protoni rossi e neutroni blu. Non rappresenta un isotopo specifico.",
+    "contextsAlt": "Scanner medico, rocce, campione di laboratorio e osservatorio: diversi contesti dei radionuclidi.",
+    "schematic": "Modello concettuale · non in scala",
+    "proton": "protone",
+    "neutron": "neutrone",
+    "sameElement": "Stessi protoni → stesso elemento",
+    "differentIsotope": "Neutroni diversi → isotopi diversi",
+    "element": "Elemento",
+    "mass": "Numero di massa",
+    "halfLife": "Emivita",
+    "symbols": "Simboli della carta",
+    "context": "Contesto",
+    "cardCaption": "Carta di esempio · proprietà dal mazzo del gioco",
+    "cardSymbolNote": "Le icone mescolano modi di decadimento e radiazioni associate: li distingueremo nel percorso.",
+    "protons": "protoni",
+    "neutrons": "neutroni",
+    "nucleons": "nucleoni",
+    "alpha": "Emissione alfa",
+    "minus": "Beta meno",
+    "plus": "Beta più",
+    "capture": "Cattura elettronica",
+    "gamma": "Transizione gamma",
+    "alphaNote": "Una particella α porta via 2 protoni e 2 neutroni.",
+    "minusNote": "Elettrone + antineutrino elettronico",
+    "plusNote": "Positrone + neutrino elettronico",
+    "captureNote": "Un elettrone viene catturato; esce un neutrino elettronico.",
+    "gammaNote": "Il nucleo eccitato perde energia: A e Z non cambiano.",
+    "unchanged": "invariato",
+    "reactionNote": "Schemi a livello dei nucleoni: nei nuclei l’energia disponibile dipende anche dalle masse e dagli stati nucleari. Il protone libero non decade spontaneamente β+.",
+    "antineutrino": "antineutrino elettronico",
+    "neutrino": "neutrino elettronico",
+    "conservation": "Energia · quantità di moto · momento angolare · numero leptonico",
+    "neutrinoBalance": "Nel β−: +1 per e− e −1 per ν̄e; nel β+: −1 per e+ e +1 per νe. Nella EC l’elettrone iniziale e il neutrino finale hanno entrambi +1.",
+    "nuclearStep": "Trasformazione nucleare",
+    "daughterStep": "Possibile nucleo figlio eccitato",
+    "emissionStep": "Diseccitazione γ",
+    "iodineCaption": "I-131: β−, con γ associati alla diseccitazione di stati del nucleo figlio Xe-131.",
+    "technetiumCaption": "Tc-99m: transizione isomerica verso Tc-99. Può emettere γ oppure trasferire energia a un elettrone per conversione interna.",
+    "petBranch": "Ramo β+ di F-18",
+    "slowing": "Il positrone rallenta nel materiale",
+    "annihilation": "Annichilazione con un elettrone",
+    "coincidence": "PET: rivelazione in coincidenza",
+    "photons": "Due fotoni ≈ 511 keV, quasi opposti, per l’annichilazione a due fotoni a riposo.",
+    "petAlt": "Due rivelatori opposti raccolgono i fotoni prodotti dall’annichilazione, non dalla trasformazione nucleare primaria.",
+    "detector": "Rivelatore",
+    "remaining": "Frazione non decaduta attesa",
+    "elapsed": "Tempo in emivite",
+    "ensemble": "8 → 4 → 2 → 1 è una proporzione attesa, non una previsione esatta per 8 nuclei.",
+    "graphAlt": "Curva esponenziale: 100% all’inizio, 50% a T½, 25% a 2T½, 12,5% a 3T½.",
+    "timeScales": [
+      "secondi / minuti",
+      "ore / giorni",
+      "anni",
+      "milioni / miliardi di anni"
     ],
-    "intermediate": [
-      {
-        "img": "atom-card",
-        "title": "1 · Dalla carta alla domanda",
-        "body": "Una carta raccoglie proprietà diverse dello stesso radionuclide. Explorer ti guida a collegare ogni domanda a una proprietà scientifica e poi usa l'eliminazione automatica per confrontare il tuo ragionamento.",
-        "chips": [
-          "Explorer",
-          "proprietà",
-          "deduzione"
-        ]
-      },
-      {
-        "img": "nucleus",
-        "title": "2 · Elemento, isotopo e nucleo",
-        "body": "Z è il numero di protoni e identifica l'elemento. A è il numero di massa. Due isotopi dello stesso elemento condividono Z ma differiscono nel numero di neutroni N = A − Z.",
-        "chips": [
-          "Z",
-          "A",
-          "N",
-          "isotopi"
-        ]
-      },
-      {
-        "img": "decays",
-        "title": "3 · Decadimenti e neutrini",
-        "body": "Nel decadimento β− un neutrone si trasforma in protone con emissione di elettrone e antineutrino elettronico. Nel β+ un protone diventa neutrone con emissione di positrone e neutrino elettronico; nella cattura elettronica il nucleo cattura un elettrone ed emette un neutrino. Una transizione γ invece diseccita il nucleo senza cambiare A o Z.",
-        "chips": [
-          "β− + ν̄e",
-          "β+ + νe",
-          "EC + νe",
-          "γ"
-        ]
-      },
-      {
-        "img": "colours",
-        "title": "4 · Decadimento e radiazione non sono sinonimi",
-        "body": "Il modo di decadimento descrive la trasformazione del nucleo; le particelle o i fotoni osservati sono i prodotti della trasformazione o di processi successivi. In PET, per esempio, il radionuclide emette un positrone e un neutrino, mentre i due fotoni da 511 keV nascono dall'annichilazione del positrone.",
-        "chips": [
-          "trasformazione",
-          "e− / e+",
-          "ν",
-          "γ"
-        ]
-      },
-      {
-        "img": "half-life",
-        "title": "5 · Tempo di dimezzamento e scale",
-        "body": "Confrontare ordini di grandezza è spesso più utile che ricordare numeri esatti. Minuti, ore, giorni, anni o miliardi di anni possono separare gruppi molto diversi di radionuclidi.",
-        "chips": [
-          "ordini di grandezza",
-          "T½",
-          "confronto"
-        ]
-      },
-      {
-        "img": "applications",
-        "title": "6 · Medicina, natura, ambiente e ricerca",
-        "body": "PET e SPECT usano proprietà di emissione diverse; la terapia sfrutta radiazioni che depositano dose nel bersaglio. Altri radionuclidi sono naturali, cosmogenici o impiegati in datazione, industria e ricerca.",
-        "chips": [
-          "PET",
-          "SPECT",
-          "terapia",
-          "natura"
-        ]
-      }
+    "formulaNote": "Qui N(t) conta i nuclei non decaduti e A(t) indica l’attività, non il numero di massa. Un solo radionuclide, λ costante, senza produzione o alimentazione da un precursore.",
+    "meanLife": "τ ≈ 1,443 T½; a τ resta 1/e ≈ 36,8%.",
+    "exposure": "Irraggiamento",
+    "contamination": "Contaminazione",
+    "exposureCaption": "Radiazione che raggiunge una persona o un oggetto.",
+    "contaminationCaption": "Materiale radioattivo sulla superficie o all’interno.",
+    "activation": "Attivazione: una reazione nucleare può creare nuclei radioattivi.",
+    "activationFactors": [
+      "tipo di radiazione",
+      "energia",
+      "nuclide bersaglio",
+      "probabilità di reazione"
     ],
-    "expert": [
-      {
-        "img": "expert-map",
-        "title": "1 · Scientist: ragionamento esplicito",
-        "body": "Scientist riduce lo scaffolding e richiede eliminazione manuale. Le proprietà centrali diventano Z, A, N, trasformazioni nucleari, emivita quantitativa, applicazioni e relazioni tra le proprietà della carta.",
-        "chips": [
-          "Scientist",
-          "manuale",
-          "evidenza"
-        ]
-      },
-      {
-        "img": "zan",
-        "title": "2 · Z, A e N come vincoli",
-        "body": "Z identifica l'elemento, A conta i nucleoni e N = A − Z. Nei decadimenti α cambiano A e Z; nei decadimenti β e nella cattura elettronica A resta costante mentre Z cambia di una unità.",
-        "chips": [
-          "Z",
-          "A",
-          "N=A−Z"
-        ]
-      },
-      {
-        "img": "decays",
-        "title": "3 · Conservazioni nei decadimenti beta",
-        "body": "β−: n → p + e− + ν̄e. β+: p → n + e+ + νe. Cattura elettronica: p + e− → n + νe. Neutrino o antineutrino sono essenziali per la conservazione di energia, quantità di moto e numero leptonico, anche se non sono usati come indizio diretto nel gioco.",
-        "chips": [
-          "ν̄e",
-          "νe",
-          "conservazioni"
-        ]
-      },
-      {
-        "img": "mean-life",
-        "title": "4 · Legge esponenziale",
-        "body": "Per un insieme di nuclei N(t)=N0e^(−λt). Le grandezze T½ = ln2/λ e τ = 1/λ descrivono la stessa probabilità di decadimento. Il singolo decadimento resta casuale.",
-        "chips": [
-          "λ",
-          "T½",
-          "τ",
-          "esponenziale"
-        ]
-      },
-      {
-        "img": "colours",
-        "title": "5 · Modo di decadimento e radiazione osservata",
-        "body": "Non confondere la trasformazione nucleare con ciò che un rivelatore osserva. Un decadimento può lasciare il nucleo figlio eccitato; un positrone può annichilarsi dopo l'emissione; fotoni γ possono quindi comparire come prodotti successivi.",
-        "chips": [
-          "decadimento",
-          "emissione",
-          "annichilazione"
-        ]
-      },
-      {
-        "img": "applications",
-        "title": "6 · PET, SPECT e terapia: il perché fisico",
-        "body": "La PET usa emettitori β+ e rileva in coincidenza i fotoni di annichilazione, non il neutrino. La SPECT rileva fotoni γ. Nelle terapie con radionuclidi la scelta della radiazione influenza il deposito di dose e la scala spaziale dell'energia rilasciata.",
-        "chips": [
-          "511 keV",
-          "γ",
-          "α / β−"
-        ]
-      }
+    "riskFactors": [
+      "radionuclide e attività",
+      "radiazione ed energia",
+      "via interna / esterna",
+      "dose e durata",
+      "distanza",
+      "distribuzione biologica"
+    ],
+    "spectNote": "SPECT: un collimatore seleziona le direzioni dei fotoni γ che raggiungono la gamma-camera.",
+    "collimator": "Collimatore",
+    "therapyAlpha": "α · percorso breve, ionizzazione densa (LET elevato)",
+    "therapyBeta": "β− · percorso generalmente maggiore, ionizzazione meno densa",
+    "therapyScale": "Confronto qualitativo nei tessuti; la portata dipende dall’energia e dal materiale.",
+    "chemistry": "Chimica dell’elemento",
+    "nuclear": "Proprietà nucleari",
+    "chemicalProperties": [
+      "famiglia periodica",
+      "stato a condizioni definite",
+      "comportamento chimico"
+    ],
+    "nuclearProperties": [
+      "isotopo: A e N",
+      "emivita",
+      "modi di decadimento"
+    ],
+    "chemistryEquation": "famiglia chimica ≠ modo di decadimento",
+    "strategyQuestion": "Prova una domanda sul mazzo",
+    "betaMinus": "Ha un modo β− sulla carta?",
+    "betaPlus": "Ha un modo β+ sulla carta?",
+    "shortHalfLife": "Ha emivita inferiore a un giorno?",
+    "highZ": "Ha numero atomico Z > 20?",
+    "yes": "Sì",
+    "no": "No",
+    "reset": "Ripristina il mazzo",
+    "candidates": "carte candidate",
+    "strategyCaption": "Simulazione separata dalla partita: scegli una risposta, osserva il gruppo rimasto e prova un’altra proprietà. I conteggi sono calcolati sulle carte ancora presenti.",
+    "strategyEmpty": "Questo gruppo è vuoto: ripristina il mazzo.",
+    "strategyFlow": [
+      "Domanda ampia",
+      "Risposta",
+      "Escludi le incompatibili",
+      "Domanda più specifica"
     ]
   },
-  "adult": {
-    "base": [
-      {
-        "img": "atom-card",
-        "title": "1 · Come leggere una carta",
-        "body": "Ogni carta descrive un radionuclide preciso. Elemento, numero di massa, emivita, trasformazioni nucleari e contesto sono proprietà diverse: una buona domanda usa una di queste proprietà per restringere il mazzo.",
-        "chips": [
-          "radionuclide",
-          "proprietà",
-          "deduzione"
-        ]
-      },
-      {
-        "img": "nucleus",
-        "title": "2 · Elemento e isotopo",
-        "body": "L'elemento è definito dal numero di protoni Z. Isotopi dello stesso elemento hanno lo stesso Z ma numeri di neutroni diversi.",
-        "chips": [
-          "Z",
-          "isotopo",
-          "neutroni"
-        ]
-      },
-      {
-        "img": "half-life",
-        "title": "3 · Emivita",
-        "body": "Il tempo di dimezzamento è il tempo in cui il numero medio di nuclei non decaduti e l'attività si riducono della metà. Non dice quando decadrà un singolo nucleo.",
-        "chips": [
-          "T½",
-          "attività",
-          "statistica"
-        ]
-      }
-    ],
-    "intermediate": [
-      {
-        "img": "atom-card",
-        "title": "1 · Dalla carta alla domanda",
-        "body": "Una carta raccoglie proprietà diverse dello stesso radionuclide. Explorer ti guida a collegare ogni domanda a una proprietà scientifica e poi usa l'eliminazione automatica per confrontare il tuo ragionamento.",
-        "chips": [
-          "Explorer",
-          "proprietà",
-          "deduzione"
-        ]
-      },
-      {
-        "img": "nucleus",
-        "title": "2 · Elemento, isotopo e nucleo",
-        "body": "Z è il numero di protoni e identifica l'elemento. A è il numero di massa. Due isotopi dello stesso elemento condividono Z ma differiscono nel numero di neutroni N = A − Z.",
-        "chips": [
-          "Z",
-          "A",
-          "N",
-          "isotopi"
-        ]
-      },
-      {
-        "img": "decays",
-        "title": "3 · Decadimenti e neutrini",
-        "body": "Nel decadimento β− un neutrone si trasforma in protone con emissione di elettrone e antineutrino elettronico. Nel β+ un protone diventa neutrone con emissione di positrone e neutrino elettronico; nella cattura elettronica il nucleo cattura un elettrone ed emette un neutrino. Una transizione γ invece diseccita il nucleo senza cambiare A o Z.",
-        "chips": [
-          "β− + ν̄e",
-          "β+ + νe",
-          "EC + νe",
-          "γ"
-        ]
-      },
-      {
-        "img": "colours",
-        "title": "4 · Decadimento e radiazione non sono sinonimi",
-        "body": "Il modo di decadimento descrive la trasformazione del nucleo; le particelle o i fotoni osservati sono i prodotti della trasformazione o di processi successivi. In PET, per esempio, il radionuclide emette un positrone e un neutrino, mentre i due fotoni da 511 keV nascono dall'annichilazione del positrone.",
-        "chips": [
-          "trasformazione",
-          "e− / e+",
-          "ν",
-          "γ"
-        ]
-      },
-      {
-        "img": "half-life",
-        "title": "5 · Tempo di dimezzamento e scale",
-        "body": "Confrontare ordini di grandezza è spesso più utile che ricordare numeri esatti. Minuti, ore, giorni, anni o miliardi di anni possono separare gruppi molto diversi di radionuclidi.",
-        "chips": [
-          "ordini di grandezza",
-          "T½",
-          "confronto"
-        ]
-      },
-      {
-        "img": "applications",
-        "title": "6 · Medicina, natura, ambiente e ricerca",
-        "body": "PET e SPECT usano proprietà di emissione diverse; la terapia sfrutta radiazioni che depositano dose nel bersaglio. Altri radionuclidi sono naturali, cosmogenici o impiegati in datazione, industria e ricerca.",
-        "chips": [
-          "PET",
-          "SPECT",
-          "terapia",
-          "natura"
-        ]
-      },
-      {
-        "img": "stories",
-        "title": "7 · Irraggiamento, contaminazione e rischio",
-        "body": "L'irraggiamento è esposizione a radiazioni; la contaminazione è presenza di materiale radioattivo. Il rischio dipende da quantità, tipo ed energia della radiazione, via di esposizione, tempo, distanza e contesto: la parola «radioattivo» da sola non basta a determinarlo.",
-        "chips": [
-          "esposizione",
-          "contaminazione",
-          "contesto"
-        ]
-      }
-    ],
-    "expert": [
-      {
-        "img": "expert-map",
-        "title": "1 · Scientist: ragionamento esplicito",
-        "body": "Scientist riduce lo scaffolding e richiede eliminazione manuale. Le proprietà centrali diventano Z, A, N, trasformazioni nucleari, emivita quantitativa, applicazioni e relazioni tra le proprietà della carta.",
-        "chips": [
-          "Scientist",
-          "manuale",
-          "evidenza"
-        ]
-      },
-      {
-        "img": "zan",
-        "title": "2 · Z, A e N come vincoli",
-        "body": "Z identifica l'elemento, A conta i nucleoni e N = A − Z. Nei decadimenti α cambiano A e Z; nei decadimenti β e nella cattura elettronica A resta costante mentre Z cambia di una unità.",
-        "chips": [
-          "Z",
-          "A",
-          "N=A−Z"
-        ]
-      },
-      {
-        "img": "decays",
-        "title": "3 · Conservazioni nei decadimenti beta",
-        "body": "β−: n → p + e− + ν̄e. β+: p → n + e+ + νe. Cattura elettronica: p + e− → n + νe. Neutrino o antineutrino sono essenziali per la conservazione di energia, quantità di moto e numero leptonico, anche se non sono usati come indizio diretto nel gioco.",
-        "chips": [
-          "ν̄e",
-          "νe",
-          "conservazioni"
-        ]
-      },
-      {
-        "img": "mean-life",
-        "title": "4 · Legge esponenziale",
-        "body": "Per un insieme di nuclei N(t)=N0e^(−λt). Le grandezze T½ = ln2/λ e τ = 1/λ descrivono la stessa probabilità di decadimento. Il singolo decadimento resta casuale.",
-        "chips": [
-          "λ",
-          "T½",
-          "τ",
-          "esponenziale"
-        ]
-      },
-      {
-        "img": "colours",
-        "title": "5 · Modo di decadimento e radiazione osservata",
-        "body": "Non confondere la trasformazione nucleare con ciò che un rivelatore osserva. Un decadimento può lasciare il nucleo figlio eccitato; un positrone può annichilarsi dopo l'emissione; fotoni γ possono quindi comparire come prodotti successivi.",
-        "chips": [
-          "decadimento",
-          "emissione",
-          "annichilazione"
-        ]
-      },
-      {
-        "img": "applications",
-        "title": "6 · PET, SPECT e terapia: il perché fisico",
-        "body": "La PET usa emettitori β+ e rileva in coincidenza i fotoni di annichilazione, non il neutrino. La SPECT rileva fotoni γ. Nelle terapie con radionuclidi la scelta della radiazione influenza il deposito di dose e la scala spaziale dell'energia rilasciata.",
-        "chips": [
-          "511 keV",
-          "γ",
-          "α / β−"
-        ]
-      },
-      {
-        "img": "stories",
-        "title": "7 · Rischio e attivazione",
-        "body": "Esposizione e contaminazione restano concetti distinti. L'irraggiamento ordinario non rende automaticamente radioattivi; l'attivazione è un processo nucleare separato che richiede particelle o fotoni, energie e bersagli appropriati.",
-        "chips": [
-          "dose",
-          "via di esposizione",
-          "attivazione"
-        ]
-      },
-      {
-        "img": "chemistry",
-        "title": "8 · La chimica come proprietà di supporto",
-        "body": "Ogni radionuclide appartiene a un elemento con famiglia chimica e stato fisico propri. Queste proprietà possono aiutare la deduzione, ma non vanno confuse con le proprietà nucleari o con il modo di decadimento.",
-        "chips": [
-          "elemento",
-          "famiglia",
-          "stato fisico"
-        ]
-      }
-    ]
+  "paths": {
+    "explorer": {
+      "chapters": [
+        {
+          "id": "card",
+          "visual": "card",
+          "title": "Una carta, molti indizi",
+          "subtitle": "Leggere prima di memorizzare.",
+          "blocks": [
+            {
+              "title": "Un’identità nucleare",
+              "text": "Un radionuclide è un nuclide radioattivo. Il nome unisce elemento e numero di massa: K-40 è un isotopo del potassio con 40 nucleoni."
+            },
+            {
+              "title": "Una proprietà alla volta",
+              "text": "Emivita, decadimenti e contesti offrono indizi diversi. Non serve sapere tutto: confronta la stessa proprietà tra le carte."
+            }
+          ],
+          "takeaway": "Una domanda collega una proprietà scientifica a un gruppo di carte."
+        },
+        {
+          "id": "isotopes",
+          "visual": "isotopes",
+          "title": "Il nucleo dà l’identità",
+          "subtitle": "Protoni e neutroni, due ruoli diversi.",
+          "blocks": [
+            {
+              "title": "L’elemento",
+              "text": "Il nucleo contiene protoni e neutroni. Il numero di protoni identifica l’elemento: l’idrogeno ne ha uno."
+            },
+            {
+              "title": "Gli isotopi",
+              "text": "H-1 e H-2 sono entrambi idrogeno. Il secondo ha un neutrone in più. Non tutti gli isotopi sono radioattivi: questi due sono stabili."
+            }
+          ],
+          "takeaway": "Stesso elemento non significa stesso isotopo, né stessa emivita."
+        },
+        {
+          "id": "transformations",
+          "visual": "transformations",
+          "title": "Come cambia un nucleo",
+          "subtitle": "Cinque processi da riconoscere.",
+          "blocks": [
+            {
+              "title": "Particelle e trasformazioni",
+              "text": "L’alfa porta via un piccolo gruppo di nucleoni. Nei processi beta e nella cattura elettronica cambia il numero di protoni."
+            },
+            {
+              "title": "Non dimenticare i neutrini",
+              "text": "Neutrini e antineutrini sono particelle molto difficili da rivelare che accompagnano questi processi. Il β− emette un antineutrino; β+ e cattura elettronica emettono un neutrino."
+            }
+          ],
+          "takeaway": "Una transizione γ rilascia energia: non cambia l’elemento."
+        },
+        {
+          "id": "emissions",
+          "visual": "emissions",
+          "title": "Trasformazione ≠ radiazione",
+          "subtitle": "Distingui il primo processo da ciò che osservi.",
+          "blocks": [
+            {
+              "title": "Il modo di decadimento",
+              "text": "Descrive la trasformazione nucleare. La radiazione osservata può provenire anche da processi successivi, come la diseccitazione del nucleo figlio."
+            },
+            {
+              "title": "Il caso PET",
+              "text": "Nel ramo β+ di F-18 escono un positrone e un neutrino. Il positrone rallenta, poi si annichila con un elettrone: i fotoni da circa 511 keV nascono qui, non dal decadimento nucleare primario."
+            }
+          ],
+          "takeaway": "Vedere fotoni γ non basta per identificare il modo di decadimento."
+        },
+        {
+          "id": "half-life",
+          "visual": "halfLife",
+          "title": "Metà, poi ancora metà",
+          "subtitle": "Una regolarità collettiva, non un timer individuale.",
+          "blocks": [
+            {
+              "title": "Una legge statistica",
+              "text": "Dopo un’emivita resta in media metà dei nuclei non decaduti; dopo due, un quarto; dopo tre, un ottavo. Nelle stesse condizioni anche l’attività segue questa riduzione."
+            },
+            {
+              "title": "Ragiona per scale",
+              "text": "Il singolo nucleo decade in modo casuale. La materia non scompare: cambia il nucleo. Per confrontare carte, spesso bastano gli ordini di grandezza."
+            }
+          ],
+          "takeaway": "Chiedi un intervallo di emivita, senza dover ricordare ogni valore."
+        },
+        {
+          "id": "contexts",
+          "visual": "contexts",
+          "title": "Un fenomeno, molti contesti",
+          "subtitle": "Medicina, natura, ambiente e oltre.",
+          "blocks": [
+            {
+              "title": "Origine e impiego sono diversi",
+              "text": "La radioattività naturale riguarda l’origine dei radionuclidi. Il monitoraggio ambientale riguarda dove si trovano e come si misurano, anche quando l’origine è artificiale."
+            },
+            {
+              "title": "Il contesto conta",
+              "text": "La radioattività è un fenomeno fisico. Utilità e rischio dipendono dalla situazione, dalle proprietà del radionuclide e dall’esposizione."
+            }
+          ],
+          "takeaway": "Un radionuclide può appartenere a più contesti: le categorie non sono esclusive.",
+          "contexts": [
+            [
+              "PET",
+              "Immagini da annichilazione"
+            ],
+            [
+              "SPECT",
+              "Immagini da fotoni γ"
+            ],
+            [
+              "Terapia",
+              "Energia depositata nei tessuti"
+            ],
+            [
+              "Radioattività naturale",
+              "Radionuclidi presenti in natura"
+            ],
+            [
+              "Radon / ambiente",
+              "Presenza, trasporto e monitoraggio"
+            ],
+            [
+              "Datazione / geoscienze",
+              "Orologi isotopici"
+            ],
+            [
+              "Industria",
+              "Controlli e misure"
+            ],
+            [
+              "Ricerca",
+              "Traccianti e nuovi dati"
+            ],
+            [
+              "Astronomia / cosmogenici",
+              "Nuclei nel cosmo e da raggi cosmici"
+            ]
+          ]
+        },
+        {
+          "id": "risk",
+          "visual": "risk",
+          "title": "Esposto non significa contaminato",
+          "subtitle": "La differenza è la presenza di materiale radioattivo.",
+          "blocks": [
+            {
+              "title": "Due situazioni distinte",
+              "text": "Nell’irraggiamento una persona o un oggetto riceve radiazioni ionizzanti. Nella contaminazione, materiale radioattivo è presente sulla superficie o all’interno."
+            },
+            {
+              "title": "Nessun trasferimento automatico",
+              "text": "Stare vicino a un paziente dopo una PET non rende un’altra persona radioattiva. La normale esposizione non trasferisce automaticamente materiale radioattivo."
+            },
+            {
+              "title": "Il rischio dipende dal contesto",
+              "text": "Contano attività, tipo di radiazione, dose, durata e via di esposizione. L’energia da sola non stabilisce il rischio."
+            }
+          ],
+          "takeaway": "Chiediti: arriva radiazione, oppure è presente materiale radioattivo?"
+        },
+        {
+          "id": "strategy",
+          "visual": "strategy",
+          "title": "Una buona domanda cambia il gruppo",
+          "subtitle": "La sua utilità dipende dalle carte rimaste.",
+          "blocks": [
+            {
+              "title": "Dal generale allo specifico",
+              "text": "Parti da applicazione, decadimento o intervallo di emivita; poi usa le risposte per escludere le carte incompatibili e restringere la ricerca."
+            },
+            {
+              "title": "Il mazzo decide",
+              "text": "Una domanda utile divide il gruppo in modo informativo. La stessa domanda può essere utile ora e inutile dopo: osserva come cambiano i conteggi."
+            }
+          ],
+          "takeaway": "Nel gioco il Learning Engine ti aiuterà a mettere alla prova questi modelli mentali."
+        }
+      ]
+    },
+    "scientist": {
+      "chapters": [
+        {
+          "id": "zan",
+          "visual": "zan",
+          "title": "Tre numeri per un nucleo",
+          "subtitle": "Z identifica l’elemento. A e N distinguono gli isotopi.",
+          "blocks": [
+            {
+              "title": "Conta i nucleoni",
+              "text": "Z è il numero di protoni; A è il numero totale di nucleoni. Il numero di neutroni è N = A − Z."
+            },
+            {
+              "title": "Stesso Z, diverso N",
+              "text": "U-235 e U-238 hanno entrambi 92 protoni, ma rispettivamente 143 e 146 neutroni. La notazione è simbolica: non occorre disegnare centinaia di sfere."
+            }
+          ],
+          "takeaway": "Z seleziona un elemento; A distingue i suoi isotopi."
+        },
+        {
+          "id": "transformations",
+          "visual": "transformations",
+          "title": "Segui A. Segui Z.",
+          "subtitle": "Ogni trasformazione lascia una firma nel nucleo.",
+          "blocks": [
+            {
+              "title": "Bilancio nucleare",
+              "text": "L’alfa riduce A di 4 e Z di 2. Il β− aumenta Z di 1; β+ e cattura elettronica lo riducono di 1. Nei tre processi A resta invariato."
+            },
+            {
+              "title": "Energia e stato",
+              "text": "La transizione γ conserva A e Z: cambia lo stato energetico. Gli schemi di conversione p/n non descrivono da soli il bilancio energetico di un nucleo reale."
+            }
+          ],
+          "takeaway": "Controlla sia la trasformazione dei nucleoni sia le particelle emesse."
+        },
+        {
+          "id": "neutrinos",
+          "visual": "neutrinos",
+          "title": "La particella che completa il conto",
+          "subtitle": "Debolmente interagente non significa facoltativa.",
+          "blocks": [
+            {
+              "title": "Conservazioni simultanee",
+              "text": "Neutrini e antineutrini partecipano al bilancio di energia, quantità di moto, momento angolare e numero leptonico. Nel β l’energia disponibile si distribuisce fra i prodotti, incluso il rinculo nucleare."
+            },
+            {
+              "title": "Non sono l’indizio pratico",
+              "text": "Interagiscono molto debolmente e non sono normalmente l’osservabile delle carte. Includerli è essenziale per capire il processo, senza introdurre una nuova categoria di domande."
+            }
+          ],
+          "takeaway": "β− → ν̄e; β+ ed EC → νe."
+        },
+        {
+          "id": "exponential",
+          "visual": "halfLife",
+          "title": "Il tempo di un insieme",
+          "subtitle": "Emivita e vita media descrivono la stessa legge.",
+          "blocks": [
+            {
+              "title": "Una probabilità costante",
+              "text": "λ è la probabilità di decadimento per unità di tempo, nel limite di un intervallo infinitesimo. Per un insieme isolato N(t) segue la legge esponenziale; A(t) = λN(t)."
+            },
+            {
+              "title": "Due tempi caratteristici",
+              "text": "T½ = ln(2)/λ dimezza l’insieme. τ = 1/λ è la vita media: non è uguale all’emivita. Il singolo decadimento resta stocastico."
+            }
+          ],
+          "takeaway": "Confronta tempi e intervalli; distingui il numero di massa A dall’attività A(t)."
+        },
+        {
+          "id": "emissions",
+          "visual": "emissions",
+          "title": "Dal nucleo al rivelatore",
+          "subtitle": "Una catena di processi, non un’unica etichetta.",
+          "blocks": [
+            {
+              "title": "Stati del nucleo figlio",
+              "text": "Un decadimento può popolare uno stato eccitato del figlio. La successiva diseccitazione può produrre γ o elettroni di conversione interna. Nella cattura elettronica, il riassetto atomico può produrre raggi X ed elettroni Auger."
+            },
+            {
+              "title": "Annichilazione dopo il β+",
+              "text": "F-18 emette e+ e νe nel ramo β+. Dopo il rallentamento, l’annichilazione e+/e− produce i fotoni usati in PET. I due fotoni da circa 511 keV non sono emissioni gamma nucleari primarie di F-18."
+            }
+          ],
+          "takeaway": "Un fotone γ osservato non identifica da solo il meccanismo primario."
+        },
+        {
+          "id": "medicine",
+          "visual": "medicine",
+          "title": "Rivelare. Localizzare. Trattare.",
+          "subtitle": "Proprietà fisiche diverse, obiettivi diversi.",
+          "blocks": [
+            {
+              "title": "PET e SPECT",
+              "text": "La PET misura coppie di fotoni di annichilazione in coincidenza. La SPECT usa i fotoni γ emessi e la collimazione per ricostruire la distribuzione del tracciante."
+            },
+            {
+              "title": "Terapia: dove va l’energia?",
+              "text": "Le α hanno in genere portata breve e alto trasferimento lineare di energia (LET). Le β− hanno portata generalmente maggiore e ionizzazione meno densa. Conta anche dove si distribuisce il radiofarmaco."
+            }
+          ],
+          "takeaway": "L’applicazione dipende da radiazione, tempi e distribuzione biologica."
+        },
+        {
+          "id": "risk",
+          "visual": "risk",
+          "title": "Tre fenomeni da separare",
+          "subtitle": "Irraggiamento, contaminazione, attivazione.",
+          "blocks": [
+            {
+              "title": "Esposizione e materiale",
+              "text": "Irraggiamento significa ricevere radiazioni; contaminazione significa presenza di materiale radioattivo. La normale esposizione diagnostica non rende automaticamente radioattivi."
+            },
+            {
+              "title": "L’attivazione è una reazione",
+              "text": "In condizioni adatte, reazioni indotte da particelle appropriate o fotoni sufficientemente energetici possono produrre nuclei radioattivi. Tipo di proiettile, energia, nuclide bersaglio e probabilità di reazione sono determinanti."
+            },
+            {
+              "title": "Un rischio contestuale",
+              "text": "Non è un effetto comune della normale diagnostica. Il rischio dipende da attività, radiazione, energia, dose, durata, distanza, via d’ingresso e distribuzione biologica; non dalla sola energia."
+            }
+          ],
+          "takeaway": "Individua il meccanismo fisico prima di generalizzare sul rischio."
+        },
+        {
+          "id": "chemistry",
+          "visual": "chemistry",
+          "title": "Un indizio chimico, una proprietà nucleare",
+          "subtitle": "Due piani complementari per la deduzione.",
+          "blocks": [
+            {
+              "title": "Il ruolo dell’elemento",
+              "text": "Famiglia periodica, stato a condizioni definite e comportamento chimico appartengono principalmente all’elemento e alla sua struttura elettronica."
+            },
+            {
+              "title": "Il ruolo dell’isotopo",
+              "text": "Emivita e decadimenti dipendono dal nucleo. Gli isotopi hanno chimica simile, pur con possibili effetti isotopici: una famiglia chimica non determina un modo di decadimento."
+            }
+          ],
+          "takeaway": "Usa la chimica come indizio di supporto, insieme alle proprietà nucleari."
+        },
+        {
+          "id": "strategy",
+          "visual": "strategy",
+          "title": "Una buona domanda cambia il gruppo",
+          "subtitle": "La sua utilità dipende dalle carte rimaste.",
+          "blocks": [
+            {
+              "title": "Dal generale allo specifico",
+              "text": "Parti da applicazione, decadimento o intervallo di emivita; poi usa le risposte per escludere le carte incompatibili e restringere la ricerca."
+            },
+            {
+              "title": "Il mazzo decide",
+              "text": "Una domanda utile divide il gruppo in modo informativo. La stessa domanda può essere utile ora e inutile dopo: osserva come cambiano i conteggi."
+            }
+          ],
+          "takeaway": "Nel gioco il Learning Engine ti aiuterà a mettere alla prova questi modelli mentali."
+        }
+      ]
+    }
   }
 }

@@ -1,3 +1,4 @@
+import TutorialEntry from "./tutorial/Entry.jsx";
 import {useLearning} from "./learning/useLearning.js";
 import {LearningPanel, LearningRecap} from "./learning/LearningPanel.jsx";
 import {selectDeck} from "./learning/adaptiveDeck.js";
@@ -5,12 +6,8 @@ import {localId} from "./learning/playerModel.js";
 import {describeQuestion, propertyText} from "./learning/gameplay.js";
 import {LEVELS, learningLevel, legacyLevel, normalConfig} from "./learning/levels.js";
 import {learningText} from "./learning/i18n.js";
-import tutorialIT from "./data/tutorial-it.json";
 import {multiplayerText} from "./multiplayer/i18n.js";
 import {OnlineGame} from "./multiplayer/OnlineGame.jsx";
-import tutorialEN from "./data/tutorial-en.json";
-import tutorialFR from "./data/tutorial-fr.json";
-const tutorials={it:tutorialIT,en:tutorialEN,fr:tutorialFR};
 import {formatQuery} from "./engine/advanced.js";
 import {EvidencePanel} from "./ui/EvidencePanel.js";
 import * as _ from "react";
@@ -793,119 +790,6 @@ function Mt(e) {
     ),
   });
 }
-function Nt({
-  lang: e,
-  audience: t,
-  level: n,
-  setAudience: r,
-  setLevel: i,
-  close: a,
-  start: o,
-}) {
-  let s = _t[e],
-    c =
-      e === `en`
-        ? `Built from Orano, IAEA and BBC Bitesize educational material, then adapted to the card game.`
-        : e === `fr`
-          ? `Construit à partir de ressources pédagogiques Orano, AIEA et BBC Bitesize, puis adapté au jeu de cartes.`
-          : `Costruito a partire da risorse didattiche Orano, IAEA e BBC Bitesize, poi adattato al gioco di carte.`,
-    l = tutorials[e],
-    u = l[t]?.[legacyLevel(n)] || l.adult.base, imageLang=e;
-  return (0, j.jsxs)(`main`, {
-    className: `mx-auto max-w-6xl px-5 py-8`,
-    children: [
-      (0, j.jsxs)(`div`, {
-        className: `flex flex-wrap items-center justify-between gap-4`,
-        children: [
-          (0, j.jsxs)(`div`, {
-            children: [
-              (0, j.jsx)(`h1`, {
-                className: `text-3xl font-bold`,
-                children: s.tutorial,
-              }),
-              (0, j.jsxs)(`p`, {
-                className: `mt-2 max-w-3xl text-slate-600`,
-                children: learningText[e].intro,
-              }),
-              (0, j.jsx)(`p`, {
-                className: `mt-2 max-w-3xl text-xs font-semibold text-slate-500`,
-                children: c,
-              }),
-            ],
-          }),
-          (0, j.jsx)(`button`, {
-            onClick: a,
-            className: `rounded-xl border bg-white px-4 py-2 font-semibold`,
-            children: s.tutorialBack,
-          }),
-        ],
-      }),
-      (0, j.jsxs)(`div`, {
-        className: `mt-6 flex flex-wrap gap-3`,
-        children: [
-          LEVELS.map(level => j.jsx(Et, {
-            active: learningLevel(n) === level, onClick: () => i(level),
-            children: learningText[e][level],
-          }, level)),
-        ],
-      }),
-      (0, j.jsxs)(`div`, {
-        className: `mt-6 rounded-3xl border bg-gradient-to-br from-amber-50 to-cyan-50 p-5`,
-        children: [
-          (0, j.jsx)(`h2`, {
-            className: `text-xl font-black`,
-            children:
-              t === `child`
-                ? ({it:`Percorso visivo e narrativo`,en:`Visual stories`,fr:`Parcours visuel`})[e]
-                : legacyLevel(n) === `expert`
-                  ? ({it:`Percorso fisico e tecnico`,en:`Physics and technical concepts`,fr:`Physique et concepts techniques`})[e]
-                  : ({it:`Percorso scientifico guidato`,en:`Guided science`,fr:`Parcours scientifique`})[e],
-          }),
-          (0, j.jsx)(`p`, {
-            className: `mt-2 text-slate-700`,
-            children:
-              t === `child`
-                ? ({it:`Le carte mostrano indizi visivi e categorie larghe per fare domande senza gergo.`,en:`Use pictures and broad categories to ask questions without technical vocabulary.`,fr:`Utilisez les images et les grandes catégories pour poser des questions sans jargon.`})[e]
-                : ({it:`Il tutorial distingue proprietà nucleari, chimica dell’elemento e contesti reali.`,en:`Distinguish nuclear properties, element chemistry and real-world contexts.`,fr:`Distinguez propriétés nucléaires, chimie et contextes réels.`})[e],
-          }),
-        ],
-      }),
-      (0, j.jsx)(`div`, {
-        className: `mt-8 grid gap-5 md:grid-cols-2`,
-        children: u.map((e) =>
-          (0, j.jsxs)(
-            `article`,
-            {
-              className: `rounded-3xl border bg-white p-5 shadow-sm`,
-              children: [
-                (0, j.jsx)(`img`, {
-                  src: `./tutorial/${imageLang}/${e.img}.svg`,
-                  alt: ``,
-                  className: `mx-auto h-44 w-full object-contain`,
-                }),
-                (0, j.jsx)(`h2`, {
-                  className: `mt-4 text-xl font-bold`,
-                  children: e.title,
-                }),
-                (0, j.jsx)(`p`, {
-                  className: `mt-2 leading-relaxed text-slate-600`,
-                  children: e.body,
-                }),
-                Mt(e.chips || []),
-              ],
-            },
-            e.title,
-          ),
-        ),
-      }),
-      (0, j.jsx)(`button`, {
-        onClick: o,
-        className: `mt-8 rounded-2xl bg-slate-900 px-8 py-4 font-bold text-white`,
-        children: s.tutorialGo,
-      }),
-    ],
-  });
-}
 function Pt({ lang: e, context: t, close: n }) {
   let r = _t[e],
     [i, a] = (0, _.useState)(`misunderstood`),
@@ -1034,6 +918,7 @@ function Pt({ lang: e, context: t, close: n }) {
 }
 function Ft() {
   const learning=useLearning();
+  const [levelSelected,setLevelSelected]=_.useState(false);
   const localTurnStart=_.useRef([]);
   const [guessCandidate,setGuessCandidate]=_.useState(null);
   const [pendingQuery,setPendingQuery]=_.useState(null);
@@ -1138,6 +1023,7 @@ function Ft() {
     setGuessCandidate(null);
     if(o.mode === 'online'){a('online');return;}
     setPendingQuery(null);setPrivacy(null);
+    setLevelSelected(true);
     let e = selectDeck(be,o.deckSize,{profile:learning.engine.profile,mode:o.mode});
     learning.start({id:localId(),level:o.level,mode:o.mode,deckIds:e.map(c=>c.id)});
     (l(e),
@@ -1487,12 +1373,12 @@ function Ft() {
           }),
         }),
       i === `learn` &&
-        (0, j.jsx)(Nt, {
+        (0, j.jsx)(TutorialEntry, {
           lang: e,
-          audience: o.audience,
-          level: o.level,
-          setAudience: (e) => s({ ...o, audience: e }),
-          setLevel: (e) => s(normalConfig({ ...o, level: e })),
+          level: levelSelected ? o.level : null,
+          cards: be,
+          deck: c,
+          setLevel: (e) => {setLevelSelected(true);s(normalConfig({ ...o, level: e }));},
           close: () => a(`home`),
           start: () => a(`setup`),
         }),
@@ -1527,7 +1413,7 @@ function Ft() {
               title: learningText[e].level,
               children: LEVELS.map(level => j.jsxs('button', {
                 'data-learning-level': level,
-                onClick: () => s(normalConfig({...o, level})),
+                onClick: () => {setLevelSelected(true);s(normalConfig({...o, level}));},
                 className: `min-w-[190px] rounded-2xl border p-4 text-left transition ${o.level === level ? 'border-slate-900 bg-slate-900 text-white' : 'bg-white hover:border-slate-400'}`,
                 children: [j.jsx('b', {children: learningText[e][level]}),
                   j.jsx('span', {className:'mt-1 block text-xs', children:learningText[e][level+'Hint']})],

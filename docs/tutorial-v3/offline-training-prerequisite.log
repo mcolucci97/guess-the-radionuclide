@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/0d97872d738b/guess-the-radionuclide/tests/offline-kit-smoke.py", line 5, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
